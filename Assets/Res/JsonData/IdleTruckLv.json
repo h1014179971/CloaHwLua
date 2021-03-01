@@ -1,0 +1,72 @@
+[
+  {
+    "Lv": 1.0,
+    "price": "100000,0",
+    "speed": 3.0,
+    "volume": 1.0,
+    "icon": null
+  },
+  {
+    "Lv": 2.0,
+    "price": "1000000,0",
+    "speed": 3.0,
+    "volume": 2.0,
+    "icon": null
+  },
+  {
+    "Lv": 3.0,
+    "price": "10000000,0",
+    "speed": 3.0,
+    "volume": 3.0,
+    "icon": null
+  },
+  {
+    "Lv": 4.0,
+    "price": "50000000,0",
+    "speed": 3.0,
+    "volume": 4.0,
+    "icon": null
+  },
+  {
+    "Lv": 5.0,
+    "price": "50000000,1",
+    "speed": 3.0,
+    "volume": 5.0,
+    "icon": null
+  },
+  {
+    "Lv": 6.0,
+    "price": "50000000,2",
+    "speed": 3.0,
+    "volume": 6.0,
+    "icon": null
+  },
+  {
+    "Lv": 7.0,
+    "price": "50000000,3",
+    "speed": 3.0,
+    "volume": 7.0,
+    "icon": null
+  },
+  {
+    "Lv": 8.0,
+    "price": "50000000,4",
+    "speed": 3.0,
+    "volume": 8.0,
+    "icon": null
+  },
+  {
+    "Lv": 9.0,
+    "price": "50000000,5",
+    "speed": 3.0,
+    "volume": 9.0,
+    "icon": null
+  },
+  {
+    "Lv": 10.0,
+    "price": "50000000,6",
+    "speed": 3.0,
+    "volume": 10.0,
+    "icon": null
+  }
+]

@@ -1,0 +1,1919 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62c2e79bfa78c62449ea022ab1422975, type: 3}
+  m_Name: Rules
+  m_EditorClassIdentifier: 
+  searchPatternAsset: '*.asset'
+  searchPatternController: '*.controller'
+  searchPatternDir: '*'
+  searchPatternMaterial: '*.mat'
+  searchPatternPng: '*.png'
+  searchPatternPrefab: '*.prefab'
+  searchPatternScene: '*.unity'
+  searchPatternText: '*.txt,*.bytes,*.json,*.csv,*.xml,*htm,*.html,*.yaml,*.fnt'
+  version: 11
+  scenesInBuild:
+  - {fileID: 102900000, guid: 5866861b7f9a25841be83c614cfb2440, type: 3}
+  rules:
+  - searchPath: Assets/Scenes/Idle
+    searchPattern: '*.unity'
+    nameBy: 1
+    assetBundleName: 
+  - searchPath: Assets/Res/Audio
+    searchPattern: '*'
+    nameBy: 1
+    assetBundleName: 
+  - searchPath: Assets/Res/Prefabs/Idle/Fx
+    searchPattern: '*.prefab'
+    nameBy: 1
+    assetBundleName: 
+  - searchPath: Assets/Res/Prefabs/Idle
+    searchPattern: '*.prefab'
+    nameBy: 1
+    assetBundleName: 
+  - searchPath: Assets/Res/UI/Idle
+    searchPattern: '*.prefab'
+    nameBy: 1
+    assetBundleName: 
+  - searchPath: Assets/Res/Textures/Idle/ItemIcons
+    searchPattern: '*.png'
+    nameBy: 1
+    assetBundleName: 
+  - searchPath: Assets/Res/Textures/Idle/SiteIcons
+    searchPattern: '*.png'
+    nameBy: 1
+    assetBundleName: 
+  - searchPath: Assets/Res/JsonData
+    searchPattern: '*.json'
+    nameBy: 1
+    assetBundleName: 
+  - searchPath: Assets/Res/Textures/Idle/cityTruck
+    searchPattern: '*.png'
+    nameBy: 1
+    assetBundleName: 
+  - searchPath: Assets/Res/Textures/Idle/truck
+    searchPattern: '*.png'
+    nameBy: 1
+    assetBundleName: 
+  - searchPath: Assets/Res/Textures/Idle/fork
+    searchPattern: '*.png'
+    nameBy: 1
+    assetBundleName: 
+  - searchPath: Assets/Res/UI/GameUI
+    searchPattern: '*.prefab'
+    nameBy: 1
+    assetBundleName: 
+  - searchPath: Assets/Res/Textures/Idle/shelfRes
+    searchPattern: '*.png'
+    nameBy: 1
+    assetBundleName: 
+  - searchPath: Assets/Res/Prefabs/Idle/fork
+    searchPattern: '*.prefab'
+    nameBy: 1
+    assetBundleName: 
+  - searchPath: Assets/Res/Textures/Idle/floorRes
+    searchPattern: '*.png'
+    nameBy: 1
+    assetBundleName: 
+  - searchPath: Assets/Res/Prefabs/Idle/PostSite
+    searchPattern: '*.prefab'
+    nameBy: 1
+    assetBundleName: 
+  - searchPath: Assets/Res/Textures/Idle/ItemImgs
+    searchPattern: '*.png'
+    nameBy: 1
+    assetBundleName: 
+  - searchPath: Assets/Textures/idle/city1002
+    searchPattern: '*'
+    nameBy: 2
+    assetBundleName: 
+  - searchPath: Assets/Res/Textures/Idle/Common
+    searchPattern: '*.png'
+    nameBy: 1
+    assetBundleName: 
+  - searchPath: Assets/Res/Prefabs/Idle/Common
+    searchPattern: '*.prefab'
+    nameBy: 1
+    assetBundleName: 
+  - searchPath: Assets/Res/Prefabs/Idle/Staffs
+    searchPattern: '*.prefab'
+    nameBy: 1
+    assetBundleName: 
+  - searchPath: Assets/GameAssets/SprotoBytes
+    searchPattern: '*.txt,*.bytes,*.json,*.csv,*.xml,*htm,*.html,*.yaml,*.fnt'
+    nameBy: 1
+    assetBundleName: 
+  - searchPath: Assets/GameAssets/Arts/UI/Prefabs
+    searchPattern: '*.prefab'
+    nameBy: 1
+    assetBundleName: 
+  ruleAssets:
+  - bundle: assets/res/audio/buildsmoke.mp3.unity3d
+    path: Assets/Res/Audio/BuildSmoke.mp3
+  - bundle: assets/res/audio/buttonclick.mp3.unity3d
+    path: Assets/Res/Audio/ButtonClick.mp3
+  - bundle: assets/res/audio/buttonclose.mp3.unity3d
+    path: Assets/Res/Audio/ButtonClose.mp3
+  - bundle: assets/res/audio/doubleincome.mp3.unity3d
+    path: Assets/Res/Audio/DoubleIncome.mp3
+  - bundle: assets/res/audio/login.mp3.unity3d
+    path: Assets/Res/Audio/Login.mp3
+  - bundle: assets/res/audio/moneyfxshow.mp3.unity3d
+    path: Assets/Res/Audio/MoneyFxShow.mp3
+  - bundle: assets/res/audio/showitem.mp3.unity3d
+    path: Assets/Res/Audio/ShowItem.mp3
+  - bundle: assets/res/audio/vendingmoney.mp3.unity3d
+    path: Assets/Res/Audio/VendingMoney.mp3
+  - bundle: assets/res/audio/audio_fireworks.mp3.unity3d
+    path: Assets/Res/Audio/audio_fireworks.mp3
+  - bundle: assets/res/audio/bgm.mp3.unity3d
+    path: Assets/Res/Audio/bgm.mp3
+  - bundle: assets/res/audio/citytruckmove.mp3.unity3d
+    path: Assets/Res/Audio/cityTruckMove.mp3
+  - bundle: assets/res/audio/citytruckstop.mp3.unity3d
+    path: Assets/Res/Audio/cityTruckStop.mp3
+  - bundle: assets/res/audio/clickfeiji.mp3.unity3d
+    path: Assets/Res/Audio/clickFeiji.mp3
+  - bundle: assets/res/audio/clicknpctalk.mp3.unity3d
+    path: Assets/Res/Audio/clickNpcTalk.mp3
+  - bundle: assets/res/audio/forkunloaditem.mp3.unity3d
+    path: Assets/Res/Audio/forkUnloadItem.mp3
+  - bundle: assets/res/audio/refreshfeiji.mp3.unity3d
+    path: Assets/Res/Audio/refreshFeiji.mp3
+  - bundle: assets/res/audio/sitetruckstop.mp3.unity3d
+    path: Assets/Res/Audio/siteTruckStop.mp3
+  - bundle: assets/res/audio/staffloaditem.mp3.unity3d
+    path: Assets/Res/Audio/staffLoadItem.mp3
+  - bundle: assets/res/audio/xiangzidown.mp3.unity3d
+    path: Assets/Res/Audio/xiangzidown.mp3
+  - bundle: assets/res/jsondata/idlecity.json.unity3d
+    path: Assets/Res/JsonData/IdleCity.json
+  - bundle: assets/res/jsondata/idlecitycycle.json.unity3d
+    path: Assets/Res/JsonData/IdleCityCycle.json
+  - bundle: assets/res/jsondata/idlecitystorevolume.json.unity3d
+    path: Assets/Res/JsonData/IdleCityStoreVolume.json
+  - bundle: assets/res/jsondata/idlecitytruckres.json.unity3d
+    path: Assets/Res/JsonData/IdleCityTruckRes.json
+  - bundle: assets/res/jsondata/idlecityvolume.json.unity3d
+    path: Assets/Res/JsonData/IdleCityVolume.json
+  - bundle: assets/res/jsondata/idleguide.json.unity3d
+    path: Assets/Res/JsonData/IdleGuide.json
+  - bundle: assets/res/jsondata/idleguidestep.json.unity3d
+    path: Assets/Res/JsonData/IdleGuideStep.json
+  - bundle: assets/res/jsondata/idleitem.json.unity3d
+    path: Assets/Res/JsonData/IdleItem.json
+  - bundle: assets/res/jsondata/idlemaintask.json.unity3d
+    path: Assets/Res/JsonData/IdleMainTask.json
+  - bundle: assets/res/jsondata/idleshelfres.json.unity3d
+    path: Assets/Res/JsonData/IdleShelfRes.json
+  - bundle: assets/res/jsondata/idlesite.json.unity3d
+    path: Assets/Res/JsonData/IdleSite.json
+  - bundle: assets/res/jsondata/idlesitebase1.json.unity3d
+    path: Assets/Res/JsonData/IdleSiteBase1.json
+  - bundle: assets/res/jsondata/idlesitebase2.json.unity3d
+    path: Assets/Res/JsonData/IdleSiteBase2.json
+  - bundle: assets/res/jsondata/idlesitebase3.json.unity3d
+    path: Assets/Res/JsonData/IdleSiteBase3.json
+  - bundle: assets/res/jsondata/idlesitebase4.json.unity3d
+    path: Assets/Res/JsonData/IdleSiteBase4.json
+  - bundle: assets/res/jsondata/idlesitebase5.json.unity3d
+    path: Assets/Res/JsonData/IdleSiteBase5.json
+  - bundle: assets/res/jsondata/idlesitebase6.json.unity3d
+    path: Assets/Res/JsonData/IdleSiteBase6.json
+  - bundle: assets/res/jsondata/idlesitegrade1.json.unity3d
+    path: Assets/Res/JsonData/IdleSiteGrade1.json
+  - bundle: assets/res/jsondata/idlesitegrade2.json.unity3d
+    path: Assets/Res/JsonData/IdleSiteGrade2.json
+  - bundle: assets/res/jsondata/idlesitegrade3.json.unity3d
+    path: Assets/Res/JsonData/IdleSiteGrade3.json
+  - bundle: assets/res/jsondata/idlesitegrade4.json.unity3d
+    path: Assets/Res/JsonData/IdleSiteGrade4.json
+  - bundle: assets/res/jsondata/idlesitegrade5.json.unity3d
+    path: Assets/Res/JsonData/IdleSiteGrade5.json
+  - bundle: assets/res/jsondata/idlesitegrade6.json.unity3d
+    path: Assets/Res/JsonData/IdleSiteGrade6.json
+  - bundle: assets/res/jsondata/idlesitetime1.json.unity3d
+    path: Assets/Res/JsonData/IdleSiteTime1.json
+  - bundle: assets/res/jsondata/idlesitetime2.json.unity3d
+    path: Assets/Res/JsonData/IdleSiteTime2.json
+  - bundle: assets/res/jsondata/idlesitetime3.json.unity3d
+    path: Assets/Res/JsonData/IdleSiteTime3.json
+  - bundle: assets/res/jsondata/idlesitetime4.json.unity3d
+    path: Assets/Res/JsonData/IdleSiteTime4.json
+  - bundle: assets/res/jsondata/idlesitetime5.json.unity3d
+    path: Assets/Res/JsonData/IdleSiteTime5.json
+  - bundle: assets/res/jsondata/idlesitetime6.json.unity3d
+    path: Assets/Res/JsonData/IdleSiteTime6.json
+  - bundle: assets/res/jsondata/idlesitevolume1.json.unity3d
+    path: Assets/Res/JsonData/IdleSiteVolume1.json
+  - bundle: assets/res/jsondata/idlesitevolume2.json.unity3d
+    path: Assets/Res/JsonData/IdleSiteVolume2.json
+  - bundle: assets/res/jsondata/idlesitevolume3.json.unity3d
+    path: Assets/Res/JsonData/IdleSiteVolume3.json
+  - bundle: assets/res/jsondata/idlesitevolume4.json.unity3d
+    path: Assets/Res/JsonData/IdleSiteVolume4.json
+  - bundle: assets/res/jsondata/idlesitevolume5.json.unity3d
+    path: Assets/Res/JsonData/IdleSiteVolume5.json
+  - bundle: assets/res/jsondata/idlesitevolume6.json.unity3d
+    path: Assets/Res/JsonData/IdleSiteVolume6.json
+  - bundle: assets/res/jsondata/idlespecialevent.json.unity3d
+    path: Assets/Res/JsonData/IdleSpecialEvent.json
+  - bundle: assets/res/jsondata/idletask.json.unity3d
+    path: Assets/Res/JsonData/IdleTask.json
+  - bundle: assets/res/jsondata/idletrucklv.json.unity3d
+    path: Assets/Res/JsonData/IdleTruckLv.json
+  - bundle: assets/res/jsondata/idletrucknum.json.unity3d
+    path: Assets/Res/JsonData/IdleTruckNum.json
+  - bundle: assets/res/jsondata/idletruckres.json.unity3d
+    path: Assets/Res/JsonData/IdleTruckRes.json
+  - bundle: assets/res/jsondata/languagedata.json.unity3d
+    path: Assets/Res/JsonData/LanguageData.json
+  - bundle: assets/res/jsondata/unitconvert.json.unity3d
+    path: Assets/Res/JsonData/UnitConvert.json
+  - bundle: assets/res/prefabs/idle/common/faced.prefab.unity3d
+    path: Assets/Res/Prefabs/Idle/Common/faced.prefab
+  - bundle: assets/res/prefabs/idle/common/xiangzi.prefab.unity3d
+    path: Assets/Res/Prefabs/Idle/Common/xiangzi.prefab
+  - bundle: assets/res/prefabs/idle/fx/fx_kd_caidai_lizi.prefab.unity3d
+    path: Assets/Res/Prefabs/Idle/Fx/FX_KD_caidai_lizi.prefab
+  - bundle: assets/res/prefabs/idle/fx/fx_kd_moneyget.prefab.unity3d
+    path: Assets/Res/Prefabs/Idle/Fx/FX_KD_moneyGet.prefab
+  - bundle: assets/res/prefabs/idle/fx/fx_kd_quan.prefab.unity3d
+    path: Assets/Res/Prefabs/Idle/Fx/FX_KD_quan.prefab
+  - bundle: assets/res/prefabs/idle/fx/fx_kd_shengji_site.prefab.unity3d
+    path: Assets/Res/Prefabs/Idle/Fx/FX_KD_shengji_site.prefab
+  - bundle: assets/res/prefabs/idle/fx/fx_ui_money.prefab.unity3d
+    path: Assets/Res/Prefabs/Idle/Fx/FX_UI_Money.prefab
+  - bundle: assets/res/prefabs/idle/fx/fx_dianji.prefab.unity3d
+    path: Assets/Res/Prefabs/Idle/Fx/FX_dianji.prefab
+  - bundle: assets/res/prefabs/idle/fx/fx_ui_siteview.prefab.unity3d
+    path: Assets/Res/Prefabs/Idle/Fx/Fx_UI_SiteView.prefab
+  - bundle: assets/res/prefabs/idle/fx/feiji_piaoqian.prefab.unity3d
+    path: Assets/Res/Prefabs/Idle/Fx/feiji_piaoqian.prefab
+  - bundle: assets/res/prefabs/idle/fx/fx_baoguang_dianji.prefab.unity3d
+    path: Assets/Res/Prefabs/Idle/Fx/fx_baoguang_dianji.prefab
+  - bundle: assets/res/prefabs/idle/fx/fx_feijinbi_baoji.prefab.unity3d
+    path: Assets/Res/Prefabs/Idle/Fx/fx_feijinbi_baoji.prefab
+  - bundle: assets/res/prefabs/idle/fx/fx_feiqian.prefab.unity3d
+    path: Assets/Res/Prefabs/Idle/Fx/fx_feiqian.prefab
+  - bundle: assets/res/prefabs/idle/fx/fx_jianzaoyanwu_01.prefab.unity3d
+    path: Assets/Res/Prefabs/Idle/Fx/fx_jianzaoyanwu_01.prefab
+  - bundle: assets/res/prefabs/idle/fx/fx_lihua.prefab.unity3d
+    path: Assets/Res/Prefabs/Idle/Fx/fx_lihua.prefab
+  - bundle: assets/res/prefabs/idle/fx/fx_nongchangshengji_01.prefab.unity3d
+    path: Assets/Res/Prefabs/Idle/Fx/fx_nongchangshengji_01.prefab
+  - bundle: assets/res/prefabs/idle/fx/fx_tchechang.prefab.unity3d
+    path: Assets/Res/Prefabs/Idle/Fx/fx_tchechang.prefab
+  - bundle: assets/res/prefabs/idle/fx/fx_youxi_jieshu_01.prefab.unity3d
+    path: Assets/Res/Prefabs/Idle/Fx/fx_youxi_jieshu_01.prefab
+  - bundle: assets/res/prefabs/idle/postsite/chuangyiyuan_lv1.prefab.unity3d
+    path: Assets/Res/Prefabs/Idle/PostSite/chuangyiyuan_lv1.prefab
+  - bundle: assets/res/prefabs/idle/postsite/ditan_lv1.prefab.unity3d
+    path: Assets/Res/Prefabs/Idle/PostSite/ditan_lv1.prefab
+  - bundle: assets/res/prefabs/idle/postsite/jiaqin_lv1.prefab.unity3d
+    path: Assets/Res/Prefabs/Idle/PostSite/jiaqin_lv1.prefab
+  - bundle: assets/res/prefabs/idle/postsite/jiaqin_lv2.prefab.unity3d
+    path: Assets/Res/Prefabs/Idle/PostSite/jiaqin_lv2.prefab
+  - bundle: assets/res/prefabs/idle/postsite/jiaqin_lv3.prefab.unity3d
+    path: Assets/Res/Prefabs/Idle/PostSite/jiaqin_lv3.prefab
+  - bundle: assets/res/prefabs/idle/postsite/tiantan_lv1.prefab.unity3d
+    path: Assets/Res/Prefabs/Idle/PostSite/tiantan_lv1.prefab
+  - bundle: assets/res/prefabs/idle/postsite/wenwan_lv2.prefab.unity3d
+    path: Assets/Res/Prefabs/Idle/PostSite/wenwan_lv2.prefab
+  - bundle: assets/res/prefabs/idle/postsite/yiliao_lv2.prefab.unity3d
+    path: Assets/Res/Prefabs/Idle/PostSite/yiliao_lv2.prefab
+  - bundle: assets/res/prefabs/idle/staffs/remover.prefab.unity3d
+    path: Assets/Res/Prefabs/Idle/Staffs/remover.prefab
+  - bundle: assets/res/prefabs/idle/staffs/staff1.prefab.unity3d
+    path: Assets/Res/Prefabs/Idle/Staffs/staff1.prefab
+  - bundle: assets/res/prefabs/idle/staffs/staff2.prefab.unity3d
+    path: Assets/Res/Prefabs/Idle/Staffs/staff2.prefab
+  - bundle: assets/res/prefabs/idle/fork.prefab.unity3d
+    path: Assets/Res/Prefabs/Idle/fork.prefab
+  - bundle: assets/res/prefabs/idle/fork/fork_down_left.prefab.unity3d
+    path: Assets/Res/Prefabs/Idle/fork/fork_down_left.prefab
+  - bundle: assets/res/prefabs/idle/fork/fork_down_right.prefab.unity3d
+    path: Assets/Res/Prefabs/Idle/fork/fork_down_right.prefab
+  - bundle: assets/res/prefabs/idle/fork/fork_up_left.prefab.unity3d
+    path: Assets/Res/Prefabs/Idle/fork/fork_up_left.prefab
+  - bundle: assets/res/prefabs/idle/fork/fork_up_right.prefab.unity3d
+    path: Assets/Res/Prefabs/Idle/fork/fork_up_right.prefab
+  - bundle: assets/res/prefabs/idle/idlecitytruck.prefab.unity3d
+    path: Assets/Res/Prefabs/Idle/idleCityTruck.prefab
+  - bundle: assets/res/prefabs/idle/npctruck.prefab.unity3d
+    path: Assets/Res/Prefabs/Idle/npcTruck.prefab
+  - bundle: assets/res/prefabs/idle/parklock.prefab.unity3d
+    path: Assets/Res/Prefabs/Idle/parkLock.prefab
+  - bundle: assets/res/prefabs/idle/plane.prefab.unity3d
+    path: Assets/Res/Prefabs/Idle/plane.prefab
+  - bundle: assets/res/prefabs/idle/shelf.prefab.unity3d
+    path: Assets/Res/Prefabs/Idle/shelf.prefab
+  - bundle: assets/res/prefabs/idle/truck.prefab.unity3d
+    path: Assets/Res/Prefabs/Idle/truck.prefab
+  - bundle: assets/res/textures/idle/common/btn-11.png.unity3d
+    path: Assets/Res/Textures/Idle/Common/btn-11.png
+  - bundle: assets/res/textures/idle/common/btn-shopping.png.unity3d
+    path: Assets/Res/Textures/Idle/Common/btn-shopping.png
+  - bundle: assets/res/textures/idle/common/faced.png.unity3d
+    path: Assets/Res/Textures/Idle/Common/faced.png
+  - bundle: assets/res/textures/idle/common/icon-11.png.unity3d
+    path: Assets/Res/Textures/Idle/Common/icon-11.png
+  - bundle: assets/res/textures/idle/common/icon-shopping.png.unity3d
+    path: Assets/Res/Textures/Idle/Common/icon-shopping.png
+  - bundle: assets/res/textures/idle/common/muxiang.png.unity3d
+    path: Assets/Res/Textures/Idle/Common/muxiang.png
+  - bundle: assets/res/textures/idle/itemicons/itemicon1.png.unity3d
+    path: Assets/Res/Textures/Idle/ItemIcons/itemicon1.png
+  - bundle: assets/res/textures/idle/itemicons/itemicon2.png.unity3d
+    path: Assets/Res/Textures/Idle/ItemIcons/itemicon2.png
+  - bundle: assets/res/textures/idle/itemicons/itemicon3.png.unity3d
+    path: Assets/Res/Textures/Idle/ItemIcons/itemicon3.png
+  - bundle: assets/res/textures/idle/itemicons/itemicon4.png.unity3d
+    path: Assets/Res/Textures/Idle/ItemIcons/itemicon4.png
+  - bundle: assets/res/textures/idle/itemicons/itemicon5.png.unity3d
+    path: Assets/Res/Textures/Idle/ItemIcons/itemicon5.png
+  - bundle: assets/res/textures/idle/itemicons/itemicon6.png.unity3d
+    path: Assets/Res/Textures/Idle/ItemIcons/itemicon6.png
+  - bundle: assets/res/textures/idle/itemimgs/itemimg01.png.unity3d
+    path: Assets/Res/Textures/Idle/ItemImgs/itemImg01.png
+  - bundle: assets/res/textures/idle/itemimgs/itemimg02.png.unity3d
+    path: Assets/Res/Textures/Idle/ItemImgs/itemImg02.png
+  - bundle: assets/res/textures/idle/itemimgs/itemimg03.png.unity3d
+    path: Assets/Res/Textures/Idle/ItemImgs/itemImg03.png
+  - bundle: assets/res/textures/idle/itemimgs/itemimg04.png.unity3d
+    path: Assets/Res/Textures/Idle/ItemImgs/itemImg04.png
+  - bundle: assets/res/textures/idle/itemimgs/itemimg05.png.unity3d
+    path: Assets/Res/Textures/Idle/ItemImgs/itemImg05.png
+  - bundle: assets/res/textures/idle/itemimgs/itemimg06.png.unity3d
+    path: Assets/Res/Textures/Idle/ItemImgs/itemImg06.png
+  - bundle: assets/res/textures/idle/siteicons/siteicon1.png.unity3d
+    path: Assets/Res/Textures/Idle/SiteIcons/siteIcon1.png
+  - bundle: assets/res/textures/idle/siteicons/siteicon2.png.unity3d
+    path: Assets/Res/Textures/Idle/SiteIcons/siteIcon2.png
+  - bundle: assets/res/textures/idle/siteicons/siteicon3.png.unity3d
+    path: Assets/Res/Textures/Idle/SiteIcons/siteIcon3.png
+  - bundle: assets/res/textures/idle/siteicons/siteicon4.png.unity3d
+    path: Assets/Res/Textures/Idle/SiteIcons/siteIcon4.png
+  - bundle: assets/res/textures/idle/siteicons/siteicon5.png.unity3d
+    path: Assets/Res/Textures/Idle/SiteIcons/siteIcon5.png
+  - bundle: assets/res/textures/idle/siteicons/siteicon6.png.unity3d
+    path: Assets/Res/Textures/Idle/SiteIcons/siteIcon6.png
+  - bundle: assets/res/textures/idle/citytruck/citytruck_lv01_up_1.png.unity3d
+    path: Assets/Res/Textures/Idle/cityTruck/cityTruck_lv01_up_1.png
+  - bundle: assets/res/textures/idle/citytruck/citytruck_lv01_up_2.png.unity3d
+    path: Assets/Res/Textures/Idle/cityTruck/cityTruck_lv01_up_2.png
+  - bundle: assets/res/textures/idle/citytruck/citytruck_lv01_up_3.png.unity3d
+    path: Assets/Res/Textures/Idle/cityTruck/cityTruck_lv01_up_3.png
+  - bundle: assets/res/textures/idle/floorres/dizhuan_01.png.unity3d
+    path: Assets/Res/Textures/Idle/floorRes/dizhuan_01.png
+  - bundle: assets/res/textures/idle/floorres/dizhuan_02.png.unity3d
+    path: Assets/Res/Textures/Idle/floorRes/dizhuan_02.png
+  - bundle: assets/res/textures/idle/fork/chache_01.png.unity3d
+    path: Assets/Res/Textures/Idle/fork/chache_01.png
+  - bundle: assets/res/textures/idle/fork/chache_back.png.unity3d
+    path: Assets/Res/Textures/Idle/fork/chache_back.png
+  - bundle: assets/res/textures/idle/fork/chache_back_cha.png.unity3d
+    path: Assets/Res/Textures/Idle/fork/chache_back_cha.png
+  - bundle: assets/res/textures/idle/fork/xiangzi.png.unity3d
+    path: Assets/Res/Textures/Idle/fork/xiangzi.png
+  - bundle: assets/res/textures/idle/shelfres/huojia1.png.unity3d
+    path: Assets/Res/Textures/Idle/shelfRes/huojia1.png
+  - bundle: assets/res/textures/idle/shelfres/huojia2.png.unity3d
+    path: Assets/Res/Textures/Idle/shelfRes/huojia2.png
+  - bundle: assets/res/textures/idle/shelfres/huojia3.png.unity3d
+    path: Assets/Res/Textures/Idle/shelfRes/huojia3.png
+  - bundle: assets/res/textures/idle/shelfres/huojia4.png.unity3d
+    path: Assets/Res/Textures/Idle/shelfRes/huojia4.png
+  - bundle: assets/res/textures/idle/shelfres/huojia5.png.unity3d
+    path: Assets/Res/Textures/Idle/shelfRes/huojia5.png
+  - bundle: assets/res/textures/idle/shelfres/huojia6.png.unity3d
+    path: Assets/Res/Textures/Idle/shelfRes/huojia6.png
+  - bundle: assets/res/textures/idle/truck/truck_lv01_down_0.png.unity3d
+    path: Assets/Res/Textures/Idle/truck/truck_lv01_down_0.png
+  - bundle: assets/res/textures/idle/truck/truck_lv01_down_1.png.unity3d
+    path: Assets/Res/Textures/Idle/truck/truck_lv01_down_1.png
+  - bundle: assets/res/textures/idle/truck/truck_lv01_up_0.png.unity3d
+    path: Assets/Res/Textures/Idle/truck/truck_lv01_up_0.png
+  - bundle: assets/res/textures/idle/truck/truck_lv01_up_1.png.unity3d
+    path: Assets/Res/Textures/Idle/truck/truck_lv01_up_1.png
+  - bundle: assets/res/textures/idle/truck/truck_lv02_down_0.png.unity3d
+    path: Assets/Res/Textures/Idle/truck/truck_lv02_down_0.png
+  - bundle: assets/res/textures/idle/truck/truck_lv02_down_1.png.unity3d
+    path: Assets/Res/Textures/Idle/truck/truck_lv02_down_1.png
+  - bundle: assets/res/textures/idle/truck/truck_lv02_up_0.png.unity3d
+    path: Assets/Res/Textures/Idle/truck/truck_lv02_up_0.png
+  - bundle: assets/res/textures/idle/truck/truck_lv02_up_1.png.unity3d
+    path: Assets/Res/Textures/Idle/truck/truck_lv02_up_1.png
+  - bundle: assets/res/textures/idle/truck/truck_lv03_down_1.png.unity3d
+    path: Assets/Res/Textures/Idle/truck/truck_lv03_down_1.png
+  - bundle: assets/res/textures/idle/truck/truck_lv03_up_0.png.unity3d
+    path: Assets/Res/Textures/Idle/truck/truck_lv03_up_0.png
+  - bundle: assets/res/textures/idle/truck/truck_lv03_up_1.png.unity3d
+    path: Assets/Res/Textures/Idle/truck/truck_lv03_up_1.png
+  - bundle: assets/res/textures/idle/truck/truck_lv04_down_0.png.unity3d
+    path: Assets/Res/Textures/Idle/truck/truck_lv04_down_0.png
+  - bundle: assets/res/textures/idle/truck/truck_lv04_down_1.png.unity3d
+    path: Assets/Res/Textures/Idle/truck/truck_lv04_down_1.png
+  - bundle: assets/res/textures/idle/truck/truck_lv04_up_0.png.unity3d
+    path: Assets/Res/Textures/Idle/truck/truck_lv04_up_0.png
+  - bundle: assets/res/textures/idle/truck/truck_lv04_up_1.png.unity3d
+    path: Assets/Res/Textures/Idle/truck/truck_lv04_up_1.png
+  - bundle: assets/res/textures/idle/truck/truck_lv05_down_1.png.unity3d
+    path: Assets/Res/Textures/Idle/truck/truck_lv05_down_1.png
+  - bundle: assets/res/textures/idle/truck/truck_lv05_up_0.png.unity3d
+    path: Assets/Res/Textures/Idle/truck/truck_lv05_up_0.png
+  - bundle: assets/res/textures/idle/truck/truck_lv05_up_1.png.unity3d
+    path: Assets/Res/Textures/Idle/truck/truck_lv05_up_1.png
+  - bundle: assets/res/ui/gameui/doubleincometip.prefab.unity3d
+    path: Assets/Res/UI/GameUI/doubleIncomeTip.prefab
+  - bundle: assets/res/ui/gameui/finger.prefab.unity3d
+    path: Assets/Res/UI/GameUI/finger.prefab
+  - bundle: assets/res/ui/gameui/npctalk.prefab.unity3d
+    path: Assets/Res/UI/GameUI/npctalk.prefab
+  - bundle: assets/res/ui/gameui/tipui.prefab.unity3d
+    path: Assets/Res/UI/GameUI/tipUI.prefab
+  - bundle: assets/res/ui/gameui/truckunloadprocess.prefab.unity3d
+    path: Assets/Res/UI/GameUI/truckUnloadProcess.prefab
+  - bundle: assets/res/ui/idle/idlebuildingwindow.prefab.unity3d
+    path: Assets/Res/UI/Idle/IdleBuildingWindow.prefab
+  - bundle: assets/res/ui/idle/idlecityinfowindow.prefab.unity3d
+    path: Assets/Res/UI/Idle/IdleCityInfoWindow.prefab
+  - bundle: assets/res/ui/idle/idledoubleincomewindow.prefab.unity3d
+    path: Assets/Res/UI/Idle/IdleDoubleIncomeWindow.prefab
+  - bundle: assets/res/ui/idle/idleeventwindow.prefab.unity3d
+    path: Assets/Res/UI/Idle/IdleEventWindow.prefab
+  - bundle: assets/res/ui/idle/idleguidewindow.prefab.unity3d
+    path: Assets/Res/UI/Idle/IdleGuideWindow.prefab
+  - bundle: assets/res/ui/idle/idleinvestorwindow.prefab.unity3d
+    path: Assets/Res/UI/Idle/IdleInvestorWindow.prefab
+  - bundle: assets/res/ui/idle/idlemapwindow.prefab.unity3d
+    path: Assets/Res/UI/Idle/IdleMapWindow.prefab
+  - bundle: assets/res/ui/idle/idlepostsitewindow.prefab.unity3d
+    path: Assets/Res/UI/Idle/IdlePostSiteWindow.prefab
+  - bundle: assets/res/ui/idle/idlesiteinfowindow.prefab.unity3d
+    path: Assets/Res/UI/Idle/IdleSiteInfoWindow.prefab
+  - bundle: assets/res/ui/idle/idlestatisticswindow.prefab.unity3d
+    path: Assets/Res/UI/Idle/IdleStatisticsWindow.prefab
+  - bundle: assets/res/ui/idle/idletaskwindow.prefab.unity3d
+    path: Assets/Res/UI/Idle/IdleTaskWindow.prefab
+  - bundle: assets/res/ui/idle/idletopui.prefab.unity3d
+    path: Assets/Res/UI/Idle/IdleTopUI.prefab
+  - bundle: assets/res/ui/idle/idletruckinfowindow.prefab.unity3d
+    path: Assets/Res/UI/Idle/IdleTruckInfoWindow.prefab
+  - bundle: assets/res/ui/idle/idlewindow.prefab.unity3d
+    path: Assets/Res/UI/Idle/IdleWindow.prefab
+  - bundle: assets/res/ui/idle/offlinewindow.prefab.unity3d
+    path: Assets/Res/UI/Idle/OfflineWindow.prefab
+  - bundle: assets/scenes/idle/idlescene_1001.unity.unity3d
+    path: Assets/Scenes/Idle/IdleScene_1001.unity
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/798.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/banma_xian.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/beijingdaxue.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/bian.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/bian_01.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/bianzhong.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/cai01.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/cai02.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/canyi.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/canyi_lv2.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/canyi_lv3.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/canzhuo.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/canzhuo_lv2.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/canzhuo_lv3.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/cao_hezi.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/cao_huatan.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/cao_kuai.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/cao_pen.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/cao_pin.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/caoping.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/chache_kong.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/changfang.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/changyi.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/chaow.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/chaow_zgui.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/chaungyiyuan.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/chepeng.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/chuan.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/chuan_pai.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/chuanghu.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/chuanghu_lv2.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/denglong.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/dengzi.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/diban01_lv2.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/diban_lv2.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/ditan.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/dizhuan.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/dizhuan01.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/dizhuan_lv1.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/dizhuan_lv3.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/dong_1.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/dong_2.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/dong_3.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/fangliang.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/feiji.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/feiji_01.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/feiji_shadow.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/gd.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/gongyuan_ditan.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/guang.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/guanggao_01.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/gugong_01.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/gugong_02.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/gugong_03.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/gugong_04.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/gugong_05.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/gugong_06.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/gugong_dizhuan.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/gugong_dizhuan01.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/gugong_menpai.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/gugong_qiang01.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/gugong_talou.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/gugong_yizhanpng.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/guizi01.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/guizi02.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/guizi03.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/guizi04.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/gushuyizhan.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/hua.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/huaping.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/hulu_yizhan.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/hushi.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/jiancai.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/jiaqin_paizi.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/jijiaqi1.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/jijiaqi_hong.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/jijiaqi_lv.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/jq_zgui.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/juminglou.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/juminglou_men.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/kdy_01.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/kongtiao.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/laoshu.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/long.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/lou_gaolou.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/lou_gaolou_01.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/lou_jumingpng.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/lou_xuexiao.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/lu.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/maomi.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/maomi_pai.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/mianju.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/money-npc.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/muma.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/paibian.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/paifang_lan.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/paizi.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/park_lock.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/penzai.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/penzai01.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/penzai02.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/penzai_lv2.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/qiang01.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/qiang01_.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/qiang02.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/qiang03.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/qiang03_.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/qiang04_.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/qiang_01.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/qiang_02.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/qiang_03.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/qiang_yuanzhu.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/qiao.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/qiao_pai.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/qingtianzhu.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/ren_kuaidipng.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/shadow.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/shadow_01.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/shafa.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/shafa_lv2.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/shafa_lv3.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/shizi.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/shu.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/shu_meihua.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/shui.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/suanpan.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/tche.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/test_yuan.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/text_01.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/text_cheng.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/text_di.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/text_jin.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/text_kuai.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/text_zi.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/thl_zgui.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/tiantan.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/tiezhi.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/tingche_gan.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/tingche_xian.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/tingjip.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/tishipai.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/tt_zgui.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/tu_01.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/unlockPrice.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/wubian.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/ww_dl.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/ww_dt.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/ww_dz.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/ww_guazi.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/ww_guz.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/ww_gz1.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/ww_ho.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/ww_hua.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/ww_mj2.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/ww_mj3.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/ww_pb.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/ww_pbs.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/ww_pf.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/ww_ping.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/ww_pz.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/ww_pz_.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/ww_qiang.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/ww_qiang_.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/ww_shu.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/ww_wan.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/ww_wushi.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/ww_zgui.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/ww_zhi.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/ww_zho.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/ww_zho_.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/ww_zhu.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/ww_zhuanpng.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/ww_zi.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/xiangzi_01.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/xianshiqi.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/xiaolu.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/xiaopaifang.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/xinz_01.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/xinz_02.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/xinzeng.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/xiongmao.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/yazi.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/yiliaoyizhan.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/yinshuiji.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/yinshuiji_lv2.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/yinying.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/yl_bt.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/yl_diban.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/yl_dn.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/yl_ds.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/yl_dyi.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/yl_gui.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/yl_hb.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/yl_huj.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/yl_huj_.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/yl_hz.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/yl_pz.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/yl_qia_boli_.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/yl_qiang_boli.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/yl_qt.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/yl_smj.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/yl_xyj.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/yl_xzb.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/yl_yz.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/yuanditan.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/zhamen.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/zhaocaimao.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/zhauanjiao-r.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/zhi_01.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/zhonglu.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/zhuanjiao-l.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/zhuanjiao.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/zhuanjiao2.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/zhuozi.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/zhuozi_lv2.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/zhuozi_lv3.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/zhuozi_lv4.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/zhuzi05.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/zhuzi06.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/zhuzi_01.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/zhuzi_02.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/zhuzi_03.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/zhuzi_04.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/zixingche.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/zixingche_01.png
+  - bundle: assets/textures/idle/city1002.unity3d
+    path: Assets/Textures/idle/city1002/zu -6.png
+  ruleBundles:
+  - name: assets/scenes/idle/idlescene_1001.unity.unity3d
+    assets:
+    - Assets/Scenes/Idle/IdleScene_1001.unity
+  - name: assets/res/audio/audio_fireworks.mp3.unity3d
+    assets:
+    - Assets/Res/Audio/audio_fireworks.mp3
+  - name: assets/res/audio/bgm.mp3.unity3d
+    assets:
+    - Assets/Res/Audio/bgm.mp3
+  - name: assets/res/audio/buildsmoke.mp3.unity3d
+    assets:
+    - Assets/Res/Audio/BuildSmoke.mp3
+  - name: assets/res/audio/buttonclick.mp3.unity3d
+    assets:
+    - Assets/Res/Audio/ButtonClick.mp3
+  - name: assets/res/audio/buttonclose.mp3.unity3d
+    assets:
+    - Assets/Res/Audio/ButtonClose.mp3
+  - name: assets/res/audio/citytruckmove.mp3.unity3d
+    assets:
+    - Assets/Res/Audio/cityTruckMove.mp3
+  - name: assets/res/audio/citytruckstop.mp3.unity3d
+    assets:
+    - Assets/Res/Audio/cityTruckStop.mp3
+  - name: assets/res/audio/clickfeiji.mp3.unity3d
+    assets:
+    - Assets/Res/Audio/clickFeiji.mp3
+  - name: assets/res/audio/clicknpctalk.mp3.unity3d
+    assets:
+    - Assets/Res/Audio/clickNpcTalk.mp3
+  - name: assets/res/audio/doubleincome.mp3.unity3d
+    assets:
+    - Assets/Res/Audio/DoubleIncome.mp3
+  - name: assets/res/audio/forkunloaditem.mp3.unity3d
+    assets:
+    - Assets/Res/Audio/forkUnloadItem.mp3
+  - name: assets/res/audio/login.mp3.unity3d
+    assets:
+    - Assets/Res/Audio/Login.mp3
+  - name: assets/res/audio/moneyfxshow.mp3.unity3d
+    assets:
+    - Assets/Res/Audio/MoneyFxShow.mp3
+  - name: assets/res/audio/refreshfeiji.mp3.unity3d
+    assets:
+    - Assets/Res/Audio/refreshFeiji.mp3
+  - name: assets/res/audio/showitem.mp3.unity3d
+    assets:
+    - Assets/Res/Audio/ShowItem.mp3
+  - name: assets/res/audio/sitetruckstop.mp3.unity3d
+    assets:
+    - Assets/Res/Audio/siteTruckStop.mp3
+  - name: assets/res/audio/staffloaditem.mp3.unity3d
+    assets:
+    - Assets/Res/Audio/staffLoadItem.mp3
+  - name: assets/res/audio/vendingmoney.mp3.unity3d
+    assets:
+    - Assets/Res/Audio/VendingMoney.mp3
+  - name: assets/res/audio/xiangzidown.mp3.unity3d
+    assets:
+    - Assets/Res/Audio/xiangzidown.mp3
+  - name: assets/res/prefabs/idle/fx/feiji_piaoqian.prefab.unity3d
+    assets:
+    - Assets/Res/Prefabs/Idle/Fx/feiji_piaoqian.prefab
+  - name: assets/res/prefabs/idle/fx/fx_baoguang_dianji.prefab.unity3d
+    assets:
+    - Assets/Res/Prefabs/Idle/Fx/fx_baoguang_dianji.prefab
+  - name: assets/res/prefabs/idle/fx/fx_dianji.prefab.unity3d
+    assets:
+    - Assets/Res/Prefabs/Idle/Fx/FX_dianji.prefab
+  - name: assets/res/prefabs/idle/fx/fx_feijinbi_baoji.prefab.unity3d
+    assets:
+    - Assets/Res/Prefabs/Idle/Fx/fx_feijinbi_baoji.prefab
+  - name: assets/res/prefabs/idle/fx/fx_feiqian.prefab.unity3d
+    assets:
+    - Assets/Res/Prefabs/Idle/Fx/fx_feiqian.prefab
+  - name: assets/res/prefabs/idle/fx/fx_jianzaoyanwu_01.prefab.unity3d
+    assets:
+    - Assets/Res/Prefabs/Idle/Fx/fx_jianzaoyanwu_01.prefab
+  - name: assets/res/prefabs/idle/fx/fx_kd_caidai_lizi.prefab.unity3d
+    assets:
+    - Assets/Res/Prefabs/Idle/Fx/FX_KD_caidai_lizi.prefab
+  - name: assets/res/prefabs/idle/fx/fx_kd_moneyget.prefab.unity3d
+    assets:
+    - Assets/Res/Prefabs/Idle/Fx/FX_KD_moneyGet.prefab
+  - name: assets/res/prefabs/idle/fx/fx_kd_quan.prefab.unity3d
+    assets:
+    - Assets/Res/Prefabs/Idle/Fx/FX_KD_quan.prefab
+  - name: assets/res/prefabs/idle/fx/fx_kd_shengji_site.prefab.unity3d
+    assets:
+    - Assets/Res/Prefabs/Idle/Fx/FX_KD_shengji_site.prefab
+  - name: assets/res/prefabs/idle/fx/fx_lihua.prefab.unity3d
+    assets:
+    - Assets/Res/Prefabs/Idle/Fx/fx_lihua.prefab
+  - name: assets/res/prefabs/idle/fx/fx_nongchangshengji_01.prefab.unity3d
+    assets:
+    - Assets/Res/Prefabs/Idle/Fx/fx_nongchangshengji_01.prefab
+  - name: assets/res/prefabs/idle/fx/fx_tchechang.prefab.unity3d
+    assets:
+    - Assets/Res/Prefabs/Idle/Fx/fx_tchechang.prefab
+  - name: assets/res/prefabs/idle/fx/fx_ui_money.prefab.unity3d
+    assets:
+    - Assets/Res/Prefabs/Idle/Fx/FX_UI_Money.prefab
+  - name: assets/res/prefabs/idle/fx/fx_ui_siteview.prefab.unity3d
+    assets:
+    - Assets/Res/Prefabs/Idle/Fx/Fx_UI_SiteView.prefab
+  - name: assets/res/prefabs/idle/fx/fx_youxi_jieshu_01.prefab.unity3d
+    assets:
+    - Assets/Res/Prefabs/Idle/Fx/fx_youxi_jieshu_01.prefab
+  - name: assets/res/prefabs/idle/fork.prefab.unity3d
+    assets:
+    - Assets/Res/Prefabs/Idle/fork.prefab
+  - name: assets/res/prefabs/idle/idlecitytruck.prefab.unity3d
+    assets:
+    - Assets/Res/Prefabs/Idle/idleCityTruck.prefab
+  - name: assets/res/prefabs/idle/npctruck.prefab.unity3d
+    assets:
+    - Assets/Res/Prefabs/Idle/npcTruck.prefab
+  - name: assets/res/prefabs/idle/parklock.prefab.unity3d
+    assets:
+    - Assets/Res/Prefabs/Idle/parkLock.prefab
+  - name: assets/res/prefabs/idle/plane.prefab.unity3d
+    assets:
+    - Assets/Res/Prefabs/Idle/plane.prefab
+  - name: assets/res/prefabs/idle/shelf.prefab.unity3d
+    assets:
+    - Assets/Res/Prefabs/Idle/shelf.prefab
+  - name: assets/res/prefabs/idle/truck.prefab.unity3d
+    assets:
+    - Assets/Res/Prefabs/Idle/truck.prefab
+  - name: assets/res/prefabs/idle/common/faced.prefab.unity3d
+    assets:
+    - Assets/Res/Prefabs/Idle/Common/faced.prefab
+  - name: assets/res/prefabs/idle/common/xiangzi.prefab.unity3d
+    assets:
+    - Assets/Res/Prefabs/Idle/Common/xiangzi.prefab
+  - name: assets/res/prefabs/idle/fork/fork_down_left.prefab.unity3d
+    assets:
+    - Assets/Res/Prefabs/Idle/fork/fork_down_left.prefab
+  - name: assets/res/prefabs/idle/fork/fork_down_right.prefab.unity3d
+    assets:
+    - Assets/Res/Prefabs/Idle/fork/fork_down_right.prefab
+  - name: assets/res/prefabs/idle/fork/fork_up_left.prefab.unity3d
+    assets:
+    - Assets/Res/Prefabs/Idle/fork/fork_up_left.prefab
+  - name: assets/res/prefabs/idle/fork/fork_up_right.prefab.unity3d
+    assets:
+    - Assets/Res/Prefabs/Idle/fork/fork_up_right.prefab
+  - name: assets/res/prefabs/idle/postsite/chuangyiyuan_lv1.prefab.unity3d
+    assets:
+    - Assets/Res/Prefabs/Idle/PostSite/chuangyiyuan_lv1.prefab
+  - name: assets/res/prefabs/idle/postsite/ditan_lv1.prefab.unity3d
+    assets:
+    - Assets/Res/Prefabs/Idle/PostSite/ditan_lv1.prefab
+  - name: assets/res/prefabs/idle/postsite/jiaqin_lv1.prefab.unity3d
+    assets:
+    - Assets/Res/Prefabs/Idle/PostSite/jiaqin_lv1.prefab
+  - name: assets/res/prefabs/idle/postsite/jiaqin_lv2.prefab.unity3d
+    assets:
+    - Assets/Res/Prefabs/Idle/PostSite/jiaqin_lv2.prefab
+  - name: assets/res/prefabs/idle/postsite/jiaqin_lv3.prefab.unity3d
+    assets:
+    - Assets/Res/Prefabs/Idle/PostSite/jiaqin_lv3.prefab
+  - name: assets/res/prefabs/idle/postsite/tiantan_lv1.prefab.unity3d
+    assets:
+    - Assets/Res/Prefabs/Idle/PostSite/tiantan_lv1.prefab
+  - name: assets/res/prefabs/idle/postsite/wenwan_lv2.prefab.unity3d
+    assets:
+    - Assets/Res/Prefabs/Idle/PostSite/wenwan_lv2.prefab
+  - name: assets/res/prefabs/idle/postsite/yiliao_lv2.prefab.unity3d
+    assets:
+    - Assets/Res/Prefabs/Idle/PostSite/yiliao_lv2.prefab
+  - name: assets/res/prefabs/idle/staffs/remover.prefab.unity3d
+    assets:
+    - Assets/Res/Prefabs/Idle/Staffs/remover.prefab
+  - name: assets/res/prefabs/idle/staffs/staff1.prefab.unity3d
+    assets:
+    - Assets/Res/Prefabs/Idle/Staffs/staff1.prefab
+  - name: assets/res/prefabs/idle/staffs/staff2.prefab.unity3d
+    assets:
+    - Assets/Res/Prefabs/Idle/Staffs/staff2.prefab
+  - name: assets/res/ui/idle/idlebuildingwindow.prefab.unity3d
+    assets:
+    - Assets/Res/UI/Idle/IdleBuildingWindow.prefab
+  - name: assets/res/ui/idle/idlecityinfowindow.prefab.unity3d
+    assets:
+    - Assets/Res/UI/Idle/IdleCityInfoWindow.prefab
+  - name: assets/res/ui/idle/idledoubleincomewindow.prefab.unity3d
+    assets:
+    - Assets/Res/UI/Idle/IdleDoubleIncomeWindow.prefab
+  - name: assets/res/ui/idle/idleeventwindow.prefab.unity3d
+    assets:
+    - Assets/Res/UI/Idle/IdleEventWindow.prefab
+  - name: assets/res/ui/idle/idleguidewindow.prefab.unity3d
+    assets:
+    - Assets/Res/UI/Idle/IdleGuideWindow.prefab
+  - name: assets/res/ui/idle/idleinvestorwindow.prefab.unity3d
+    assets:
+    - Assets/Res/UI/Idle/IdleInvestorWindow.prefab
+  - name: assets/res/ui/idle/idlemapwindow.prefab.unity3d
+    assets:
+    - Assets/Res/UI/Idle/IdleMapWindow.prefab
+  - name: assets/res/ui/idle/idlepostsitewindow.prefab.unity3d
+    assets:
+    - Assets/Res/UI/Idle/IdlePostSiteWindow.prefab
+  - name: assets/res/ui/idle/idlesiteinfowindow.prefab.unity3d
+    assets:
+    - Assets/Res/UI/Idle/IdleSiteInfoWindow.prefab
+  - name: assets/res/ui/idle/idlestatisticswindow.prefab.unity3d
+    assets:
+    - Assets/Res/UI/Idle/IdleStatisticsWindow.prefab
+  - name: assets/res/ui/idle/idletaskwindow.prefab.unity3d
+    assets:
+    - Assets/Res/UI/Idle/IdleTaskWindow.prefab
+  - name: assets/res/ui/idle/idletopui.prefab.unity3d
+    assets:
+    - Assets/Res/UI/Idle/IdleTopUI.prefab
+  - name: assets/res/ui/idle/idletruckinfowindow.prefab.unity3d
+    assets:
+    - Assets/Res/UI/Idle/IdleTruckInfoWindow.prefab
+  - name: assets/res/ui/idle/idlewindow.prefab.unity3d
+    assets:
+    - Assets/Res/UI/Idle/IdleWindow.prefab
+  - name: assets/res/ui/idle/offlinewindow.prefab.unity3d
+    assets:
+    - Assets/Res/UI/Idle/OfflineWindow.prefab
+  - name: assets/res/textures/idle/itemicons/itemicon1.png.unity3d
+    assets:
+    - Assets/Res/Textures/Idle/ItemIcons/itemicon1.png
+  - name: assets/res/textures/idle/itemicons/itemicon2.png.unity3d
+    assets:
+    - Assets/Res/Textures/Idle/ItemIcons/itemicon2.png
+  - name: assets/res/textures/idle/itemicons/itemicon3.png.unity3d
+    assets:
+    - Assets/Res/Textures/Idle/ItemIcons/itemicon3.png
+  - name: assets/res/textures/idle/itemicons/itemicon4.png.unity3d
+    assets:
+    - Assets/Res/Textures/Idle/ItemIcons/itemicon4.png
+  - name: assets/res/textures/idle/itemicons/itemicon5.png.unity3d
+    assets:
+    - Assets/Res/Textures/Idle/ItemIcons/itemicon5.png
+  - name: assets/res/textures/idle/itemicons/itemicon6.png.unity3d
+    assets:
+    - Assets/Res/Textures/Idle/ItemIcons/itemicon6.png
+  - name: assets/res/textures/idle/siteicons/siteicon1.png.unity3d
+    assets:
+    - Assets/Res/Textures/Idle/SiteIcons/siteIcon1.png
+  - name: assets/res/textures/idle/siteicons/siteicon2.png.unity3d
+    assets:
+    - Assets/Res/Textures/Idle/SiteIcons/siteIcon2.png
+  - name: assets/res/textures/idle/siteicons/siteicon3.png.unity3d
+    assets:
+    - Assets/Res/Textures/Idle/SiteIcons/siteIcon3.png
+  - name: assets/res/textures/idle/siteicons/siteicon4.png.unity3d
+    assets:
+    - Assets/Res/Textures/Idle/SiteIcons/siteIcon4.png
+  - name: assets/res/textures/idle/siteicons/siteicon5.png.unity3d
+    assets:
+    - Assets/Res/Textures/Idle/SiteIcons/siteIcon5.png
+  - name: assets/res/textures/idle/siteicons/siteicon6.png.unity3d
+    assets:
+    - Assets/Res/Textures/Idle/SiteIcons/siteIcon6.png
+  - name: assets/res/jsondata/idlecity.json.unity3d
+    assets:
+    - Assets/Res/JsonData/IdleCity.json
+  - name: assets/res/jsondata/idlecitycycle.json.unity3d
+    assets:
+    - Assets/Res/JsonData/IdleCityCycle.json
+  - name: assets/res/jsondata/idlecitystorevolume.json.unity3d
+    assets:
+    - Assets/Res/JsonData/IdleCityStoreVolume.json
+  - name: assets/res/jsondata/idlecitytruckres.json.unity3d
+    assets:
+    - Assets/Res/JsonData/IdleCityTruckRes.json
+  - name: assets/res/jsondata/idlecityvolume.json.unity3d
+    assets:
+    - Assets/Res/JsonData/IdleCityVolume.json
+  - name: assets/res/jsondata/idleguide.json.unity3d
+    assets:
+    - Assets/Res/JsonData/IdleGuide.json
+  - name: assets/res/jsondata/idleguidestep.json.unity3d
+    assets:
+    - Assets/Res/JsonData/IdleGuideStep.json
+  - name: assets/res/jsondata/idleitem.json.unity3d
+    assets:
+    - Assets/Res/JsonData/IdleItem.json
+  - name: assets/res/jsondata/idlemaintask.json.unity3d
+    assets:
+    - Assets/Res/JsonData/IdleMainTask.json
+  - name: assets/res/jsondata/idleshelfres.json.unity3d
+    assets:
+    - Assets/Res/JsonData/IdleShelfRes.json
+  - name: assets/res/jsondata/idlesite.json.unity3d
+    assets:
+    - Assets/Res/JsonData/IdleSite.json
+  - name: assets/res/jsondata/idlesitebase1.json.unity3d
+    assets:
+    - Assets/Res/JsonData/IdleSiteBase1.json
+  - name: assets/res/jsondata/idlesitebase2.json.unity3d
+    assets:
+    - Assets/Res/JsonData/IdleSiteBase2.json
+  - name: assets/res/jsondata/idlesitebase3.json.unity3d
+    assets:
+    - Assets/Res/JsonData/IdleSiteBase3.json
+  - name: assets/res/jsondata/idlesitebase4.json.unity3d
+    assets:
+    - Assets/Res/JsonData/IdleSiteBase4.json
+  - name: assets/res/jsondata/idlesitebase5.json.unity3d
+    assets:
+    - Assets/Res/JsonData/IdleSiteBase5.json
+  - name: assets/res/jsondata/idlesitebase6.json.unity3d
+    assets:
+    - Assets/Res/JsonData/IdleSiteBase6.json
+  - name: assets/res/jsondata/idlesitegrade1.json.unity3d
+    assets:
+    - Assets/Res/JsonData/IdleSiteGrade1.json
+  - name: assets/res/jsondata/idlesitegrade2.json.unity3d
+    assets:
+    - Assets/Res/JsonData/IdleSiteGrade2.json
+  - name: assets/res/jsondata/idlesitegrade3.json.unity3d
+    assets:
+    - Assets/Res/JsonData/IdleSiteGrade3.json
+  - name: assets/res/jsondata/idlesitegrade4.json.unity3d
+    assets:
+    - Assets/Res/JsonData/IdleSiteGrade4.json
+  - name: assets/res/jsondata/idlesitegrade5.json.unity3d
+    assets:
+    - Assets/Res/JsonData/IdleSiteGrade5.json
+  - name: assets/res/jsondata/idlesitegrade6.json.unity3d
+    assets:
+    - Assets/Res/JsonData/IdleSiteGrade6.json
+  - name: assets/res/jsondata/idlesitetime1.json.unity3d
+    assets:
+    - Assets/Res/JsonData/IdleSiteTime1.json
+  - name: assets/res/jsondata/idlesitetime2.json.unity3d
+    assets:
+    - Assets/Res/JsonData/IdleSiteTime2.json
+  - name: assets/res/jsondata/idlesitetime3.json.unity3d
+    assets:
+    - Assets/Res/JsonData/IdleSiteTime3.json
+  - name: assets/res/jsondata/idlesitetime4.json.unity3d
+    assets:
+    - Assets/Res/JsonData/IdleSiteTime4.json
+  - name: assets/res/jsondata/idlesitetime5.json.unity3d
+    assets:
+    - Assets/Res/JsonData/IdleSiteTime5.json
+  - name: assets/res/jsondata/idlesitetime6.json.unity3d
+    assets:
+    - Assets/Res/JsonData/IdleSiteTime6.json
+  - name: assets/res/jsondata/idlesitevolume1.json.unity3d
+    assets:
+    - Assets/Res/JsonData/IdleSiteVolume1.json
+  - name: assets/res/jsondata/idlesitevolume2.json.unity3d
+    assets:
+    - Assets/Res/JsonData/IdleSiteVolume2.json
+  - name: assets/res/jsondata/idlesitevolume3.json.unity3d
+    assets:
+    - Assets/Res/JsonData/IdleSiteVolume3.json
+  - name: assets/res/jsondata/idlesitevolume4.json.unity3d
+    assets:
+    - Assets/Res/JsonData/IdleSiteVolume4.json
+  - name: assets/res/jsondata/idlesitevolume5.json.unity3d
+    assets:
+    - Assets/Res/JsonData/IdleSiteVolume5.json
+  - name: assets/res/jsondata/idlesitevolume6.json.unity3d
+    assets:
+    - Assets/Res/JsonData/IdleSiteVolume6.json
+  - name: assets/res/jsondata/idlespecialevent.json.unity3d
+    assets:
+    - Assets/Res/JsonData/IdleSpecialEvent.json
+  - name: assets/res/jsondata/idletask.json.unity3d
+    assets:
+    - Assets/Res/JsonData/IdleTask.json
+  - name: assets/res/jsondata/idletrucklv.json.unity3d
+    assets:
+    - Assets/Res/JsonData/IdleTruckLv.json
+  - name: assets/res/jsondata/idletrucknum.json.unity3d
+    assets:
+    - Assets/Res/JsonData/IdleTruckNum.json
+  - name: assets/res/jsondata/idletruckres.json.unity3d
+    assets:
+    - Assets/Res/JsonData/IdleTruckRes.json
+  - name: assets/res/jsondata/languagedata.json.unity3d
+    assets:
+    - Assets/Res/JsonData/LanguageData.json
+  - name: assets/res/jsondata/unitconvert.json.unity3d
+    assets:
+    - Assets/Res/JsonData/UnitConvert.json
+  - name: assets/res/textures/idle/citytruck/citytruck_lv01_up_1.png.unity3d
+    assets:
+    - Assets/Res/Textures/Idle/cityTruck/cityTruck_lv01_up_1.png
+  - name: assets/res/textures/idle/citytruck/citytruck_lv01_up_2.png.unity3d
+    assets:
+    - Assets/Res/Textures/Idle/cityTruck/cityTruck_lv01_up_2.png
+  - name: assets/res/textures/idle/citytruck/citytruck_lv01_up_3.png.unity3d
+    assets:
+    - Assets/Res/Textures/Idle/cityTruck/cityTruck_lv01_up_3.png
+  - name: assets/res/textures/idle/truck/truck_lv01_down_0.png.unity3d
+    assets:
+    - Assets/Res/Textures/Idle/truck/truck_lv01_down_0.png
+  - name: assets/res/textures/idle/truck/truck_lv01_down_1.png.unity3d
+    assets:
+    - Assets/Res/Textures/Idle/truck/truck_lv01_down_1.png
+  - name: assets/res/textures/idle/truck/truck_lv01_up_0.png.unity3d
+    assets:
+    - Assets/Res/Textures/Idle/truck/truck_lv01_up_0.png
+  - name: assets/res/textures/idle/truck/truck_lv01_up_1.png.unity3d
+    assets:
+    - Assets/Res/Textures/Idle/truck/truck_lv01_up_1.png
+  - name: assets/res/textures/idle/truck/truck_lv02_down_0.png.unity3d
+    assets:
+    - Assets/Res/Textures/Idle/truck/truck_lv02_down_0.png
+  - name: assets/res/textures/idle/truck/truck_lv02_down_1.png.unity3d
+    assets:
+    - Assets/Res/Textures/Idle/truck/truck_lv02_down_1.png
+  - name: assets/res/textures/idle/truck/truck_lv02_up_0.png.unity3d
+    assets:
+    - Assets/Res/Textures/Idle/truck/truck_lv02_up_0.png
+  - name: assets/res/textures/idle/truck/truck_lv02_up_1.png.unity3d
+    assets:
+    - Assets/Res/Textures/Idle/truck/truck_lv02_up_1.png
+  - name: assets/res/textures/idle/truck/truck_lv03_down_1.png.unity3d
+    assets:
+    - Assets/Res/Textures/Idle/truck/truck_lv03_down_1.png
+  - name: assets/res/textures/idle/truck/truck_lv03_up_0.png.unity3d
+    assets:
+    - Assets/Res/Textures/Idle/truck/truck_lv03_up_0.png
+  - name: assets/res/textures/idle/truck/truck_lv03_up_1.png.unity3d
+    assets:
+    - Assets/Res/Textures/Idle/truck/truck_lv03_up_1.png
+  - name: assets/res/textures/idle/truck/truck_lv04_down_0.png.unity3d
+    assets:
+    - Assets/Res/Textures/Idle/truck/truck_lv04_down_0.png
+  - name: assets/res/textures/idle/truck/truck_lv04_down_1.png.unity3d
+    assets:
+    - Assets/Res/Textures/Idle/truck/truck_lv04_down_1.png
+  - name: assets/res/textures/idle/truck/truck_lv04_up_0.png.unity3d
+    assets:
+    - Assets/Res/Textures/Idle/truck/truck_lv04_up_0.png
+  - name: assets/res/textures/idle/truck/truck_lv04_up_1.png.unity3d
+    assets:
+    - Assets/Res/Textures/Idle/truck/truck_lv04_up_1.png
+  - name: assets/res/textures/idle/truck/truck_lv05_down_1.png.unity3d
+    assets:
+    - Assets/Res/Textures/Idle/truck/truck_lv05_down_1.png
+  - name: assets/res/textures/idle/truck/truck_lv05_up_0.png.unity3d
+    assets:
+    - Assets/Res/Textures/Idle/truck/truck_lv05_up_0.png
+  - name: assets/res/textures/idle/truck/truck_lv05_up_1.png.unity3d
+    assets:
+    - Assets/Res/Textures/Idle/truck/truck_lv05_up_1.png
+  - name: assets/res/textures/idle/fork/chache_01.png.unity3d
+    assets:
+    - Assets/Res/Textures/Idle/fork/chache_01.png
+  - name: assets/res/textures/idle/fork/chache_back.png.unity3d
+    assets:
+    - Assets/Res/Textures/Idle/fork/chache_back.png
+  - name: assets/res/textures/idle/fork/chache_back_cha.png.unity3d
+    assets:
+    - Assets/Res/Textures/Idle/fork/chache_back_cha.png
+  - name: assets/res/textures/idle/fork/xiangzi.png.unity3d
+    assets:
+    - Assets/Res/Textures/Idle/fork/xiangzi.png
+  - name: assets/res/ui/gameui/doubleincometip.prefab.unity3d
+    assets:
+    - Assets/Res/UI/GameUI/doubleIncomeTip.prefab
+  - name: assets/res/ui/gameui/finger.prefab.unity3d
+    assets:
+    - Assets/Res/UI/GameUI/finger.prefab
+  - name: assets/res/ui/gameui/npctalk.prefab.unity3d
+    assets:
+    - Assets/Res/UI/GameUI/npctalk.prefab
+  - name: assets/res/ui/gameui/tipui.prefab.unity3d
+    assets:
+    - Assets/Res/UI/GameUI/tipUI.prefab
+  - name: assets/res/ui/gameui/truckunloadprocess.prefab.unity3d
+    assets:
+    - Assets/Res/UI/GameUI/truckUnloadProcess.prefab
+  - name: assets/res/textures/idle/shelfres/huojia1.png.unity3d
+    assets:
+    - Assets/Res/Textures/Idle/shelfRes/huojia1.png
+  - name: assets/res/textures/idle/shelfres/huojia2.png.unity3d
+    assets:
+    - Assets/Res/Textures/Idle/shelfRes/huojia2.png
+  - name: assets/res/textures/idle/shelfres/huojia3.png.unity3d
+    assets:
+    - Assets/Res/Textures/Idle/shelfRes/huojia3.png
+  - name: assets/res/textures/idle/shelfres/huojia4.png.unity3d
+    assets:
+    - Assets/Res/Textures/Idle/shelfRes/huojia4.png
+  - name: assets/res/textures/idle/shelfres/huojia5.png.unity3d
+    assets:
+    - Assets/Res/Textures/Idle/shelfRes/huojia5.png
+  - name: assets/res/textures/idle/shelfres/huojia6.png.unity3d
+    assets:
+    - Assets/Res/Textures/Idle/shelfRes/huojia6.png
+  - name: assets/res/textures/idle/floorres/dizhuan_01.png.unity3d
+    assets:
+    - Assets/Res/Textures/Idle/floorRes/dizhuan_01.png
+  - name: assets/res/textures/idle/floorres/dizhuan_02.png.unity3d
+    assets:
+    - Assets/Res/Textures/Idle/floorRes/dizhuan_02.png
+  - name: assets/res/textures/idle/itemimgs/itemimg01.png.unity3d
+    assets:
+    - Assets/Res/Textures/Idle/ItemImgs/itemImg01.png
+  - name: assets/res/textures/idle/itemimgs/itemimg02.png.unity3d
+    assets:
+    - Assets/Res/Textures/Idle/ItemImgs/itemImg02.png
+  - name: assets/res/textures/idle/itemimgs/itemimg03.png.unity3d
+    assets:
+    - Assets/Res/Textures/Idle/ItemImgs/itemImg03.png
+  - name: assets/res/textures/idle/itemimgs/itemimg04.png.unity3d
+    assets:
+    - Assets/Res/Textures/Idle/ItemImgs/itemImg04.png
+  - name: assets/res/textures/idle/itemimgs/itemimg05.png.unity3d
+    assets:
+    - Assets/Res/Textures/Idle/ItemImgs/itemImg05.png
+  - name: assets/res/textures/idle/itemimgs/itemimg06.png.unity3d
+    assets:
+    - Assets/Res/Textures/Idle/ItemImgs/itemImg06.png
+  - name: assets/textures/idle/city1002.unity3d
+    assets:
+    - Assets/Textures/idle/city1002/798.png
+    - Assets/Textures/idle/city1002/banma_xian.png
+    - Assets/Textures/idle/city1002/beijingdaxue.png
+    - Assets/Textures/idle/city1002/bian.png
+    - Assets/Textures/idle/city1002/bianzhong.png
+    - Assets/Textures/idle/city1002/bian_01.png
+    - Assets/Textures/idle/city1002/cai01.png
+    - Assets/Textures/idle/city1002/cai02.png
+    - Assets/Textures/idle/city1002/canyi.png
+    - Assets/Textures/idle/city1002/canyi_lv2.png
+    - Assets/Textures/idle/city1002/canyi_lv3.png
+    - Assets/Textures/idle/city1002/canzhuo.png
+    - Assets/Textures/idle/city1002/canzhuo_lv2.png
+    - Assets/Textures/idle/city1002/canzhuo_lv3.png
+    - Assets/Textures/idle/city1002/caoping.png
+    - Assets/Textures/idle/city1002/cao_hezi.png
+    - Assets/Textures/idle/city1002/cao_huatan.png
+    - Assets/Textures/idle/city1002/cao_kuai.png
+    - Assets/Textures/idle/city1002/cao_pen.png
+    - Assets/Textures/idle/city1002/cao_pin.png
+    - Assets/Textures/idle/city1002/chache_kong.png
+    - Assets/Textures/idle/city1002/changfang.png
+    - Assets/Textures/idle/city1002/changyi.png
+    - Assets/Textures/idle/city1002/chaow.png
+    - Assets/Textures/idle/city1002/chaow_zgui.png
+    - Assets/Textures/idle/city1002/chaungyiyuan.png
+    - Assets/Textures/idle/city1002/chepeng.png
+    - Assets/Textures/idle/city1002/chuan.png
+    - Assets/Textures/idle/city1002/chuanghu.png
+    - Assets/Textures/idle/city1002/chuanghu_lv2.png
+    - Assets/Textures/idle/city1002/chuan_pai.png
+    - Assets/Textures/idle/city1002/denglong.png
+    - Assets/Textures/idle/city1002/dengzi.png
+    - Assets/Textures/idle/city1002/diban01_lv2.png
+    - Assets/Textures/idle/city1002/diban_lv2.png
+    - Assets/Textures/idle/city1002/ditan.png
+    - Assets/Textures/idle/city1002/dizhuan.png
+    - Assets/Textures/idle/city1002/dizhuan01.png
+    - Assets/Textures/idle/city1002/dizhuan_lv1.png
+    - Assets/Textures/idle/city1002/dizhuan_lv3.png
+    - Assets/Textures/idle/city1002/dong_1.png
+    - Assets/Textures/idle/city1002/dong_2.png
+    - Assets/Textures/idle/city1002/dong_3.png
+    - Assets/Textures/idle/city1002/fangliang.png
+    - Assets/Textures/idle/city1002/feiji.png
+    - Assets/Textures/idle/city1002/feiji_01.png
+    - Assets/Textures/idle/city1002/feiji_shadow.png
+    - Assets/Textures/idle/city1002/gd.png
+    - Assets/Textures/idle/city1002/gongyuan_ditan.png
+    - Assets/Textures/idle/city1002/guang.png
+    - Assets/Textures/idle/city1002/guanggao_01.png
+    - Assets/Textures/idle/city1002/gugong_01.png
+    - Assets/Textures/idle/city1002/gugong_02.png
+    - Assets/Textures/idle/city1002/gugong_03.png
+    - Assets/Textures/idle/city1002/gugong_04.png
+    - Assets/Textures/idle/city1002/gugong_05.png
+    - Assets/Textures/idle/city1002/gugong_06.png
+    - Assets/Textures/idle/city1002/gugong_dizhuan.png
+    - Assets/Textures/idle/city1002/gugong_dizhuan01.png
+    - Assets/Textures/idle/city1002/gugong_menpai.png
+    - Assets/Textures/idle/city1002/gugong_qiang01.png
+    - Assets/Textures/idle/city1002/gugong_talou.png
+    - Assets/Textures/idle/city1002/gugong_yizhanpng.png
+    - Assets/Textures/idle/city1002/guizi01.png
+    - Assets/Textures/idle/city1002/guizi02.png
+    - Assets/Textures/idle/city1002/guizi03.png
+    - Assets/Textures/idle/city1002/guizi04.png
+    - Assets/Textures/idle/city1002/gushuyizhan.png
+    - Assets/Textures/idle/city1002/hua.png
+    - Assets/Textures/idle/city1002/huaping.png
+    - Assets/Textures/idle/city1002/hulu_yizhan.png
+    - Assets/Textures/idle/city1002/hushi.png
+    - Assets/Textures/idle/city1002/jiancai.png
+    - Assets/Textures/idle/city1002/jiaqin_paizi.png
+    - Assets/Textures/idle/city1002/jijiaqi1.png
+    - Assets/Textures/idle/city1002/jijiaqi_hong.png
+    - Assets/Textures/idle/city1002/jijiaqi_lv.png
+    - Assets/Textures/idle/city1002/jq_zgui.png
+    - Assets/Textures/idle/city1002/juminglou.png
+    - Assets/Textures/idle/city1002/juminglou_men.png
+    - Assets/Textures/idle/city1002/kdy_01.png
+    - Assets/Textures/idle/city1002/kongtiao.png
+    - Assets/Textures/idle/city1002/laoshu.png
+    - Assets/Textures/idle/city1002/long.png
+    - Assets/Textures/idle/city1002/lou_gaolou.png
+    - Assets/Textures/idle/city1002/lou_gaolou_01.png
+    - Assets/Textures/idle/city1002/lou_jumingpng.png
+    - Assets/Textures/idle/city1002/lou_xuexiao.png
+    - Assets/Textures/idle/city1002/lu.png
+    - Assets/Textures/idle/city1002/maomi.png
+    - Assets/Textures/idle/city1002/maomi_pai.png
+    - Assets/Textures/idle/city1002/mianju.png
+    - Assets/Textures/idle/city1002/money-npc.png
+    - Assets/Textures/idle/city1002/muma.png
+    - Assets/Textures/idle/city1002/paibian.png
+    - Assets/Textures/idle/city1002/paifang_lan.png
+    - Assets/Textures/idle/city1002/paizi.png
+    - Assets/Textures/idle/city1002/park_lock.png
+    - Assets/Textures/idle/city1002/penzai.png
+    - Assets/Textures/idle/city1002/penzai01.png
+    - Assets/Textures/idle/city1002/penzai02.png
+    - Assets/Textures/idle/city1002/penzai_lv2.png
+    - Assets/Textures/idle/city1002/qiang01.png
+    - Assets/Textures/idle/city1002/qiang01_.png
+    - Assets/Textures/idle/city1002/qiang02.png
+    - Assets/Textures/idle/city1002/qiang03.png
+    - Assets/Textures/idle/city1002/qiang03_.png
+    - Assets/Textures/idle/city1002/qiang04_.png
+    - Assets/Textures/idle/city1002/qiang_01.png
+    - Assets/Textures/idle/city1002/qiang_02.png
+    - Assets/Textures/idle/city1002/qiang_03.png
+    - Assets/Textures/idle/city1002/qiang_yuanzhu.png
+    - Assets/Textures/idle/city1002/qiao.png
+    - Assets/Textures/idle/city1002/qiao_pai.png
+    - Assets/Textures/idle/city1002/qingtianzhu.png
+    - Assets/Textures/idle/city1002/ren_kuaidipng.png
+    - Assets/Textures/idle/city1002/shadow.png
+    - Assets/Textures/idle/city1002/shadow_01.png
+    - Assets/Textures/idle/city1002/shafa.png
+    - Assets/Textures/idle/city1002/shafa_lv2.png
+    - Assets/Textures/idle/city1002/shafa_lv3.png
+    - Assets/Textures/idle/city1002/shizi.png
+    - Assets/Textures/idle/city1002/shu.png
+    - Assets/Textures/idle/city1002/shui.png
+    - Assets/Textures/idle/city1002/shu_meihua.png
+    - Assets/Textures/idle/city1002/suanpan.png
+    - Assets/Textures/idle/city1002/tche.png
+    - Assets/Textures/idle/city1002/test_yuan.png
+    - Assets/Textures/idle/city1002/text_01.png
+    - Assets/Textures/idle/city1002/text_cheng.png
+    - Assets/Textures/idle/city1002/text_di.png
+    - Assets/Textures/idle/city1002/text_jin.png
+    - Assets/Textures/idle/city1002/text_kuai.png
+    - Assets/Textures/idle/city1002/text_zi.png
+    - Assets/Textures/idle/city1002/thl_zgui.png
+    - Assets/Textures/idle/city1002/tiantan.png
+    - Assets/Textures/idle/city1002/tiezhi.png
+    - Assets/Textures/idle/city1002/tingche_gan.png
+    - Assets/Textures/idle/city1002/tingche_xian.png
+    - Assets/Textures/idle/city1002/tingjip.png
+    - Assets/Textures/idle/city1002/tishipai.png
+    - Assets/Textures/idle/city1002/tt_zgui.png
+    - Assets/Textures/idle/city1002/tu_01.png
+    - Assets/Textures/idle/city1002/unlockPrice.png
+    - Assets/Textures/idle/city1002/wubian.png
+    - Assets/Textures/idle/city1002/ww_dl.png
+    - Assets/Textures/idle/city1002/ww_dt.png
+    - Assets/Textures/idle/city1002/ww_dz.png
+    - Assets/Textures/idle/city1002/ww_guazi.png
+    - Assets/Textures/idle/city1002/ww_guz.png
+    - Assets/Textures/idle/city1002/ww_gz1.png
+    - Assets/Textures/idle/city1002/ww_ho.png
+    - Assets/Textures/idle/city1002/ww_hua.png
+    - Assets/Textures/idle/city1002/ww_mj2.png
+    - Assets/Textures/idle/city1002/ww_mj3.png
+    - Assets/Textures/idle/city1002/ww_pb.png
+    - Assets/Textures/idle/city1002/ww_pbs.png
+    - Assets/Textures/idle/city1002/ww_pf.png
+    - Assets/Textures/idle/city1002/ww_ping.png
+    - Assets/Textures/idle/city1002/ww_pz.png
+    - Assets/Textures/idle/city1002/ww_pz_.png
+    - Assets/Textures/idle/city1002/ww_qiang.png
+    - Assets/Textures/idle/city1002/ww_qiang_.png
+    - Assets/Textures/idle/city1002/ww_shu.png
+    - Assets/Textures/idle/city1002/ww_wan.png
+    - Assets/Textures/idle/city1002/ww_wushi.png
+    - Assets/Textures/idle/city1002/ww_zgui.png
+    - Assets/Textures/idle/city1002/ww_zhi.png
+    - Assets/Textures/idle/city1002/ww_zho.png
+    - Assets/Textures/idle/city1002/ww_zho_.png
+    - Assets/Textures/idle/city1002/ww_zhu.png
+    - Assets/Textures/idle/city1002/ww_zhuanpng.png
+    - Assets/Textures/idle/city1002/ww_zi.png
+    - Assets/Textures/idle/city1002/xiangzi_01.png
+    - Assets/Textures/idle/city1002/xianshiqi.png
+    - Assets/Textures/idle/city1002/xiaolu.png
+    - Assets/Textures/idle/city1002/xiaopaifang.png
+    - Assets/Textures/idle/city1002/xinzeng.png
+    - Assets/Textures/idle/city1002/xinz_01.png
+    - Assets/Textures/idle/city1002/xinz_02.png
+    - Assets/Textures/idle/city1002/xiongmao.png
+    - Assets/Textures/idle/city1002/yazi.png
+    - Assets/Textures/idle/city1002/yiliaoyizhan.png
+    - Assets/Textures/idle/city1002/yinshuiji.png
+    - Assets/Textures/idle/city1002/yinshuiji_lv2.png
+    - Assets/Textures/idle/city1002/yinying.png
+    - Assets/Textures/idle/city1002/yl_bt.png
+    - Assets/Textures/idle/city1002/yl_diban.png
+    - Assets/Textures/idle/city1002/yl_dn.png
+    - Assets/Textures/idle/city1002/yl_ds.png
+    - Assets/Textures/idle/city1002/yl_dyi.png
+    - Assets/Textures/idle/city1002/yl_gui.png
+    - Assets/Textures/idle/city1002/yl_hb.png
+    - Assets/Textures/idle/city1002/yl_huj.png
+    - Assets/Textures/idle/city1002/yl_huj_.png
+    - Assets/Textures/idle/city1002/yl_hz.png
+    - Assets/Textures/idle/city1002/yl_pz.png
+    - Assets/Textures/idle/city1002/yl_qiang_boli.png
+    - Assets/Textures/idle/city1002/yl_qia_boli_.png
+    - Assets/Textures/idle/city1002/yl_qt.png
+    - Assets/Textures/idle/city1002/yl_smj.png
+    - Assets/Textures/idle/city1002/yl_xyj.png
+    - Assets/Textures/idle/city1002/yl_xzb.png
+    - Assets/Textures/idle/city1002/yl_yz.png
+    - Assets/Textures/idle/city1002/yuanditan.png
+    - Assets/Textures/idle/city1002/zhamen.png
+    - Assets/Textures/idle/city1002/zhaocaimao.png
+    - Assets/Textures/idle/city1002/zhauanjiao-r.png
+    - Assets/Textures/idle/city1002/zhi_01.png
+    - Assets/Textures/idle/city1002/zhonglu.png
+    - Assets/Textures/idle/city1002/zhuanjiao-l.png
+    - Assets/Textures/idle/city1002/zhuanjiao.png
+    - Assets/Textures/idle/city1002/zhuanjiao2.png
+    - Assets/Textures/idle/city1002/zhuozi.png
+    - Assets/Textures/idle/city1002/zhuozi_lv2.png
+    - Assets/Textures/idle/city1002/zhuozi_lv3.png
+    - Assets/Textures/idle/city1002/zhuozi_lv4.png
+    - Assets/Textures/idle/city1002/zhuzi05.png
+    - Assets/Textures/idle/city1002/zhuzi06.png
+    - Assets/Textures/idle/city1002/zhuzi_01.png
+    - Assets/Textures/idle/city1002/zhuzi_02.png
+    - Assets/Textures/idle/city1002/zhuzi_03.png
+    - Assets/Textures/idle/city1002/zhuzi_04.png
+    - Assets/Textures/idle/city1002/zixingche.png
+    - Assets/Textures/idle/city1002/zixingche_01.png
+    - Assets/Textures/idle/city1002/zu -6.png
+  - name: assets/res/textures/idle/common/btn-11.png.unity3d
+    assets:
+    - Assets/Res/Textures/Idle/Common/btn-11.png
+  - name: assets/res/textures/idle/common/btn-shopping.png.unity3d
+    assets:
+    - Assets/Res/Textures/Idle/Common/btn-shopping.png
+  - name: assets/res/textures/idle/common/faced.png.unity3d
+    assets:
+    - Assets/Res/Textures/Idle/Common/faced.png
+  - name: assets/res/textures/idle/common/icon-11.png.unity3d
+    assets:
+    - Assets/Res/Textures/Idle/Common/icon-11.png
+  - name: assets/res/textures/idle/common/icon-shopping.png.unity3d
+    assets:
+    - Assets/Res/Textures/Idle/Common/icon-shopping.png
+  - name: assets/res/textures/idle/common/muxiang.png.unity3d
+    assets:
+    - Assets/Res/Textures/Idle/Common/muxiang.png
+  - name: assets/effects/materials/mat_piaoqian.mat.unity3d
+    assets:
+    - Assets/Effects/Materials/Mat_piaoqian.mat
+  - name: assets/effects/textures/qian.png.unity3d
+    assets:
+    - Assets/Effects/Textures/qian.png
+  - name: assets/fonts/alibaba.ttf.unity3d
+    assets:
+    - Assets/Fonts/Alibaba.ttf
+  - name: assets/animations/idle/truck_scale.anim.unity3d
+    assets:
+    - Assets/Animations/Idle/truck_scale.anim
+  - name: assets/animations/buiding.anim.unity3d
+    assets:
+    - Assets/Animations/buiding.anim
+  - name: assets/3rdparty/spine/spine/editor/spine-unity/editor/gui/atlasasset icon.png.unity3d
+    assets:
+    - Assets/3rdParty/Spine/Spine/Editor/spine-unity/Editor/GUI/AtlasAsset Icon.png
+  - name: assets/3rdparty/spine/spine/runtime/spine-unity/skeletondatamodifierassets/blendmodematerials/skeletonpmaadditive.mat.unity3d
+    assets:
+    - Assets/3rdParty/Spine/Spine/Runtime/spine-unity/SkeletonDataModifierAssets/BlendModeMaterials/SkeletonPMAAdditive.mat
+  - name: assets/spine/zhanggui-chaowan/chaowan.atlas.txt.unity3d
+    assets:
+    - Assets/Spine/zhanggui-chaowan/chaowan.atlas.txt
+  - name: assets/spine/zhanggui-chaowan/chaowan_material.mat.unity3d
+    assets:
+    - Assets/Spine/zhanggui-chaowan/chaowan_Material.mat
+  - name: assets/3rdparty/spine/spine/runtime/spine-unity/skeletondatamodifierassets/blendmodematerials/skeletonpmamultiply.mat.unity3d
+    assets:
+    - Assets/3rdParty/Spine/Spine/Runtime/spine-unity/SkeletonDataModifierAssets/BlendModeMaterials/SkeletonPMAMultiply.mat
+  - name: assets/spine/zhanggui-chaowan/chaowan_atlas.asset.unity3d
+    assets:
+    - Assets/Spine/zhanggui-chaowan/chaowan_Atlas.asset
+  - name: shaders.unity3d
+    assets:
+    - Assets/3rdParty/Spine/Spine/Runtime/spine-unity/Shaders/BlendModes/Spine-Skeleton-PMA-Screen.shader
+    - Assets/3rdParty/Spine/Spine/Runtime/spine-unity/Shaders/BlendModes/Spine-Skeleton-PMA-Additive.shader
+    - Assets/3rdParty/Spine/Spine/Runtime/spine-unity/Shaders/Spine-Skeleton.shader
+    - Assets/3rdParty/Spine/Spine/Runtime/spine-unity/Shaders/BlendModes/Spine-Skeleton-PMA-Multiply.shader
+  - name: assets/spine/zhanggui-chaowan/chaowan.png.unity3d
+    assets:
+    - Assets/Spine/zhanggui-chaowan/chaowan.png
+  - name: assets/3rdparty/spine/spine/editor/spine-unity/editor/gui/skeletondataasset
+      icon.png.unity3d
+    assets:
+    - Assets/3rdParty/Spine/Spine/Editor/spine-unity/Editor/GUI/SkeletonDataAsset
+      Icon.png
+  - name: assets/3rdparty/spine/spine/runtime/spine-unity/skeletondatamodifierassets/blendmodematerials/skeletonpmascreen.mat.unity3d
+    assets:
+    - Assets/3rdParty/Spine/Spine/Runtime/spine-unity/SkeletonDataModifierAssets/BlendModeMaterials/SkeletonPMAScreen.mat
+  - name: assets/spine/zhanggui-chaowan/chaowan_skeletondata.asset.unity3d
+    assets:
+    - Assets/Spine/zhanggui-chaowan/chaowan_SkeletonData.asset
+  - name: assets/spine/zhanggui-chaowan/chaowan.json.unity3d
+    assets:
+    - Assets/Spine/zhanggui-chaowan/chaowan.json
+  - name: assets/spine/zhanggui-tanghulu/tanghulu.atlas.txt.unity3d
+    assets:
+    - Assets/Spine/zhanggui-tanghulu/tanghulu.atlas.txt
+  - name: assets/spine/zhanggui-tanghulu/tanghulu.json.unity3d
+    assets:
+    - Assets/Spine/zhanggui-tanghulu/tanghulu.json
+  - name: assets/spine/zhanggui-tanghulu/tanghulu_atlas.asset.unity3d
+    assets:
+    - Assets/Spine/zhanggui-tanghulu/tanghulu_Atlas.asset
+  - name: assets/spine/zhanggui-tanghulu/tanghulu.png.unity3d
+    assets:
+    - Assets/Spine/zhanggui-tanghulu/tanghulu.png
+  - name: assets/spine/zhanggui-tanghulu/tanghulu_skeletondata.asset.unity3d
+    assets:
+    - Assets/Spine/zhanggui-tanghulu/tanghulu_SkeletonData.asset
+  - name: assets/spine/zhanggui-tanghulu/tanghulu_material.mat.unity3d
+    assets:
+    - Assets/Spine/zhanggui-tanghulu/tanghulu_Material.mat
+  - name: assets/spine/zhanggui-gushu/gushu.json.unity3d
+    assets:
+    - Assets/Spine/zhanggui-gushu/gushu.json
+  - name: assets/spine/zhanggui-gushu/gushu.atlas.txt.unity3d
+    assets:
+    - Assets/Spine/zhanggui-gushu/gushu.atlas.txt
+  - name: assets/spine/zhanggui-gushu/gushu.png.unity3d
+    assets:
+    - Assets/Spine/zhanggui-gushu/gushu.png
+  - name: assets/spine/zhanggui-gushu/gushu_material.mat.unity3d
+    assets:
+    - Assets/Spine/zhanggui-gushu/gushu_Material.mat
+  - name: assets/spine/zhanggui-gushu/gushu_skeletondata.asset.unity3d
+    assets:
+    - Assets/Spine/zhanggui-gushu/gushu_SkeletonData.asset
+  - name: assets/spine/zhanggui-gushu/gushu_atlas.asset.unity3d
+    assets:
+    - Assets/Spine/zhanggui-gushu/gushu_Atlas.asset
+  - name: assets/spine/zhanggui-guwan/zhanggui.json.unity3d
+    assets:
+    - Assets/Spine/zhanggui-guwan/zhanggui.json
+  - name: assets/spine/zhanggui-guwan/zhanggui_skeletondata.asset.unity3d
+    assets:
+    - Assets/Spine/zhanggui-guwan/zhanggui_SkeletonData.asset
+  - name: assets/spine/zhanggui-guwan/zhanggui_atlas.asset.unity3d
+    assets:
+    - Assets/Spine/zhanggui-guwan/zhanggui_Atlas.asset
+  - name: assets/spine/zhanggui-guwan/zhanggui.atlas.txt.unity3d
+    assets:
+    - Assets/Spine/zhanggui-guwan/zhanggui.atlas.txt
+  - name: assets/spine/zhanggui-guwan/zhanggui_material.mat.unity3d
+    assets:
+    - Assets/Spine/zhanggui-guwan/zhanggui_Material.mat
+  - name: assets/spine/zhanggui-guwan/zhanggui.png.unity3d
+    assets:
+    - Assets/Spine/zhanggui-guwan/zhanggui.png
+  - name: assets/textures/idle/common/shadow.png.unity3d
+    assets:
+    - Assets/Textures/idle/common/shadow.png
+  - name: assets/spine/staffs/staff2/kuaidi_material.mat.unity3d
+    assets:
+    - Assets/Spine/Staffs/staff2/kuaidi_Material.mat
+  - name: assets/spine/staffs/staff2/kuaidi.png.unity3d
+    assets:
+    - Assets/Spine/Staffs/staff2/kuaidi.png
+  - name: assets/spine/staffs/staff2/kuaidi_atlas.asset.unity3d
+    assets:
+    - Assets/Spine/Staffs/staff2/kuaidi_Atlas.asset
+  - name: assets/spine/staffs/staff2/kuaidi_skeletondata.asset.unity3d
+    assets:
+    - Assets/Spine/Staffs/staff2/kuaidi_SkeletonData.asset
+  - name: assets/spine/staffs/staff2/kuaidi.atlas.txt.unity3d
+    assets:
+    - Assets/Spine/Staffs/staff2/kuaidi.atlas.txt
+  - name: assets/spine/staffs/staff2/kuaidi.json.unity3d
+    assets:
+    - Assets/Spine/Staffs/staff2/kuaidi.json
+  - name: assets/textures/idle/ui/commen/money.png.unity3d
+    assets:
+    - Assets/Textures/idle/UI/commen/money.png
+  - name: assets/textures/idle/ui/commen/button.png.unity3d
+    assets:
+    - Assets/Textures/idle/UI/commen/button.png
+  - name: assets/textures/idle/ui/commen/btn-close.png.unity3d
+    assets:
+    - Assets/Textures/idle/UI/commen/btn-close.png
+  - name: assets/textures/idle/ui/commen/frameheadbg.png.unity3d
+    assets:
+    - Assets/Textures/idle/UI/commen/frameheadbg.png
+  - name: assets/textures/idle/ui/commen/bg-mark.png.unity3d
+    assets:
+    - Assets/Textures/idle/UI/commen/bg-mark.png
+  - name: assets/textures/idle/ui/commen/icon-video.png.unity3d
+    assets:
+    - Assets/Textures/idle/UI/commen/icon-video.png
+  - name: assets/animations/idle/loading.controller.unity3d
+    assets:
+    - Assets/Animations/Idle/loading.controller
+  - name: assets/textures/idle/ui/commen/framebg.png.unity3d
+    assets:
+    - Assets/Textures/idle/UI/commen/frameBg.png
+  - name: assets/textures/idle/ui/commen/loading.png.unity3d
+    assets:
+    - Assets/Textures/idle/UI/commen/loading.png
+  - name: assets/animations/idle/loading.anim.unity3d
+    assets:
+    - Assets/Animations/Idle/loading.anim
+  - name: assets/textures/idle/ui/commen/icon-deliver.png.unity3d
+    assets:
+    - Assets/Textures/idle/UI/commen/icon-deliver.png
+  - name: assets/textures/idle/ui/guide/finger.png.unity3d
+    assets:
+    - Assets/Textures/idle/UI/guide/finger.png
+  - name: assets/textures/idle/ui/commen/btn-big.png.unity3d
+    assets:
+    - Assets/Textures/idle/UI/commen/btn-big.png
+  - name: assets/textures/idle/ui/commen/btn-playvideo.png.unity3d
+    assets:
+    - Assets/Textures/idle/UI/commen/btn-playVideo.png
+  - name: assets/textures/idle/ui/commen/normaltrunk.png.unity3d
+    assets:
+    - Assets/Textures/idle/UI/commen/normalTrunk.png
+  - name: assets/textures/idle/ui/commen/bg.png.unity3d
+    assets:
+    - Assets/Textures/idle/UI/commen/bg.png
+  - name: assets/textures/idle/ui/commen/maintitlebg.png.unity3d
+    assets:
+    - Assets/Textures/idle/UI/commen/mainTitlebg.png
+  - name: assets/textures/idle/ui/commen/btn-gray.png.unity3d
+    assets:
+    - Assets/Textures/idle/UI/commen/btn-gray.png
+  - name: assets/textures/idle/ui/commen/framebg-blue.png.unity3d
+    assets:
+    - Assets/Textures/idle/UI/commen/frameBg-blue.png
+  - name: assets/textures/idle/ui/commen/iconbg.png.unity3d
+    assets:
+    - Assets/Textures/idle/UI/commen/iconbg.png
+  - name: assets/textures/idle/ui/commen/titlebg.png.unity3d
+    assets:
+    - Assets/Textures/idle/UI/commen/titlebg.png
+  - name: assets/textures/idle/ui/commen/descbg.png.unity3d
+    assets:
+    - Assets/Textures/idle/UI/commen/descbg.png
+  - name: assets/textures/idle/ui/commen/bg-cost.png.unity3d
+    assets:
+    - Assets/Textures/idle/UI/commen/bg-cost.png
+  - name: assets/textures/idle/ui/commen/titlebg-line.png.unity3d
+    assets:
+    - Assets/Textures/idle/UI/commen/titlebg-line.png
+  - name: assets/textures/idle/ui/commen/icon-talk.png.unity3d
+    assets:
+    - Assets/Textures/idle/UI/commen/icon-talk.png
+  - name: assets/textures/idle/ui/commen/progressbg-gray.png.unity3d
+    assets:
+    - Assets/Textures/idle/UI/commen/progressbg-gray.png
+  - name: assets/textures/idle/ui/commen/progressbg-green.png.unity3d
+    assets:
+    - Assets/Textures/idle/UI/commen/progressbg-green.png
+  - name: assets/textures/idle/ui/commen/btn-normal.png.unity3d
+    assets:
+    - Assets/Textures/idle/UI/commen/btn-normal.png
+  - name: assets/animations/idle/finger.controller.unity3d
+    assets:
+    - Assets/Animations/Idle/finger.controller
+  - name: assets/animations/idle/guide_finger.anim.unity3d
+    assets:
+    - Assets/Animations/Idle/guide_finger.anim
+  - name: assets/textures/idle/ui/idlewindow/offlinebg.png.unity3d
+    assets:
+    - Assets/Textures/idle/UI/idleWindow/offlinebg.png
