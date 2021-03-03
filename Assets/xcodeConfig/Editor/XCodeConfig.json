@@ -1,0 +1,93 @@
+{
+  "libs": {
+    "+": [
+        "libresolv.9.tbd",
+        "libc++.tbd",
+        "libz.tbd",
+        "libsqlite3.tbd",
+        "libbz2.tbd",
+        "libxml2.tbd",
+        "libc++abi.tbd"
+    ],
+    "-": []
+  },
+  "frameworks": {
+    "+": [
+        "AuthenticationServices.framework",
+        "StoreKit.framework",
+        "MobileCoreServices.framework",
+        "WebKit.framework",
+        "MediaPlayer.framework",
+        "CoreMedia.framework",
+        "CoreLocation.framework",
+        "AVFoundation.framework",
+        "CoreTelephony.framework",
+        "SystemConfiguration.framework",
+        "AdSupport.framework",
+        "CoreMotion.framework",
+        "Accelerate.framework",
+        "ImageIO.framework",
+        "UserNotifications.framework"
+    ],
+    "-": []
+  },
+  "properties": {
+    "=": {
+        "ENABLE_BITCODE": "NO",
+        "CODE_SIGN_IDENTITY": "Apple Development",
+        "CODE_SIGN_IDENTITY[sdk=iphoneos*]": "Apple Development",
+        "PRODUCT_BUNDLE_IDENTIFIER": "com.hw.delivery",
+        "PROVISIONING_PROFILE_SPECIFIER": "delivery_0108_dev"
+    },
+    "+": {
+        "OTHER_LDFLAGS": [
+            "$(inherited)",
+            "-ObjC"
+        ],
+      "LIBRARY_SEARCH_PATHS": [
+      ]
+    },
+    "-": {
+      "LIBRARY_SEARCH_PATHS": [
+      ]
+    }
+  },
+    "plist": {
+        "LSApplicationQueriesSchemes": [
+            "douyinsharesdk",
+            "douyinopensdk",
+            "snssdk1128",
+            "toutiaoopensdk"
+        ],
+        "NSCalendarsUsageDescription": "需要日历权限",
+        "NSCameraUsageDescription": "需要相机权限",
+        "NSLocationWhenInUseUsageDescription": "需要定位权限",
+        "NSMicrophoneUsageDescription": "录制屏幕需要麦克风权限",
+        "NSPhotoLibraryAddUsageDescription": "需要相册权限",
+        "NSPhotoLibraryUsageDescription": "需要相册权限"
+    },
+  "teamId": "7T5FPV927C",
+    "copyfiles": {
+        "iOSAdd/Files/HwAdsInterface.m": "Classes/HwAdsInterface.m",
+        "iOSAdd/Files/HwAdsInterface.h": "Classes/HwAdsInterface.h",
+        "iOSAdd/Files/CustomAppController.mm": "Classes/CustomAppController.mm"
+    },
+    "folders": {
+        "iOSAdd/HwAds": "HwAds"
+    },
+  "deletefolder": [
+    
+  ],
+  "deleteFiles": {
+    
+  },
+  "embeds": [
+    
+  ],
+  "addShellScript": [
+    
+  ],
+  "filesCompileFlag": {
+    
+  }
+}

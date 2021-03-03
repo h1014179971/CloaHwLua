@@ -1,0 +1,55 @@
+
+geyou.png
+size: 178,107
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+shangshen
+  rotate: false
+  xy: 106, 9
+  size: 31, 24
+  orig: 31, 24
+  offset: 0, 0
+  index: -1
+tou
+  rotate: true
+  xy: 106, 35
+  size: 70, 56
+  orig: 70, 56
+  offset: 0, 0
+  index: -1
+yizi
+  rotate: true
+  xy: 2, 4
+  size: 101, 102
+  orig: 101, 102
+  offset: 0, 0
+  index: -1
+youdatui
+  rotate: true
+  xy: 164, 83
+  size: 22, 11
+  orig: 22, 11
+  offset: 0, 0
+  index: -1
+youjiao
+  rotate: true
+  xy: 139, 18
+  size: 15, 23
+  orig: 15, 23
+  offset: 0, 0
+  index: -1
+zuodatui
+  rotate: true
+  xy: 160, 2
+  size: 14, 16
+  orig: 14, 16
+  offset: 0, 0
+  index: -1
+zuojiao
+  rotate: true
+  xy: 139, 2
+  size: 14, 19
+  orig: 14, 19
+  offset: 0, 0
+  index: -1

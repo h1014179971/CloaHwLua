@@ -1,0 +1,83 @@
+
+xiongmao.png
+size: 335,62
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ditai
+  rotate: true
+  xy: 264, 5
+  size: 55, 35
+  orig: 55, 35
+  offset: 0, 0
+  index: -1
+maozi
+  rotate: false
+  xy: 2, 2
+  size: 82, 58
+  orig: 82, 58
+  offset: 0, 0
+  index: -1
+shangshen
+  rotate: true
+  xy: 301, 13
+  size: 47, 32
+  orig: 47, 32
+  offset: 0, 0
+  index: -1
+tou
+  rotate: false
+  xy: 86, 3
+  size: 69, 57
+  orig: 69, 57
+  offset: 0, 0
+  index: -1
+tui1
+  rotate: true
+  xy: 238, 15
+  size: 14, 17
+  orig: 14, 17
+  offset: 0, 0
+  index: -1
+tui2
+  rotate: false
+  xy: 186, 12
+  size: 16, 17
+  orig: 16, 17
+  offset: 0, 0
+  index: -1
+wuqi
+  rotate: true
+  xy: 157, 31
+  size: 29, 105
+  orig: 29, 105
+  offset: 0, 0
+  index: -1
+yougebo
+  rotate: false
+  xy: 221, 13
+  size: 15, 16
+  orig: 15, 16
+  offset: 0, 0
+  index: -1
+youshou
+  rotate: false
+  xy: 157, 9
+  size: 14, 20
+  orig: 14, 20
+  offset: 0, 0
+  index: -1
+zuogebo
+  rotate: false
+  xy: 173, 4
+  size: 11, 25
+  orig: 11, 25
+  offset: 0, 0
+  index: -1
+zuoshou
+  rotate: false
+  xy: 204, 12
+  size: 15, 17
+  orig: 15, 17
+  offset: 0, 0
+  index: -1

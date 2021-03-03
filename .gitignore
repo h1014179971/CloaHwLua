@@ -4,6 +4,7 @@
 /Temp
 /.vs
 /DLC
+/output
 /Assets/StreamingAssets/DLC
 /TrackEditor
 Assembly-CSharp.csproj

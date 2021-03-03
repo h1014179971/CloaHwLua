@@ -1,0 +1,44 @@
+[
+  {
+    "Id": 1.0,
+    "icon": "itemicon5",
+    "name": "糖葫芦",
+    "desc": null,
+    "itemRes": "itemImg04"
+  },
+  {
+    "Id": 2.0,
+    "icon": "itemicon6",
+    "name": "古书",
+    "desc": null,
+    "itemRes": "itemImg02"
+  },
+  {
+    "Id": 3.0,
+    "icon": "itemicon4",
+    "name": "潮玩",
+    "desc": null,
+    "itemRes": "itemImg01"
+  },
+  {
+    "Id": 4.0,
+    "icon": "itemicon1",
+    "name": "家禽",
+    "desc": null,
+    "itemRes": "itemImg03"
+  },
+  {
+    "Id": 5.0,
+    "icon": "itemicon2",
+    "name": "医药",
+    "desc": null,
+    "itemRes": "itemImg06"
+  },
+  {
+    "Id": 6.0,
+    "icon": "itemicon3",
+    "name": "文玩",
+    "desc": null,
+    "itemRes": "itemImg05"
+  }
+]

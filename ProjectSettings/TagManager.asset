@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Item
+  - CityOutSite
+  - CityOutPoint
+  - CitySite
+  - DeliverySite
+  - TruckSite
+  - ForkStopPoint
+  - Npc
+  - SiteLock
+  - WaitParkPoint
+  - CityStaffWaitPoint
+  - RewardNpc
+  - WaitParkArea
+  - LockShelfArea
+  - UIView
+  - UIProperty
+  - UIRoot
+  - UIIgnore
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Road
+  - Build
+  - ForkRoad
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: road
+    uniqueID: 3497509915
+    locked: 0
+  - name: floor
+    uniqueID: 1073346517
+    locked: 0
+  - name: green
+    uniqueID: 2707209691
+    locked: 0
+  - name: sidewalk
+    uniqueID: 3693117365
+    locked: 0
+  - name: mid
+    uniqueID: 4006416705
+    locked: 0
+  - name: build
+    uniqueID: 1304890641
+    locked: 0
+  - name: man
+    uniqueID: 812850655
+    locked: 0
+  - name: sky
+    uniqueID: 4010837257
+    locked: 0
+  - name: fx
+    uniqueID: 865881865
+    locked: 0

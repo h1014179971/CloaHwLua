@@ -1,0 +1,104 @@
+
+banhuo.png
+size: 157,74
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+datui
+  rotate: false
+  xy: 130, 3
+  size: 9, 12
+  orig: 9, 12
+  offset: 0, 0
+  index: -1
+fubu
+  rotate: true
+  xy: 117, 17
+  size: 26, 21
+  orig: 26, 21
+  offset: 0, 0
+  index: -1
+jiao
+  rotate: true
+  xy: 105, 2
+  size: 12, 11
+  orig: 12, 11
+  offset: 0, 0
+  index: -1
+tou
+  rotate: false
+  xy: 2, 6
+  size: 61, 66
+  orig: 61, 66
+  offset: 0, 0
+  index: -1
+xiangzi
+  rotate: false
+  xy: 65, 16
+  size: 50, 56
+  orig: 50, 56
+  offset: 0, 0
+  index: -1
+xiaotui
+  rotate: true
+  xy: 140, 26
+  size: 8, 12
+  orig: 8, 12
+  offset: 0, 0
+  index: -1
+xiong
+  rotate: false
+  xy: 117, 45
+  size: 27, 27
+  orig: 27, 27
+  offset: 0, 0
+  index: -1
+youdatui
+  rotate: false
+  xy: 146, 59
+  size: 8, 13
+  orig: 8, 13
+  offset: 0, 0
+  index: -1
+yougebo
+  rotate: true
+  xy: 65, 2
+  size: 12, 19
+  orig: 12, 19
+  offset: 0, 0
+  index: -1
+youjiao
+  rotate: false
+  xy: 146, 46
+  size: 9, 11
+  orig: 9, 11
+  offset: 0, 0
+  index: -1
+youshou
+  rotate: true
+  xy: 140, 36
+  size: 7, 15
+  orig: 7, 15
+  offset: 0, 0
+  index: -1
+youxiaotui
+  rotate: true
+  xy: 140, 17
+  size: 7, 12
+  orig: 7, 12
+  offset: 0, 0
+  index: -1
+zuogebo
+  rotate: true
+  xy: 86, 4
+  size: 10, 17
+  orig: 10, 17
+  offset: 0, 0
+  index: -1
+zuoshou
+  rotate: false
+  xy: 118, 3
+  size: 10, 12
+  orig: 10, 12
+  offset: 0, 0
+  index: -1

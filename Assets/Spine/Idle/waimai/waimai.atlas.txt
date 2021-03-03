@@ -1,0 +1,34 @@
+
+waimai.png
+size: 111,269
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arm1
+  rotate: false
+  xy: 2, 2
+  size: 60, 94
+  orig: 60, 94
+  offset: 0, 0
+  index: -1
+arm2
+  rotate: true
+  xy: 64, 34
+  size: 62, 44
+  orig: 62, 44
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 2, 98
+  size: 89, 67
+  orig: 89, 67
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 2, 167
+  size: 107, 100
+  orig: 107, 100
+  offset: 0, 0
+  index: -1

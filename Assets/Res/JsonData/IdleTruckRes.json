@@ -1,0 +1,102 @@
+[
+  {
+    "Id": 1.0,
+    "lvmin": 1.0,
+    "lvmax": 1.0,
+    "icon": null,
+    "spriteUp": "truck_lv01_up_1",
+    "spriteDown": "truck_lv01_down_1",
+    "emptySpriteUp": "truck_lv01_up_0",
+    "emptySpriteDown": "truck_lv01_down_0"
+  },
+  {
+    "Id": 2.0,
+    "lvmin": 2.0,
+    "lvmax": 2.0,
+    "icon": null,
+    "spriteUp": "truck_lv02_up_1",
+    "spriteDown": "truck_lv02_down_1",
+    "emptySpriteUp": "truck_lv02_up_0",
+    "emptySpriteDown": "truck_lv02_down_0"
+  },
+  {
+    "Id": 3.0,
+    "lvmin": 3.0,
+    "lvmax": 3.0,
+    "icon": null,
+    "spriteUp": "truck_lv02_up_1",
+    "spriteDown": "truck_lv02_down_1",
+    "emptySpriteUp": "truck_lv02_up_0",
+    "emptySpriteDown": "truck_lv02_down_0"
+  },
+  {
+    "Id": 4.0,
+    "lvmin": 4.0,
+    "lvmax": 4.0,
+    "icon": null,
+    "spriteUp": "truck_lv03_up_1",
+    "spriteDown": "truck_lv03_down_1",
+    "emptySpriteUp": "truck_lv03_up_0",
+    "emptySpriteDown": "truck_lv03_down_1"
+  },
+  {
+    "Id": 5.0,
+    "lvmin": 5.0,
+    "lvmax": 5.0,
+    "icon": null,
+    "spriteUp": "truck_lv03_up_1",
+    "spriteDown": "truck_lv03_down_1",
+    "emptySpriteUp": "truck_lv03_up_0",
+    "emptySpriteDown": "truck_lv03_down_1"
+  },
+  {
+    "Id": 6.0,
+    "lvmin": 6.0,
+    "lvmax": 6.0,
+    "icon": null,
+    "spriteUp": "truck_lv04_up_1",
+    "spriteDown": "truck_lv04_down_1",
+    "emptySpriteUp": "truck_lv04_up_0",
+    "emptySpriteDown": "truck_lv04_down_0"
+  },
+  {
+    "Id": 7.0,
+    "lvmin": 7.0,
+    "lvmax": 7.0,
+    "icon": null,
+    "spriteUp": "truck_lv04_up_1",
+    "spriteDown": "truck_lv04_down_1",
+    "emptySpriteUp": "truck_lv04_up_0",
+    "emptySpriteDown": "truck_lv04_down_0"
+  },
+  {
+    "Id": 8.0,
+    "lvmin": 8.0,
+    "lvmax": 8.0,
+    "icon": null,
+    "spriteUp": "truck_lv05_up_1",
+    "spriteDown": "truck_lv05_down_1",
+    "emptySpriteUp": "truck_lv05_up_0",
+    "emptySpriteDown": "truck_lv05_down_1"
+  },
+  {
+    "Id": 9.0,
+    "lvmin": 9.0,
+    "lvmax": 9.0,
+    "icon": null,
+    "spriteUp": "truck_lv05_up_1",
+    "spriteDown": "truck_lv05_down_1",
+    "emptySpriteUp": "truck_lv05_up_0",
+    "emptySpriteDown": "truck_lv05_down_1"
+  },
+  {
+    "Id": 10.0,
+    "lvmin": 10.0,
+    "lvmax": 10.0,
+    "icon": null,
+    "spriteUp": "truck_lv05_up_1",
+    "spriteDown": "truck_lv05_down_1",
+    "emptySpriteUp": "truck_lv05_up_0",
+    "emptySpriteDown": "truck_lv05_down_1"
+  }
+]

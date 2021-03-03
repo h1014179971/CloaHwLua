@@ -1,0 +1,32 @@
+[
+  {
+    "id": 101.0,
+    "storey": 1.0,
+    "sprite": "huojia1"
+  },
+  {
+    "id": 201.0,
+    "storey": 2.0,
+    "sprite": "huojia2"
+  },
+  {
+    "id": 202.0,
+    "storey": 2.0,
+    "sprite": "huojia3"
+  },
+  {
+    "id": 301.0,
+    "storey": 3.0,
+    "sprite": "huojia4"
+  },
+  {
+    "id": 302.0,
+    "storey": 3.0,
+    "sprite": "huojia5"
+  },
+  {
+    "id": 303.0,
+    "storey": 3.0,
+    "sprite": "huojia6"
+  }
+]

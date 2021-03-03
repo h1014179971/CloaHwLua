@@ -1,0 +1,83 @@
+
+kaorou.png
+size: 327,184
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+chezi
+  rotate: false
+  xy: 2, 2
+  size: 261, 180
+  orig: 262, 180
+  offset: 0, 0
+  index: -1
+fubu
+  rotate: false
+  xy: 285, 36
+  size: 23, 17
+  orig: 23, 17
+  offset: 0, 0
+  index: -1
+jiazi
+  rotate: true
+  xy: 265, 35
+  size: 37, 18
+  orig: 37, 18
+  offset: 0, 0
+  index: -1
+panzi
+  rotate: false
+  xy: 285, 55
+  size: 27, 17
+  orig: 27, 17
+  offset: 0, 0
+  index: -1
+roukuai
+  rotate: false
+  xy: 294, 89
+  size: 25, 15
+  orig: 25, 15
+  offset: 0, 0
+  index: -1
+roukuaiyou
+  rotate: false
+  xy: 265, 10
+  size: 31, 23
+  orig: 31, 23
+  offset: 0, 0
+  index: -1
+roukuaizuo
+  rotate: false
+  xy: 265, 10
+  size: 31, 23
+  orig: 31, 23
+  offset: 0, 0
+  index: -1
+tou
+  rotate: false
+  xy: 265, 106
+  size: 60, 76
+  orig: 60, 76
+  offset: 0, 0
+  index: -1
+xiong
+  rotate: false
+  xy: 265, 74
+  size: 27, 30
+  orig: 27, 30
+  offset: 0, 0
+  index: -1
+yougebo
+  rotate: true
+  xy: 294, 78
+  size: 9, 10
+  orig: 9, 10
+  offset: 0, 0
+  index: -1
+youshou
+  rotate: false
+  xy: 306, 79
+  size: 17, 8
+  orig: 17, 8
+  offset: 0, 0
+  index: -1

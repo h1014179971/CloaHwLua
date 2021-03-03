@@ -1,0 +1,125 @@
+
+chaiquan.png
+size: 107,114
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+biyanyou
+  rotate: false
+  xy: 85, 3
+  size: 12, 6
+  orig: 12, 6
+  offset: 0, 0
+  index: -1
+biyanzuo
+  rotate: true
+  xy: 97, 65
+  size: 12, 7
+  orig: 12, 7
+  offset: 0, 0
+  index: -1
+shenti
+  rotate: true
+  xy: 2, 53
+  size: 59, 69
+  orig: 59, 69
+  offset: 0, 0
+  index: -1
+tou
+  rotate: false
+  xy: 2, 2
+  size: 53, 49
+  orig: 53, 49
+  offset: 0, 0
+  index: -1
+weiba1
+  rotate: false
+  xy: 73, 72
+  size: 22, 19
+  orig: 22, 19
+  offset: 0, 0
+  index: -1
+weiba2
+  rotate: true
+  xy: 73, 47
+  size: 23, 18
+  orig: 23, 18
+  offset: 0, 0
+  index: -1
+weiba3
+  rotate: false
+  xy: 72, 29
+  size: 17, 16
+  orig: 17, 16
+  offset: 0, 0
+  index: -1
+youer1
+  rotate: false
+  xy: 57, 35
+  size: 13, 16
+  orig: 13, 16
+  offset: 0, 0
+  index: -1
+youer2
+  rotate: false
+  xy: 57, 18
+  size: 13, 15
+  orig: 13, 15
+  offset: 0, 0
+  index: -1
+youer3
+  rotate: true
+  xy: 72, 14
+  size: 13, 15
+  orig: 13, 15
+  offset: 0, 0
+  index: -1
+youtui
+  rotate: false
+  xy: 93, 41
+  size: 12, 22
+  orig: 12, 22
+  offset: 0, 0
+  index: -1
+youyan
+  rotate: false
+  xy: 71, 5
+  size: 12, 7
+  orig: 12, 7
+  offset: 0, 0
+  index: -1
+zuoer1
+  rotate: true
+  xy: 89, 11
+  size: 12, 13
+  orig: 12, 13
+  offset: 0, 0
+  index: -1
+zuoer2
+  rotate: false
+  xy: 57, 2
+  size: 12, 14
+  orig: 12, 14
+  offset: 0, 0
+  index: -1
+zuoer3
+  rotate: false
+  xy: 91, 25
+  size: 14, 14
+  orig: 14, 14
+  offset: 0, 0
+  index: -1
+zuotui
+  rotate: true
+  xy: 73, 93
+  size: 19, 29
+  orig: 19, 29
+  offset: 0, 0
+  index: -1
+zuoyan
+  rotate: true
+  xy: 97, 79
+  size: 12, 8
+  orig: 12, 8
+  offset: 0, 0
+  index: -1

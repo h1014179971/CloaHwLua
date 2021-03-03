@@ -1,0 +1,69 @@
+
+kuaidi.png
+size: 110,60
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+gebo
+  rotate: false
+  xy: 98, 33
+  size: 10, 11
+  orig: 10, 11
+  offset: 0, 0
+  index: -1
+shenti
+  rotate: true
+  xy: 57, 2
+  size: 19, 29
+  orig: 19, 29
+  offset: 0, 0
+  index: -1
+tou
+  rotate: true
+  xy: 2, 4
+  size: 54, 53
+  orig: 54, 53
+  offset: 0, 0
+  index: -1
+xiangzi
+  rotate: true
+  xy: 57, 23
+  size: 35, 39
+  orig: 35, 39
+  offset: 0, 0
+  index: -1
+youshou
+  rotate: false
+  xy: 98, 46
+  size: 10, 12
+  orig: 10, 12
+  offset: 0, 0
+  index: -1
+youtui
+  rotate: true
+  xy: 88, 12
+  size: 9, 14
+  orig: 9, 14
+  offset: 0, 0
+  index: -1
+zuogebo
+  rotate: false
+  xy: 88, 2
+  size: 6, 8
+  orig: 6, 8
+  offset: 0, 0
+  index: -1
+zuoshou
+  rotate: true
+  xy: 98, 23
+  size: 8, 10
+  orig: 8, 10
+  offset: 0, 0
+  index: -1
+zuotui
+  rotate: true
+  xy: 96, 3
+  size: 7, 12
+  orig: 7, 12
+  offset: 0, 0
+  index: -1

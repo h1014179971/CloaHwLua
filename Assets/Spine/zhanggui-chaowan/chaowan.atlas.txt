@@ -1,0 +1,55 @@
+
+chaowan.png
+size: 169,75
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arm_L
+  rotate: true
+  xy: 137, 25
+  size: 16, 27
+  orig: 16, 27
+  offset: 0, 0
+  index: -1
+arm_R
+  rotate: true
+  xy: 135, 8
+  size: 15, 26
+  orig: 15, 26
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 137, 43
+  size: 30, 30
+  orig: 30, 30
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 87, 31
+  size: 48, 42
+  orig: 48, 42
+  offset: 0, 0
+  index: -1
+leg_L
+  rotate: false
+  xy: 87, 7
+  size: 25, 22
+  orig: 25, 22
+  offset: 0, 0
+  index: -1
+leg_R
+  rotate: true
+  xy: 114, 3
+  size: 26, 19
+  orig: 26, 19
+  offset: 0, 0
+  index: -1
+sofa
+  rotate: false
+  xy: 2, 2
+  size: 83, 71
+  orig: 83, 71
+  offset: 0, 0
+  index: -1

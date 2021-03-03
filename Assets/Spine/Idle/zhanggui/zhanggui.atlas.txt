@@ -1,0 +1,90 @@
+
+zhanggui.png
+size: 237,75
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bianzi
+  rotate: true
+  xy: 68, 27
+  size: 46, 59
+  orig: 46, 59
+  offset: 0, 0
+  index: -1
+datui
+  rotate: true
+  xy: 206, 33
+  size: 40, 29
+  orig: 40, 29
+  offset: 0, 0
+  index: -1
+tou
+  rotate: true
+  xy: 2, 10
+  size: 63, 64
+  orig: 63, 64
+  offset: 0, 0
+  index: -1
+xiaotui
+  rotate: true
+  xy: 206, 2
+  size: 29, 24
+  orig: 29, 24
+  offset: 0, 0
+  index: -1
+xiong
+  rotate: true
+  xy: 129, 27
+  size: 46, 50
+  orig: 46, 50
+  offset: 0, 0
+  index: -1
+yanjing
+  rotate: true
+  xy: 181, 18
+  size: 55, 23
+  orig: 55, 23
+  offset: 0, 0
+  index: -1
+yougebo
+  rotate: false
+  xy: 68, 5
+  size: 20, 20
+  orig: 20, 20
+  offset: 0, 0
+  index: -1
+youjiao
+  rotate: true
+  xy: 167, 2
+  size: 14, 15
+  orig: 14, 15
+  offset: 0, 0
+  index: -1
+youshou
+  rotate: true
+  xy: 90, 6
+  size: 19, 27
+  orig: 19, 27
+  offset: 0, 0
+  index: -1
+zuogebo
+  rotate: false
+  xy: 119, 6
+  size: 22, 19
+  orig: 22, 19
+  offset: 0, 0
+  index: -1
+zuojiao
+  rotate: false
+  xy: 184, 2
+  size: 14, 14
+  orig: 14, 14
+  offset: 0, 0
+  index: -1
+zuoshou
+  rotate: false
+  xy: 143, 6
+  size: 22, 19
+  orig: 22, 19
+  offset: 0, 0
+  index: -1

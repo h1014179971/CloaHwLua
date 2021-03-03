@@ -1,0 +1,111 @@
+
+dabing.png
+size: 189,78
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+dadatui
+  rotate: true
+  xy: 134, 9
+  size: 11, 14
+  orig: 11, 14
+  offset: 0, 0
+  index: -1
+daxiaotui
+  rotate: true
+  xy: 136, 22
+  size: 11, 17
+  orig: 11, 17
+  offset: 0, 0
+  index: -1
+fubu
+  rotate: false
+  xy: 2, 2
+  size: 25, 13
+  orig: 25, 13
+  offset: 0, 0
+  index: -1
+jiao
+  rotate: false
+  xy: 45, 2
+  size: 13, 13
+  orig: 13, 13
+  offset: 0, 0
+  index: -1
+tou
+  rotate: false
+  xy: 2, 17
+  size: 66, 59
+  orig: 66, 59
+  offset: 0, 0
+  index: -1
+toukui
+  rotate: false
+  xy: 70, 28
+  size: 64, 48
+  orig: 64, 48
+  offset: 0, 0
+  index: -1
+toukuidaizi
+  rotate: false
+  xy: 136, 35
+  size: 44, 41
+  orig: 44, 41
+  offset: 0, 0
+  index: -1
+xiong
+  rotate: true
+  xy: 70, 2
+  size: 24, 25
+  orig: 24, 25
+  offset: 0, 0
+  index: -1
+youdatui
+  rotate: true
+  xy: 155, 22
+  size: 11, 15
+  orig: 11, 15
+  offset: 0, 0
+  index: -1
+yougebo
+  rotate: false
+  xy: 109, 7
+  size: 10, 19
+  orig: 10, 19
+  offset: 0, 0
+  index: -1
+youjiao
+  rotate: true
+  xy: 29, 2
+  size: 13, 14
+  orig: 13, 14
+  offset: 0, 0
+  index: -1
+youshou
+  rotate: false
+  xy: 121, 8
+  size: 11, 18
+  orig: 11, 18
+  offset: 0, 0
+  index: -1
+youxiaotui
+  rotate: false
+  xy: 150, 10
+  size: 10, 10
+  orig: 10, 10
+  offset: 0, 0
+  index: -1
+zuogebo
+  rotate: true
+  xy: 172, 22
+  size: 11, 15
+  orig: 11, 15
+  offset: 0, 0
+  index: -1
+zuoshou
+  rotate: false
+  xy: 97, 5
+  size: 10, 21
+  orig: 10, 21
+  offset: 0, 0
+  index: -1

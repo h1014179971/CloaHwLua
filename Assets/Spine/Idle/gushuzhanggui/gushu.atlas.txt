@@ -1,0 +1,69 @@
+
+gushu.png
+size: 89,61
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+shenti
+  rotate: false
+  xy: 56, 34
+  size: 24, 25
+  orig: 24, 25
+  offset: 0, 0
+  index: -1
+tou
+  rotate: false
+  xy: 2, 4
+  size: 52, 55
+  orig: 52, 55
+  offset: 0, 0
+  index: -1
+yougebo
+  rotate: false
+  xy: 56, 16
+  size: 10, 16
+  orig: 10, 16
+  offset: 0, 0
+  index: -1
+youjiao
+  rotate: true
+  xy: 78, 6
+  size: 10, 7
+  orig: 10, 7
+  offset: 0, 0
+  index: -1
+youshou
+  rotate: true
+  xy: 68, 18
+  size: 14, 7
+  orig: 14, 7
+  offset: 0, 0
+  index: -1
+youtui
+  rotate: false
+  xy: 77, 18
+  size: 7, 14
+  orig: 7, 14
+  offset: 0, 0
+  index: -1
+zuojiao
+  rotate: true
+  xy: 82, 52
+  size: 7, 5
+  orig: 7, 5
+  offset: 0, 0
+  index: -1
+zuoshou
+  rotate: false
+  xy: 56, 2
+  size: 9, 12
+  orig: 9, 12
+  offset: 0, 0
+  index: -1
+zuotui
+  rotate: true
+  xy: 67, 4
+  size: 10, 9
+  orig: 10, 9
+  offset: 0, 0
+  index: -1

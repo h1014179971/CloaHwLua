@@ -1,0 +1,6 @@
+﻿{
+	   "absUIPrefabsPath":"Assets/XNRes/AssetBundle/Prefabs/UI",
+	   "absTexturePath":"Assets/XNRes/AssetBundle/Textures",
+	   "absAltasPath":"Assets/XNRes/AssetBundle/Altas",
+	   "absMapAltasPath":"Assets/XNRes/AssetBundle/AltasMap"
+}

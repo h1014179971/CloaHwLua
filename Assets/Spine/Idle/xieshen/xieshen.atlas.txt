@@ -1,0 +1,76 @@
+
+xieshen.png
+size: 82,74
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+duzi
+  rotate: false
+  xy: 16, 4
+  size: 27, 15
+  orig: 27, 15
+  offset: 0, 0
+  index: -1
+gebo1
+  rotate: false
+  xy: 70, 60
+  size: 10, 12
+  orig: 10, 12
+  offset: 0, 0
+  index: -1
+kuzi
+  rotate: true
+  xy: 54, 45
+  size: 27, 14
+  orig: 27, 14
+  offset: 0, 0
+  index: -1
+tou
+  rotate: false
+  xy: 2, 21
+  size: 50, 51
+  orig: 50, 51
+  offset: 0, 0
+  index: -1
+tui1
+  rotate: false
+  xy: 58, 5
+  size: 10, 14
+  orig: 10, 14
+  offset: 0, 0
+  index: -1
+xiong
+  rotate: true
+  xy: 54, 21
+  size: 22, 14
+  orig: 22, 14
+  offset: 0, 0
+  index: -1
+youshou
+  rotate: false
+  xy: 2, 2
+  size: 12, 17
+  orig: 12, 17
+  offset: 0, 0
+  index: -1
+zuogebo
+  rotate: false
+  xy: 70, 38
+  size: 6, 7
+  orig: 6, 7
+  offset: 0, 0
+  index: -1
+zuojiao
+  rotate: false
+  xy: 45, 4
+  size: 11, 15
+  orig: 11, 15
+  offset: 0, 0
+  index: -1
+zuoshou
+  rotate: false
+  xy: 70, 47
+  size: 10, 11
+  orig: 10, 11
+  offset: 0, 0
+  index: -1

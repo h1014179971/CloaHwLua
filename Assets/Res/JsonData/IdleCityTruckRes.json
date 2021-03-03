@@ -1,0 +1,102 @@
+[
+  {
+    "lvMin": 1.0,
+    "lvMax": 5.0,
+    "sprite": "cityTruck_lv01_up_"
+  },
+  {
+    "lvMin": 6.0,
+    "lvMax": 10.0,
+    "sprite": "cityTruck_lv01_up_"
+  },
+  {
+    "lvMin": 11.0,
+    "lvMax": 15.0,
+    "sprite": "cityTruck_lv01_up_"
+  },
+  {
+    "lvMin": 16.0,
+    "lvMax": 20.0,
+    "sprite": "cityTruck_lv01_up_"
+  },
+  {
+    "lvMin": 21.0,
+    "lvMax": 25.0,
+    "sprite": "cityTruck_lv01_up_"
+  },
+  {
+    "lvMin": 26.0,
+    "lvMax": 30.0,
+    "sprite": "cityTruck_lv01_up_"
+  },
+  {
+    "lvMin": 31.0,
+    "lvMax": 35.0,
+    "sprite": "cityTruck_lv01_up_"
+  },
+  {
+    "lvMin": 36.0,
+    "lvMax": 40.0,
+    "sprite": "cityTruck_lv01_up_"
+  },
+  {
+    "lvMin": 41.0,
+    "lvMax": 45.0,
+    "sprite": "cityTruck_lv01_up_"
+  },
+  {
+    "lvMin": 46.0,
+    "lvMax": 50.0,
+    "sprite": "cityTruck_lv01_up_"
+  },
+  {
+    "lvMin": 51.0,
+    "lvMax": 55.0,
+    "sprite": "cityTruck_lv01_up_"
+  },
+  {
+    "lvMin": 56.0,
+    "lvMax": 60.0,
+    "sprite": "cityTruck_lv01_up_"
+  },
+  {
+    "lvMin": 61.0,
+    "lvMax": 65.0,
+    "sprite": "cityTruck_lv01_up_"
+  },
+  {
+    "lvMin": 66.0,
+    "lvMax": 70.0,
+    "sprite": "cityTruck_lv01_up_"
+  },
+  {
+    "lvMin": 71.0,
+    "lvMax": 75.0,
+    "sprite": "cityTruck_lv01_up_"
+  },
+  {
+    "lvMin": 76.0,
+    "lvMax": 80.0,
+    "sprite": "cityTruck_lv01_up_"
+  },
+  {
+    "lvMin": 81.0,
+    "lvMax": 85.0,
+    "sprite": "cityTruck_lv01_up_"
+  },
+  {
+    "lvMin": 86.0,
+    "lvMax": 90.0,
+    "sprite": "cityTruck_lv01_up_"
+  },
+  {
+    "lvMin": 91.0,
+    "lvMax": 95.0,
+    "sprite": "cityTruck_lv01_up_"
+  },
+  {
+    "lvMin": 96.0,
+    "lvMax": 100.0,
+    "sprite": "cityTruck_lv01_up_"
+  }
+]

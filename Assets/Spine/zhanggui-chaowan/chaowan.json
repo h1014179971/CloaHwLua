@@ -1,0 +1,261 @@
+{
+"skeleton": {
+	"hash": "tBL3EJgvtjpPp2iFuc5iJQ8O+9s",
+	"spine": "3.8.99",
+	"x": -37.86,
+	"y": -5.12,
+	"width": 83,
+	"height": 101,
+	"images": "./images/",
+	"audio": "D:/哈乐沃德工作文件/快递项目/潮玩"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root", "x": -1.72, "y": 32.43 },
+	{ "name": "body", "parent": "bone", "length": 18.69, "rotation": 83.66, "x": 0.66, "y": 2.88 },
+	{ "name": "head", "parent": "body", "length": 29.52, "rotation": 11.35, "x": 22.36, "y": -0.28 },
+	{ "name": "arm_L", "parent": "body", "length": 20.94, "rotation": -159.4, "x": 15.63, "y": -10.98 },
+	{ "name": "arm_R", "parent": "body", "length": 19.75, "rotation": 166.48, "x": 13.22, "y": 7.59 },
+	{ "name": "leg_L", "parent": "bone", "length": 15.39, "rotation": -140.44, "x": 8.16, "y": -3.09 },
+	{ "name": "leg_R", "parent": "bone", "length": 18.68, "rotation": -139.86, "x": -4.05, "y": 0.52 },
+	{ "name": "sofa", "parent": "root", "x": 16.45, "y": 18.92 }
+],
+"slots": [
+	{ "name": "sofa", "bone": "sofa", "attachment": "sofa" },
+	{ "name": "arm_R", "bone": "arm_R", "attachment": "arm_R" },
+	{ "name": "leg_R", "bone": "leg_R", "attachment": "leg_R" },
+	{ "name": "leg_L", "bone": "leg_L", "attachment": "leg_L" },
+	{ "name": "body", "bone": "body", "attachment": "body" },
+	{ "name": "arm_L", "bone": "arm_L", "attachment": "arm_L" },
+	{ "name": "head", "bone": "head", "attachment": "head" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"arm_L": {
+				"arm_L": {
+					"type": "mesh",
+					"uvs": [ 1, 1, 0, 1, 0, 0, 1, 0 ],
+					"triangles": [ 1, 2, 3, 1, 3, 0 ],
+					"vertices": [ 1, 4, 28.06, 5.83, 1, 1, 4, 24.11, -9.67, 1, 1, 4, -2.05, -3.02, 1, 1, 4, 1.89, 12.48, 1 ],
+					"hull": 4,
+					"edges": [ 0, 2, 2, 4, 4, 6, 0, 6 ],
+					"width": 16,
+					"height": 27
+				}
+			},
+			"arm_R": {
+				"arm_R": {
+					"type": "mesh",
+					"uvs": [ 1, 1, 0, 1, 0, 0, 1, 0 ],
+					"triangles": [ 1, 2, 3, 1, 3, 0 ],
+					"vertices": [ 1, 5, 20.56, 11.98, 1, 1, 5, 25.66, -2.12, 1, 1, 5, 1.2, -10.95, 1, 1, 5, -3.89, 3.15, 1 ],
+					"hull": 4,
+					"edges": [ 0, 2, 2, 4, 4, 6, 0, 6 ],
+					"width": 15,
+					"height": 26
+				}
+			},
+			"body": {
+				"body": {
+					"type": "mesh",
+					"uvs": [ 1, 1, 0, 1, 0, 0, 1, 0 ],
+					"triangles": [ 1, 2, 3, 1, 3, 0 ],
+					"vertices": [ 1, 2, -2.18, -20.57, 1, 1, 2, -5.49, 9.25, 1, 1, 2, 24.33, 12.56, 1, 1, 2, 27.64, -17.26, 1 ],
+					"hull": 4,
+					"edges": [ 0, 2, 2, 4, 4, 6, 0, 6 ],
+					"width": 30,
+					"height": 30
+				}
+			},
+			"head": {
+				"head": {
+					"type": "mesh",
+					"uvs": [ 1, 1, 0, 1, 0, 0, 1, 0 ],
+					"triangles": [ 1, 2, 3, 1, 3, 0 ],
+					"vertices": [ 1, 3, -6.09, -28.03, 1, 1, 3, -1.9, 19.79, 1, 1, 3, 39.94, 16.12, 1, 1, 3, 35.74, -31.7, 1 ],
+					"hull": 4,
+					"edges": [ 0, 2, 2, 4, 4, 6, 0, 6 ],
+					"width": 48,
+					"height": 42
+				}
+			},
+			"leg_L": {
+				"leg_L": {
+					"type": "mesh",
+					"uvs": [ 1, 1, 0, 1, 0, 0, 1, 0 ],
+					"triangles": [ 1, 2, 3, 1, 3, 0 ],
+					"vertices": [ 1, 6, 6.09, 16.32, 1, 1, 6, 25.36, 0.4, 1, 1, 6, 11.35, -16.56, 1, 1, 6, -7.92, -0.64, 1 ],
+					"hull": 4,
+					"edges": [ 0, 2, 2, 4, 4, 6, 0, 6 ],
+					"width": 25,
+					"height": 22
+				}
+			},
+			"leg_R": {
+				"leg_R": {
+					"type": "mesh",
+					"uvs": [ 1, 1, 0, 1, 0, 0, 1, 0 ],
+					"triangles": [ 1, 2, 3, 1, 3, 0 ],
+					"vertices": [ 1, 7, 4.43, 15.98, 1, 1, 7, 24.31, -0.79, 1, 1, 7, 12.06, -15.31, 1, 1, 7, -7.82, 1.45, 1 ],
+					"hull": 4,
+					"edges": [ 0, 2, 2, 4, 4, 6, 0, 6 ],
+					"width": 26,
+					"height": 19
+				}
+			},
+			"sofa": {
+				"sofa": {
+					"type": "mesh",
+					"uvs": [ 1, 1, 0, 1, 0, 0, 1, 0 ],
+					"triangles": [ 1, 2, 3, 1, 3, 0 ],
+					"vertices": [ 1, 8, 28.69, -24.04, 1, 1, 8, -54.31, -24.04, 1, 1, 8, -54.31, 46.96, 1, 1, 8, 28.69, 46.96, 1 ],
+					"hull": 4,
+					"edges": [ 0, 2, 2, 4, 4, 6, 0, 6 ],
+					"width": 83,
+					"height": 71
+				}
+			}
+		}
+	}
+],
+"animations": {
+	"idle": {
+		"bones": {
+			"root": {
+				"rotate": [
+					{}
+				],
+				"translate": [
+					{}
+				],
+				"scale": [
+					{}
+				]
+			},
+			"bone": {
+				"rotate": [
+					{ "curve": "stepped" },
+					{ "time": 3.3333 }
+				],
+				"translate": [
+					{ "curve": "stepped" },
+					{ "time": 3.3333 }
+				],
+				"scale": [
+					{ "curve": "stepped" },
+					{ "time": 3.3333 }
+				]
+			},
+			"body": {
+				"rotate": [
+					{},
+					{ "time": 1.6667, "angle": 10.06 },
+					{ "time": 3.3333 }
+				],
+				"translate": [
+					{ "curve": "stepped" },
+					{ "time": 3.3333 }
+				],
+				"scale": [
+					{},
+					{ "time": 1.6667, "x": 1.11 },
+					{ "time": 3.3333 }
+				]
+			},
+			"head": {
+				"rotate": [
+					{},
+					{ "time": 1.6667, "angle": -20.55 },
+					{ "time": 3.3333 }
+				],
+				"translate": [
+					{ "curve": "stepped" },
+					{ "time": 3.3333 }
+				],
+				"scale": [
+					{ "curve": "stepped" },
+					{ "time": 3.3333 }
+				]
+			},
+			"arm_L": {
+				"rotate": [
+					{ "angle": -6.02 },
+					{ "time": 1.6667, "angle": 6.06 },
+					{ "time": 3.3333, "angle": -6.02 }
+				],
+				"translate": [
+					{},
+					{ "time": 1.6667, "x": -1.33, "y": 0.1 },
+					{ "time": 3.3333 }
+				],
+				"scale": [
+					{},
+					{ "time": 1.6667, "x": 0.911 },
+					{ "time": 3.3333 }
+				]
+			},
+			"arm_R": {
+				"rotate": [
+					{},
+					{ "time": 1.6667, "angle": -36.05 },
+					{ "time": 3.3333 }
+				],
+				"translate": [
+					{ "curve": "stepped" },
+					{ "time": 3.3333 }
+				],
+				"scale": [
+					{ "curve": "stepped" },
+					{ "time": 3.3333 }
+				]
+			},
+			"leg_L": {
+				"rotate": [
+					{ "angle": 10.98, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667, "angle": -20.17, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.3333, "angle": 10.98 }
+				],
+				"translate": [
+					{ "curve": "stepped" },
+					{ "time": 3.3333 }
+				],
+				"scale": [
+					{ "curve": "stepped" },
+					{ "time": 3.3333 }
+				]
+			},
+			"leg_R": {
+				"rotate": [
+					{ "angle": -7.03, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667, "angle": 18.08, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.3333, "angle": -7.03 }
+				],
+				"translate": [
+					{ "curve": "stepped" },
+					{ "time": 3.3333 }
+				],
+				"scale": [
+					{ "curve": "stepped" },
+					{ "time": 3.3333 }
+				]
+			},
+			"sofa": {
+				"rotate": [
+					{ "curve": "stepped" },
+					{ "time": 3.3333 }
+				],
+				"translate": [
+					{ "curve": "stepped" },
+					{ "time": 3.3333 }
+				],
+				"scale": [
+					{ "curve": "stepped" },
+					{ "time": 3.3333 }
+				]
+			}
+		}
+	}
+}
+}

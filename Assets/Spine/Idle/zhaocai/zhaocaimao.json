@@ -1,0 +1,95 @@
+{
+"skeleton": {
+	"hash": "ISqW41yR40Gld0ua0tWMn2bfzyM",
+	"spine": "3.8.99",
+	"x": -21.51,
+	"y": -4.24,
+	"width": 45,
+	"height": 55,
+	"images": "./images/",
+	"audio": "D:/哈乐沃德工作文件/快递项目/招财猫"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root", "x": -1.69, "y": 19.39 },
+	{ "name": "shou", "parent": "bone", "length": 13.02, "rotation": 80.24, "x": 14.47, "y": -2.65 }
+],
+"slots": [
+	{ "name": "shenti", "bone": "root", "attachment": "shenti" },
+	{ "name": "shou", "bone": "shou", "attachment": "shou" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"shenti": {
+				"shenti": {
+					"type": "mesh",
+					"uvs": [ 1, 1, 0, 1, 0, 0, 1, 0 ],
+					"triangles": [ 1, 2, 3, 1, 3, 0 ],
+					"vertices": [ 1, 1, 25.17, -23.64, 1, 1, 1, -19.83, -23.64, 1, 1, 1, -19.83, 31.36, 1, 1, 1, 25.17, 31.36, 1 ],
+					"hull": 4,
+					"edges": [ 0, 2, 2, 4, 4, 6, 0, 6 ],
+					"width": 45,
+					"height": 55
+				}
+			},
+			"shou": {
+				"shou": {
+					"type": "mesh",
+					"uvs": [ 1, 1, 0, 1, 0, 0, 1, 0 ],
+					"triangles": [ 1, 2, 3, 1, 3, 0 ],
+					"vertices": [ 1, 2, -0.99, -5.96, 1, 1, 2, -2.68, 3.9, 1, 1, 2, 13.08, 6.61, 1, 1, 2, 14.78, -3.25, 1 ],
+					"hull": 4,
+					"edges": [ 0, 2, 2, 4, 4, 6, 0, 6 ],
+					"width": 10,
+					"height": 16
+				}
+			}
+		}
+	}
+],
+"animations": {
+	"idle": {
+		"bones": {
+			"root": {
+				"rotate": [
+					{}
+				],
+				"translate": [
+					{}
+				],
+				"scale": [
+					{}
+				]
+			},
+			"bone": {
+				"rotate": [
+					{}
+				],
+				"translate": [
+					{}
+				],
+				"scale": [
+					{}
+				]
+			},
+			"shou": {
+				"rotate": [
+					{},
+					{ "time": 1.3333, "angle": 77.73 },
+					{ "time": 2.6667 }
+				],
+				"translate": [
+					{ "curve": "stepped" },
+					{ "time": 2.6667 }
+				],
+				"scale": [
+					{ "curve": "stepped" },
+					{ "time": 2.6667 }
+				]
+			}
+		}
+	}
+}
+}

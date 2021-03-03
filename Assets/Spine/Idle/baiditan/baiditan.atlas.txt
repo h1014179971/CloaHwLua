@@ -1,0 +1,62 @@
+
+baiditan.png
+size: 234,81
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+jianbang
+  rotate: true
+  xy: 180, 30
+  size: 49, 26
+  orig: 49, 26
+  offset: 0, 0
+  index: -1
+maozi
+  rotate: true
+  xy: 126, 3
+  size: 76, 52
+  orig: 76, 52
+  offset: 0, 0
+  index: -1
+shenti
+  rotate: false
+  xy: 76, 2
+  size: 48, 77
+  orig: 48, 77
+  offset: 0, 0
+  index: -1
+tou
+  rotate: true
+  xy: 2, 2
+  size: 77, 72
+  orig: 77, 72
+  offset: 0, 0
+  index: -1
+yougebo
+  rotate: false
+  xy: 208, 30
+  size: 15, 19
+  orig: 15, 19
+  offset: 0, 0
+  index: -1
+youshou
+  rotate: false
+  xy: 216, 5
+  size: 16, 23
+  orig: 16, 23
+  offset: 0, 0
+  index: -1
+zuogebo
+  rotate: false
+  xy: 208, 51
+  size: 18, 28
+  orig: 18, 28
+  offset: 0, 0
+  index: -1
+zuoshou
+  rotate: false
+  xy: 180, 5
+  size: 34, 23
+  orig: 34, 23
+  offset: 0, 0
+  index: -1

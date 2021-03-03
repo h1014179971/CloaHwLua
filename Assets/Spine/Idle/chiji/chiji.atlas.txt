@@ -1,0 +1,90 @@
+
+chiji.png
+size: 136,68
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+datui
+  rotate: true
+  xy: 110, 38
+  size: 7, 19
+  orig: 7, 19
+  offset: 0, 0
+  index: -1
+fubu
+  rotate: false
+  xy: 95, 4
+  size: 24, 14
+  orig: 24, 14
+  offset: 0, 0
+  index: -1
+jiao
+  rotate: false
+  xy: 121, 15
+  size: 9, 9
+  orig: 9, 9
+  offset: 0, 0
+  index: -1
+jitui
+  rotate: true
+  xy: 95, 20
+  size: 25, 13
+  orig: 25, 13
+  offset: 0, 0
+  index: -1
+tou
+  rotate: false
+  xy: 2, 3
+  size: 63, 63
+  orig: 63, 63
+  offset: 0, 0
+  index: -1
+xiong
+  rotate: true
+  xy: 67, 12
+  size: 25, 26
+  orig: 25, 26
+  offset: 0, 0
+  index: -1
+youdatui
+  rotate: true
+  xy: 67, 2
+  size: 8, 20
+  orig: 8, 20
+  offset: 0, 0
+  index: -1
+yougebo
+  rotate: true
+  xy: 94, 47
+  size: 19, 20
+  orig: 19, 20
+  offset: 0, 0
+  index: -1
+youjiao
+  rotate: false
+  xy: 125, 28
+  size: 9, 8
+  orig: 9, 8
+  offset: 0, 0
+  index: -1
+youshou
+  rotate: false
+  xy: 67, 39
+  size: 25, 27
+  orig: 25, 27
+  offset: 0, 0
+  index: -1
+zuogebo
+  rotate: true
+  xy: 116, 54
+  size: 12, 15
+  orig: 12, 15
+  offset: 0, 0
+  index: -1
+zuoshou
+  rotate: true
+  xy: 110, 26
+  size: 10, 13
+  orig: 10, 13
+  offset: 0, 0
+  index: -1

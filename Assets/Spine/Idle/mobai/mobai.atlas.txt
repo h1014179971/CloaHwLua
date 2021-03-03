@@ -1,0 +1,90 @@
+
+mobai.png
+size: 67,142
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+fubu
+  rotate: true
+  xy: 2, 19
+  size: 28, 20
+  orig: 28, 20
+  offset: 0, 0
+  index: -1
+shouji
+  rotate: true
+  xy: 46, 9
+  size: 12, 11
+  orig: 12, 11
+  offset: 0, 0
+  index: -1
+tou
+  rotate: false
+  xy: 2, 76
+  size: 63, 64
+  orig: 63, 64
+  offset: 0, 0
+  index: -1
+xiong
+  rotate: true
+  xy: 2, 49
+  size: 25, 23
+  orig: 27, 29
+  offset: 1, 3
+  index: -1
+youdatui
+  rotate: true
+  xy: 24, 29
+  size: 18, 16
+  orig: 18, 16
+  offset: 0, 0
+  index: -1
+yougebo
+  rotate: false
+  xy: 42, 39
+  size: 10, 18
+  orig: 10, 18
+  offset: 0, 0
+  index: -1
+youshou
+  rotate: true
+  xy: 27, 52
+  size: 22, 10
+  orig: 22, 10
+  offset: 0, 0
+  index: -1
+youxiatui
+  rotate: true
+  xy: 2, 2
+  size: 15, 21
+  orig: 15, 21
+  offset: 0, 0
+  index: -1
+zuodatui
+  rotate: false
+  xy: 39, 59
+  size: 13, 15
+  orig: 13, 15
+  offset: 0, 0
+  index: -1
+zuogebo
+  rotate: false
+  xy: 42, 23
+  size: 12, 14
+  orig: 12, 14
+  offset: 0, 0
+  index: -1
+zuoshou
+  rotate: false
+  xy: 24, 20
+  size: 10, 7
+  orig: 10, 7
+  offset: 0, 0
+  index: -1
+zuoxiatui
+  rotate: true
+  xy: 25, 3
+  size: 15, 19
+  orig: 15, 19
+  offset: 0, 0
+  index: -1
