@@ -2,27 +2,41 @@
 <BreakpointList/>
 <WatchList/>
 <ProjectUI>
-  <TreeState BaseX = "0" BaseY = "-180" AlternativeItem = "LuaFolders#Assets#Lua#UIBindViews#UIcopying_BindView.lua">
+  <TreeState BaseX = "0" BaseY = "-900" AlternativeItem = "LuaFolders#Assets#Lua#3rd#cjson#util.lua">
     <SelectedList>
-      <Selected Path = "LuaFolders#Assets#Lua#UIBindViews#UIBagDialog_BindView.lua"/>
+      <Selected Path = "LuaFolders#Assets#Lua#3rd#cjson#test.lua"/>
     </SelectedList>
     <ExpandedList>
       <Expanded Path = "LuaFolders"/>
       <Expanded Path = "LuaFolders#Assets"/>
+      <Expanded Path = "LuaFolders#Assets#3rd"/>
+      <Expanded Path = "LuaFolders#Assets#3rd#ToLua"/>
+      <Expanded Path = "LuaFolders#Assets#3rd#ToLua#Lua"/>
       <Expanded Path = "LuaFolders#Assets#Lua"/>
+      <Expanded Path = "LuaFolders#Assets#Lua#3rd"/>
+      <Expanded Path = "LuaFolders#Assets#Lua#3rd#BigNum"/>
+      <Expanded Path = "LuaFolders#Assets#Lua#3rd#cjson"/>
+      <Expanded Path = "LuaFolders#Assets#Lua#Common"/>
+      <Expanded Path = "LuaFolders#Assets#Lua#Common#Collections"/>
       <Expanded Path = "LuaFolders#Assets#Lua#Core"/>
       <Expanded Path = "LuaFolders#Assets#Lua#Core#Net"/>
       <Expanded Path = "LuaFolders#Assets#Lua#Core#ui"/>
+      <Expanded Path = "LuaFolders#Assets#Lua#Game"/>
+      <Expanded Path = "LuaFolders#Assets#Lua#Game#Main"/>
       <Expanded Path = "LuaFolders#Assets#Lua#LuaConfigs"/>
       <Expanded Path = "LuaFolders#Assets#Lua#Modules"/>
+      <Expanded Path = "LuaFolders#Assets#Lua#Modules#Login"/>
+      <Expanded Path = "LuaFolders#Assets#Lua#Modules#Login#Views"/>
       <Expanded Path = "LuaFolders#Assets#Lua#Modules#Test"/>
       <Expanded Path = "LuaFolders#Assets#Lua#Modules#Test#Views"/>
       <Expanded Path = "LuaFolders#Assets#Lua#UIBindViews"/>
+      <Expanded Path = "LuaFolders#Assets#Resources"/>
+      <Expanded Path = "LuaFolders#Assets#Resources#Prefabs"/>
     </ExpandedList>
   </TreeState>
 </ProjectUI>
 <FindAnReplaceUI
-  Pattern = "ResPath"
+  Pattern = "guicollections"
   MatchCase = "false"
   MatchWholeWord = "false"
   UseRegEx = "false"
@@ -33,12 +47,12 @@
   Y = "128"
   Width = "1280"
   Height = "720"
-  Maximized = "false"
+  Maximized = "true"
   LastCodeFilename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Main.lua">
   <DockingControl>
     <DockingNode DockingDirection = "Horizontal">
       <DockingNode DockingDirection = "None">
-        <DockingBlock Width = "428" Height = "923" DocumentStyle = "false">
+        <DockingBlock Width = "415" Height = "923" DocumentStyle = "false">
           <DockingCard
             Text = "Project"
             Tag = ""
@@ -53,70 +67,124 @@
       </DockingNode>
       <DockingNode DockingDirection = "Vertical">
         <DockingNode DockingDirection = "None">
-          <DockingBlock Width = "1473" Height = "571" DocumentStyle = "true">
+          <DockingBlock Width = "1486" Height = "571" DocumentStyle = "true">
+            <DockingCard
+              Text = "test.lua"
+              Tag = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/3rd/cjson/test.lua"
+              ActivePage = "false"
+              ActivateTime = "358957963"
+              CaretLineIndex = "0"
+              CaretCodeCharIndex = "0"
+              BaseX = "0"
+              BaseY = "-990"/>
+            <DockingCard
+              Text = "lua2json.lua"
+              Tag = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/3rd/cjson/lua2json.lua"
+              ActivePage = "false"
+              ActivateTime = "357258291"
+              CaretLineIndex = "11"
+              CaretCodeCharIndex = "13"
+              BaseX = "0"
+              BaseY = "0"/>
+            <DockingCard
+              Text = "util.lua"
+              Tag = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/3rd/cjson/util.lua"
+              ActivePage = "false"
+              ActivateTime = "359182568"
+              CaretLineIndex = "94"
+              CaretCodeCharIndex = "33"
+              BaseX = "0"
+              BaseY = "-1914"/>
+            <DockingCard
+              Text = "json2lua.lua"
+              Tag = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/3rd/cjson/json2lua.lua"
+              ActivePage = "false"
+              ActivateTime = "359171598"
+              CaretLineIndex = "11"
+              CaretCodeCharIndex = "29"
+              BaseX = "0"
+              BaseY = "0"/>
+            <DockingCard
+              Text = "GUICollections.lua"
+              Tag = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Game/Main/GUICollections.lua"
+              ActivePage = "false"
+              ActivateTime = "345508577"
+              CaretLineIndex = "4"
+              CaretCodeCharIndex = "3"
+              BaseX = "0"
+              BaseY = "0"/>
+            <DockingCard
+              Text = "UIBase.lua"
+              Tag = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Core/ui/UIBase.lua"
+              ActivePage = "false"
+              ActivateTime = "339345188"
+              CaretLineIndex = "51"
+              CaretCodeCharIndex = "27"
+              BaseX = "0"
+              BaseY = "-771"/>
+            <DockingCard
+              Text = "UILoginPanel.lua"
+              Tag = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Modules/Login/Views/UILoginPanel.lua"
+              ActivePage = "false"
+              ActivateTime = "338622221"
+              CaretLineIndex = "33"
+              CaretCodeCharIndex = "7"
+              BaseX = "0"
+              BaseY = "-462"/>
+            <DockingCard
+              Text = "ECEnumType.lua"
+              Tag = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Common/ECEnumType.lua"
+              ActivePage = "false"
+              ActivateTime = "338199375"
+              CaretLineIndex = "10"
+              CaretCodeCharIndex = "11"
+              BaseX = "0"
+              BaseY = "-198"/>
+            <DockingCard
+              Text = "BigNum.lua"
+              Tag = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/3rd/BigNum/BigNum.lua"
+              ActivePage = "false"
+              ActivateTime = "338157811"
+              CaretLineIndex = "983"
+              CaretCodeCharIndex = "0"
+              BaseX = "0"
+              BaseY = "-8118"/>
+            <DockingCard
+              Text = "Main.lua"
+              Tag = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Main.lua"
+              ActivePage = "true"
+              ActivateTime = "360535403"
+              CaretLineIndex = "72"
+              CaretCodeCharIndex = "18"
+              BaseX = "0"
+              BaseY = "-1320"/>
             <DockingCard
               Text = "UIBagDialog_BindView.lua"
               Tag = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/UIBindViews/UIBagDialog_BindView.lua"
               ActivePage = "false"
-              ActivateTime = "2351837556"
-              CaretLineIndex = "8"
-              CaretCodeCharIndex = "17"
+              ActivateTime = "345707472"
+              CaretLineIndex = "13"
+              CaretCodeCharIndex = "6"
               BaseX = "0"
               BaseY = "0"/>
-            <DockingCard
-              Text = "event.lua"
-              Tag = "F:/Moha/unityPro/CloaHwLua/Assets/3rd/ToLua/Lua/event.lua"
-              ActivePage = "false"
-              ActivateTime = "106075606"
-              CaretLineIndex = "211"
-              CaretCodeCharIndex = "10"
-              BaseX = "0"
-              BaseY = "-4335"/>
             <DockingCard
               Text = "UIManager.lua"
               Tag = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Mgrs/UIManager.lua"
               ActivePage = "false"
-              ActivateTime = "106248868"
-              CaretLineIndex = "74"
-              CaretCodeCharIndex = "0"
+              ActivateTime = "338679308"
+              CaretLineIndex = "75"
+              CaretCodeCharIndex = "43"
               BaseX = "0"
               BaseY = "-1519"/>
             <DockingCard
               Text = "UIBagDialog.lua"
               Tag = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Modules/Test/Views/UIBagDialog.lua"
               ActivePage = "false"
-              ActivateTime = "105934545"
-              CaretLineIndex = "18"
-              CaretCodeCharIndex = "0"
+              ActivateTime = "356657262"
+              CaretLineIndex = "52"
+              CaretCodeCharIndex = "28"
               BaseX = "0"
-              BaseY = "-1056"/>
-            <DockingCard
-              Text = "GUICollections.lua"
-              Tag = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Game/Main/GUICollections.lua"
-              ActivePage = "false"
-              ActivateTime = "106035355"
-              CaretLineIndex = "4"
-              CaretCodeCharIndex = "3"
-              BaseX = "0"
-              BaseY = "0"/>
-            <DockingCard
-              Text = "Main.lua"
-              Tag = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Main.lua"
-              ActivePage = "true"
-              ActivateTime = "2356096400"
-              CaretLineIndex = "67"
-              CaretCodeCharIndex = "18"
-              BaseX = "0"
-              BaseY = "-1188"/>
-            <DockingCard
-              Text = "UIBase.lua"
-              Tag = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Core/ui/UIBase.lua"
-              ActivePage = "false"
-              ActivateTime = "106593963"
-              CaretLineIndex = "31"
-              CaretCodeCharIndex = "3"
-              BaseX = "0"
-              BaseY = "-507"/>
+              BaseY = "-924"/>
             <DockingCard
               Text = "NetManager.lua"
               Tag = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Core/Net/NetManager.lua"
@@ -135,19 +203,10 @@
               CaretCodeCharIndex = "40"
               BaseX = "0"
               BaseY = "0"/>
-            <DockingCard
-              Text = "ECEnumType.lua"
-              Tag = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Common/ECEnumType.lua"
-              ActivePage = "false"
-              ActivateTime = "95538750"
-              CaretLineIndex = "10"
-              CaretCodeCharIndex = "11"
-              BaseX = "0"
-              BaseY = "0"/>
           </DockingBlock>
         </DockingNode>
         <DockingNode DockingDirection = "None">
-          <DockingBlock Width = "1473" Height = "345" DocumentStyle = "false">
+          <DockingBlock Width = "1486" Height = "345" DocumentStyle = "false">
             <DockingCard
               Text = "Output"
               Tag = ""

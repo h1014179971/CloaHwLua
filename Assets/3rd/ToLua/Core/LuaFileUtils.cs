@@ -26,6 +26,7 @@ using System.IO;
 using System.Collections;
 using System.Text;
 using System;
+using libx;
 
 namespace LuaInterface
 {
@@ -60,7 +61,7 @@ namespace LuaInterface
         {
             instance = this;
 #if UNITY_EDITOR
-            beZip = AppConst.LuaBundleModeEditMode;
+            beZip = Assets.runtimeMode;
 #else
             beZip = AppConst.LuaBundleMode;
 #endif
@@ -293,7 +294,11 @@ namespace LuaInterface
 #if UNITY_4_6 || UNITY_4_7
                     TextAsset luaCode = bundle.Load(fileName, typeof(TextAsset)) as TextAsset;
 #else
-                    TextAsset luaCode = bundle.LoadAsset<TextAsset>(fileName);
+                    TextAsset luaCode = null;
+                    if (bundle == null)
+                        luaCode = libx.AssetLoader.Load<TextAsset>(fileName);
+                    else
+                        luaCode = bundle.LoadAsset<TextAsset>(fileName);
 #endif
                     if (null == luaCode)
                     {

@@ -26,6 +26,7 @@ using LuaInterface;
 using System.IO;
 using System.Text;
 using ColaFramework;
+using libx;
 
 
 /// <summary>
@@ -37,7 +38,7 @@ public class LuaResLoader : LuaFileUtils
     {
         instance = this;
 #if UNITY_EDITOR
-        beZip = AppConst.LuaBundleModeEditMode;
+        beZip = Assets.runtimeMode;
 #else
         beZip = AppConst.LuaBundleMode;
 #endif

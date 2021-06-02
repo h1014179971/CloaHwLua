@@ -28,6 +28,7 @@ using System;
 #if UNITY_5_4_OR_NEWER
 using UnityEngine.SceneManagement;
 #endif
+using libx;
 
 public class LuaClient : MonoBehaviour
 {
@@ -87,7 +88,7 @@ public class LuaClient : MonoBehaviour
 #endif
         bool luaBundleMode = false;
 #if UNITY_EDITOR
-        luaBundleMode = AppConst.LuaBundleModeEditMode;
+        luaBundleMode = Assets.runtimeMode;
 #else
         luaBundleMode = AppConst.LuaBundleMode;
 #endif
@@ -102,7 +103,7 @@ public class LuaClient : MonoBehaviour
     {
         bool luaBundleMode = false;
 #if UNITY_EDITOR
-        luaBundleMode = AppConst.LuaBundleModeEditMode;
+        luaBundleMode = Assets.runtimeMode;
 #else
         luaBundleMode = AppConst.LuaBundleMode;
 #endif

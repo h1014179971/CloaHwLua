@@ -139,6 +139,8 @@ namespace libx
         {
             var watch = new Stopwatch();
             watch.Start();
+            ColaFramework.ToolKit.ColaEditHelper.BuildLuaBundle();
+            AssetDatabase.SaveAssets();
             BuildScript.ApplyBuildRules();
             BuildScript.BuildAssetBundles(target);
             watch.Stop();

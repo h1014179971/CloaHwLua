@@ -49,7 +49,9 @@ end
 
 ------------------- UI事件回调 --------------------------
 function UIBagDialog:onClick(name)
-
+	if name == "Button" then
+		print("UIBagDialog click")
+	end
 end
 
 function UIBagDialog:onBoolValueChange(name, isSelect)

@@ -51,19 +51,11 @@ namespace Delivery
                     string seachPath = init._seachPath[i];
                     Assets.AddSearchPath(seachPath);
                 }
-                //Assets.AddSearchPath("Assets/Scenes");
-                //Assets.AddSearchPath("Assets/Res/Audio");
-                //Assets.AddSearchPath("Assets/Res/Prefabs/Idle");
-                //Assets.AddSearchPath("Assets/Res/Prefabs/Idle/Fx");
-                //Assets.AddSearchPath("Assets/Res/JsonData");
-                //Assets.AddSearchPath("Assets/Res/UI/Idle");
-                //Assets.AddSearchPath("Assets/Res/Textures/Idle/ItemIcons");
-                //Assets.AddSearchPath("Assets/Res/Textures/Idle/SiteIcons");
-                //Assets.AddSearchPath("Assets/Res/Textures/Idle/truck");
-                //Assets.AddSearchPath("Assets/Res/Textures/Idle/cityTruck");
 #endif
 
                 init.Release();
+                ColaFramework.GameManager.Instance.InitGameCore(gameObject);
+                yield break;
                 _updater.Init();
                 AudioCtrl.Instance.PlayBackgroundMusic(GameAudio.login);
                 Debug.Log("start load data");

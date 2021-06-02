@@ -14,6 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activeVariants: []
   dirs:
+  - Assets/GameAssets/Arts/UI/Prefabs
+  - Assets/GameAssets/SprotoBytes
+  - Assets/LuaBaseTemp
   - Assets/Res/Audio
   - Assets/Res/JsonData
   - Assets/Res/Prefabs/Idle/Common
@@ -36,2485 +39,2999 @@ MonoBehaviour:
   - Assets/Scenes/Idle
   - Assets/Textures/idle/city1002
   assets:
-  - name: BuildSmoke.mp3
-    bundle: 16
-    dir: 0
-  - name: ButtonClick.mp3
-    bundle: 17
-    dir: 0
-  - name: ButtonClose.mp3
-    bundle: 18
-    dir: 0
-  - name: DoubleIncome.mp3
-    bundle: 23
-    dir: 0
-  - name: Login.mp3
-    bundle: 25
-    dir: 0
-  - name: MoneyFxShow.mp3
-    bundle: 26
-    dir: 0
-  - name: ShowItem.mp3
-    bundle: 28
-    dir: 0
-  - name: VendingMoney.mp3
-    bundle: 31
-    dir: 0
-  - name: audio_fireworks.mp3
+  - name: UGUIRoot.prefab
     bundle: 14
     dir: 0
-  - name: bgm.mp3
+  - name: UIBagDialog.prefab
     bundle: 15
     dir: 0
-  - name: cityTruckMove.mp3
-    bundle: 19
-    dir: 0
-  - name: cityTruckStop.mp3
+  - name: sproto.bytes
+    bundle: 16
+    dir: 1
+  - name: 3rd.BigNum.BigNum.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: 3rd.BigNum.BigRat.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: 3rd.BigNum.test.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: 3rd.BigNum.test_BigNum.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: 3rd.BigNum.test_BigRat.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: 3rd.BigNum.test_div.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: 3rd.BigNum.test_mul.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: 3rd.BigNum.test_side_effect.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: 3rd.BigNum.test_sub.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: 3rd.BigNum.test_sum.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: 3rd.cjson.json2lua.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: 3rd.cjson.lua2json.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: 3rd.cjson.test.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: 3rd.cjson.util.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: 3rd.luabitop.bitbench.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: 3rd.luabitop.bittest.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: 3rd.luabitop.installpath.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: 3rd.luabitop.md5test.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: 3rd.luabitop.nsievebits.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: 3rd.pbc.parser.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: 3rd.pbc.protobuf.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: 3rd.pbc.test.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: 3rd.pbc.test2.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: 3rd.pbc.testparser.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: 3rd.pblua.login_pb.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: 3rd.pblua.person_pb.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: 3rd.sproto.print_r.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: 3rd.sproto.sproto.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: 3rd.sproto.sprotoparser.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: 3rd.sproto.test.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: 3rd.sproto.testall.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: 3rd.sproto.testrpc.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: Common.AtlasResPathCfg.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: Common.Collections.LObjectPool.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: Common.Collections.LStack.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: Common.ECEnumType.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: Common.LuaAppConst.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: Core.ColaPlus.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: Core.Net.NetManager.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: Core.middleclass.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: Core.ui.UIBase.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: Game.Main.GUICollections.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: Game.Main.ModuleId.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: Game.Main.Modules.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: Game.Main.NotifyId.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: JustTest.ObjectPool.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: LuaConfigs.Language.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: LuaData..lua.bytes
+    bundle: 17
+    dir: 2
+  - name: LuaData.IdleCityCycle.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: LuaData.IdleCityTruckRes.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: LuaData.IdleGuide.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: LuaData.IdleItem.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: LuaData.IdleMainTask.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: LuaData.IdleShelfRes.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: LuaData.IdleSite.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: LuaData.IdleSiteVolume1.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: LuaData.IdleSiteVolume2.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: LuaData.IdleSiteVolume3.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: LuaData.IdleSiteVolume4.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: LuaData.IdleSiteVolume5.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: LuaData.IdleSiteVolume6.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: LuaData.IdleSpecialEvent.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: LuaData.IdleTruckRes.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: LuaData.LanguageData.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: LuaData.UnitConvert.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: Main.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: Mgrs.ConfigMgr.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: Mgrs.EventMgr.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: Mgrs.UIManager.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: Mgrs.UISorter.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: Modules.Common.NotifyId.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: Modules.Common.Views.UIDebugPanel.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: Modules.Common.Views.UILoading.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: Modules.Login.Login_Controller.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: Modules.Login.Login_Module.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: Modules.Login.Views.UILoginPanel.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: Modules.Test.Test_Controller.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: Modules.Test.Test_Module.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: Modules.Test.Views.UIBagDialog.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: Modules.Test.Views.UIModelPanel.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: Modules.World.Views.UIWorldDialog.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: Protocols.Protocol.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: System.Injection.InjectionBridgeInfo.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: System.Injection.LuaInjectionBus.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: System.Injection.LuaInjectionStation.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: System.Reflection.BindingFlags.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: System.Timer.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: System.ValueType.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: System.coroutine.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: UIBindViews.UIBagDialog_BindView.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: UIBindViews.UIDebugPanel_BindView.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: UIBindViews.UILoading_BindView.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: UIBindViews.UILoginPanel_BindView.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: UIBindViews.UIModelPanel_BindView.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: UIBindViews.UIMohaUIView_BindView.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: UIBindViews.UIWorldDialog_BindView.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: UIBindViews.UIcopying_BindView.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: UnityEngine.Bounds.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: UnityEngine.Color.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: UnityEngine.LayerMask.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: UnityEngine.Mathf.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: UnityEngine.Plane.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: UnityEngine.Profiler.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: UnityEngine.Quaternion.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: UnityEngine.Ray.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: UnityEngine.RaycastHit.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: UnityEngine.Time.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: UnityEngine.Touch.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: UnityEngine.Vector2.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: UnityEngine.Vector3.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: UnityEngine.Vector4.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: Utilitys.LuaCommon_Utils.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: Utilitys.LuaGlobalCheck.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: Utilitys.LuaLogHelper.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: Utilitys.Table_Utils.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: Utilitys.UI_Utils.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: cjson.util.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: event.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: jit.bc.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: jit.bcsave.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: jit.dis_arm.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: jit.dis_arm64.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: jit.dis_arm64be.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: jit.dis_mips.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: jit.dis_mips64.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: jit.dis_mips64el.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: jit.dis_mipsel.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: jit.dis_ppc.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: jit.dis_x64.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: jit.dis_x86.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: jit.dump.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: jit.p.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: jit.v.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: jit.vmdef.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: jit.zone.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: list.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: lpeg.re.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: ltn12.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: mime.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: misc.functions.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: misc.strict.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: misc.utf8.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: protobuf.containers.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: protobuf.decoder.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: protobuf.descriptor.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: protobuf.encoder.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: protobuf.listener.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: protobuf.protobuf.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: protobuf.text_format.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: protobuf.type_checkers.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: protobuf.wire_format.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: slot.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: socket.ftp.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: socket.headers.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: socket.http.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: socket.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: socket.mbox.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: socket.smtp.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: socket.tp.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: socket.url.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: tolua.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: typeof.lua.bytes
+    bundle: 17
+    dir: 2
+  - name: BuildSmoke.mp3
     bundle: 20
-    dir: 0
-  - name: clickFeiji.mp3
+    dir: 3
+  - name: ButtonClick.mp3
     bundle: 21
-    dir: 0
-  - name: clickNpcTalk.mp3
+    dir: 3
+  - name: ButtonClose.mp3
     bundle: 22
-    dir: 0
-  - name: forkUnloadItem.mp3
-    bundle: 24
-    dir: 0
-  - name: refreshFeiji.mp3
+    dir: 3
+  - name: DoubleIncome.mp3
     bundle: 27
-    dir: 0
-  - name: siteTruckStop.mp3
+    dir: 3
+  - name: Login.mp3
     bundle: 29
-    dir: 0
-  - name: staffLoadItem.mp3
+    dir: 3
+  - name: MoneyFxShow.mp3
     bundle: 30
-    dir: 0
-  - name: xiangzidown.mp3
+    dir: 3
+  - name: ShowItem.mp3
     bundle: 32
-    dir: 0
-  - name: IdleCity.json
-    bundle: 33
-    dir: 1
-  - name: IdleCityCycle.json
-    bundle: 34
-    dir: 1
-  - name: IdleCityStoreVolume.json
+    dir: 3
+  - name: VendingMoney.mp3
     bundle: 35
-    dir: 1
-  - name: IdleCityTruckRes.json
+    dir: 3
+  - name: audio_fireworks.mp3
+    bundle: 18
+    dir: 3
+  - name: bgm.mp3
+    bundle: 19
+    dir: 3
+  - name: cityTruckMove.mp3
+    bundle: 23
+    dir: 3
+  - name: cityTruckStop.mp3
+    bundle: 24
+    dir: 3
+  - name: clickFeiji.mp3
+    bundle: 25
+    dir: 3
+  - name: clickNpcTalk.mp3
+    bundle: 26
+    dir: 3
+  - name: forkUnloadItem.mp3
+    bundle: 28
+    dir: 3
+  - name: refreshFeiji.mp3
+    bundle: 31
+    dir: 3
+  - name: siteTruckStop.mp3
+    bundle: 33
+    dir: 3
+  - name: staffLoadItem.mp3
+    bundle: 34
+    dir: 3
+  - name: xiangzidown.mp3
     bundle: 36
-    dir: 1
-  - name: IdleCityVolume.json
+    dir: 3
+  - name: IdleCity.json
     bundle: 37
-    dir: 1
-  - name: IdleGuide.json
+    dir: 4
+  - name: IdleCityCycle.json
     bundle: 38
-    dir: 1
-  - name: IdleGuideStep.json
+    dir: 4
+  - name: IdleCityStoreVolume.json
     bundle: 39
-    dir: 1
-  - name: IdleItem.json
+    dir: 4
+  - name: IdleCityTruckRes.json
     bundle: 40
-    dir: 1
-  - name: IdleMainTask.json
+    dir: 4
+  - name: IdleCityVolume.json
     bundle: 41
-    dir: 1
-  - name: IdleShelfRes.json
+    dir: 4
+  - name: IdleGuide.json
     bundle: 42
-    dir: 1
-  - name: IdleSite.json
+    dir: 4
+  - name: IdleGuideStep.json
     bundle: 43
-    dir: 1
-  - name: IdleSiteBase1.json
+    dir: 4
+  - name: IdleItem.json
     bundle: 44
-    dir: 1
-  - name: IdleSiteBase2.json
+    dir: 4
+  - name: IdleMainTask.json
     bundle: 45
-    dir: 1
-  - name: IdleSiteBase3.json
+    dir: 4
+  - name: IdleShelfRes.json
     bundle: 46
-    dir: 1
-  - name: IdleSiteBase4.json
+    dir: 4
+  - name: IdleSite.json
     bundle: 47
-    dir: 1
-  - name: IdleSiteBase5.json
+    dir: 4
+  - name: IdleSiteBase1.json
     bundle: 48
-    dir: 1
-  - name: IdleSiteBase6.json
+    dir: 4
+  - name: IdleSiteBase2.json
     bundle: 49
-    dir: 1
-  - name: IdleSiteGrade1.json
+    dir: 4
+  - name: IdleSiteBase3.json
     bundle: 50
-    dir: 1
-  - name: IdleSiteGrade2.json
+    dir: 4
+  - name: IdleSiteBase4.json
     bundle: 51
-    dir: 1
-  - name: IdleSiteGrade3.json
+    dir: 4
+  - name: IdleSiteBase5.json
     bundle: 52
-    dir: 1
-  - name: IdleSiteGrade4.json
+    dir: 4
+  - name: IdleSiteBase6.json
     bundle: 53
-    dir: 1
-  - name: IdleSiteGrade5.json
+    dir: 4
+  - name: IdleSiteGrade1.json
     bundle: 54
-    dir: 1
-  - name: IdleSiteGrade6.json
+    dir: 4
+  - name: IdleSiteGrade2.json
     bundle: 55
-    dir: 1
-  - name: IdleSiteTime1.json
+    dir: 4
+  - name: IdleSiteGrade3.json
     bundle: 56
-    dir: 1
-  - name: IdleSiteTime2.json
+    dir: 4
+  - name: IdleSiteGrade4.json
     bundle: 57
-    dir: 1
-  - name: IdleSiteTime3.json
+    dir: 4
+  - name: IdleSiteGrade5.json
     bundle: 58
-    dir: 1
-  - name: IdleSiteTime4.json
+    dir: 4
+  - name: IdleSiteGrade6.json
     bundle: 59
-    dir: 1
-  - name: IdleSiteTime5.json
+    dir: 4
+  - name: IdleSiteTime1.json
     bundle: 60
-    dir: 1
-  - name: IdleSiteTime6.json
+    dir: 4
+  - name: IdleSiteTime2.json
     bundle: 61
-    dir: 1
-  - name: IdleSiteVolume1.json
+    dir: 4
+  - name: IdleSiteTime3.json
     bundle: 62
-    dir: 1
-  - name: IdleSiteVolume2.json
+    dir: 4
+  - name: IdleSiteTime4.json
     bundle: 63
-    dir: 1
-  - name: IdleSiteVolume3.json
+    dir: 4
+  - name: IdleSiteTime5.json
     bundle: 64
-    dir: 1
-  - name: IdleSiteVolume4.json
+    dir: 4
+  - name: IdleSiteTime6.json
     bundle: 65
-    dir: 1
-  - name: IdleSiteVolume5.json
+    dir: 4
+  - name: IdleSiteVolume1.json
     bundle: 66
-    dir: 1
-  - name: IdleSiteVolume6.json
+    dir: 4
+  - name: IdleSiteVolume2.json
     bundle: 67
-    dir: 1
-  - name: IdleSpecialEvent.json
+    dir: 4
+  - name: IdleSiteVolume3.json
     bundle: 68
-    dir: 1
-  - name: IdleTask.json
+    dir: 4
+  - name: IdleSiteVolume4.json
     bundle: 69
-    dir: 1
-  - name: IdleTruckLv.json
+    dir: 4
+  - name: IdleSiteVolume5.json
     bundle: 70
-    dir: 1
-  - name: IdleTruckNum.json
+    dir: 4
+  - name: IdleSiteVolume6.json
     bundle: 71
-    dir: 1
-  - name: IdleTruckRes.json
+    dir: 4
+  - name: IdleSpecialEvent.json
     bundle: 72
-    dir: 1
-  - name: LanguageData.json
+    dir: 4
+  - name: IdleTask.json
     bundle: 73
-    dir: 1
-  - name: UnitConvert.json
+    dir: 4
+  - name: IdleTruckLv.json
     bundle: 74
-    dir: 1
-  - name: faced.prefab
+    dir: 4
+  - name: IdleTruckNum.json
     bundle: 75
-    dir: 2
-  - name: xiangzi.prefab
+    dir: 4
+  - name: IdleTruckRes.json
     bundle: 76
-    dir: 2
-  - name: FX_KD_caidai_lizi.prefab
-    bundle: 88
-    dir: 3
-  - name: FX_KD_moneyGet.prefab
-    bundle: 89
-    dir: 3
-  - name: FX_KD_quan.prefab
-    bundle: 90
-    dir: 3
-  - name: FX_KD_shengji_site.prefab
-    bundle: 91
-    dir: 3
-  - name: FX_UI_Money.prefab
-    bundle: 95
-    dir: 3
-  - name: FX_dianji.prefab
-    bundle: 84
-    dir: 3
-  - name: Fx_UI_SiteView.prefab
-    bundle: 96
-    dir: 3
-  - name: feiji_piaoqian.prefab
-    bundle: 82
-    dir: 3
-  - name: fx_baoguang_dianji.prefab
-    bundle: 83
-    dir: 3
-  - name: fx_feijinbi_baoji.prefab
-    bundle: 85
-    dir: 3
-  - name: fx_feiqian.prefab
-    bundle: 86
-    dir: 3
-  - name: fx_jianzaoyanwu_01.prefab
-    bundle: 87
-    dir: 3
-  - name: fx_lihua.prefab
-    bundle: 92
-    dir: 3
-  - name: fx_nongchangshengji_01.prefab
-    bundle: 93
-    dir: 3
-  - name: fx_tchechang.prefab
-    bundle: 94
-    dir: 3
-  - name: fx_youxi_jieshu_01.prefab
-    bundle: 97
-    dir: 3
-  - name: chuangyiyuan_lv1.prefab
-    bundle: 102
     dir: 4
-  - name: ditan_lv1.prefab
-    bundle: 103
-    dir: 4
-  - name: jiaqin_lv1.prefab
-    bundle: 104
-    dir: 4
-  - name: jiaqin_lv2.prefab
-    bundle: 105
-    dir: 4
-  - name: jiaqin_lv3.prefab
-    bundle: 106
-    dir: 4
-  - name: tiantan_lv1.prefab
-    bundle: 107
-    dir: 4
-  - name: wenwan_lv2.prefab
-    bundle: 108
-    dir: 4
-  - name: yiliao_lv2.prefab
-    bundle: 109
-    dir: 4
-  - name: remover.prefab
-    bundle: 111
-    dir: 5
-  - name: staff1.prefab
-    bundle: 112
-    dir: 5
-  - name: staff2.prefab
-    bundle: 113
-    dir: 5
-  - name: fork.prefab
+  - name: LanguageData.json
     bundle: 77
-    dir: 6
-  - name: fork_down_left.prefab
+    dir: 4
+  - name: UnitConvert.json
     bundle: 78
-    dir: 7
-  - name: fork_down_right.prefab
+    dir: 4
+  - name: faced.prefab
     bundle: 79
-    dir: 7
-  - name: fork_up_left.prefab
+    dir: 5
+  - name: xiangzi.prefab
     bundle: 80
-    dir: 7
-  - name: fork_up_right.prefab
-    bundle: 81
-    dir: 7
-  - name: idleCityTruck.prefab
-    bundle: 98
+    dir: 5
+  - name: FX_KD_caidai_lizi.prefab
+    bundle: 92
     dir: 6
-  - name: npcTruck.prefab
+  - name: FX_KD_moneyGet.prefab
+    bundle: 93
+    dir: 6
+  - name: FX_KD_quan.prefab
+    bundle: 94
+    dir: 6
+  - name: FX_KD_shengji_site.prefab
+    bundle: 95
+    dir: 6
+  - name: FX_UI_Money.prefab
     bundle: 99
     dir: 6
-  - name: parkLock.prefab
+  - name: FX_dianji.prefab
+    bundle: 88
+    dir: 6
+  - name: Fx_UI_SiteView.prefab
     bundle: 100
     dir: 6
-  - name: plane.prefab
+  - name: feiji_piaoqian.prefab
+    bundle: 86
+    dir: 6
+  - name: fx_baoguang_dianji.prefab
+    bundle: 87
+    dir: 6
+  - name: fx_feijinbi_baoji.prefab
+    bundle: 89
+    dir: 6
+  - name: fx_feiqian.prefab
+    bundle: 90
+    dir: 6
+  - name: fx_jianzaoyanwu_01.prefab
+    bundle: 91
+    dir: 6
+  - name: fx_lihua.prefab
+    bundle: 96
+    dir: 6
+  - name: fx_nongchangshengji_01.prefab
+    bundle: 97
+    dir: 6
+  - name: fx_tchechang.prefab
+    bundle: 98
+    dir: 6
+  - name: fx_youxi_jieshu_01.prefab
     bundle: 101
     dir: 6
-  - name: shelf.prefab
+  - name: chuangyiyuan_lv1.prefab
+    bundle: 106
+    dir: 7
+  - name: ditan_lv1.prefab
+    bundle: 107
+    dir: 7
+  - name: jiaqin_lv1.prefab
+    bundle: 108
+    dir: 7
+  - name: jiaqin_lv2.prefab
+    bundle: 109
+    dir: 7
+  - name: jiaqin_lv3.prefab
     bundle: 110
-    dir: 6
-  - name: truck.prefab
-    bundle: 114
-    dir: 6
-  - name: btn-11.png
-    bundle: 118
-    dir: 8
-  - name: btn-shopping.png
-    bundle: 119
-    dir: 8
-  - name: faced.png
-    bundle: 120
-    dir: 8
-  - name: icon-11.png
-    bundle: 121
-    dir: 8
-  - name: icon-shopping.png
-    bundle: 122
-    dir: 8
-  - name: muxiang.png
-    bundle: 123
-    dir: 8
-  - name: itemicon1.png
-    bundle: 130
-    dir: 9
-  - name: itemicon2.png
-    bundle: 131
-    dir: 9
-  - name: itemicon3.png
-    bundle: 132
-    dir: 9
-  - name: itemicon4.png
-    bundle: 133
-    dir: 9
-  - name: itemicon5.png
-    bundle: 134
-    dir: 9
-  - name: itemicon6.png
-    bundle: 135
-    dir: 9
-  - name: itemImg01.png
-    bundle: 136
-    dir: 10
-  - name: itemImg02.png
-    bundle: 137
-    dir: 10
-  - name: itemImg03.png
-    bundle: 138
-    dir: 10
-  - name: itemImg04.png
-    bundle: 139
-    dir: 10
-  - name: itemImg05.png
-    bundle: 140
-    dir: 10
-  - name: itemImg06.png
-    bundle: 141
-    dir: 10
-  - name: siteIcon1.png
-    bundle: 148
-    dir: 11
-  - name: siteIcon2.png
-    bundle: 149
-    dir: 11
-  - name: siteIcon3.png
-    bundle: 150
-    dir: 11
-  - name: siteIcon4.png
-    bundle: 151
-    dir: 11
-  - name: siteIcon5.png
-    bundle: 152
-    dir: 11
-  - name: siteIcon6.png
-    bundle: 153
-    dir: 11
-  - name: cityTruck_lv01_up_1.png
+    dir: 7
+  - name: tiantan_lv1.prefab
+    bundle: 111
+    dir: 7
+  - name: wenwan_lv2.prefab
+    bundle: 112
+    dir: 7
+  - name: yiliao_lv2.prefab
+    bundle: 113
+    dir: 7
+  - name: remover.prefab
     bundle: 115
-    dir: 12
-  - name: cityTruck_lv01_up_2.png
+    dir: 8
+  - name: staff1.prefab
     bundle: 116
-    dir: 12
-  - name: cityTruck_lv01_up_3.png
+    dir: 8
+  - name: staff2.prefab
     bundle: 117
-    dir: 12
-  - name: dizhuan_01.png
+    dir: 8
+  - name: fork.prefab
+    bundle: 81
+    dir: 9
+  - name: fork_down_left.prefab
+    bundle: 82
+    dir: 10
+  - name: fork_down_right.prefab
+    bundle: 83
+    dir: 10
+  - name: fork_up_left.prefab
+    bundle: 84
+    dir: 10
+  - name: fork_up_right.prefab
+    bundle: 85
+    dir: 10
+  - name: idleCityTruck.prefab
+    bundle: 102
+    dir: 9
+  - name: npcTruck.prefab
+    bundle: 103
+    dir: 9
+  - name: parkLock.prefab
+    bundle: 104
+    dir: 9
+  - name: plane.prefab
+    bundle: 105
+    dir: 9
+  - name: shelf.prefab
+    bundle: 114
+    dir: 9
+  - name: truck.prefab
+    bundle: 118
+    dir: 9
+  - name: btn-11.png
+    bundle: 122
+    dir: 11
+  - name: btn-shopping.png
+    bundle: 123
+    dir: 11
+  - name: faced.png
     bundle: 124
-    dir: 13
-  - name: dizhuan_02.png
+    dir: 11
+  - name: icon-11.png
     bundle: 125
-    dir: 13
-  - name: chache_01.png
+    dir: 11
+  - name: icon-shopping.png
     bundle: 126
-    dir: 14
-  - name: chache_back.png
+    dir: 11
+  - name: muxiang.png
     bundle: 127
-    dir: 14
-  - name: chache_back_cha.png
-    bundle: 128
-    dir: 14
-  - name: xiangzi.png
-    bundle: 129
-    dir: 14
-  - name: huojia1.png
+    dir: 11
+  - name: itemicon1.png
+    bundle: 134
+    dir: 12
+  - name: itemicon2.png
+    bundle: 135
+    dir: 12
+  - name: itemicon3.png
+    bundle: 136
+    dir: 12
+  - name: itemicon4.png
+    bundle: 137
+    dir: 12
+  - name: itemicon5.png
+    bundle: 138
+    dir: 12
+  - name: itemicon6.png
+    bundle: 139
+    dir: 12
+  - name: itemImg01.png
+    bundle: 140
+    dir: 13
+  - name: itemImg02.png
+    bundle: 141
+    dir: 13
+  - name: itemImg03.png
     bundle: 142
-    dir: 15
-  - name: huojia2.png
+    dir: 13
+  - name: itemImg04.png
     bundle: 143
-    dir: 15
-  - name: huojia3.png
+    dir: 13
+  - name: itemImg05.png
     bundle: 144
-    dir: 15
-  - name: huojia4.png
+    dir: 13
+  - name: itemImg06.png
     bundle: 145
-    dir: 15
-  - name: huojia5.png
-    bundle: 146
-    dir: 15
-  - name: huojia6.png
-    bundle: 147
-    dir: 15
-  - name: truck_lv01_down_0.png
+    dir: 13
+  - name: siteIcon1.png
+    bundle: 152
+    dir: 14
+  - name: siteIcon2.png
+    bundle: 153
+    dir: 14
+  - name: siteIcon3.png
     bundle: 154
-    dir: 16
-  - name: truck_lv01_down_1.png
+    dir: 14
+  - name: siteIcon4.png
     bundle: 155
-    dir: 16
-  - name: truck_lv01_up_0.png
+    dir: 14
+  - name: siteIcon5.png
     bundle: 156
-    dir: 16
-  - name: truck_lv01_up_1.png
+    dir: 14
+  - name: siteIcon6.png
     bundle: 157
+    dir: 14
+  - name: cityTruck_lv01_up_1.png
+    bundle: 119
+    dir: 15
+  - name: cityTruck_lv01_up_2.png
+    bundle: 120
+    dir: 15
+  - name: cityTruck_lv01_up_3.png
+    bundle: 121
+    dir: 15
+  - name: dizhuan_01.png
+    bundle: 128
     dir: 16
-  - name: truck_lv02_down_0.png
+  - name: dizhuan_02.png
+    bundle: 129
+    dir: 16
+  - name: chache_01.png
+    bundle: 130
+    dir: 17
+  - name: chache_back.png
+    bundle: 131
+    dir: 17
+  - name: chache_back_cha.png
+    bundle: 132
+    dir: 17
+  - name: xiangzi.png
+    bundle: 133
+    dir: 17
+  - name: huojia1.png
+    bundle: 146
+    dir: 18
+  - name: huojia2.png
+    bundle: 147
+    dir: 18
+  - name: huojia3.png
+    bundle: 148
+    dir: 18
+  - name: huojia4.png
+    bundle: 149
+    dir: 18
+  - name: huojia5.png
+    bundle: 150
+    dir: 18
+  - name: huojia6.png
+    bundle: 151
+    dir: 18
+  - name: truck_lv01_down_0.png
     bundle: 158
-    dir: 16
-  - name: truck_lv02_down_1.png
-    bundle: 159
-    dir: 16
-  - name: truck_lv02_up_0.png
-    bundle: 160
-    dir: 16
-  - name: truck_lv02_up_1.png
-    bundle: 161
-    dir: 16
-  - name: truck_lv03_down_1.png
-    bundle: 162
-    dir: 16
-  - name: truck_lv03_up_0.png
-    bundle: 163
-    dir: 16
-  - name: truck_lv03_up_1.png
-    bundle: 164
-    dir: 16
-  - name: truck_lv04_down_0.png
-    bundle: 165
-    dir: 16
-  - name: truck_lv04_down_1.png
-    bundle: 166
-    dir: 16
-  - name: truck_lv04_up_0.png
-    bundle: 167
-    dir: 16
-  - name: truck_lv04_up_1.png
-    bundle: 168
-    dir: 16
-  - name: truck_lv05_down_1.png
-    bundle: 169
-    dir: 16
-  - name: truck_lv05_up_0.png
-    bundle: 170
-    dir: 16
-  - name: truck_lv05_up_1.png
-    bundle: 171
-    dir: 16
-  - name: doubleIncomeTip.prefab
-    bundle: 172
-    dir: 17
-  - name: finger.prefab
-    bundle: 173
-    dir: 17
-  - name: npctalk.prefab
-    bundle: 174
-    dir: 17
-  - name: tipUI.prefab
-    bundle: 175
-    dir: 17
-  - name: truckUnloadProcess.prefab
-    bundle: 176
-    dir: 17
-  - name: IdleBuildingWindow.prefab
-    bundle: 177
-    dir: 18
-  - name: IdleCityInfoWindow.prefab
-    bundle: 178
-    dir: 18
-  - name: IdleDoubleIncomeWindow.prefab
-    bundle: 179
-    dir: 18
-  - name: IdleEventWindow.prefab
-    bundle: 180
-    dir: 18
-  - name: IdleGuideWindow.prefab
-    bundle: 181
-    dir: 18
-  - name: IdleInvestorWindow.prefab
-    bundle: 182
-    dir: 18
-  - name: IdleMapWindow.prefab
-    bundle: 183
-    dir: 18
-  - name: IdlePostSiteWindow.prefab
-    bundle: 184
-    dir: 18
-  - name: IdleSiteInfoWindow.prefab
-    bundle: 185
-    dir: 18
-  - name: IdleStatisticsWindow.prefab
-    bundle: 186
-    dir: 18
-  - name: IdleTaskWindow.prefab
-    bundle: 187
-    dir: 18
-  - name: IdleTopUI.prefab
-    bundle: 188
-    dir: 18
-  - name: IdleTruckInfoWindow.prefab
-    bundle: 189
-    dir: 18
-  - name: IdleWindow.prefab
-    bundle: 190
-    dir: 18
-  - name: OfflineWindow.prefab
-    bundle: 191
-    dir: 18
-  - name: IdleScene_1001.unity
-    bundle: 192
     dir: 19
+  - name: truck_lv01_down_1.png
+    bundle: 159
+    dir: 19
+  - name: truck_lv01_up_0.png
+    bundle: 160
+    dir: 19
+  - name: truck_lv01_up_1.png
+    bundle: 161
+    dir: 19
+  - name: truck_lv02_down_0.png
+    bundle: 162
+    dir: 19
+  - name: truck_lv02_down_1.png
+    bundle: 163
+    dir: 19
+  - name: truck_lv02_up_0.png
+    bundle: 164
+    dir: 19
+  - name: truck_lv02_up_1.png
+    bundle: 165
+    dir: 19
+  - name: truck_lv03_down_1.png
+    bundle: 166
+    dir: 19
+  - name: truck_lv03_up_0.png
+    bundle: 167
+    dir: 19
+  - name: truck_lv03_up_1.png
+    bundle: 168
+    dir: 19
+  - name: truck_lv04_down_0.png
+    bundle: 169
+    dir: 19
+  - name: truck_lv04_down_1.png
+    bundle: 170
+    dir: 19
+  - name: truck_lv04_up_0.png
+    bundle: 171
+    dir: 19
+  - name: truck_lv04_up_1.png
+    bundle: 172
+    dir: 19
+  - name: truck_lv05_down_1.png
+    bundle: 173
+    dir: 19
+  - name: truck_lv05_up_0.png
+    bundle: 174
+    dir: 19
+  - name: truck_lv05_up_1.png
+    bundle: 175
+    dir: 19
+  - name: doubleIncomeTip.prefab
+    bundle: 176
+    dir: 20
+  - name: finger.prefab
+    bundle: 177
+    dir: 20
+  - name: npctalk.prefab
+    bundle: 178
+    dir: 20
+  - name: tipUI.prefab
+    bundle: 179
+    dir: 20
+  - name: truckUnloadProcess.prefab
+    bundle: 180
+    dir: 20
+  - name: IdleBuildingWindow.prefab
+    bundle: 181
+    dir: 21
+  - name: IdleCityInfoWindow.prefab
+    bundle: 182
+    dir: 21
+  - name: IdleDoubleIncomeWindow.prefab
+    bundle: 183
+    dir: 21
+  - name: IdleEventWindow.prefab
+    bundle: 184
+    dir: 21
+  - name: IdleGuideWindow.prefab
+    bundle: 185
+    dir: 21
+  - name: IdleInvestorWindow.prefab
+    bundle: 186
+    dir: 21
+  - name: IdleMapWindow.prefab
+    bundle: 187
+    dir: 21
+  - name: IdlePostSiteWindow.prefab
+    bundle: 188
+    dir: 21
+  - name: IdleSiteInfoWindow.prefab
+    bundle: 189
+    dir: 21
+  - name: IdleStatisticsWindow.prefab
+    bundle: 190
+    dir: 21
+  - name: IdleTaskWindow.prefab
+    bundle: 191
+    dir: 21
+  - name: IdleTopUI.prefab
+    bundle: 192
+    dir: 21
+  - name: IdleTruckInfoWindow.prefab
+    bundle: 193
+    dir: 21
+  - name: IdleWindow.prefab
+    bundle: 194
+    dir: 21
+  - name: OfflineWindow.prefab
+    bundle: 195
+    dir: 21
+  - name: IdleScene_1001.unity
+    bundle: 196
+    dir: 22
   - name: 798.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: banma_xian.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: beijingdaxue.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: bian.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: bian_01.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: bianzhong.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: cai01.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: cai02.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: canyi.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: canyi_lv2.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: canyi_lv3.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: canzhuo.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: canzhuo_lv2.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: canzhuo_lv3.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: cao_hezi.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: cao_huatan.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: cao_kuai.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: cao_pen.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: cao_pin.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: caoping.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: chache_kong.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: changfang.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: changyi.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: chaow.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: chaow_zgui.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: chaungyiyuan.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: chepeng.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: chuan.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: chuan_pai.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: chuanghu.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: chuanghu_lv2.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: denglong.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: dengzi.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: diban01_lv2.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: diban_lv2.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: ditan.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: dizhuan.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: dizhuan01.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: dizhuan_lv1.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: dizhuan_lv3.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: dong_1.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: dong_2.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: dong_3.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: fangliang.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: feiji.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: feiji_01.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: feiji_shadow.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: gd.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: gongyuan_ditan.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: guang.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: guanggao_01.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: gugong_01.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: gugong_02.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: gugong_03.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: gugong_04.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: gugong_05.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: gugong_06.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: gugong_dizhuan.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: gugong_dizhuan01.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: gugong_menpai.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: gugong_qiang01.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: gugong_talou.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: gugong_yizhanpng.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: guizi01.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: guizi02.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: guizi03.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: guizi04.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: gushuyizhan.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: hua.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: huaping.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: hulu_yizhan.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: hushi.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: jiancai.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: jiaqin_paizi.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: jijiaqi1.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: jijiaqi_hong.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: jijiaqi_lv.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: jq_zgui.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: juminglou.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: juminglou_men.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: kdy_01.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: kongtiao.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: laoshu.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: long.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: lou_gaolou.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: lou_gaolou_01.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: lou_jumingpng.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: lou_xuexiao.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: lu.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: maomi.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: maomi_pai.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: mianju.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: money-npc.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: muma.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: paibian.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: paifang_lan.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: paizi.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: park_lock.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: penzai.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: penzai01.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: penzai02.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: penzai_lv2.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: qiang01.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: qiang01_.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: qiang02.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: qiang03.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: qiang03_.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: qiang04_.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: qiang_01.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: qiang_02.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: qiang_03.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: qiang_yuanzhu.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: qiao.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: qiao_pai.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: qingtianzhu.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: ren_kuaidipng.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: shadow.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: shadow_01.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: shafa.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: shafa_lv2.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: shafa_lv3.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: shizi.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: shu.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: shu_meihua.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: shui.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: suanpan.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: tche.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: test_yuan.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: text_01.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: text_cheng.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: text_di.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: text_jin.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: text_kuai.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: text_zi.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: thl_zgui.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: tiantan.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: tiezhi.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: tingche_gan.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: tingche_xian.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: tingjip.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: tishipai.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: tt_zgui.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: tu_01.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: unlockPrice.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: wubian.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: ww_dl.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: ww_dt.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: ww_dz.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: ww_guazi.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: ww_guz.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: ww_gz1.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: ww_ho.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: ww_hua.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: ww_mj2.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: ww_mj3.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: ww_pb.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: ww_pbs.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: ww_pf.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: ww_ping.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: ww_pz.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: ww_pz_.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: ww_qiang.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: ww_qiang_.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: ww_shu.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: ww_wan.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: ww_wushi.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: ww_zgui.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: ww_zhi.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: ww_zho.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: ww_zho_.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: ww_zhu.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: ww_zhuanpng.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: ww_zi.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: xiangzi_01.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: xianshiqi.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: xiaolu.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: xiaopaifang.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: xinz_01.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: xinz_02.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: xinzeng.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: xiongmao.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: yazi.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: yiliaoyizhan.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: yinshuiji.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: yinshuiji_lv2.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: yinying.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: yl_bt.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: yl_diban.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: yl_dn.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: yl_ds.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: yl_dyi.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: yl_gui.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: yl_hb.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: yl_huj.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: yl_huj_.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: yl_hz.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: yl_pz.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: yl_qia_boli_.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: yl_qiang_boli.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: yl_qt.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: yl_smj.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: yl_xyj.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: yl_xzb.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: yl_yz.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: yuanditan.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: zhamen.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: zhaocaimao.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: zhauanjiao-r.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: zhi_01.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: zhonglu.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: zhuanjiao-l.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: zhuanjiao.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: zhuanjiao2.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: zhuozi.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: zhuozi_lv2.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: zhuozi_lv3.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: zhuozi_lv4.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: zhuzi05.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: zhuzi06.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: zhuzi_01.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: zhuzi_02.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: zhuzi_03.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: zhuzi_04.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: zixingche.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: zixingche_01.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   - name: zu -6.png
-    bundle: 223
-    dir: 20
+    bundle: 227
+    dir: 23
   bundles:
-  - name: assets/3rdparty/spine/spine/editor/spine-unity/editor/gui/atlasasset icon.png.unity3d
+  - name: assets/3rd/spine/spine/editor/spine-unity/editor/gui/atlasasset icon.png.unity3d
     id: 0
     deps: 
-    len: 2391
-    hash: 6ed49fc8bb64fcce593e0515d2c71247
-  - name: assets/3rdparty/spine/spine/editor/spine-unity/editor/gui/skeletondataasset
-      icon.png.unity3d
+    len: 2384
+    hash: 525d9008a4933fc59cd399c8bc5c909a
+  - name: assets/3rd/spine/spine/editor/spine-unity/editor/gui/skeletondataasset icon.png.unity3d
     id: 1
     deps: 
-    len: 2419
-    hash: 805590800881abdaad365cc56a483b1c
-  - name: assets/3rdparty/spine/spine/runtime/spine-unity/skeletondatamodifierassets/blendmodematerials/skeletonpmaadditive.mat.unity3d
+    len: 2412
+    hash: c2f8295fee664e4b803cb03f19572126
+  - name: assets/3rd/spine/spine/runtime/spine-unity/skeletondatamodifierassets/blendmodematerials/skeletonpmaadditive.mat.unity3d
     id: 2
-    deps: fc000000
-    len: 2270
-    hash: e1c5319fadd3426d9d7ce14960e909d0
-  - name: assets/3rdparty/spine/spine/runtime/spine-unity/skeletondatamodifierassets/blendmodematerials/skeletonpmamultiply.mat.unity3d
+    deps: 00010000
+    len: 2262
+    hash: 6a3f5459efbe1ab367675c2275ee344f
+  - name: assets/3rd/spine/spine/runtime/spine-unity/skeletondatamodifierassets/blendmodematerials/skeletonpmamultiply.mat.unity3d
     id: 3
-    deps: fc000000
-    len: 2270
-    hash: 2b38dca5023b348c501d8291179d003c
-  - name: assets/3rdparty/spine/spine/runtime/spine-unity/skeletondatamodifierassets/blendmodematerials/skeletonpmascreen.mat.unity3d
+    deps: 00010000
+    len: 2259
+    hash: def0c5385ecc785135f9d7c7137814ae
+  - name: assets/3rd/spine/spine/runtime/spine-unity/skeletondatamodifierassets/blendmodematerials/skeletonpmascreen.mat.unity3d
     id: 4
-    deps: fc000000
-    len: 2303
-    hash: 7af3efc3b1388c037ae6496ba9789447
+    deps: 00010000
+    len: 2293
+    hash: 14071488c0c1944847c170ae6b0fdb2f
   - name: assets/animations/buiding.anim.unity3d
     id: 5
     deps: 
     len: 5856
-    hash: 561f1a572dd0e8d376a9c3027dba5d45
+    hash: 5a099605da38d9889f0e1d4a5fd1aeba
   - name: assets/animations/idle/finger.controller.unity3d
     id: 6
     deps: 07000000
     len: 4567
-    hash: 3ca6fba2f7b2d1fec76ea97fb077280a
+    hash: 4672b1cd84800a23cc38640a9007cdc0
   - name: assets/animations/idle/guide_finger.anim.unity3d
     id: 7
     deps: 
-    len: 5883
-    hash: 2d0b14e88219fc5e081f5ddfe819eb36
+    len: 5882
+    hash: 1a0a63624be3bcb4d43521087aeb298b
   - name: assets/animations/idle/loading.anim.unity3d
     id: 8
     deps: 
-    len: 5854
-    hash: 320d757b4a49bbb5ec0e54527c0d9815
+    len: 5853
+    hash: 880703a39cdd79e992a0344ee1c83671
   - name: assets/animations/idle/loading.controller.unity3d
     id: 9
     deps: 08000000
     len: 4552
-    hash: 815729b25b8a753a9ea6121fe48153d0
+    hash: fbe0c41ce8868ec640c89afc1784eeaf
   - name: assets/animations/idle/truck_scale.anim.unity3d
     id: 10
     deps: 
-    len: 6593
-    hash: 7a5622dbbf63af3c8f5e6cac9ffa41b4
+    len: 6592
+    hash: a981d46639a89a3d32a7bf46485ee548
   - name: assets/effects/materials/mat_piaoqian.mat.unity3d
     id: 11
     deps: 0c000000
-    len: 24037
-    hash: da926b3eab0b5157ffc387239766dc56
+    len: 23872
+    hash: ea61b6a29d8e0300f9a192466ef555c1
   - name: assets/effects/textures/qian.png.unity3d
     id: 12
     deps: 
     len: 14363
-    hash: 5cd954f2fc14b83fef7b903372c36ca2
+    hash: 07182ef66683d161d6b3631423570dcc
   - name: assets/fonts/alibaba.ttf.unity3d
     id: 13
     deps: 
     len: 7120071
-    hash: 058779b10550d941affa8ae421598003
-  - name: assets/res/audio/audio_fireworks.mp3.unity3d
+    hash: 725c76a88569276af2e666c4a5eed9be
+  - name: assets/gameassets/arts/ui/prefabs/uguiroot.prefab.unity3d
     id: 14
     deps: 
-    len: 43200
-    hash: 3e934091a19d0a52b18f6e05d1b362ac
-  - name: assets/res/audio/bgm.mp3.unity3d
+    len: 4474
+    hash: ebe763dd413ffb90b0880b6b9c72fd39
+  - name: assets/gameassets/arts/ui/prefabs/uibagdialog.prefab.unity3d
     id: 15
     deps: 
-    len: 1370480
-    hash: 2601c812751ff9fc8311e39221510c71
-  - name: assets/res/audio/buildsmoke.mp3.unity3d
+    len: 8968
+    hash: fae7529515509925f40d75a073c07543
+  - name: assets/gameassets/sprotobytes/sproto.bytes.unity3d
     id: 16
     deps: 
-    len: 6402
-    hash: fa3671cc8e09461e7cde937f824912ec
-  - name: assets/res/audio/buttonclick.mp3.unity3d
+    len: 1436
+    hash: 1d186ca9036bfe30695bbe3293f44e29
+  - name: assets/luabasetemp.unity3d
     id: 17
     deps: 
-    len: 2360
-    hash: 20651326d4e05370effedac50e29ae74
-  - name: assets/res/audio/buttonclose.mp3.unity3d
+    len: 623702
+    hash: d23b55b54ae774d9316c2b10cdd49d30
+  - name: assets/res/audio/audio_fireworks.mp3.unity3d
     id: 18
     deps: 
-    len: 3464
-    hash: 8a770a51701835b965b64637f09670df
-  - name: assets/res/audio/citytruckmove.mp3.unity3d
+    len: 43200
+    hash: c51aa3f41f99013ae815a76d9827309e
+  - name: assets/res/audio/bgm.mp3.unity3d
     id: 19
     deps: 
-    len: 6412
-    hash: 3c5d88a05cf83be0e128f0587c11e2f1
-  - name: assets/res/audio/citytruckstop.mp3.unity3d
+    len: 1370480
+    hash: 4ca07d76eceb9259d70a6a2f9b71aa6e
+  - name: assets/res/audio/buildsmoke.mp3.unity3d
     id: 20
     deps: 
-    len: 8129
-    hash: b1821b36efa6b58455423e9f2f8ce719
-  - name: assets/res/audio/clickfeiji.mp3.unity3d
+    len: 6402
+    hash: e64b4243d81f0a6b92ec63b138c7b706
+  - name: assets/res/audio/buttonclick.mp3.unity3d
     id: 21
     deps: 
-    len: 3194
-    hash: a1a7b3e832b7c5fc02439f7a2c9ef6f5
-  - name: assets/res/audio/clicknpctalk.mp3.unity3d
+    len: 2360
+    hash: 6fe46784d1c8e8407c4e49a0a431c184
+  - name: assets/res/audio/buttonclose.mp3.unity3d
     id: 22
     deps: 
-    len: 18866
-    hash: b8c9d636baf37eed7e369561e2080ca0
-  - name: assets/res/audio/doubleincome.mp3.unity3d
+    len: 3464
+    hash: 300c510bf0fff958151e82b78e45e4d6
+  - name: assets/res/audio/citytruckmove.mp3.unity3d
     id: 23
     deps: 
-    len: 22862
-    hash: be66a9a66d1b6990787dd84608226b1e
-  - name: assets/res/audio/forkunloaditem.mp3.unity3d
+    len: 6412
+    hash: bf2cee301ed29960a84190aa6bda44fd
+  - name: assets/res/audio/citytruckstop.mp3.unity3d
     id: 24
     deps: 
-    len: 5969
-    hash: 6237d6a051213403e1cf44358bfc4874
-  - name: assets/res/audio/login.mp3.unity3d
+    len: 8129
+    hash: 4809d0492a27cd857ce97453e8c0d92b
+  - name: assets/res/audio/clickfeiji.mp3.unity3d
     id: 25
     deps: 
-    len: 373718
-    hash: 64a23001a7b63b80432482b72d29a27a
-  - name: assets/res/audio/moneyfxshow.mp3.unity3d
+    len: 3194
+    hash: 7b222430f12f7063e52f57d6506d8935
+  - name: assets/res/audio/clicknpctalk.mp3.unity3d
     id: 26
     deps: 
-    len: 11958
-    hash: ad3cae0c9be4614df8e26438b7a7a939
-  - name: assets/res/audio/refreshfeiji.mp3.unity3d
+    len: 18866
+    hash: ef121d584508f4e2f8676ebb7bc0746f
+  - name: assets/res/audio/doubleincome.mp3.unity3d
     id: 27
     deps: 
-    len: 19941
-    hash: c406f64dfdff475ae2fc0641dae7b1ae
-  - name: assets/res/audio/showitem.mp3.unity3d
+    len: 22862
+    hash: e3b012c407d4d220de144518ea214005
+  - name: assets/res/audio/forkunloaditem.mp3.unity3d
     id: 28
     deps: 
-    len: 2839
-    hash: e681e5ca2b1e5229dee0a60820ef5010
-  - name: assets/res/audio/sitetruckstop.mp3.unity3d
+    len: 5969
+    hash: 4fbc7ebc513c7a3fcc51fb4a0b9c6473
+  - name: assets/res/audio/login.mp3.unity3d
     id: 29
     deps: 
-    len: 18607
-    hash: fa87137e67472ffbb5ffd42bfecd7346
-  - name: assets/res/audio/staffloaditem.mp3.unity3d
+    len: 373718
+    hash: ff49200f9e0f52098d5810ff72c3cdb7
+  - name: assets/res/audio/moneyfxshow.mp3.unity3d
     id: 30
     deps: 
-    len: 2485
-    hash: f65488adeaff8a472b417c2cf840ffb2
-  - name: assets/res/audio/vendingmoney.mp3.unity3d
+    len: 11958
+    hash: e7467617d096c939c2c081a0474156e7
+  - name: assets/res/audio/refreshfeiji.mp3.unity3d
     id: 31
     deps: 
-    len: 13152
-    hash: 1cb8ee1428296af883dd7b05a2a0d12a
-  - name: assets/res/audio/xiangzidown.mp3.unity3d
+    len: 19941
+    hash: c3b8ebd2f4fde0e69b1145ca8d1e6956
+  - name: assets/res/audio/showitem.mp3.unity3d
     id: 32
     deps: 
-    len: 5965
-    hash: b64d2959e23ef836a088b191eb077cd7
-  - name: assets/res/jsondata/idlecity.json.unity3d
+    len: 2839
+    hash: 925817ac6e0a9dc9d800c27378528db1
+  - name: assets/res/audio/sitetruckstop.mp3.unity3d
     id: 33
     deps: 
-    len: 1690
-    hash: 3f21176f9e5602ea0df0efc6363d4081
-  - name: assets/res/jsondata/idlecitycycle.json.unity3d
+    len: 18607
+    hash: 492247fd4463e2adebdf030a226e6665
+  - name: assets/res/audio/staffloaditem.mp3.unity3d
     id: 34
     deps: 
-    len: 1648
-    hash: 42c3315f15720d0e11f091e3be69815e
-  - name: assets/res/jsondata/idlecitystorevolume.json.unity3d
+    len: 2485
+    hash: ea1190013fddb1fded833be3690d5d06
+  - name: assets/res/audio/vendingmoney.mp3.unity3d
     id: 35
     deps: 
-    len: 1756
-    hash: e492bab41e4d2797871bda529f6ff51f
-  - name: assets/res/jsondata/idlecitytruckres.json.unity3d
+    len: 13152
+    hash: 868d131bde4ae9e381e71bab8193429d
+  - name: assets/res/audio/xiangzidown.mp3.unity3d
     id: 36
     deps: 
-    len: 1435
-    hash: 032e62d46e350e8b164be37a668a6cdd
-  - name: assets/res/jsondata/idlecityvolume.json.unity3d
+    len: 5965
+    hash: 51f53873e0bf3fe7345b17862231abb2
+  - name: assets/res/jsondata/idlecity.json.unity3d
     id: 37
     deps: 
-    len: 1958
-    hash: 93293dbd0b26f13f0e8efab78a98aae0
-  - name: assets/res/jsondata/idleguide.json.unity3d
+    len: 1690
+    hash: 8903e610662f2c7dfaab441d3c5c5c3c
+  - name: assets/res/jsondata/idlecitycycle.json.unity3d
     id: 38
     deps: 
-    len: 1433
-    hash: fbb618d068f341f24c03925c1f9a3f16
-  - name: assets/res/jsondata/idleguidestep.json.unity3d
+    len: 1648
+    hash: 87a8a9dbf19054936e37ace83ffe516d
+  - name: assets/res/jsondata/idlecitystorevolume.json.unity3d
     id: 39
     deps: 
-    len: 3034
-    hash: 2043b8f5a4c756f7145e166cda6d1b80
-  - name: assets/res/jsondata/idleitem.json.unity3d
+    len: 1756
+    hash: 16aa1dea2afcfdef0f9344abc2eb7f59
+  - name: assets/res/jsondata/idlecitytruckres.json.unity3d
     id: 40
     deps: 
-    len: 1375
-    hash: d190c73d167624fb2c160f038bbd193a
-  - name: assets/res/jsondata/idlemaintask.json.unity3d
+    len: 1435
+    hash: 732c425a0a7fd396c3fc8638a2172ffa
+  - name: assets/res/jsondata/idlecityvolume.json.unity3d
     id: 41
     deps: 
-    len: 2322
-    hash: a6622927164cae7a8705d53d6d08f43a
-  - name: assets/res/jsondata/idleshelfres.json.unity3d
+    len: 1958
+    hash: 1c1364d1057ea1e1ab8796700d8c825d
+  - name: assets/res/jsondata/idleguide.json.unity3d
     id: 42
     deps: 
-    len: 1292
-    hash: 8e33d13b6e5f6d4eaf5d9e7fd1383ace
-  - name: assets/res/jsondata/idlesite.json.unity3d
+    len: 1433
+    hash: dc1052a795162c02c015a3c11b257c6e
+  - name: assets/res/jsondata/idleguidestep.json.unity3d
     id: 43
     deps: 
-    len: 1984
-    hash: 87f27c5a61928827d98cfbf2c7d05949
-  - name: assets/res/jsondata/idlesitebase1.json.unity3d
+    len: 3034
+    hash: 45918d14394439b2221c6e200c07452c
+  - name: assets/res/jsondata/idleitem.json.unity3d
     id: 44
     deps: 
-    len: 45482
-    hash: c8932db357186b2979a6720c7d1767bf
-  - name: assets/res/jsondata/idlesitebase2.json.unity3d
+    len: 1375
+    hash: 8031f16819639e8c124ddde8e21df230
+  - name: assets/res/jsondata/idlemaintask.json.unity3d
     id: 45
     deps: 
-    len: 46934
-    hash: e5edb4e7209a27f76e33665beb9e90b2
-  - name: assets/res/jsondata/idlesitebase3.json.unity3d
+    len: 2322
+    hash: d0cc5c6232ca04eca986e491d99cc18a
+  - name: assets/res/jsondata/idleshelfres.json.unity3d
     id: 46
     deps: 
-    len: 46688
-    hash: 56a84b591e040e7cb58b1a53fda1cef8
-  - name: assets/res/jsondata/idlesitebase4.json.unity3d
+    len: 1292
+    hash: 0834a595f55987fd3c10121100ba2143
+  - name: assets/res/jsondata/idlesite.json.unity3d
     id: 47
     deps: 
-    len: 51072
-    hash: 3ee01b94caa73b514e44ab21e401b243
-  - name: assets/res/jsondata/idlesitebase5.json.unity3d
+    len: 1984
+    hash: dbfb69d023eac94cc4ea96953157635d
+  - name: assets/res/jsondata/idlesitebase1.json.unity3d
     id: 48
     deps: 
-    len: 49914
-    hash: 0959169d5e469945e05769decb6f3c6c
-  - name: assets/res/jsondata/idlesitebase6.json.unity3d
+    len: 45482
+    hash: 10118ce4f6568ac5cf88897e2ad3a246
+  - name: assets/res/jsondata/idlesitebase2.json.unity3d
     id: 49
     deps: 
-    len: 51030
-    hash: 1d728296aa71b35a4d69e72622e7e612
-  - name: assets/res/jsondata/idlesitegrade1.json.unity3d
+    len: 46934
+    hash: 7e757fdba47df0db97830ec37b784d3a
+  - name: assets/res/jsondata/idlesitebase3.json.unity3d
     id: 50
     deps: 
-    len: 2074
-    hash: 0fcab6217c28942066a827779825736c
-  - name: assets/res/jsondata/idlesitegrade2.json.unity3d
+    len: 46688
+    hash: 5362fe006905eacdb8373400d1de7e9b
+  - name: assets/res/jsondata/idlesitebase4.json.unity3d
     id: 51
     deps: 
-    len: 2068
-    hash: 8fd3b9395888758d128ab5e4d189f197
-  - name: assets/res/jsondata/idlesitegrade3.json.unity3d
+    len: 51072
+    hash: 0f10f6659ccebd0ac719a83e61dbe90c
+  - name: assets/res/jsondata/idlesitebase5.json.unity3d
     id: 52
     deps: 
-    len: 2075
-    hash: ec75776395ef0d930913d45dc755db74
-  - name: assets/res/jsondata/idlesitegrade4.json.unity3d
+    len: 49914
+    hash: 7aa7cf2b044f7b8e5257298fad752003
+  - name: assets/res/jsondata/idlesitebase6.json.unity3d
     id: 53
     deps: 
-    len: 2009
-    hash: 487b97d4cce2d6eda094a25184adfc83
-  - name: assets/res/jsondata/idlesitegrade5.json.unity3d
+    len: 51030
+    hash: 6bba7c166d6ac761f9f535018589b8fa
+  - name: assets/res/jsondata/idlesitegrade1.json.unity3d
     id: 54
     deps: 
-    len: 2064
-    hash: ad53691ea93e6c56363dc560a5045dde
-  - name: assets/res/jsondata/idlesitegrade6.json.unity3d
+    len: 2074
+    hash: e9e7f276780c8f2472d1db3cf98b5393
+  - name: assets/res/jsondata/idlesitegrade2.json.unity3d
     id: 55
     deps: 
-    len: 2064
-    hash: 35897ffb03fcc4c84d78d6d83938556c
-  - name: assets/res/jsondata/idlesitetime1.json.unity3d
+    len: 2068
+    hash: bdaa471f98530686f05cf388b4d2ac80
+  - name: assets/res/jsondata/idlesitegrade3.json.unity3d
     id: 56
     deps: 
-    len: 1700
-    hash: c172d6d15a6ca1a9c5a74e9f7def4316
-  - name: assets/res/jsondata/idlesitetime2.json.unity3d
+    len: 2075
+    hash: 8ffb2d0d4d672f468fed47efeb4cecf7
+  - name: assets/res/jsondata/idlesitegrade4.json.unity3d
     id: 57
     deps: 
-    len: 1706
-    hash: ac2d2a2b96e2210c7e20f0aa3fabd1e0
-  - name: assets/res/jsondata/idlesitetime3.json.unity3d
+    len: 2009
+    hash: 870e6de6cd7a64d25d1e017606db7018
+  - name: assets/res/jsondata/idlesitegrade5.json.unity3d
     id: 58
     deps: 
-    len: 1721
-    hash: 649723fe6464fa95af1853dc707388d8
-  - name: assets/res/jsondata/idlesitetime4.json.unity3d
+    len: 2064
+    hash: 948a583addec41b6ae27fe4b6c65cc13
+  - name: assets/res/jsondata/idlesitegrade6.json.unity3d
     id: 59
     deps: 
-    len: 1708
-    hash: dbb34f2bc15dd524a5effce5ec64c79e
-  - name: assets/res/jsondata/idlesitetime5.json.unity3d
+    len: 2064
+    hash: b08f6a23b3a549bd8c7fdddc80d5833a
+  - name: assets/res/jsondata/idlesitetime1.json.unity3d
     id: 60
     deps: 
-    len: 1717
-    hash: 62172619108ebed3b3d30c68ba83e418
-  - name: assets/res/jsondata/idlesitetime6.json.unity3d
+    len: 1700
+    hash: 102cb27a33264a68b3999a9cde6bc732
+  - name: assets/res/jsondata/idlesitetime2.json.unity3d
     id: 61
     deps: 
-    len: 1720
-    hash: b38fe5686efc6f02de6955de1cf2bcec
-  - name: assets/res/jsondata/idlesitevolume1.json.unity3d
+    len: 1706
+    hash: bbb6b0e6036cc6f18bfecbcf89011117
+  - name: assets/res/jsondata/idlesitetime3.json.unity3d
     id: 62
     deps: 
-    len: 1423
-    hash: 5a21422c796be43af48786c4068a5c86
-  - name: assets/res/jsondata/idlesitevolume2.json.unity3d
+    len: 1721
+    hash: fe22e64cbe2280ca1061316490d042d4
+  - name: assets/res/jsondata/idlesitetime4.json.unity3d
     id: 63
     deps: 
-    len: 1426
-    hash: 560ef3c279ed5d006373c90734245abf
-  - name: assets/res/jsondata/idlesitevolume3.json.unity3d
+    len: 1708
+    hash: b10b092942a24939a0733ca2d569cf56
+  - name: assets/res/jsondata/idlesitetime5.json.unity3d
     id: 64
     deps: 
-    len: 1427
-    hash: 20ffdab5db0f5531d72cf4b7ee91f284
-  - name: assets/res/jsondata/idlesitevolume4.json.unity3d
+    len: 1717
+    hash: 9b4393a4cf79d7058123e08177826f7d
+  - name: assets/res/jsondata/idlesitetime6.json.unity3d
     id: 65
     deps: 
-    len: 1421
-    hash: 40dc0e9c7f2c366f25e155ea1296a826
-  - name: assets/res/jsondata/idlesitevolume5.json.unity3d
+    len: 1720
+    hash: 725542c925a6004ad2c15b5999cffd72
+  - name: assets/res/jsondata/idlesitevolume1.json.unity3d
     id: 66
     deps: 
-    len: 1438
-    hash: 7e6f2f528b9e7341b1b6f9e534985332
-  - name: assets/res/jsondata/idlesitevolume6.json.unity3d
+    len: 1423
+    hash: d029038835afadd297c32d7c80d4da2a
+  - name: assets/res/jsondata/idlesitevolume2.json.unity3d
     id: 67
     deps: 
-    len: 1423
-    hash: 01cb3727bc4a6d3942dc2e4152134f7e
-  - name: assets/res/jsondata/idlespecialevent.json.unity3d
+    len: 1426
+    hash: 2d6452d4b136da158adea025b4126520
+  - name: assets/res/jsondata/idlesitevolume3.json.unity3d
     id: 68
     deps: 
-    len: 1450
-    hash: c8eb66de3dbab51a8638853c46d07144
-  - name: assets/res/jsondata/idletask.json.unity3d
+    len: 1427
+    hash: 73c00d1e0147cd8c68cc89e5f365be79
+  - name: assets/res/jsondata/idlesitevolume4.json.unity3d
     id: 69
     deps: 
-    len: 2187
-    hash: ccb124cdd07275b3ba65019221a687a3
-  - name: assets/res/jsondata/idletrucklv.json.unity3d
+    len: 1421
+    hash: 41de10a3aebde9de252d9f1e3543a072
+  - name: assets/res/jsondata/idlesitevolume5.json.unity3d
     id: 70
     deps: 
-    len: 1387
-    hash: e4bd9034aff0833987cb8cf771673bab
-  - name: assets/res/jsondata/idletrucknum.json.unity3d
+    len: 1438
+    hash: 4dbf2cd79a5b2914bc98fb0a1cb85753
+  - name: assets/res/jsondata/idlesitevolume6.json.unity3d
     id: 71
     deps: 
-    len: 1610
-    hash: 43b646d37a100098871e0545d253d387
-  - name: assets/res/jsondata/idletruckres.json.unity3d
+    len: 1423
+    hash: 1285a40dfd1d9e107f77c9cecfb330b5
+  - name: assets/res/jsondata/idlespecialevent.json.unity3d
     id: 72
     deps: 
-    len: 1490
-    hash: 9e0dbda9c8709cf799970a5cfaa808dc
-  - name: assets/res/jsondata/languagedata.json.unity3d
+    len: 1450
+    hash: 17b9f2bae33efcfe99d0eacd38e00f38
+  - name: assets/res/jsondata/idletask.json.unity3d
     id: 73
     deps: 
-    len: 1275
-    hash: d0aa4b05cab332cb007ac24e38efd7ca
-  - name: assets/res/jsondata/unitconvert.json.unity3d
+    len: 2187
+    hash: 836648ccc0b281379edede7982a1af45
+  - name: assets/res/jsondata/idletrucklv.json.unity3d
     id: 74
     deps: 
-    len: 9309
-    hash: 52347e88995ba66f7d4f6b56ab093d7f
-  - name: assets/res/prefabs/idle/common/faced.prefab.unity3d
+    len: 1387
+    hash: 18d351fd2b89c80d5c70e668b0d2e8bb
+  - name: assets/res/jsondata/idletrucknum.json.unity3d
     id: 75
-    deps: 78000000
-    len: 3388
-    hash: 8e6d6d9234809df600b16310a3e66a25
-  - name: assets/res/prefabs/idle/common/xiangzi.prefab.unity3d
+    deps: 
+    len: 1610
+    hash: 23ab0e648171b6e78761f05496e649cc
+  - name: assets/res/jsondata/idletruckres.json.unity3d
     id: 76
-    deps: 7b000000
-    len: 3742
-    hash: 080954364e57fba138cb2e4dd6f9ab0e
-  - name: assets/res/prefabs/idle/fork.prefab.unity3d
+    deps: 
+    len: 1490
+    hash: 86a98ed169b7da1b85e3528fd99a2ee5
+  - name: assets/res/jsondata/languagedata.json.unity3d
     id: 77
+    deps: 
+    len: 1275
+    hash: 4e9f9a920405a944efb7065dd780d162
+  - name: assets/res/jsondata/unitconvert.json.unity3d
+    id: 78
+    deps: 
+    len: 9309
+    hash: 25cf1041a6c994afda0a13aaf58cd082
+  - name: assets/res/prefabs/idle/common/faced.prefab.unity3d
+    id: 79
+    deps: 7c000000
+    len: 3388
+    hash: b74550e101d5b1fff594f06681dd71a5
+  - name: assets/res/prefabs/idle/common/xiangzi.prefab.unity3d
+    id: 80
+    deps: 7f000000
+    len: 3742
+    hash: 97c2922de2cfb4ecdfa13961ce53a119
+  - name: assets/res/prefabs/idle/fork.prefab.unity3d
+    id: 81
     deps: 0a000000
     len: 4035
-    hash: ed78b72552f3e4b025dae47c34076c01
+    hash: feaca53956916e6dc3b3a38167ae958c
   - name: assets/res/prefabs/idle/fork/fork_down_left.prefab.unity3d
-    id: 78
-    deps: 0a0000007e00000081000000
-    len: 5389
-    hash: 7fee8c4b57122ba054a433d87d145642
-  - name: assets/res/prefabs/idle/fork/fork_down_right.prefab.unity3d
-    id: 79
-    deps: 0a0000007e00000081000000
-    len: 5361
-    hash: 7821920cc1daa7048012d19440b633cd
-  - name: assets/res/prefabs/idle/fork/fork_up_left.prefab.unity3d
-    id: 80
-    deps: 0a0000007f0000008000000081000000
-    len: 5574
-    hash: e674fd6a5333aaf9cc0dbde8a336aff8
-  - name: assets/res/prefabs/idle/fork/fork_up_right.prefab.unity3d
-    id: 81
-    deps: 0a0000007f0000008000000081000000
-    len: 5597
-    hash: 2d98b4ecc79d22e679a3ed59c319d6b2
-  - name: assets/res/prefabs/idle/fx/feiji_piaoqian.prefab.unity3d
     id: 82
-    deps: 0b0000000c000000
-    len: 52426
-    hash: 6ab74a710a12bce949f4083f12ce1fa9
-  - name: assets/res/prefabs/idle/fx/fx_baoguang_dianji.prefab.unity3d
+    deps: 0a0000008200000085000000
+    len: 5389
+    hash: 7ee4ad1b64d8156027dcbaf7f1849426
+  - name: assets/res/prefabs/idle/fork/fork_down_right.prefab.unity3d
     id: 83
-    deps: 
-    len: 43963
-    hash: 3cbd2e2a7250acc5f80646f28acdaf59
-  - name: assets/res/prefabs/idle/fx/fx_dianji.prefab.unity3d
+    deps: 0a0000008200000085000000
+    len: 5361
+    hash: 25ba81c6eb132f8150a1dbfa1994e9eb
+  - name: assets/res/prefabs/idle/fork/fork_up_left.prefab.unity3d
     id: 84
-    deps: 
-    len: 44603
-    hash: 3e350954dfdaae8536ce49aeb7bb336b
-  - name: assets/res/prefabs/idle/fx/fx_feijinbi_baoji.prefab.unity3d
+    deps: 0a000000830000008400000085000000
+    len: 5574
+    hash: 93c7dea6977389778bee808db5cd948c
+  - name: assets/res/prefabs/idle/fork/fork_up_right.prefab.unity3d
     id: 85
-    deps: 
-    len: 60708
-    hash: 1f0988fb24142c8c3a3f1e2648b07607
-  - name: assets/res/prefabs/idle/fx/fx_feiqian.prefab.unity3d
+    deps: 0a000000830000008400000085000000
+    len: 5597
+    hash: 9021d17c6dd226ed5aac9156994e3c36
+  - name: assets/res/prefabs/idle/fx/feiji_piaoqian.prefab.unity3d
     id: 86
-    deps: 
-    len: 53236
-    hash: 3e5ed4234d653b2589f8f91c89310dec
-  - name: assets/res/prefabs/idle/fx/fx_jianzaoyanwu_01.prefab.unity3d
+    deps: 0b0000000c000000
+    len: 51760
+    hash: 1d7d7b6b9fc902b6c2bf96adf36f7c02
+  - name: assets/res/prefabs/idle/fx/fx_baoguang_dianji.prefab.unity3d
     id: 87
     deps: 
-    len: 53375
-    hash: 0311c11d86693a5182a82a3cc6103635
-  - name: assets/res/prefabs/idle/fx/fx_kd_caidai_lizi.prefab.unity3d
+    len: 44070
+    hash: 1c0421a3d2637c179aa4150b39115246
+  - name: assets/res/prefabs/idle/fx/fx_dianji.prefab.unity3d
     id: 88
     deps: 
-    len: 44195
-    hash: a71ddd8c71571456d013f3cbf36c4ea5
-  - name: assets/res/prefabs/idle/fx/fx_kd_moneyget.prefab.unity3d
+    len: 44837
+    hash: bc2dbe75c8f3ca587a896f8a682f5a80
+  - name: assets/res/prefabs/idle/fx/fx_feijinbi_baoji.prefab.unity3d
     id: 89
     deps: 
-    len: 58690
-    hash: 5f047a036607dcd31a72fe46809d101a
-  - name: assets/res/prefabs/idle/fx/fx_kd_quan.prefab.unity3d
+    len: 62563
+    hash: 87645d717b5302bd40220c052004c7ac
+  - name: assets/res/prefabs/idle/fx/fx_feiqian.prefab.unity3d
     id: 90
     deps: 
-    len: 42307
-    hash: 83581e73140c78e9c13931e86a08f12b
-  - name: assets/res/prefabs/idle/fx/fx_kd_shengji_site.prefab.unity3d
+    len: 50786
+    hash: 7f282b31c1ad6632cc31f5d42ffc1249
+  - name: assets/res/prefabs/idle/fx/fx_jianzaoyanwu_01.prefab.unity3d
     id: 91
     deps: 
-    len: 17805
-    hash: 50170123094b9bf91205d6b14593884c
-  - name: assets/res/prefabs/idle/fx/fx_lihua.prefab.unity3d
+    len: 56158
+    hash: 64a1be06ea70f033fe77b19d472fd0f7
+  - name: assets/res/prefabs/idle/fx/fx_kd_caidai_lizi.prefab.unity3d
     id: 92
     deps: 
-    len: 81729
-    hash: aad319394f6fb48f4e04e6d6fcbded7d
-  - name: assets/res/prefabs/idle/fx/fx_nongchangshengji_01.prefab.unity3d
+    len: 43877
+    hash: 0fdb966195800eb48ba340462cf991d5
+  - name: assets/res/prefabs/idle/fx/fx_kd_moneyget.prefab.unity3d
     id: 93
     deps: 
-    len: 91186
-    hash: ef3b33f8ffba08869f548346c7a5bad0
-  - name: assets/res/prefabs/idle/fx/fx_tchechang.prefab.unity3d
+    len: 59137
+    hash: be12167f91c7c77aa8ff9dce099f9136
+  - name: assets/res/prefabs/idle/fx/fx_kd_quan.prefab.unity3d
     id: 94
     deps: 
-    len: 77486
-    hash: 819aa4faa2e9a1836ddceee99ddfbec3
-  - name: assets/res/prefabs/idle/fx/fx_ui_money.prefab.unity3d
+    len: 41983
+    hash: a2d938840bb4abe20307ad20ed1ad557
+  - name: assets/res/prefabs/idle/fx/fx_kd_shengji_site.prefab.unity3d
     id: 95
     deps: 
-    len: 69033
-    hash: 96568bdc7eefa933ab7b69cd4c6ec563
-  - name: assets/res/prefabs/idle/fx/fx_ui_siteview.prefab.unity3d
+    len: 17757
+    hash: dfedd06e1d2234a46dc0afd72100924d
+  - name: assets/res/prefabs/idle/fx/fx_lihua.prefab.unity3d
     id: 96
-    deps: 0d000000
-    len: 4290
-    hash: ea7c50f1bb65caa8cf8ef198f74e5b4b
-  - name: assets/res/prefabs/idle/fx/fx_youxi_jieshu_01.prefab.unity3d
+    deps: 
+    len: 105433
+    hash: a12f1dbb2030c7c7ffd91635cba65952
+  - name: assets/res/prefabs/idle/fx/fx_nongchangshengji_01.prefab.unity3d
     id: 97
     deps: 
-    len: 81677
-    hash: 4437a6e9680886f276e4fca96b98b057
-  - name: assets/res/prefabs/idle/idlecitytruck.prefab.unity3d
+    len: 200363
+    hash: 571fa4442977a3e7a06555cd3e0a9d7f
+  - name: assets/res/prefabs/idle/fx/fx_tchechang.prefab.unity3d
     id: 98
-    deps: 0a00000073000000
-    len: 4272
-    hash: 86150f5f5bd5fc75f405b7efd3c85fe8
-  - name: assets/res/prefabs/idle/npctruck.prefab.unity3d
+    deps: 
+    len: 76821
+    hash: 15b061508d7328ba3e83e27a2550f153
+  - name: assets/res/prefabs/idle/fx/fx_ui_money.prefab.unity3d
     id: 99
-    deps: 0a0000009b000000
-    len: 4100
-    hash: 40bb53ddf164eb2a4db4224c1e2f58b6
-  - name: assets/res/prefabs/idle/parklock.prefab.unity3d
+    deps: 
+    len: 62285
+    hash: 972b07114190eee14f5293cffc52e0d4
+  - name: assets/res/prefabs/idle/fx/fx_ui_siteview.prefab.unity3d
     id: 100
-    deps: df000000
-    len: 3697
-    hash: 1c64e7330e197b6eb91ba11fa2759495
-  - name: assets/res/prefabs/idle/plane.prefab.unity3d
+    deps: 0d000000
+    len: 4290
+    hash: 11aa0b704a2d8e54b95db7968ca9f3a9
+  - name: assets/res/prefabs/idle/fx/fx_youxi_jieshu_01.prefab.unity3d
     id: 101
     deps: 
-    len: 9381
-    hash: b6922b4e1fad90a938c6aac539415f76
-  - name: assets/res/prefabs/idle/postsite/chuangyiyuan_lv1.prefab.unity3d
+    len: 75464
+    hash: 812899a61c970d6c1192223f0b85e6b2
+  - name: assets/res/prefabs/idle/idlecitytruck.prefab.unity3d
     id: 102
-    deps: c7000000c8000000c9000000ca000000cb000000cc000000df000000fc000000
-    len: 16764
-    hash: 1dd0fb5f97d47b825dc6d74b4b6e5158
-  - name: assets/res/prefabs/idle/postsite/ditan_lv1.prefab.unity3d
+    deps: 0a00000077000000
+    len: 4272
+    hash: a26ebd78782b1a0c8418fed8e918b1d8
+  - name: assets/res/prefabs/idle/npctruck.prefab.unity3d
     id: 103
-    deps: d9000000da000000db000000dc000000dd000000de000000df000000fc000000
-    len: 12667
-    hash: 6fa6ca3ebb6129d75bd6507ca6d8adfa
-  - name: assets/res/prefabs/idle/postsite/jiaqin_lv1.prefab.unity3d
+    deps: 0a0000009f000000
+    len: 4100
+    hash: 2e93dc637992fde6d7be8c214e58ffd9
+  - name: assets/res/prefabs/idle/parklock.prefab.unity3d
     id: 104
-    deps: df000000
-    len: 10287
-    hash: 852247f6340304a67536c8e6bd6960ad
-  - name: assets/res/prefabs/idle/postsite/jiaqin_lv2.prefab.unity3d
+    deps: e3000000
+    len: 3697
+    hash: 5b803fbddb6044148e5f98202bcb9a38
+  - name: assets/res/prefabs/idle/plane.prefab.unity3d
     id: 105
-    deps: df000000
-    len: 14481
-    hash: b762b148b75ad7d3f1bfd6767be87dfd
-  - name: assets/res/prefabs/idle/postsite/jiaqin_lv3.prefab.unity3d
+    deps: 
+    len: 9381
+    hash: 376a2440de9d0bda532226cc73174cdc
+  - name: assets/res/prefabs/idle/postsite/chuangyiyuan_lv1.prefab.unity3d
     id: 106
-    deps: df000000
-    len: 12013
-    hash: 7b920204e760350191994a597997d02d
-  - name: assets/res/prefabs/idle/postsite/tiantan_lv1.prefab.unity3d
+    deps: cb000000cc000000cd000000ce000000cf000000d0000000e300000000010000
+    len: 16764
+    hash: b255a7d960a97a46670816b6a0b17c00
+  - name: assets/res/prefabs/idle/postsite/ditan_lv1.prefab.unity3d
     id: 107
-    deps: cd000000ce000000cf000000d0000000d1000000d2000000df000000fc000000
-    len: 12467
-    hash: 3ad21d23fd4ce258df06d4943f05f142
-  - name: assets/res/prefabs/idle/postsite/wenwan_lv2.prefab.unity3d
+    deps: dd000000de000000df000000e0000000e1000000e2000000e300000000010000
+    len: 12667
+    hash: 9520248a303be5752e5557c90702ad58
+  - name: assets/res/prefabs/idle/postsite/jiaqin_lv1.prefab.unity3d
     id: 108
-    deps: d3000000d4000000d5000000d6000000d7000000d8000000df000000fc000000
-    len: 14927
-    hash: e5a0f82db8890d59e0e22332dc86680a
-  - name: assets/res/prefabs/idle/postsite/yiliao_lv2.prefab.unity3d
+    deps: e3000000
+    len: 10286
+    hash: a96345e989313ec16a0645b1da4426ad
+  - name: assets/res/prefabs/idle/postsite/jiaqin_lv2.prefab.unity3d
     id: 109
-    deps: df000000
-    len: 10847
-    hash: a8408d7568ecc59d48b1c44eeb480343
-  - name: assets/res/prefabs/idle/shelf.prefab.unity3d
+    deps: e3000000
+    len: 14481
+    hash: 3e12a1dc6f2df75095a4e083c9338bd9
+  - name: assets/res/prefabs/idle/postsite/jiaqin_lv3.prefab.unity3d
     id: 110
-    deps: 050000008c00000091000000
-    len: 4728
-    hash: d9c73eed87db140db8b50f2ba39fb834
-  - name: assets/res/prefabs/idle/staffs/remover.prefab.unity3d
+    deps: e3000000
+    len: 12013
+    hash: 2b415374de9fff8f89f02410d3da903d
+  - name: assets/res/prefabs/idle/postsite/tiantan_lv1.prefab.unity3d
     id: 111
-    deps: c1000000c2000000c3000000c4000000c5000000c6000000e0000000fc000000
-    len: 5679
-    hash: 8f26f1df702b8417ed4a034e72dd617c
-  - name: assets/res/prefabs/idle/staffs/staff1.prefab.unity3d
+    deps: d1000000d2000000d3000000d4000000d5000000d6000000e300000000010000
+    len: 12467
+    hash: ffcfbbfb4c111187e18daff4ff0e92a2
+  - name: assets/res/prefabs/idle/postsite/wenwan_lv2.prefab.unity3d
     id: 112
-    deps: e0000000fc000000
-    len: 28977
-    hash: 470a7134988f2e905806ce0d768c33c5
-  - name: assets/res/prefabs/idle/staffs/staff2.prefab.unity3d
+    deps: d7000000d8000000d9000000da000000db000000dc000000e300000000010000
+    len: 14927
+    hash: ddd766ea960a4f46116a29aacc634ea9
+  - name: assets/res/prefabs/idle/postsite/yiliao_lv2.prefab.unity3d
     id: 113
-    deps: c1000000c2000000c3000000c4000000c5000000c6000000e0000000fc000000
-    len: 5676
-    hash: f9b46a8293cc387a3d568e9e42d4af10
-  - name: assets/res/prefabs/idle/truck.prefab.unity3d
+    deps: e3000000
+    len: 10847
+    hash: 743c6e7e61e7129a030dad8f7cbcd752
+  - name: assets/res/prefabs/idle/shelf.prefab.unity3d
     id: 114
-    deps: 0a000000820000009b000000
-    len: 5210
-    hash: fc8c5a8a2a8e93414990d01cd4438065
-  - name: assets/res/textures/idle/citytruck/citytruck_lv01_up_1.png.unity3d
+    deps: 050000009000000095000000
+    len: 4728
+    hash: c232ef63e1c72be1106234ef645e6ee9
+  - name: assets/res/prefabs/idle/staffs/remover.prefab.unity3d
     id: 115
-    deps: 
-    len: 21848
-    hash: f6db6a6645c08e5889d95cc50122a18d
-  - name: assets/res/textures/idle/citytruck/citytruck_lv01_up_2.png.unity3d
+    deps: c5000000c6000000c7000000c8000000c9000000ca000000e400000000010000
+    len: 5679
+    hash: c75059774da836f3514f6b9331e0958a
+  - name: assets/res/prefabs/idle/staffs/staff1.prefab.unity3d
     id: 116
-    deps: 
-    len: 22430
-    hash: 9ed45c164c890c3f671c796afe9fcaf5
-  - name: assets/res/textures/idle/citytruck/citytruck_lv01_up_3.png.unity3d
+    deps: e400000000010000
+    len: 28977
+    hash: 364b7f78889cffb96124446d0a6a717e
+  - name: assets/res/prefabs/idle/staffs/staff2.prefab.unity3d
     id: 117
-    deps: 
-    len: 22480
-    hash: af87f1e503c8d318ac0a59998c520f12
-  - name: assets/res/textures/idle/common/btn-11.png.unity3d
+    deps: c5000000c6000000c7000000c8000000c9000000ca000000e400000000010000
+    len: 5676
+    hash: b69e7a5dfef887537c7fc394eba44439
+  - name: assets/res/prefabs/idle/truck.prefab.unity3d
     id: 118
-    deps: 
-    len: 33318
-    hash: cefb6ffbd1dd8f0e46630b60312a5a77
-  - name: assets/res/textures/idle/common/btn-shopping.png.unity3d
+    deps: 0a000000860000009f000000
+    len: 5210
+    hash: 52dcfc6a08af4a37ca25186c38258bfb
+  - name: assets/res/textures/idle/citytruck/citytruck_lv01_up_1.png.unity3d
     id: 119
     deps: 
-    len: 98013
-    hash: 66e9ac8c90e243762b64476829da51e6
-  - name: assets/res/textures/idle/common/faced.png.unity3d
+    len: 21157
+    hash: 5402bf444c53be3022adafd1fcb529a0
+  - name: assets/res/textures/idle/citytruck/citytruck_lv01_up_2.png.unity3d
     id: 120
     deps: 
-    len: 5993
-    hash: 86293537abe8be6b9af2d8ab50357129
-  - name: assets/res/textures/idle/common/icon-11.png.unity3d
+    len: 21410
+    hash: 36e400806e1700bcdd7f610117220adc
+  - name: assets/res/textures/idle/citytruck/citytruck_lv01_up_3.png.unity3d
     id: 121
     deps: 
-    len: 18036
-    hash: 26f55a0dce839c3a819cf9fd3adc33c3
-  - name: assets/res/textures/idle/common/icon-shopping.png.unity3d
+    len: 21515
+    hash: fb2de3dd9c8ac8a71e5314b53f7b6fbe
+  - name: assets/res/textures/idle/common/btn-11.png.unity3d
     id: 122
     deps: 
-    len: 39955
-    hash: b031e5d3e497cf270d6f950f88d464a4
-  - name: assets/res/textures/idle/common/muxiang.png.unity3d
+    len: 33318
+    hash: 00d0af789bd8845a9a93d3264edb0893
+  - name: assets/res/textures/idle/common/btn-shopping.png.unity3d
     id: 123
     deps: 
-    len: 29956
-    hash: 9cc675a7525f597fde552d2666448ca7
-  - name: assets/res/textures/idle/floorres/dizhuan_01.png.unity3d
+    len: 89113
+    hash: c0590bc0e9d2da46ee6134ccc8ee4343
+  - name: assets/res/textures/idle/common/faced.png.unity3d
     id: 124
     deps: 
-    len: 994554
-    hash: 4ae1af383527caa081b00e2c26906ba0
-  - name: assets/res/textures/idle/floorres/dizhuan_02.png.unity3d
+    len: 5942
+    hash: bb310fbb5c4963be945719518d41c20c
+  - name: assets/res/textures/idle/common/icon-11.png.unity3d
     id: 125
     deps: 
-    len: 994665
-    hash: 784f23869eaaede39968329b726f1d4d
-  - name: assets/res/textures/idle/fork/chache_01.png.unity3d
+    len: 16839
+    hash: 71e862341ed81ad70afc5016d0b1b6ff
+  - name: assets/res/textures/idle/common/icon-shopping.png.unity3d
     id: 126
     deps: 
-    len: 42338
-    hash: 64b791748077a4747dd3981370036433
-  - name: assets/res/textures/idle/fork/chache_back.png.unity3d
+    len: 39955
+    hash: dee39cb46054fa0c3c50a701b9c82cb9
+  - name: assets/res/textures/idle/common/muxiang.png.unity3d
     id: 127
     deps: 
-    len: 32491
-    hash: 0a81c9c6f4e54e292d21d07d61de0517
-  - name: assets/res/textures/idle/fork/chache_back_cha.png.unity3d
+    len: 29956
+    hash: 85514846f995bbe0525eac9f3452b5a0
+  - name: assets/res/textures/idle/floorres/dizhuan_01.png.unity3d
     id: 128
     deps: 
-    len: 6408
-    hash: 775b4f3b37f56020fc4854fc4ac9205e
-  - name: assets/res/textures/idle/fork/xiangzi.png.unity3d
+    len: 939566
+    hash: b8db5f0e1d953931323905e02d2c09f2
+  - name: assets/res/textures/idle/floorres/dizhuan_02.png.unity3d
     id: 129
     deps: 
-    len: 6748
-    hash: 821a697b88cca6f9d5f6eb20f8f3ca6d
-  - name: assets/res/textures/idle/itemicons/itemicon1.png.unity3d
+    len: 939576
+    hash: 710ee476478e3e2799dc7e4d9187a278
+  - name: assets/res/textures/idle/fork/chache_01.png.unity3d
     id: 130
     deps: 
-    len: 12095
-    hash: 1cdc2b972d501c7df65f0ff8c366e155
-  - name: assets/res/textures/idle/itemicons/itemicon2.png.unity3d
+    len: 42338
+    hash: c7ccfb16ba27ac64eaffa4c9c2c73335
+  - name: assets/res/textures/idle/fork/chache_back.png.unity3d
     id: 131
     deps: 
-    len: 9885
-    hash: 00c3ced35d7e7aa3e46cd3ab948b6e04
-  - name: assets/res/textures/idle/itemicons/itemicon3.png.unity3d
+    len: 32491
+    hash: 84d17a977c5edfff7b8a1b92a6e61564
+  - name: assets/res/textures/idle/fork/chache_back_cha.png.unity3d
     id: 132
     deps: 
-    len: 11682
-    hash: 86a6165a188ca433b20d67f8285f0990
-  - name: assets/res/textures/idle/itemicons/itemicon4.png.unity3d
+    len: 6408
+    hash: c5f05063a47abb573f80d1014e4ea199
+  - name: assets/res/textures/idle/fork/xiangzi.png.unity3d
     id: 133
     deps: 
-    len: 11992
-    hash: ce05f7620b310ed991d8fcfd49c659a2
-  - name: assets/res/textures/idle/itemicons/itemicon5.png.unity3d
+    len: 6748
+    hash: c460fcf4a307d73330588469e44f3a24
+  - name: assets/res/textures/idle/itemicons/itemicon1.png.unity3d
     id: 134
     deps: 
-    len: 12621
-    hash: 9cd46f7336ae69fb1a88eda7c0f378b5
-  - name: assets/res/textures/idle/itemicons/itemicon6.png.unity3d
+    len: 12095
+    hash: 4514583626283f77b73b05ee640c6154
+  - name: assets/res/textures/idle/itemicons/itemicon2.png.unity3d
     id: 135
     deps: 
-    len: 11644
-    hash: c390de71fdc11734dd945927f73aad73
-  - name: assets/res/textures/idle/itemimgs/itemimg01.png.unity3d
+    len: 9885
+    hash: 0fb1b0a29839dca56e6df7be85dd6bab
+  - name: assets/res/textures/idle/itemicons/itemicon3.png.unity3d
     id: 136
     deps: 
-    len: 13349
-    hash: 685e86dcd5501662df104357fa32dc2b
-  - name: assets/res/textures/idle/itemimgs/itemimg02.png.unity3d
+    len: 11682
+    hash: 42bceb054ba5da7fc5eb4cb58886b200
+  - name: assets/res/textures/idle/itemicons/itemicon4.png.unity3d
     id: 137
     deps: 
-    len: 13075
-    hash: a7aaeae4b1209caad38f1553b659977d
-  - name: assets/res/textures/idle/itemimgs/itemimg03.png.unity3d
+    len: 11992
+    hash: 8542e94ed24e4395bb726d9458d5a8bf
+  - name: assets/res/textures/idle/itemicons/itemicon5.png.unity3d
     id: 138
     deps: 
-    len: 14172
-    hash: f6059b54c12b52bd5871bdce02ad04e9
-  - name: assets/res/textures/idle/itemimgs/itemimg04.png.unity3d
+    len: 12621
+    hash: 5d44673a55b0d89a3cd5a4cdfe6048ac
+  - name: assets/res/textures/idle/itemicons/itemicon6.png.unity3d
     id: 139
     deps: 
-    len: 14566
-    hash: 7c3bbfe837ac0e527ee91fec436498fa
-  - name: assets/res/textures/idle/itemimgs/itemimg05.png.unity3d
+    len: 11644
+    hash: 10869b1babe8dc1c0e6af5e10d68cf4b
+  - name: assets/res/textures/idle/itemimgs/itemimg01.png.unity3d
     id: 140
     deps: 
-    len: 14153
-    hash: 79c4f65bd8a8d3d346b80626dc2a217d
-  - name: assets/res/textures/idle/itemimgs/itemimg06.png.unity3d
+    len: 13349
+    hash: acce81496d9b57c66dfd3d98e4b434e4
+  - name: assets/res/textures/idle/itemimgs/itemimg02.png.unity3d
     id: 141
     deps: 
-    len: 13755
-    hash: be4241beeeae89f7500bfe1e6f346aaf
-  - name: assets/res/textures/idle/shelfres/huojia1.png.unity3d
+    len: 13075
+    hash: 2f5d85be3fb7916d4c622cbdd14d66e7
+  - name: assets/res/textures/idle/itemimgs/itemimg03.png.unity3d
     id: 142
     deps: 
-    len: 10411
-    hash: 1407242dd6b82f86dc7d0e7eebf3a65e
-  - name: assets/res/textures/idle/shelfres/huojia2.png.unity3d
+    len: 14172
+    hash: 59d7d62fd5fb80417c427942499d97c9
+  - name: assets/res/textures/idle/itemimgs/itemimg04.png.unity3d
     id: 143
     deps: 
-    len: 11558
-    hash: 83921e2bd84a0080ae6ebec161255a57
-  - name: assets/res/textures/idle/shelfres/huojia3.png.unity3d
+    len: 14566
+    hash: 0061ba70c5214d297022e7f426f30543
+  - name: assets/res/textures/idle/itemimgs/itemimg05.png.unity3d
     id: 144
     deps: 
-    len: 11558
-    hash: 32b8e6e1485282e63971f108afe7d940
-  - name: assets/res/textures/idle/shelfres/huojia4.png.unity3d
+    len: 14153
+    hash: 32c396d2de2e5b5b9f4a6d84f8754bfa
+  - name: assets/res/textures/idle/itemimgs/itemimg06.png.unity3d
     id: 145
     deps: 
-    len: 15053
-    hash: 10cff12e827a8ee94a65971a667d8d85
-  - name: assets/res/textures/idle/shelfres/huojia5.png.unity3d
+    len: 13755
+    hash: 8277633836140033cd0917b415ad7c0a
+  - name: assets/res/textures/idle/shelfres/huojia1.png.unity3d
     id: 146
     deps: 
-    len: 15579
-    hash: 48a1ecad6ba15d2bb3ad921a04f68cfc
-  - name: assets/res/textures/idle/shelfres/huojia6.png.unity3d
+    len: 10411
+    hash: c4b569e4a6ae0b46eefce24d6da77e66
+  - name: assets/res/textures/idle/shelfres/huojia2.png.unity3d
     id: 147
     deps: 
-    len: 23188
-    hash: 4742c39ab3f06ac44f50cdea53ded4a9
-  - name: assets/res/textures/idle/siteicons/siteicon1.png.unity3d
+    len: 11558
+    hash: 23450a06c278172d12163c08a9590cab
+  - name: assets/res/textures/idle/shelfres/huojia3.png.unity3d
     id: 148
     deps: 
-    len: 9232
-    hash: 837749908415e5ec3ab8994b6575bfd4
-  - name: assets/res/textures/idle/siteicons/siteicon2.png.unity3d
+    len: 11558
+    hash: 226ffe4911fa0b2408676eb34e3bfbfc
+  - name: assets/res/textures/idle/shelfres/huojia4.png.unity3d
     id: 149
     deps: 
-    len: 9076
-    hash: 57be8b1eabfffad08cdfffb3a6cdf5e7
-  - name: assets/res/textures/idle/siteicons/siteicon3.png.unity3d
+    len: 15053
+    hash: f00307feea8c34a95ebcfd000bbb9a42
+  - name: assets/res/textures/idle/shelfres/huojia5.png.unity3d
     id: 150
     deps: 
-    len: 9177
-    hash: 2761bd000bcf4e329af2a014d50f5f7a
-  - name: assets/res/textures/idle/siteicons/siteicon4.png.unity3d
+    len: 15579
+    hash: e98a28c3d946b30c0e111d0700133439
+  - name: assets/res/textures/idle/shelfres/huojia6.png.unity3d
     id: 151
     deps: 
-    len: 8162
-    hash: 1af6fe11dfd0a73579bb8741d4849818
-  - name: assets/res/textures/idle/siteicons/siteicon5.png.unity3d
+    len: 23188
+    hash: 64623d09d4672d5dbbe9c29a97b94d5b
+  - name: assets/res/textures/idle/siteicons/siteicon1.png.unity3d
     id: 152
     deps: 
-    len: 9298
-    hash: 5b3ac33022e0f4e4651f03e92da6b585
-  - name: assets/res/textures/idle/siteicons/siteicon6.png.unity3d
+    len: 8764
+    hash: f6c8d31064480c54ecbc22e749223a41
+  - name: assets/res/textures/idle/siteicons/siteicon2.png.unity3d
     id: 153
     deps: 
-    len: 9041
-    hash: 043b0b37e6e0f964cd07c29bb8db9138
-  - name: assets/res/textures/idle/truck/truck_lv01_down_0.png.unity3d
+    len: 8588
+    hash: dba401da3802a4bb6718e9976f37d2be
+  - name: assets/res/textures/idle/siteicons/siteicon3.png.unity3d
     id: 154
     deps: 
-    len: 19355
-    hash: 4f6abf3822e979c499ccce06e64fab6a
-  - name: assets/res/textures/idle/truck/truck_lv01_down_1.png.unity3d
+    len: 8653
+    hash: 12de6ff9c7dd535ecb7fcc2b304969bc
+  - name: assets/res/textures/idle/siteicons/siteicon4.png.unity3d
     id: 155
     deps: 
-    len: 20081
-    hash: 08d3880f0234435c33bac4291cb00733
-  - name: assets/res/textures/idle/truck/truck_lv01_up_0.png.unity3d
+    len: 7679
+    hash: 1ca5df8bf458647fb6ef256b47580fe8
+  - name: assets/res/textures/idle/siteicons/siteicon5.png.unity3d
     id: 156
     deps: 
-    len: 16321
-    hash: 68f1cc556160ac5526cfe46f9f8441ef
-  - name: assets/res/textures/idle/truck/truck_lv01_up_1.png.unity3d
+    len: 8760
+    hash: 036a5027cbec45b2a4bfbf37c7a3d6de
+  - name: assets/res/textures/idle/siteicons/siteicon6.png.unity3d
     id: 157
     deps: 
-    len: 16958
-    hash: 2f596da037f9283fa8b30e72b07d8f0f
-  - name: assets/res/textures/idle/truck/truck_lv02_down_0.png.unity3d
+    len: 8488
+    hash: 21bfbe48fa65a4893488feecb9e2b9d6
+  - name: assets/res/textures/idle/truck/truck_lv01_down_0.png.unity3d
     id: 158
     deps: 
-    len: 21034
-    hash: 5f910a8a176ef12e5b524aa744d2de47
-  - name: assets/res/textures/idle/truck/truck_lv02_down_1.png.unity3d
+    len: 19355
+    hash: 8c43b23a61f9836b83d4a31a66fb43d3
+  - name: assets/res/textures/idle/truck/truck_lv01_down_1.png.unity3d
     id: 159
     deps: 
-    len: 22764
-    hash: fcc48354e2d24759f40277ce0786f38e
-  - name: assets/res/textures/idle/truck/truck_lv02_up_0.png.unity3d
+    len: 20081
+    hash: 866889ec4e2503cb77dee92810041fcf
+  - name: assets/res/textures/idle/truck/truck_lv01_up_0.png.unity3d
     id: 160
     deps: 
-    len: 16495
-    hash: 90bbd66483ce816b778a7c7149638c2b
-  - name: assets/res/textures/idle/truck/truck_lv02_up_1.png.unity3d
+    len: 16321
+    hash: 7872ca8012905480c3162287640086f2
+  - name: assets/res/textures/idle/truck/truck_lv01_up_1.png.unity3d
     id: 161
     deps: 
-    len: 18391
-    hash: 56b6b0084697e5ef1fb9d0ace096d1f7
-  - name: assets/res/textures/idle/truck/truck_lv03_down_1.png.unity3d
+    len: 16958
+    hash: a01273f9bfc45155fdc22739d6ad6991
+  - name: assets/res/textures/idle/truck/truck_lv02_down_0.png.unity3d
     id: 162
     deps: 
-    len: 20583
-    hash: 3def3a47fae1268796d3276826da75eb
-  - name: assets/res/textures/idle/truck/truck_lv03_up_0.png.unity3d
+    len: 21034
+    hash: ca315a405d71429f6793475e3850535c
+  - name: assets/res/textures/idle/truck/truck_lv02_down_1.png.unity3d
     id: 163
     deps: 
-    len: 19500
-    hash: 994935af5ed5d22eaa4dededd0d23b05
-  - name: assets/res/textures/idle/truck/truck_lv03_up_1.png.unity3d
+    len: 22764
+    hash: 7edfc01a106cf7ade0e78f354af0462e
+  - name: assets/res/textures/idle/truck/truck_lv02_up_0.png.unity3d
     id: 164
     deps: 
-    len: 20644
-    hash: e82fe59f79ebd6dd9a7a4d1ae02fa0de
-  - name: assets/res/textures/idle/truck/truck_lv04_down_0.png.unity3d
+    len: 16495
+    hash: 7f56eb9b9dbf03afc5254f31480eb5bb
+  - name: assets/res/textures/idle/truck/truck_lv02_up_1.png.unity3d
     id: 165
     deps: 
-    len: 28090
-    hash: 7bd84cd34de644b062bdc2ab5dc2131b
-  - name: assets/res/textures/idle/truck/truck_lv04_down_1.png.unity3d
+    len: 18391
+    hash: 53b05776e99f51fc43a36d7e49e9823f
+  - name: assets/res/textures/idle/truck/truck_lv03_down_1.png.unity3d
     id: 166
     deps: 
-    len: 10763
-    hash: 4d5e3f7ee7d0455e09e66392d761f7da
-  - name: assets/res/textures/idle/truck/truck_lv04_up_0.png.unity3d
+    len: 20583
+    hash: f22f859926c4e6b3daa5e4e6ee42e1d7
+  - name: assets/res/textures/idle/truck/truck_lv03_up_0.png.unity3d
     id: 167
     deps: 
-    len: 25799
-    hash: d7cf2323855cf18122eaa367166e941b
-  - name: assets/res/textures/idle/truck/truck_lv04_up_1.png.unity3d
+    len: 19500
+    hash: 94d745c320c50b59eb886940d4ff83a9
+  - name: assets/res/textures/idle/truck/truck_lv03_up_1.png.unity3d
     id: 168
     deps: 
-    len: 26745
-    hash: 57f809ad396179f07f159d401399ec6d
-  - name: assets/res/textures/idle/truck/truck_lv05_down_1.png.unity3d
+    len: 20644
+    hash: cd1b52a4fc8e058f2ee04024de3b9924
+  - name: assets/res/textures/idle/truck/truck_lv04_down_0.png.unity3d
     id: 169
     deps: 
-    len: 27355
-    hash: 10dc8fc0ce644e71998a8335bc3fe995
-  - name: assets/res/textures/idle/truck/truck_lv05_up_0.png.unity3d
+    len: 28090
+    hash: 001ea8a72a1c0a87701dc88b3d6755ae
+  - name: assets/res/textures/idle/truck/truck_lv04_down_1.png.unity3d
     id: 170
     deps: 
-    len: 23910
-    hash: 8df70430f8bfb20b7de2a0291d0e8350
-  - name: assets/res/textures/idle/truck/truck_lv05_up_1.png.unity3d
+    len: 10326
+    hash: d3c80d0a60739912fa733173ba9281bb
+  - name: assets/res/textures/idle/truck/truck_lv04_up_0.png.unity3d
     id: 171
     deps: 
-    len: 26030
-    hash: 611db3937f3c3672d63d6a46e0ab5c67
-  - name: assets/res/ui/gameui/doubleincometip.prefab.unity3d
+    len: 25799
+    hash: 796245aba9abfe9663a785c61a574c76
+  - name: assets/res/textures/idle/truck/truck_lv04_up_1.png.unity3d
     id: 172
-    deps: 0d000000
-    len: 85485
-    hash: b79216e4168badebe7b99cb3bc9f0866
-  - name: assets/res/ui/gameui/finger.prefab.unity3d
+    deps: 
+    len: 26745
+    hash: acb79ddf6e5bf3095a1a127b09b1fa4c
+  - name: assets/res/textures/idle/truck/truck_lv05_down_1.png.unity3d
     id: 173
-    deps: 0600000007000000fa000000
-    len: 3820
-    hash: 9327ca8959b19d77d9e69de21341f321
-  - name: assets/res/ui/gameui/npctalk.prefab.unity3d
+    deps: 
+    len: 27355
+    hash: ab9247388da7299fa4ff3a9711b19469
+  - name: assets/res/textures/idle/truck/truck_lv05_up_0.png.unity3d
     id: 174
     deps: 
-    len: 10151
-    hash: 91057671ae24141313da0457be067a77
-  - name: assets/res/ui/gameui/tipui.prefab.unity3d
+    len: 23910
+    hash: d9f56ea9396d5d9c40f9ff23d58bf568
+  - name: assets/res/textures/idle/truck/truck_lv05_up_1.png.unity3d
     id: 175
+    deps: 
+    len: 26030
+    hash: 84896ea3aa4528182007c9c80e00375f
+  - name: assets/res/ui/gameui/doubleincometip.prefab.unity3d
+    id: 176
+    deps: 0d000000
+    len: 85485
+    hash: c7e572cec083755d4ff7f5362a63e309
+  - name: assets/res/ui/gameui/finger.prefab.unity3d
+    id: 177
+    deps: 0600000007000000fe000000
+    len: 3820
+    hash: 825eb34f69d90ce389b7be21859896cb
+  - name: assets/res/ui/gameui/npctalk.prefab.unity3d
+    id: 178
+    deps: 
+    len: 10151
+    hash: 19010590481030c851e26529243a8058
+  - name: assets/res/ui/gameui/tipui.prefab.unity3d
+    id: 179
     deps: 0d000000
     len: 22714
-    hash: 6be14a108586cf543ccd0f4a89a526a1
+    hash: 07c093c2cf47d554b3521dcc710a4e11
   - name: assets/res/ui/gameui/truckunloadprocess.prefab.unity3d
-    id: 176
-    deps: 
-    len: 8662
-    hash: b5192cbd213e5f0270994875f0bd7f71
-  - name: assets/res/ui/idle/idlebuildingwindow.prefab.unity3d
-    id: 177
-    deps: 0d000000e3000000e5000000e6000000e7000000eb000000ee000000ef000000f1000000f3000000f4000000
-    len: 43895
-    hash: 9df49ac0723e9b97e8ee9de6851abd71
-  - name: assets/res/ui/idle/idlecityinfowindow.prefab.unity3d
-    id: 178
-    deps: e9000000f5000000
-    len: 12164
-    hash: b65e08171bf41c240bb4568647b09f3e
-  - name: assets/res/ui/idle/idledoubleincomewindow.prefab.unity3d
-    id: 179
-    deps: 08000000090000000d000000e2000000e5000000e9000000ec000000ed000000f0000000f2000000
-    len: 52465
-    hash: 8a9ace443e644e2956222aa23e6b73d0
-  - name: assets/res/ui/idle/idleeventwindow.prefab.unity3d
     id: 180
-    deps: 08000000090000000d0000007a000000e2000000e4000000e8000000ec000000ed000000f0000000f2000000
-    len: 11823
-    hash: e0d912eee4c15c772d9bc4fc8891d293
-  - name: assets/res/ui/idle/idleguidewindow.prefab.unity3d
+    deps: 
+    len: 8638
+    hash: bd3ed20a0c28ec49c0941bf8010df17b
+  - name: assets/res/ui/idle/idlebuildingwindow.prefab.unity3d
     id: 181
-    deps: 06000000070000000d000000ee000000fa000000
-    len: 67794
-    hash: 0d95723413455cf74fd303ac9c2bb096
-  - name: assets/res/ui/idle/idleinvestorwindow.prefab.unity3d
+    deps: 0d000000e7000000e9000000ea000000eb000000ef000000f2000000f3000000f5000000f7000000f8000000
+    len: 43895
+    hash: dc0a781d67be6e512137655804b2e0aa
+  - name: assets/res/ui/idle/idlecityinfowindow.prefab.unity3d
     id: 182
-    deps: 08000000090000000d000000e2000000e4000000e8000000ec000000ed000000f0000000f2000000f4000000fb000000
-    len: 33601
-    hash: cb81fff1653a9e420e404042bd8fe63f
-  - name: assets/res/ui/idle/idlemapwindow.prefab.unity3d
+    deps: ed000000f9000000
+    len: 12164
+    hash: 90c0b13fba25fb9cde590a5c2a561523
+  - name: assets/res/ui/idle/idledoubleincomewindow.prefab.unity3d
     id: 183
-    deps: 0d000000e3000000e5000000e9000000f3000000f4000000f5000000
-    len: 178680
-    hash: 9722593c208e650a1c56561bca75ad5f
-  - name: assets/res/ui/idle/idlepostsitewindow.prefab.unity3d
+    deps: 08000000090000000d000000e6000000e9000000ed000000f0000000f1000000f4000000f6000000
+    len: 52465
+    hash: bc02c117c3a17f7e08779b42386aec0a
+  - name: assets/res/ui/idle/idleeventwindow.prefab.unity3d
     id: 184
-    deps: 0d000000e1000000e4000000e6000000ea000000eb000000ec000000f1000000f4000000f6000000f7000000f8000000f9000000
-    len: 62630
-    hash: b6c556e2bbac898432006de8bbfedf51
-  - name: assets/res/ui/idle/idlesiteinfowindow.prefab.unity3d
+    deps: 08000000090000000d0000007e000000e6000000e8000000ec000000f0000000f1000000f4000000f6000000
+    len: 11823
+    hash: 6924245abba50cb8ed50cb2f190355e3
+  - name: assets/res/ui/idle/idleguidewindow.prefab.unity3d
     id: 185
-    deps: 0d000000e1000000e4000000e6000000ea000000eb000000ec000000f1000000f4000000f5000000f8000000f9000000
-    len: 52285
-    hash: e519cddc7862cc34e2c5caa87d96fc98
-  - name: assets/res/ui/idle/idlestatisticswindow.prefab.unity3d
+    deps: 06000000070000000d000000f2000000fe000000
+    len: 38473
+    hash: 362b0554daa39a56e7894657cf8af6d3
+  - name: assets/res/ui/idle/idleinvestorwindow.prefab.unity3d
     id: 186
-    deps: 0d000000e3000000e5000000eb000000ee000000ef000000f1000000f3000000f5000000
-    len: 34610
-    hash: e528c881bf4b0d784839224dd04e4baf
-  - name: assets/res/ui/idle/idletaskwindow.prefab.unity3d
+    deps: 08000000090000000d000000e6000000e8000000ec000000f0000000f1000000f4000000f6000000f8000000ff000000
+    len: 33601
+    hash: bc701888683874cf47572e1a50165a89
+  - name: assets/res/ui/idle/idlemapwindow.prefab.unity3d
     id: 187
-    deps: 0d000000e3000000e5000000e7000000eb000000ee000000ef000000f1000000f3000000f6000000f7000000
-    len: 69448
-    hash: e0a23c2dad2dbb8952ebb31d8fb57a60
-  - name: assets/res/ui/idle/idletopui.prefab.unity3d
+    deps: 0d000000e7000000e9000000ed000000f7000000f8000000f9000000
+    len: 169554
+    hash: 8cbb2b27703a51d51d26e8e4cd4d566e
+  - name: assets/res/ui/idle/idlepostsitewindow.prefab.unity3d
     id: 188
-    deps: 0d000000f4000000
-    len: 16957
-    hash: 173183a7b0a1facdc234b596a83114f6
-  - name: assets/res/ui/idle/idletruckinfowindow.prefab.unity3d
+    deps: 0d000000e5000000e8000000ea000000ee000000ef000000f0000000f5000000f8000000fa000000fb000000fc000000fd000000
+    len: 59996
+    hash: 7d0495a6611568f9c360f497a6469b33
+  - name: assets/res/ui/idle/idlesiteinfowindow.prefab.unity3d
     id: 189
-    deps: 0d000000e1000000e4000000e6000000ea000000eb000000ec000000f1000000f4000000f9000000
-    len: 35960
-    hash: c4e3ebf0fd90a97d4aedb6ada50f2f8b
-  - name: assets/res/ui/idle/idlewindow.prefab.unity3d
+    deps: 0d000000e5000000e8000000ea000000ee000000ef000000f0000000f5000000f8000000f9000000fc000000fd000000
+    len: 49708
+    hash: d0dea2313123d52b1407fd7ce2b739c2
+  - name: assets/res/ui/idle/idlestatisticswindow.prefab.unity3d
     id: 190
-    deps: 06000000070000000d00000077000000ad000000fa000000fc000000
-    len: 261714
-    hash: 691134070e154c10d970917dd375eeb7
-  - name: assets/res/ui/idle/offlinewindow.prefab.unity3d
+    deps: 0d000000e7000000e9000000ef000000f2000000f3000000f5000000f7000000f9000000
+    len: 33748
+    hash: 76c44e8f019ddb02467cb5a507b62a8e
+  - name: assets/res/ui/idle/idletaskwindow.prefab.unity3d
     id: 191
-    deps: 08000000090000000d000000e2000000e4000000e8000000ed000000f0000000f2000000f4000000fb000000
-    len: 12070
-    hash: 583e398e364e357d0655a1c98d4d7e5f
-  - name: assets/scenes/idle/idlescene_1001.unity.unity3d
+    deps: 0d000000e7000000e9000000eb000000ef000000f2000000f3000000f5000000f7000000fa000000fb000000
+    len: 46553
+    hash: 1eddc8e6348fa9582264b989fd6620f8
+  - name: assets/res/ui/idle/idletopui.prefab.unity3d
     id: 192
-    deps: 050000000a0000000b0000000c0000000d00000052000000600000006300000066000000670000006a0000006b0000006c0000006d0000007c0000007d0000009b000000c7000000c8000000c9000000ca000000cb000000cc000000cd000000ce000000cf000000d0000000d1000000d2000000d3000000d4000000d5000000d6000000d7000000d8000000d9000000da000000db000000dc000000dd000000de000000df000000e0000000f4000000fa000000fc000000
-    len: 1753274
-    hash: 99571d436b88101a23253311734bb8ac
-  - name: assets/spine/staffs/staff2/kuaidi.atlas.txt.unity3d
+    deps: 0d000000f8000000
+    len: 16958
+    hash: 0a384207f999929d9f2ef22540df22db
+  - name: assets/res/ui/idle/idletruckinfowindow.prefab.unity3d
     id: 193
+    deps: 0d000000e5000000e8000000ea000000ee000000ef000000f0000000f5000000f8000000fd000000
+    len: 34595
+    hash: 65f09b9676dd218edb0ea6ba47e93780
+  - name: assets/res/ui/idle/idlewindow.prefab.unity3d
+    id: 194
+    deps: 06000000070000000d0000007b000000b1000000fe00000000010000
+    len: 250764
+    hash: bab8beabda6bc2d143aa7bb9a5b2d7af
+  - name: assets/res/ui/idle/offlinewindow.prefab.unity3d
+    id: 195
+    deps: 08000000090000000d000000e6000000e8000000ec000000f1000000f4000000f6000000f8000000ff000000
+    len: 12070
+    hash: bfb35c52d886c099954ac510cdbef4a9
+  - name: assets/scenes/idle/idlescene_1001.unity.unity3d
+    id: 196
+    deps: 050000000a0000000b0000000c0000000d0000005600000064000000670000006a0000006b0000006e0000006f000000700000007100000080000000810000009f000000cb000000cc000000cd000000ce000000cf000000d0000000d1000000d2000000d3000000d4000000d5000000d6000000d7000000d8000000d9000000da000000db000000dc000000dd000000de000000df000000e0000000e1000000e2000000e3000000e4000000f8000000fe00000000010000
+    len: 1758842
+    hash: b588998d844dbad35349bf258b251992
+  - name: assets/spine/staffs/staff2/kuaidi.atlas.txt.unity3d
+    id: 197
     deps: 
     len: 1533
-    hash: c9b35cd1027cc3db4a0006692be07296
+    hash: b6f6f3fad43d662ab4bb7948d32bbf84
   - name: assets/spine/staffs/staff2/kuaidi.json.unity3d
-    id: 194
+    id: 198
     deps: 
     len: 5568
-    hash: f57e85b667a12c6f974c39a7f5d39fc1
+    hash: ede8603b3dc04eea41fc86d78af6955e
   - name: assets/spine/staffs/staff2/kuaidi.png.unity3d
-    id: 195
-    deps: 
-    len: 19218
-    hash: e7afc731efafa9e8608627c742bf48c3
-  - name: assets/spine/staffs/staff2/kuaidi_atlas.asset.unity3d
-    id: 196
-    deps: c1000000c3000000c5000000fc000000
-    len: 2000
-    hash: a42015879c9b37e2a912b6edc849b434
-  - name: assets/spine/staffs/staff2/kuaidi_material.mat.unity3d
-    id: 197
-    deps: c3000000fc000000
-    len: 2263
-    hash: b7009b4addcbf4322fc4b036914353db
-  - name: assets/spine/staffs/staff2/kuaidi_skeletondata.asset.unity3d
-    id: 198
-    deps: c1000000c2000000c3000000c4000000c5000000fc000000
-    len: 2292
-    hash: 58916d28b34b300a0197827ffce38402
-  - name: assets/spine/zhanggui-chaowan/chaowan.atlas.txt.unity3d
     id: 199
     deps: 
-    len: 1506
-    hash: 4d58aaaa1c2409addfb978eba32b101a
-  - name: assets/spine/zhanggui-chaowan/chaowan.json.unity3d
+    len: 19218
+    hash: aa3d0adb0ba28ca3250801986a836885
+  - name: assets/spine/staffs/staff2/kuaidi_atlas.asset.unity3d
     id: 200
+    deps: c5000000c7000000c900000000010000
+    len: 2000
+    hash: 67006632937646306c333a12786db4ed
+  - name: assets/spine/staffs/staff2/kuaidi_material.mat.unity3d
+    id: 201
+    deps: c700000000010000
+    len: 2263
+    hash: 9a9a89b9b218c0bbb69f4ebcc5912670
+  - name: assets/spine/staffs/staff2/kuaidi_skeletondata.asset.unity3d
+    id: 202
+    deps: c5000000c6000000c7000000c8000000c900000000010000
+    len: 2292
+    hash: 6d84a075f8ea050ad73e46a792054de8
+  - name: assets/spine/zhanggui-chaowan/chaowan.atlas.txt.unity3d
+    id: 203
+    deps: 
+    len: 1506
+    hash: 2852cf2f0c591be2fc002da52ce3886e
+  - name: assets/spine/zhanggui-chaowan/chaowan.json.unity3d
+    id: 204
     deps: 
     len: 2861
-    hash: 0d5c7d4d9b9b61f8656832cde9e83312
+    hash: 6078707101462ac097ba648b5c645b95
   - name: assets/spine/zhanggui-chaowan/chaowan.png.unity3d
-    id: 201
-    deps: 
-    len: 20222
-    hash: 8b00a9b493b432e8950efdbea9f8bc15
-  - name: assets/spine/zhanggui-chaowan/chaowan_atlas.asset.unity3d
-    id: 202
-    deps: c7000000c9000000cb000000fc000000
-    len: 2006
-    hash: c7a9793c70e3e49508a251695041aae6
-  - name: assets/spine/zhanggui-chaowan/chaowan_material.mat.unity3d
-    id: 203
-    deps: c9000000fc000000
-    len: 2300
-    hash: cffd7da8f6b0d2218472f6c690596bc6
-  - name: assets/spine/zhanggui-chaowan/chaowan_skeletondata.asset.unity3d
-    id: 204
-    deps: c7000000c8000000c9000000ca000000cb000000fc000000
-    len: 2292
-    hash: a4b7c7b4906eda07b9908d088f65a506
-  - name: assets/spine/zhanggui-gushu/gushu.atlas.txt.unity3d
     id: 205
     deps: 
-    len: 1532
-    hash: eea84161d6d335f3b6816e46e1560532
-  - name: assets/spine/zhanggui-gushu/gushu.json.unity3d
+    len: 20222
+    hash: 83bfb67b18b6576acdb035abf4692871
+  - name: assets/spine/zhanggui-chaowan/chaowan_atlas.asset.unity3d
     id: 206
+    deps: cb000000cd000000cf00000000010000
+    len: 2006
+    hash: 84761d4b0bcda37a54a7d5c578fe56ce
+  - name: assets/spine/zhanggui-chaowan/chaowan_material.mat.unity3d
+    id: 207
+    deps: cd00000000010000
+    len: 2300
+    hash: 464fcc81924641bf4e95dae80a7e5eff
+  - name: assets/spine/zhanggui-chaowan/chaowan_skeletondata.asset.unity3d
+    id: 208
+    deps: cb000000cc000000cd000000ce000000cf00000000010000
+    len: 2292
+    hash: d4345037eef955c588b9ad669966379c
+  - name: assets/spine/zhanggui-gushu/gushu.atlas.txt.unity3d
+    id: 209
+    deps: 
+    len: 1532
+    hash: 39ef37811c92da4a6522df051471d656
+  - name: assets/spine/zhanggui-gushu/gushu.json.unity3d
+    id: 210
     deps: 
     len: 3130
-    hash: 2ac6d05e57265b76658a9c4761594f28
+    hash: 7deaf89b83c17f2a5c2aa162ddad8457
   - name: assets/spine/zhanggui-gushu/gushu.png.unity3d
-    id: 207
-    deps: 
-    len: 13709
-    hash: a95e794474388ba1710b0031844d3e92
-  - name: assets/spine/zhanggui-gushu/gushu_atlas.asset.unity3d
-    id: 208
-    deps: cd000000cf000000d1000000fc000000
-    len: 2002
-    hash: b055f83ebf5855a97dcb1e7a3d146337
-  - name: assets/spine/zhanggui-gushu/gushu_material.mat.unity3d
-    id: 209
-    deps: cf000000fc000000
-    len: 2301
-    hash: 0cb7f450cc6a44d22b34e11f699b3bfc
-  - name: assets/spine/zhanggui-gushu/gushu_skeletondata.asset.unity3d
-    id: 210
-    deps: cd000000ce000000cf000000d0000000d1000000fc000000
-    len: 2295
-    hash: 2dd67e6016f192e9bec9a18f7eb7aa8d
-  - name: assets/spine/zhanggui-guwan/zhanggui.atlas.txt.unity3d
     id: 211
     deps: 
-    len: 1617
-    hash: 1984060b3a073b3a970776cc50365559
-  - name: assets/spine/zhanggui-guwan/zhanggui.json.unity3d
+    len: 13709
+    hash: 86247917db8ca1c5cf8ce69a6de0ebcd
+  - name: assets/spine/zhanggui-gushu/gushu_atlas.asset.unity3d
     id: 212
+    deps: d1000000d3000000d500000000010000
+    len: 2002
+    hash: b99626c5b26a8beaa5e73a191fb81604
+  - name: assets/spine/zhanggui-gushu/gushu_material.mat.unity3d
+    id: 213
+    deps: d300000000010000
+    len: 2301
+    hash: 5c76443bea0cee539bfb17f48b53254a
+  - name: assets/spine/zhanggui-gushu/gushu_skeletondata.asset.unity3d
+    id: 214
+    deps: d1000000d2000000d3000000d4000000d500000000010000
+    len: 2295
+    hash: 16276e81dd57f2f6d8cb77778ac382d5
+  - name: assets/spine/zhanggui-guwan/zhanggui.atlas.txt.unity3d
+    id: 215
+    deps: 
+    len: 1617
+    hash: e5c03cb3e36a647e4cd02ea41d36a8ed
+  - name: assets/spine/zhanggui-guwan/zhanggui.json.unity3d
+    id: 216
     deps: 
     len: 4425
-    hash: 16e0eff864797a41b2fa5425145c061a
+    hash: b4aff1034bba80b332ac9294cf7d5f97
   - name: assets/spine/zhanggui-guwan/zhanggui.png.unity3d
-    id: 213
-    deps: 
-    len: 28526
-    hash: 5232540f8ee8c2a710dfd6bb8ccd89e3
-  - name: assets/spine/zhanggui-guwan/zhanggui_atlas.asset.unity3d
-    id: 214
-    deps: d3000000d5000000d7000000fc000000
-    len: 1984
-    hash: d962784ae2a4f5bb39de0ef23660ca6c
-  - name: assets/spine/zhanggui-guwan/zhanggui_material.mat.unity3d
-    id: 215
-    deps: d5000000fc000000
-    len: 2266
-    hash: 25ef4585184b35bc8ba7f98066957fd0
-  - name: assets/spine/zhanggui-guwan/zhanggui_skeletondata.asset.unity3d
-    id: 216
-    deps: d3000000d4000000d5000000d6000000d7000000fc000000
-    len: 2278
-    hash: 9173cc162bca30bb68aa686da0049627
-  - name: assets/spine/zhanggui-tanghulu/tanghulu.atlas.txt.unity3d
     id: 217
     deps: 
-    len: 1701
-    hash: f7b72042a9a3f63d428705ab09cf8f2c
-  - name: assets/spine/zhanggui-tanghulu/tanghulu.json.unity3d
+    len: 28526
+    hash: 377217ff1915ea5cc264c95cf26f9691
+  - name: assets/spine/zhanggui-guwan/zhanggui_atlas.asset.unity3d
     id: 218
+    deps: d7000000d9000000db00000000010000
+    len: 1984
+    hash: 174e895fa9d3bc7f681f60e77ec99742
+  - name: assets/spine/zhanggui-guwan/zhanggui_material.mat.unity3d
+    id: 219
+    deps: d900000000010000
+    len: 2266
+    hash: 1dde623b297673a8a35d7a8f7b256bf0
+  - name: assets/spine/zhanggui-guwan/zhanggui_skeletondata.asset.unity3d
+    id: 220
+    deps: d7000000d8000000d9000000da000000db00000000010000
+    len: 2278
+    hash: 9609e49c00d563b55853dbcd289e858d
+  - name: assets/spine/zhanggui-tanghulu/tanghulu.atlas.txt.unity3d
+    id: 221
+    deps: 
+    len: 1701
+    hash: 2a87ff38e8c106a3026c67e1dad1b54f
+  - name: assets/spine/zhanggui-tanghulu/tanghulu.json.unity3d
+    id: 222
     deps: 
     len: 4165
-    hash: 88a698c8d0c9cdde141979dba386ec65
+    hash: e06cdf460c286abf575ffa90f1ff784d
   - name: assets/spine/zhanggui-tanghulu/tanghulu.png.unity3d
-    id: 219
-    deps: 
-    len: 18636
-    hash: 3c9e2bd6a0d52b10230175a4d94c9661
-  - name: assets/spine/zhanggui-tanghulu/tanghulu_atlas.asset.unity3d
-    id: 220
-    deps: d9000000db000000dd000000fc000000
-    len: 2006
-    hash: eacf8fbae7c9c8d966e537437a29ee3b
-  - name: assets/spine/zhanggui-tanghulu/tanghulu_material.mat.unity3d
-    id: 221
-    deps: db000000fc000000
-    len: 2271
-    hash: 95d863ca681d243912fd7ea933e9f526
-  - name: assets/spine/zhanggui-tanghulu/tanghulu_skeletondata.asset.unity3d
-    id: 222
-    deps: d9000000da000000db000000dc000000dd000000fc000000
-    len: 2295
-    hash: 22d35db3f10a5881b4c9222bd38ecbd6
-  - name: assets/textures/idle/city1002.unity3d
     id: 223
     deps: 
-    len: 2006334
-    hash: 274c6063bfce771ca5cffc3dd7b9293d
-  - name: assets/textures/idle/common/shadow.png.unity3d
+    len: 18636
+    hash: 493d4bc9fd3c6d123ada701ba629d81b
+  - name: assets/spine/zhanggui-tanghulu/tanghulu_atlas.asset.unity3d
     id: 224
-    deps: 
-    len: 3997
-    hash: 8f8b1500117a8eb6afac1855ef6fe6b3
-  - name: assets/textures/idle/ui/commen/bg-cost.png.unity3d
+    deps: dd000000df000000e100000000010000
+    len: 2006
+    hash: 9671fa59f56df19cf2196398a1045d18
+  - name: assets/spine/zhanggui-tanghulu/tanghulu_material.mat.unity3d
     id: 225
-    deps: 
-    len: 4254
-    hash: 17cff3905e16e6cdbc470c3657b62db6
-  - name: assets/textures/idle/ui/commen/bg-mark.png.unity3d
+    deps: df00000000010000
+    len: 2271
+    hash: 3cfed61816b5c2eeaec3f6942d1f67a4
+  - name: assets/spine/zhanggui-tanghulu/tanghulu_skeletondata.asset.unity3d
     id: 226
-    deps: 
-    len: 4980
-    hash: 2bfcaa37a42f7b342dd3d8ff6c24b779
-  - name: assets/textures/idle/ui/commen/bg.png.unity3d
+    deps: dd000000de000000df000000e0000000e100000000010000
+    len: 2295
+    hash: 2c92f9ed888a843afe563337846e0408
+  - name: assets/textures/idle/city1002.unity3d
     id: 227
     deps: 
-    len: 39260
-    hash: b8160cf1cf3bd8162dcd725149ffd1a6
-  - name: assets/textures/idle/ui/commen/btn-big.png.unity3d
+    len: 1922346
+    hash: 7166add852b0654d74815bc1fa70c1d9
+  - name: assets/textures/idle/common/shadow.png.unity3d
     id: 228
     deps: 
-    len: 12483
-    hash: 872af9b33733dd0158387e928d8ae4ab
-  - name: assets/textures/idle/ui/commen/btn-close.png.unity3d
+    len: 3997
+    hash: f74fc5200a970dd9bbdf87d3cc476035
+  - name: assets/textures/idle/ui/commen/bg-cost.png.unity3d
     id: 229
     deps: 
-    len: 19339
-    hash: 10730643ba55afafb6ba374ec73888c6
-  - name: assets/textures/idle/ui/commen/btn-gray.png.unity3d
+    len: 4254
+    hash: ca22ab5c675893ffcb30ec1b30474efe
+  - name: assets/textures/idle/ui/commen/bg-mark.png.unity3d
     id: 230
     deps: 
-    len: 14202
-    hash: 3d89559326d473d0fccdb85a86e08e71
-  - name: assets/textures/idle/ui/commen/btn-normal.png.unity3d
+    len: 4980
+    hash: d4afba9b8c2096e4cd5439cda6a7c5e4
+  - name: assets/textures/idle/ui/commen/bg.png.unity3d
     id: 231
     deps: 
-    len: 19376
-    hash: a2d116c401d4a44b7a431106f2cf1be2
-  - name: assets/textures/idle/ui/commen/btn-playvideo.png.unity3d
+    len: 39518
+    hash: 0efd1d04a2b2dc9f909e06cc3b8f68fd
+  - name: assets/textures/idle/ui/commen/btn-big.png.unity3d
     id: 232
     deps: 
-    len: 13212
-    hash: 47e26c7de1adb0d9c23487bc88e6fafd
-  - name: assets/textures/idle/ui/commen/button.png.unity3d
+    len: 12483
+    hash: 2f56a5c1de5b06fda04b336517854bf2
+  - name: assets/textures/idle/ui/commen/btn-close.png.unity3d
     id: 233
     deps: 
-    len: 19432
-    hash: 96b366984e5cbbdd59374cad712b2763
-  - name: assets/textures/idle/ui/commen/descbg.png.unity3d
+    len: 18975
+    hash: 358fd4890dc8d77bf070dc3b3f752295
+  - name: assets/textures/idle/ui/commen/btn-gray.png.unity3d
     id: 234
     deps: 
-    len: 31900
-    hash: 3a321b4c8b37fec2e657f5ccff2822d2
-  - name: assets/textures/idle/ui/commen/framebg-blue.png.unity3d
+    len: 14202
+    hash: c962728b3b0ad0779340cd45f27544bf
+  - name: assets/textures/idle/ui/commen/btn-normal.png.unity3d
     id: 235
     deps: 
-    len: 3797
-    hash: 17136c2746aa20bb591945848bf30c3e
-  - name: assets/textures/idle/ui/commen/framebg.png.unity3d
+    len: 18987
+    hash: da6c44501afd22a94933542ebf545255
+  - name: assets/textures/idle/ui/commen/btn-playvideo.png.unity3d
     id: 236
     deps: 
-    len: 122078
-    hash: 1423358f2a0dde1ad7c27a3cb3344323
-  - name: assets/textures/idle/ui/commen/frameheadbg.png.unity3d
+    len: 13212
+    hash: 1939d8ba8873084545c9bcfc7632e624
+  - name: assets/textures/idle/ui/commen/button.png.unity3d
     id: 237
     deps: 
-    len: 31676
-    hash: f93a7aafbe7f8efaf40ec5395b98971c
-  - name: assets/textures/idle/ui/commen/icon-deliver.png.unity3d
+    len: 19050
+    hash: 2e20f056d13123702c6d1e962b136dc7
+  - name: assets/textures/idle/ui/commen/descbg.png.unity3d
     id: 238
     deps: 
-    len: 172609
-    hash: bd50119fc346f06ebc02c19f5e3fdef5
-  - name: assets/textures/idle/ui/commen/icon-talk.png.unity3d
+    len: 29460
+    hash: 311be6a81fdfcdc0cbc99741f2e38dbd
+  - name: assets/textures/idle/ui/commen/framebg-blue.png.unity3d
     id: 239
     deps: 
-    len: 61583
-    hash: 94841db870b78815395087ab75531a9d
-  - name: assets/textures/idle/ui/commen/icon-video.png.unity3d
+    len: 3797
+    hash: 5c7a5edc9806f4a05775e9c82c331ecf
+  - name: assets/textures/idle/ui/commen/framebg.png.unity3d
     id: 240
     deps: 
-    len: 4818
-    hash: a7af4fbbad45b20fc8e01fceaf404f8d
-  - name: assets/textures/idle/ui/commen/iconbg.png.unity3d
+    len: 122078
+    hash: 691afc4c412779bc7be0c6ec7f5ae122
+  - name: assets/textures/idle/ui/commen/frameheadbg.png.unity3d
     id: 241
     deps: 
-    len: 31759
-    hash: b5f227ee6b91453b036acb85906287a5
-  - name: assets/textures/idle/ui/commen/loading.png.unity3d
+    len: 29239
+    hash: f938f7fa880398c2027f4d7a534bc887
+  - name: assets/textures/idle/ui/commen/icon-deliver.png.unity3d
     id: 242
     deps: 
-    len: 4844
-    hash: 7ccf2e860ed04f21f39d7b1790a1d6ea
-  - name: assets/textures/idle/ui/commen/maintitlebg.png.unity3d
+    len: 172609
+    hash: 2ae4f85f57aa9929ca0cf0296b713586
+  - name: assets/textures/idle/ui/commen/icon-talk.png.unity3d
     id: 243
     deps: 
-    len: 31755
-    hash: cee18e1de165c83014bcc507dc6fc874
-  - name: assets/textures/idle/ui/commen/money.png.unity3d
+    len: 61583
+    hash: 1b01009995ca0c8aee609ebc5a5b6dbc
+  - name: assets/textures/idle/ui/commen/icon-video.png.unity3d
     id: 244
     deps: 
-    len: 6532
-    hash: 12471b88783f092ac0cf3f332ffcb8bc
-  - name: assets/textures/idle/ui/commen/normaltrunk.png.unity3d
+    len: 4706
+    hash: 5ddc0ddce9bfb5c996ad552cb68b6766
+  - name: assets/textures/idle/ui/commen/iconbg.png.unity3d
     id: 245
     deps: 
-    len: 3830
-    hash: b2b4d0288b6838ca08eca9ec2c1cfc1e
-  - name: assets/textures/idle/ui/commen/progressbg-gray.png.unity3d
+    len: 29306
+    hash: 1d6123aeb6e4829cce9c5082a6bf9a89
+  - name: assets/textures/idle/ui/commen/loading.png.unity3d
     id: 246
     deps: 
-    len: 19288
-    hash: ea90c080f4aaf418e7e6ffa3145e9a7b
-  - name: assets/textures/idle/ui/commen/progressbg-green.png.unity3d
+    len: 4870
+    hash: 1fe4e8a2aea6a32f49ec275251788939
+  - name: assets/textures/idle/ui/commen/maintitlebg.png.unity3d
     id: 247
     deps: 
-    len: 19244
-    hash: 8e5dd5aae922f489a86a8e04fca61901
-  - name: assets/textures/idle/ui/commen/titlebg-line.png.unity3d
+    len: 29318
+    hash: 994cd2adaed767d0b2b28cc3fb87f42f
+  - name: assets/textures/idle/ui/commen/money.png.unity3d
     id: 248
     deps: 
-    len: 31721
-    hash: 97bd353df35963fdb3e36d0458cae49f
-  - name: assets/textures/idle/ui/commen/titlebg.png.unity3d
+    len: 6532
+    hash: 8673256a71333002888e57a2267418c4
+  - name: assets/textures/idle/ui/commen/normaltrunk.png.unity3d
     id: 249
     deps: 
-    len: 32170
-    hash: a5cdeb71de28dcd4f3cf55aa8ddda2ee
-  - name: assets/textures/idle/ui/guide/finger.png.unity3d
+    len: 3826
+    hash: 01779f40b3fa4932f2887cca8e34a50d
+  - name: assets/textures/idle/ui/commen/progressbg-gray.png.unity3d
     id: 250
     deps: 
-    len: 8558
-    hash: 44355a3c394205bd0b4e51a01e16be21
-  - name: assets/textures/idle/ui/idlewindow/offlinebg.png.unity3d
+    len: 18914
+    hash: 33cb6b01df14bc90d463202b4bfc1dbd
+  - name: assets/textures/idle/ui/commen/progressbg-green.png.unity3d
     id: 251
     deps: 
-    len: 97688
-    hash: 86980041152fb1654df2c4c929167ddd
-  - name: shaders.unity3d
+    len: 18862
+    hash: 13162baac1745a813d4703c7468c202b
+  - name: assets/textures/idle/ui/commen/titlebg-line.png.unity3d
     id: 252
     deps: 
-    len: 15191
-    hash: c51af8030d97229eb0123173d8f74cd6
+    len: 29297
+    hash: f10e65c49543bf43067287d20a6d91d2
+  - name: assets/textures/idle/ui/commen/titlebg.png.unity3d
+    id: 253
+    deps: 
+    len: 29757
+    hash: 3021e6b95bdbd29e035dabf6dff013d9
+  - name: assets/textures/idle/ui/guide/finger.png.unity3d
+    id: 254
+    deps: 
+    len: 8213
+    hash: fc9a21f9cc5fd6710eccf7cb364854d0
+  - name: assets/textures/idle/ui/idlewindow/offlinebg.png.unity3d
+    id: 255
+    deps: 
+    len: 88800
+    hash: f06e150df5e27bacfc8becae975208e3
+  - name: shaders.unity3d
+    id: 256
+    deps: 
+    len: 14412
+    hash: acca64f5ac25d946092cc071557cd119

@@ -246,10 +246,8 @@ public class ExcelUtility
         //判断Excel文件中是否存在数据表
         if (mResultSet.Tables.Count < 1)
             return;
-
-        StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.Append("local datas = {");
-        stringBuilder.Append("\r\n");
+        
+        
 
         //读取数据表
         foreach (DataTable mSheet in mResultSet.Tables)
@@ -257,7 +255,15 @@ public class ExcelUtility
             //判断数据表内是否存在数据
             if (mSheet.Rows.Count < 1)
                 continue;
-
+            if (!mSheet.Rows[0][0].ToString().Equals("类名"))
+                continue;
+            string fileName = "test";
+            fileName = mSheet.Rows[1][0].ToString();
+            if (String.IsNullOrEmpty(fileName)) continue;
+            StringBuilder stringBuilder = new StringBuilder();
+            stringBuilder.Append("local "+fileName+" = {");
+            stringBuilder.Append("\r\n");
+            
             //读取数据表行数和列数
             int rowCount = mSheet.Rows.Count;
             int colCount = mSheet.Columns.Count;
@@ -266,48 +272,71 @@ public class ExcelUtility
             List<Dictionary<string, object>> table = new List<Dictionary<string, object>>();
 
             //读取数据
-            for (int i = 1; i < rowCount; i++)
+            for (int i = 2; i < rowCount; i++)
             {
+                bool isNext = false;
+                for (int m = 0; m < colCount; m++)
+                {
+                    string objStr = mSheet.Rows[i][m].ToString();
+                    if (!string.IsNullOrEmpty(objStr) && objStr != "null")
+                    {
+                        isNext = true;
+                        break;
+                    }
+                }
+                if (!isNext) continue;
                 //准备一个字典存储每一行的数据
                 Dictionary<string, object> row = new Dictionary<string, object>();
-                for (int j = 0; j < colCount; j++)
+                for (int j = 1; j < colCount; j++)
                 {
                     //读取第1行数据作为表头字段
-                    string field = mSheet.Rows[0][j].ToString();
+                    string field = mSheet.Rows[1][j].ToString();
                     //Key-Value对应
                     row[field] = mSheet.Rows[i][j];
                 }
                 //添加到表数据中
                 table.Add(row);
             }
-            stringBuilder.Append(string.Format("\t\"{0}\" = ", mSheet.TableName));
-            stringBuilder.Append("{\r\n");
+            //stringBuilder.Append(string.Format("\t\"{0}\" = ", mSheet.TableName));
+            //stringBuilder.Append("{\r\n");
             foreach (Dictionary<string, object> dic in table)
             {
                 stringBuilder.Append("\t\t{\r\n");
                 foreach (string key in dic.Keys)
                 {
-                    if (dic[key].GetType().Name == "String")
-                        stringBuilder.Append(string.Format("\t\t\t\"{0}\" = \"{1}\",\r\n", key, dic[key]));
+                    if (string.IsNullOrEmpty(key)) continue;
+                    object valueObj = dic[key];
+                    Type type = valueObj.GetType();
+                    if (valueObj.GetType().Name == "String")
+                    {
+                        string valueStr = valueObj as string;
+                        if (!string.IsNullOrEmpty(valueStr))
+                            stringBuilder.Append(string.Format("\t\t\t{0} = \"{1}\",\r\n", key, valueObj));
+                        else
+                            stringBuilder.Append(string.Format("\t\t\t{0} = nil,\r\n", key));
+                    }  
+                    else if (valueObj == null || valueObj.GetType().Name == "DBNull")
+                        stringBuilder.Append(string.Format("\t\t\t{0} = nil,\r\n", key));
                     else
-                        stringBuilder.Append(string.Format("\t\t\t\"{0}\" = {1},\r\n", key, dic[key]));
+                        stringBuilder.Append(string.Format("\t\t\t{0} = {1},\r\n", key, valueObj));
                 }
                 stringBuilder.Append("\t\t},\r\n");
             }
-            stringBuilder.Append("\t}\r\n");
-        }
-
-        stringBuilder.Append("}\r\n");
-        stringBuilder.Append("return datas");
-
-        //写入文件
-        using (FileStream fileStream = new FileStream(luaPath, FileMode.Create, FileAccess.Write))
-        {
-            using (TextWriter textWriter = new StreamWriter(fileStream, encoding))
+            stringBuilder.Append("}\r\n");
+            stringBuilder.Append("return " + fileName);
+            fileName += ".lua";
+            string writePath = Path.Combine(luaPath, fileName);
+            //写入文件
+            using (FileStream fileStream = new FileStream(writePath, FileMode.Create, FileAccess.Write))
             {
-                textWriter.Write(stringBuilder.ToString());
+                using (TextWriter textWriter = new StreamWriter(fileStream, encoding))
+                {
+                    textWriter.Write(stringBuilder.ToString());
+                }
             }
         }
+
+        
     }
 
 

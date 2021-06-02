@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using LuaInterface;
 using System.IO;
+using libx;
 
 /// <summary>
 /// 自定义的Lua加载器
@@ -19,7 +20,7 @@ public class ColaLuaResLoader : LuaFileUtils
     {
         instance = this;
 #if UNITY_EDITOR
-        beZip = AppConst.LuaBundleModeEditMode;
+        beZip = Assets.runtimeMode;
 #else
         beZip = AppConst.LuaBundleMode;
 #endif
@@ -37,14 +38,15 @@ public class ColaLuaResLoader : LuaFileUtils
     public void AddBundle(string bundleName)
     {
         var url = bundleName.ToLower();
-        //var bundle = Assets.LoadBundle(url);
-        //if(null != bundle)
-        //{
-        //    base.AddSearchBundle(url, bundle);
-        //}
-        //else
-        //{
-        //    Debug.LogError(string.Format("{0} : Luabundle is load failed!",bundleName));
-        //}
+        //var bundle = AssetLoader.Load<AssetBundle>(url);
+        var bundle = Assets.LoadBundle(url);
+        if (null != bundle)
+        {
+            base.AddSearchBundle(url, bundle.assetBundle);
+        }
+        else
+        {
+            Debug.LogError(string.Format("{0} : Luabundle is load failed!", bundleName));
+        }
     }
 }

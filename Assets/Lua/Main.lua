@@ -9,6 +9,7 @@ else
 	print('LuaPerfect: Check documents at: https://luaperfect.net')
 end
 
+local IdleCityTruckRes = require("LuaData.IdleCityTruckRes")
 --主入口函数。从这里开始lua逻辑
 local rawset = rawset
 
@@ -39,6 +40,7 @@ local function gloablDefine()
     _G.EventMgr = require("Mgrs.EventMgr")
     require("Game.Main.Modules")
     require("Game.Main.GUICollections")
+	
     -- 模块初始化
     Modules.Initialize()
     _G.UIManager = require("Mgrs.UIManager")
@@ -68,8 +70,16 @@ function Main()
     gloablDefine()
     initParam()
     initialize()
-	print("init main lua");
+	print("init main lua111");
     UIManager.Open(ECEnumType.UIEnum.UIBagDialog);
+	print(IdleCityTruckRes[1].lvMin);
+	--local txt = AssetLoader.LoadAsync("IdleSite.json",type(TextAsset),function(obj)
+			--print("init main lua222");
+		--if obj ~= nil then
+				--local jsonStr = obj.text;
+				--print("init main lua333",jsonStr);
+		--end		
+	--end);
     --CommonUtil.GetSceneMgr():LoadSceneAdditiveAsync("xinshoucun", function(sceneName)
         --EventMgr.DispatchEvent(Modules.moduleId.Common, Modules.notifyId.Common.CREATE_PANEL, ECEnumType.UIEnum.Login)
         --UIManager.Close(ECEnumType.UIEnum.Loading)

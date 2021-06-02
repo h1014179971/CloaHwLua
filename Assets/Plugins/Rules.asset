@@ -20,7 +20,7 @@ MonoBehaviour:
   searchPatternPrefab: '*.prefab'
   searchPatternScene: '*.unity'
   searchPatternText: '*.txt,*.bytes,*.json,*.csv,*.xml,*htm,*.html,*.yaml,*.fnt'
-  version: 11
+  version: 18
   scenesInBuild:
   - {fileID: 102900000, guid: 5866861b7f9a25841be83c614cfb2440, type: 3}
   rules:
@@ -116,7 +116,345 @@ MonoBehaviour:
     searchPattern: '*.prefab'
     nameBy: 1
     assetBundleName: 
+  - searchPath: Assets/LuaBaseTemp
+    searchPattern: '*'
+    nameBy: 2
+    assetBundleName: 
+  - searchPath: Assets/LuaUpdateTemp
+    searchPattern: '*'
+    nameBy: 2
+    assetBundleName: 
   ruleAssets:
+  - bundle: assets/gameassets/arts/ui/prefabs/uguiroot.prefab.unity3d
+    path: Assets/GameAssets/Arts/UI/Prefabs/UGUIRoot.prefab
+  - bundle: assets/gameassets/arts/ui/prefabs/uibagdialog.prefab.unity3d
+    path: Assets/GameAssets/Arts/UI/Prefabs/UIBagDialog.prefab
+  - bundle: assets/gameassets/sprotobytes/sproto.bytes.unity3d
+    path: Assets/GameAssets/SprotoBytes/sproto.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/3rd.BigNum.BigNum.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/3rd.BigNum.BigRat.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/3rd.BigNum.test.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/3rd.BigNum.test_BigNum.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/3rd.BigNum.test_BigRat.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/3rd.BigNum.test_div.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/3rd.BigNum.test_mul.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/3rd.BigNum.test_side_effect.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/3rd.BigNum.test_sub.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/3rd.BigNum.test_sum.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/3rd.cjson.json2lua.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/3rd.cjson.lua2json.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/3rd.cjson.test.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/3rd.cjson.util.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/3rd.luabitop.bitbench.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/3rd.luabitop.bittest.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/3rd.luabitop.installpath.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/3rd.luabitop.md5test.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/3rd.luabitop.nsievebits.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/3rd.pbc.parser.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/3rd.pbc.protobuf.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/3rd.pbc.test.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/3rd.pbc.test2.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/3rd.pbc.testparser.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/3rd.pblua.login_pb.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/3rd.pblua.person_pb.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/3rd.sproto.print_r.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/3rd.sproto.sproto.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/3rd.sproto.sprotoparser.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/3rd.sproto.test.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/3rd.sproto.testall.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/3rd.sproto.testrpc.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/Common.AtlasResPathCfg.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/Common.Collections.LObjectPool.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/Common.Collections.LStack.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/Common.ECEnumType.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/Common.LuaAppConst.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/Core.ColaPlus.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/Core.Net.NetManager.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/Core.middleclass.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/Core.ui.UIBase.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/Game.Main.GUICollections.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/Game.Main.ModuleId.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/Game.Main.Modules.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/Game.Main.NotifyId.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/JustTest.ObjectPool.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/LuaConfigs.Language.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/LuaData..lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/LuaData.IdleCityCycle.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/LuaData.IdleCityTruckRes.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/LuaData.IdleGuide.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/LuaData.IdleItem.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/LuaData.IdleMainTask.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/LuaData.IdleShelfRes.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/LuaData.IdleSite.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/LuaData.IdleSiteVolume1.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/LuaData.IdleSiteVolume2.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/LuaData.IdleSiteVolume3.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/LuaData.IdleSiteVolume4.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/LuaData.IdleSiteVolume5.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/LuaData.IdleSiteVolume6.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/LuaData.IdleSpecialEvent.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/LuaData.IdleTruckRes.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/LuaData.LanguageData.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/LuaData.UnitConvert.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/Main.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/Mgrs.ConfigMgr.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/Mgrs.EventMgr.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/Mgrs.UIManager.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/Mgrs.UISorter.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/Modules.Common.NotifyId.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/Modules.Common.Views.UIDebugPanel.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/Modules.Common.Views.UILoading.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/Modules.Login.Login_Controller.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/Modules.Login.Login_Module.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/Modules.Login.Views.UILoginPanel.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/Modules.Test.Test_Controller.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/Modules.Test.Test_Module.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/Modules.Test.Views.UIBagDialog.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/Modules.Test.Views.UIModelPanel.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/Modules.World.Views.UIWorldDialog.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/Protocols.Protocol.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/System.Injection.InjectionBridgeInfo.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/System.Injection.LuaInjectionBus.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/System.Injection.LuaInjectionStation.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/System.Reflection.BindingFlags.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/System.Timer.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/System.ValueType.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/System.coroutine.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/UIBindViews.UIBagDialog_BindView.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/UIBindViews.UIDebugPanel_BindView.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/UIBindViews.UILoading_BindView.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/UIBindViews.UILoginPanel_BindView.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/UIBindViews.UIModelPanel_BindView.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/UIBindViews.UIMohaUIView_BindView.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/UIBindViews.UIWorldDialog_BindView.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/UIBindViews.UIcopying_BindView.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/UnityEngine.Bounds.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/UnityEngine.Color.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/UnityEngine.LayerMask.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/UnityEngine.Mathf.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/UnityEngine.Plane.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/UnityEngine.Profiler.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/UnityEngine.Quaternion.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/UnityEngine.Ray.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/UnityEngine.RaycastHit.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/UnityEngine.Time.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/UnityEngine.Touch.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/UnityEngine.Vector2.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/UnityEngine.Vector3.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/UnityEngine.Vector4.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/Utilitys.LuaCommon_Utils.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/Utilitys.LuaGlobalCheck.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/Utilitys.LuaLogHelper.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/Utilitys.Table_Utils.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/Utilitys.UI_Utils.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/cjson.util.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/event.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/jit.bc.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/jit.bcsave.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/jit.dis_arm.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/jit.dis_arm64.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/jit.dis_arm64be.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/jit.dis_mips.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/jit.dis_mips64.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/jit.dis_mips64el.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/jit.dis_mipsel.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/jit.dis_ppc.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/jit.dis_x64.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/jit.dis_x86.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/jit.dump.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/jit.p.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/jit.v.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/jit.vmdef.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/jit.zone.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/list.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/lpeg.re.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/ltn12.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/mime.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/misc.functions.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/misc.strict.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/misc.utf8.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/protobuf.containers.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/protobuf.decoder.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/protobuf.descriptor.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/protobuf.encoder.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/protobuf.listener.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/protobuf.protobuf.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/protobuf.text_format.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/protobuf.type_checkers.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/protobuf.wire_format.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/slot.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/socket.ftp.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/socket.headers.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/socket.http.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/socket.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/socket.mbox.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/socket.smtp.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/socket.tp.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/socket.url.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/tolua.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/typeof.lua.bytes
   - bundle: assets/res/audio/buildsmoke.mp3.unity3d
     path: Assets/Res/Audio/BuildSmoke.mp3
   - bundle: assets/res/audio/buttonclick.mp3.unity3d
@@ -1693,6 +2031,179 @@ MonoBehaviour:
   - name: assets/res/textures/idle/common/muxiang.png.unity3d
     assets:
     - Assets/Res/Textures/Idle/Common/muxiang.png
+  - name: assets/gameassets/sprotobytes/sproto.bytes.unity3d
+    assets:
+    - Assets/GameAssets/SprotoBytes/sproto.bytes
+  - name: assets/gameassets/arts/ui/prefabs/uguiroot.prefab.unity3d
+    assets:
+    - Assets/GameAssets/Arts/UI/Prefabs/UGUIRoot.prefab
+  - name: assets/gameassets/arts/ui/prefabs/uibagdialog.prefab.unity3d
+    assets:
+    - Assets/GameAssets/Arts/UI/Prefabs/UIBagDialog.prefab
+  - name: assets/luabasetemp.unity3d
+    assets:
+    - Assets/LuaBaseTemp/3rd.BigNum.BigNum.lua.bytes
+    - Assets/LuaBaseTemp/3rd.BigNum.BigRat.lua.bytes
+    - Assets/LuaBaseTemp/3rd.BigNum.test.lua.bytes
+    - Assets/LuaBaseTemp/3rd.BigNum.test_BigNum.lua.bytes
+    - Assets/LuaBaseTemp/3rd.BigNum.test_BigRat.lua.bytes
+    - Assets/LuaBaseTemp/3rd.BigNum.test_div.lua.bytes
+    - Assets/LuaBaseTemp/3rd.BigNum.test_mul.lua.bytes
+    - Assets/LuaBaseTemp/3rd.BigNum.test_side_effect.lua.bytes
+    - Assets/LuaBaseTemp/3rd.BigNum.test_sub.lua.bytes
+    - Assets/LuaBaseTemp/3rd.BigNum.test_sum.lua.bytes
+    - Assets/LuaBaseTemp/3rd.cjson.json2lua.lua.bytes
+    - Assets/LuaBaseTemp/3rd.cjson.lua2json.lua.bytes
+    - Assets/LuaBaseTemp/3rd.cjson.test.lua.bytes
+    - Assets/LuaBaseTemp/3rd.cjson.util.lua.bytes
+    - Assets/LuaBaseTemp/3rd.luabitop.bitbench.lua.bytes
+    - Assets/LuaBaseTemp/3rd.luabitop.bittest.lua.bytes
+    - Assets/LuaBaseTemp/3rd.luabitop.installpath.lua.bytes
+    - Assets/LuaBaseTemp/3rd.luabitop.md5test.lua.bytes
+    - Assets/LuaBaseTemp/3rd.luabitop.nsievebits.lua.bytes
+    - Assets/LuaBaseTemp/3rd.pbc.parser.lua.bytes
+    - Assets/LuaBaseTemp/3rd.pbc.protobuf.lua.bytes
+    - Assets/LuaBaseTemp/3rd.pbc.test.lua.bytes
+    - Assets/LuaBaseTemp/3rd.pbc.test2.lua.bytes
+    - Assets/LuaBaseTemp/3rd.pbc.testparser.lua.bytes
+    - Assets/LuaBaseTemp/3rd.pblua.login_pb.lua.bytes
+    - Assets/LuaBaseTemp/3rd.pblua.person_pb.lua.bytes
+    - Assets/LuaBaseTemp/3rd.sproto.print_r.lua.bytes
+    - Assets/LuaBaseTemp/3rd.sproto.sproto.lua.bytes
+    - Assets/LuaBaseTemp/3rd.sproto.sprotoparser.lua.bytes
+    - Assets/LuaBaseTemp/3rd.sproto.test.lua.bytes
+    - Assets/LuaBaseTemp/3rd.sproto.testall.lua.bytes
+    - Assets/LuaBaseTemp/3rd.sproto.testrpc.lua.bytes
+    - Assets/LuaBaseTemp/cjson.util.lua.bytes
+    - Assets/LuaBaseTemp/Common.AtlasResPathCfg.lua.bytes
+    - Assets/LuaBaseTemp/Common.Collections.LObjectPool.lua.bytes
+    - Assets/LuaBaseTemp/Common.Collections.LStack.lua.bytes
+    - Assets/LuaBaseTemp/Common.ECEnumType.lua.bytes
+    - Assets/LuaBaseTemp/Common.LuaAppConst.lua.bytes
+    - Assets/LuaBaseTemp/Core.ColaPlus.lua.bytes
+    - Assets/LuaBaseTemp/Core.middleclass.lua.bytes
+    - Assets/LuaBaseTemp/Core.Net.NetManager.lua.bytes
+    - Assets/LuaBaseTemp/Core.ui.UIBase.lua.bytes
+    - Assets/LuaBaseTemp/event.lua.bytes
+    - Assets/LuaBaseTemp/Game.Main.GUICollections.lua.bytes
+    - Assets/LuaBaseTemp/Game.Main.ModuleId.lua.bytes
+    - Assets/LuaBaseTemp/Game.Main.Modules.lua.bytes
+    - Assets/LuaBaseTemp/Game.Main.NotifyId.lua.bytes
+    - Assets/LuaBaseTemp/jit.bc.lua.bytes
+    - Assets/LuaBaseTemp/jit.bcsave.lua.bytes
+    - Assets/LuaBaseTemp/jit.dis_arm.lua.bytes
+    - Assets/LuaBaseTemp/jit.dis_arm64.lua.bytes
+    - Assets/LuaBaseTemp/jit.dis_arm64be.lua.bytes
+    - Assets/LuaBaseTemp/jit.dis_mips.lua.bytes
+    - Assets/LuaBaseTemp/jit.dis_mips64.lua.bytes
+    - Assets/LuaBaseTemp/jit.dis_mips64el.lua.bytes
+    - Assets/LuaBaseTemp/jit.dis_mipsel.lua.bytes
+    - Assets/LuaBaseTemp/jit.dis_ppc.lua.bytes
+    - Assets/LuaBaseTemp/jit.dis_x64.lua.bytes
+    - Assets/LuaBaseTemp/jit.dis_x86.lua.bytes
+    - Assets/LuaBaseTemp/jit.dump.lua.bytes
+    - Assets/LuaBaseTemp/jit.p.lua.bytes
+    - Assets/LuaBaseTemp/jit.v.lua.bytes
+    - Assets/LuaBaseTemp/jit.vmdef.lua.bytes
+    - Assets/LuaBaseTemp/jit.zone.lua.bytes
+    - Assets/LuaBaseTemp/JustTest.ObjectPool.lua.bytes
+    - Assets/LuaBaseTemp/list.lua.bytes
+    - Assets/LuaBaseTemp/lpeg.re.lua.bytes
+    - Assets/LuaBaseTemp/ltn12.lua.bytes
+    - Assets/LuaBaseTemp/LuaConfigs.Language.lua.bytes
+    - Assets/LuaBaseTemp/LuaData..lua.bytes
+    - Assets/LuaBaseTemp/LuaData.IdleCityCycle.lua.bytes
+    - Assets/LuaBaseTemp/LuaData.IdleCityTruckRes.lua.bytes
+    - Assets/LuaBaseTemp/LuaData.IdleGuide.lua.bytes
+    - Assets/LuaBaseTemp/LuaData.IdleItem.lua.bytes
+    - Assets/LuaBaseTemp/LuaData.IdleMainTask.lua.bytes
+    - Assets/LuaBaseTemp/LuaData.IdleShelfRes.lua.bytes
+    - Assets/LuaBaseTemp/LuaData.IdleSite.lua.bytes
+    - Assets/LuaBaseTemp/LuaData.IdleSiteVolume1.lua.bytes
+    - Assets/LuaBaseTemp/LuaData.IdleSiteVolume2.lua.bytes
+    - Assets/LuaBaseTemp/LuaData.IdleSiteVolume3.lua.bytes
+    - Assets/LuaBaseTemp/LuaData.IdleSiteVolume4.lua.bytes
+    - Assets/LuaBaseTemp/LuaData.IdleSiteVolume5.lua.bytes
+    - Assets/LuaBaseTemp/LuaData.IdleSiteVolume6.lua.bytes
+    - Assets/LuaBaseTemp/LuaData.IdleSpecialEvent.lua.bytes
+    - Assets/LuaBaseTemp/LuaData.IdleTruckRes.lua.bytes
+    - Assets/LuaBaseTemp/LuaData.LanguageData.lua.bytes
+    - Assets/LuaBaseTemp/LuaData.UnitConvert.lua.bytes
+    - Assets/LuaBaseTemp/Main.lua.bytes
+    - Assets/LuaBaseTemp/Mgrs.ConfigMgr.lua.bytes
+    - Assets/LuaBaseTemp/Mgrs.EventMgr.lua.bytes
+    - Assets/LuaBaseTemp/Mgrs.UIManager.lua.bytes
+    - Assets/LuaBaseTemp/Mgrs.UISorter.lua.bytes
+    - Assets/LuaBaseTemp/mime.lua.bytes
+    - Assets/LuaBaseTemp/misc.functions.lua.bytes
+    - Assets/LuaBaseTemp/misc.strict.lua.bytes
+    - Assets/LuaBaseTemp/misc.utf8.lua.bytes
+    - Assets/LuaBaseTemp/Modules.Common.NotifyId.lua.bytes
+    - Assets/LuaBaseTemp/Modules.Common.Views.UIDebugPanel.lua.bytes
+    - Assets/LuaBaseTemp/Modules.Common.Views.UILoading.lua.bytes
+    - Assets/LuaBaseTemp/Modules.Login.Login_Controller.lua.bytes
+    - Assets/LuaBaseTemp/Modules.Login.Login_Module.lua.bytes
+    - Assets/LuaBaseTemp/Modules.Login.Views.UILoginPanel.lua.bytes
+    - Assets/LuaBaseTemp/Modules.Test.Test_Controller.lua.bytes
+    - Assets/LuaBaseTemp/Modules.Test.Test_Module.lua.bytes
+    - Assets/LuaBaseTemp/Modules.Test.Views.UIBagDialog.lua.bytes
+    - Assets/LuaBaseTemp/Modules.Test.Views.UIModelPanel.lua.bytes
+    - Assets/LuaBaseTemp/Modules.World.Views.UIWorldDialog.lua.bytes
+    - Assets/LuaBaseTemp/protobuf.containers.lua.bytes
+    - Assets/LuaBaseTemp/protobuf.decoder.lua.bytes
+    - Assets/LuaBaseTemp/protobuf.descriptor.lua.bytes
+    - Assets/LuaBaseTemp/protobuf.encoder.lua.bytes
+    - Assets/LuaBaseTemp/protobuf.listener.lua.bytes
+    - Assets/LuaBaseTemp/protobuf.protobuf.lua.bytes
+    - Assets/LuaBaseTemp/protobuf.text_format.lua.bytes
+    - Assets/LuaBaseTemp/protobuf.type_checkers.lua.bytes
+    - Assets/LuaBaseTemp/protobuf.wire_format.lua.bytes
+    - Assets/LuaBaseTemp/Protocols.Protocol.lua.bytes
+    - Assets/LuaBaseTemp/slot.lua.bytes
+    - Assets/LuaBaseTemp/socket.ftp.lua.bytes
+    - Assets/LuaBaseTemp/socket.headers.lua.bytes
+    - Assets/LuaBaseTemp/socket.http.lua.bytes
+    - Assets/LuaBaseTemp/socket.lua.bytes
+    - Assets/LuaBaseTemp/socket.mbox.lua.bytes
+    - Assets/LuaBaseTemp/socket.smtp.lua.bytes
+    - Assets/LuaBaseTemp/socket.tp.lua.bytes
+    - Assets/LuaBaseTemp/socket.url.lua.bytes
+    - Assets/LuaBaseTemp/System.coroutine.lua.bytes
+    - Assets/LuaBaseTemp/System.Injection.InjectionBridgeInfo.lua.bytes
+    - Assets/LuaBaseTemp/System.Injection.LuaInjectionBus.lua.bytes
+    - Assets/LuaBaseTemp/System.Injection.LuaInjectionStation.lua.bytes
+    - Assets/LuaBaseTemp/System.Reflection.BindingFlags.lua.bytes
+    - Assets/LuaBaseTemp/System.Timer.lua.bytes
+    - Assets/LuaBaseTemp/System.ValueType.lua.bytes
+    - Assets/LuaBaseTemp/tolua.lua.bytes
+    - Assets/LuaBaseTemp/typeof.lua.bytes
+    - Assets/LuaBaseTemp/UIBindViews.UIBagDialog_BindView.lua.bytes
+    - Assets/LuaBaseTemp/UIBindViews.UIcopying_BindView.lua.bytes
+    - Assets/LuaBaseTemp/UIBindViews.UIDebugPanel_BindView.lua.bytes
+    - Assets/LuaBaseTemp/UIBindViews.UILoading_BindView.lua.bytes
+    - Assets/LuaBaseTemp/UIBindViews.UILoginPanel_BindView.lua.bytes
+    - Assets/LuaBaseTemp/UIBindViews.UIModelPanel_BindView.lua.bytes
+    - Assets/LuaBaseTemp/UIBindViews.UIMohaUIView_BindView.lua.bytes
+    - Assets/LuaBaseTemp/UIBindViews.UIWorldDialog_BindView.lua.bytes
+    - Assets/LuaBaseTemp/UnityEngine.Bounds.lua.bytes
+    - Assets/LuaBaseTemp/UnityEngine.Color.lua.bytes
+    - Assets/LuaBaseTemp/UnityEngine.LayerMask.lua.bytes
+    - Assets/LuaBaseTemp/UnityEngine.Mathf.lua.bytes
+    - Assets/LuaBaseTemp/UnityEngine.Plane.lua.bytes
+    - Assets/LuaBaseTemp/UnityEngine.Profiler.lua.bytes
+    - Assets/LuaBaseTemp/UnityEngine.Quaternion.lua.bytes
+    - Assets/LuaBaseTemp/UnityEngine.Ray.lua.bytes
+    - Assets/LuaBaseTemp/UnityEngine.RaycastHit.lua.bytes
+    - Assets/LuaBaseTemp/UnityEngine.Time.lua.bytes
+    - Assets/LuaBaseTemp/UnityEngine.Touch.lua.bytes
+    - Assets/LuaBaseTemp/UnityEngine.Vector2.lua.bytes
+    - Assets/LuaBaseTemp/UnityEngine.Vector3.lua.bytes
+    - Assets/LuaBaseTemp/UnityEngine.Vector4.lua.bytes
+    - Assets/LuaBaseTemp/Utilitys.LuaCommon_Utils.lua.bytes
+    - Assets/LuaBaseTemp/Utilitys.LuaGlobalCheck.lua.bytes
+    - Assets/LuaBaseTemp/Utilitys.LuaLogHelper.lua.bytes
+    - Assets/LuaBaseTemp/Utilitys.Table_Utils.lua.bytes
+    - Assets/LuaBaseTemp/Utilitys.UI_Utils.lua.bytes
   - name: assets/effects/materials/mat_piaoqian.mat.unity3d
     assets:
     - Assets/Effects/Materials/Mat_piaoqian.mat
@@ -1708,41 +2219,39 @@ MonoBehaviour:
   - name: assets/animations/buiding.anim.unity3d
     assets:
     - Assets/Animations/buiding.anim
-  - name: assets/3rdparty/spine/spine/editor/spine-unity/editor/gui/atlasasset icon.png.unity3d
+  - name: assets/3rd/spine/spine/editor/spine-unity/editor/gui/atlasasset icon.png.unity3d
     assets:
-    - Assets/3rdParty/Spine/Spine/Editor/spine-unity/Editor/GUI/AtlasAsset Icon.png
-  - name: assets/3rdparty/spine/spine/runtime/spine-unity/skeletondatamodifierassets/blendmodematerials/skeletonpmaadditive.mat.unity3d
+    - Assets/3rd/Spine/Spine/Editor/spine-unity/Editor/GUI/AtlasAsset Icon.png
+  - name: assets/3rd/spine/spine/runtime/spine-unity/skeletondatamodifierassets/blendmodematerials/skeletonpmaadditive.mat.unity3d
     assets:
-    - Assets/3rdParty/Spine/Spine/Runtime/spine-unity/SkeletonDataModifierAssets/BlendModeMaterials/SkeletonPMAAdditive.mat
+    - Assets/3rd/Spine/Spine/Runtime/spine-unity/SkeletonDataModifierAssets/BlendModeMaterials/SkeletonPMAAdditive.mat
   - name: assets/spine/zhanggui-chaowan/chaowan.atlas.txt.unity3d
     assets:
     - Assets/Spine/zhanggui-chaowan/chaowan.atlas.txt
   - name: assets/spine/zhanggui-chaowan/chaowan_material.mat.unity3d
     assets:
     - Assets/Spine/zhanggui-chaowan/chaowan_Material.mat
-  - name: assets/3rdparty/spine/spine/runtime/spine-unity/skeletondatamodifierassets/blendmodematerials/skeletonpmamultiply.mat.unity3d
+  - name: assets/3rd/spine/spine/runtime/spine-unity/skeletondatamodifierassets/blendmodematerials/skeletonpmamultiply.mat.unity3d
     assets:
-    - Assets/3rdParty/Spine/Spine/Runtime/spine-unity/SkeletonDataModifierAssets/BlendModeMaterials/SkeletonPMAMultiply.mat
+    - Assets/3rd/Spine/Spine/Runtime/spine-unity/SkeletonDataModifierAssets/BlendModeMaterials/SkeletonPMAMultiply.mat
   - name: assets/spine/zhanggui-chaowan/chaowan_atlas.asset.unity3d
     assets:
     - Assets/Spine/zhanggui-chaowan/chaowan_Atlas.asset
   - name: shaders.unity3d
     assets:
-    - Assets/3rdParty/Spine/Spine/Runtime/spine-unity/Shaders/BlendModes/Spine-Skeleton-PMA-Screen.shader
-    - Assets/3rdParty/Spine/Spine/Runtime/spine-unity/Shaders/BlendModes/Spine-Skeleton-PMA-Additive.shader
-    - Assets/3rdParty/Spine/Spine/Runtime/spine-unity/Shaders/Spine-Skeleton.shader
-    - Assets/3rdParty/Spine/Spine/Runtime/spine-unity/Shaders/BlendModes/Spine-Skeleton-PMA-Multiply.shader
+    - Assets/3rd/Spine/Spine/Runtime/spine-unity/Shaders/BlendModes/Spine-Skeleton-PMA-Screen.shader
+    - Assets/3rd/Spine/Spine/Runtime/spine-unity/Shaders/BlendModes/Spine-Skeleton-PMA-Additive.shader
+    - Assets/3rd/Spine/Spine/Runtime/spine-unity/Shaders/Spine-Skeleton.shader
+    - Assets/3rd/Spine/Spine/Runtime/spine-unity/Shaders/BlendModes/Spine-Skeleton-PMA-Multiply.shader
   - name: assets/spine/zhanggui-chaowan/chaowan.png.unity3d
     assets:
     - Assets/Spine/zhanggui-chaowan/chaowan.png
-  - name: assets/3rdparty/spine/spine/editor/spine-unity/editor/gui/skeletondataasset
-      icon.png.unity3d
+  - name: assets/3rd/spine/spine/editor/spine-unity/editor/gui/skeletondataasset icon.png.unity3d
     assets:
-    - Assets/3rdParty/Spine/Spine/Editor/spine-unity/Editor/GUI/SkeletonDataAsset
-      Icon.png
-  - name: assets/3rdparty/spine/spine/runtime/spine-unity/skeletondatamodifierassets/blendmodematerials/skeletonpmascreen.mat.unity3d
+    - Assets/3rd/Spine/Spine/Editor/spine-unity/Editor/GUI/SkeletonDataAsset Icon.png
+  - name: assets/3rd/spine/spine/runtime/spine-unity/skeletondatamodifierassets/blendmodematerials/skeletonpmascreen.mat.unity3d
     assets:
-    - Assets/3rdParty/Spine/Spine/Runtime/spine-unity/SkeletonDataModifierAssets/BlendModeMaterials/SkeletonPMAScreen.mat
+    - Assets/3rd/Spine/Spine/Runtime/spine-unity/SkeletonDataModifierAssets/BlendModeMaterials/SkeletonPMAScreen.mat
   - name: assets/spine/zhanggui-chaowan/chaowan_skeletondata.asset.unity3d
     assets:
     - Assets/Spine/zhanggui-chaowan/chaowan_SkeletonData.asset
