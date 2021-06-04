@@ -6,5 +6,6 @@
 
 
 require("Common.ECEnumType")
-require("Tools.EventMgr")
+require("Common.ECEventType")
+require("Mgrs.EventMgr")
 require("Tools.Handler")

@@ -29,8 +29,7 @@ end
 ---注册事件
 function UIManager.RegisterEvent()
     -- 创建界面
-	EventMgr.AddListener(ECEventType.UIEvent.CREATE_PANEL,Handler.Create2(UIManager.Open))
-    --EventMgr.RegisterEvent(Modules.moduleId.Common, Modules.notifyId.Common.CREATE_PANEL, UIManager.Open)
+    EventMgr.RegisterEvent(ECEventType.UIEvent.CREATE_PANEL, UIManager.Open)
     -- 销毁界面
     --EventMgr.RegisterEvent(Modules.moduleId.Common, Modules.notifyId.Common.DESTROY_PANEL, UIManager.Close)
 end

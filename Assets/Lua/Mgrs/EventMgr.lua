@@ -5,6 +5,7 @@
 ---
 
 local EventMgr = {}
+_G.EventMgr = EventMgr
 local bit = require "bit"
 
 ---@field 观察者列表
@@ -15,18 +16,18 @@ local _listeners = {}
 ---@param eventId table
 ---@param func table
 ---@param 实例 table
-function EventMgr.RegisterEvent(moduleId, eventId, func, inst)
-    local key = bit.lshift(moduleId, 16) + eventId
+function EventMgr.RegisterEvent(moduleId, func, inst)
+    local key = moduleId
     EventMgr.AddEventListener(key, func, inst, nil)
 end
 
-function EventMgr.UnRegisterEvent(moduleId, eventId, func)
-    local key = bit.lshift(moduleId, 16) + eventId
+function EventMgr.UnRegisterEvent(moduleId, func)
+    local key = moduleId
     EventMgr.RemoveEventListener(key, func)
 end
 
-function EventMgr.DispatchEvent(moduleId, eventId, param)
-    local key = bit.lshift(moduleId, 16) + eventId
+function EventMgr.DispatchEvent(moduleId, param)
+    local key = moduleId
     local listeners = _listeners[key]
     if nil == listeners then
         return

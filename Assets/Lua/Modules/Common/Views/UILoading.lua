@@ -4,7 +4,7 @@
 ---                 UILoading UI类
 ---
 
-require("Common.ECEventType")
+
 local UIBase = require("Core.ui.UIBase")
 local UILoading = Class("UILoading",UIBase)
 
@@ -42,9 +42,9 @@ end
 
 -- 注册UI事件监听
 function UILoading:RegisterEvent()
-	--EventMgr.RegisterEvent(Modules.moduleId.Common, Modules.notifyId.Common.Loading_progress, SceneProgress)
+	EventMgr.RegisterEvent(ECEventType.UIEvent.Loading_progress, self.SceneProgress,self)
 	
-	EventMgr.AddListener(ECEventType.UIEvent.Loading_progress,Handler.Create(self.SceneProgress,self))
+	
 end
 
 -- 取消注册UI事件监听

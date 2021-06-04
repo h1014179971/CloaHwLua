@@ -75,7 +75,7 @@ function Main()
     initialize()
 	Log.debug("init main lua111");
     --UIManager.Open(ECEnumType.UIEnum.UIBagDialog);
-	EventMgr.TriggerEvent(ECEventType.UIEvent.CREATE_PANEL,ECEnumType.UIEnum.UILoading)
+	EventMgr.DispatchEvent(ECEventType.UIEvent.CREATE_PANEL,ECEnumType.UIEnum.UILoading)
 	--UIManager.Open(ECEnumType.UIEnum.UILoading);
 	Log.debug(IdleCityTruckRes[1].lvMin);
 	--local txt = AssetLoader.LoadAsync("IdleSite.json",type(TextAsset),function(obj)
@@ -89,7 +89,7 @@ function Main()
     CommonUtil.GetSceneMgr():LoadSceneAdditiveAsync("IdleScene_1001.unity",function(progress)
 		Log.debug("progress=="..progress)
 		--EventMgr.DispatchEvent(Modules.moduleId.Common, Modules.notifyId.Common.Loading_progress, progress)
-		EventMgr.TriggerEvent(ECEventType.UIEvent.Loading_progress,progress)
+		EventMgr.DispatchEvent(ECEventType.UIEvent.Loading_progress,progress)
 	end, function(sceneName)
 			Log.debug("is done")
         --EventMgr.DispatchEvent(Modules.moduleId.Common, Modules.notifyId.Common.CREATE_PANEL, ECEnumType.UIEnum.Login)
