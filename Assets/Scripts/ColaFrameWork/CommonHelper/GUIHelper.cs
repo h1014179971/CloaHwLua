@@ -8,6 +8,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using UnityEngine.UI.Extensions;
 using ColaFramework.Foundation;
+using libx;
 
 namespace ColaFramework
 {
@@ -72,62 +73,74 @@ namespace ColaFramework
 
         private static void UGUICreate()
         {
-            if (null == uiRootObj)
+            GameObject root= GameObject.FindWithTag("UIRoot");
+            if (root == null)
             {
-                //创建画布根节点，相机节点，3D物体根节点
-                int uiLayer = LayerMask.NameToLayer("UI");
-                GameObject rootObj = new GameObject("UGUIRoot");
-                GameObject.DontDestroyOnLoad(rootObj);
-                rootObj.layer = uiLayer;
-
-                uiRootObj = new GameObject("Canvas");
-                uiRootObj.transform.parent = rootObj.transform;
-                uiRootObj.layer = uiLayer;
-
-                uiCameraObj = new GameObject("UICamera");
-                uiCameraObj.layer = uiLayer;
-                uiCameraObj.transform.parent = uiRootObj.transform;
-                uiCamera = uiCameraObj.AddComponent<Camera>();
-                uiCamera.depth = 6;
-                uiCamera.backgroundColor = Color.black;
-                uiCamera.cullingMask = LayerMask.GetMask("UI");
-                uiCamera.clearFlags = CameraClearFlags.Depth;
-
-                //使用2D相机
-                uiCamera.orthographicSize = 1.0f;
-                uiCamera.orthographic = true;
-                uiCamera.nearClipPlane = -1000f;
-                uiCamera.farClipPlane = 1000f;
-                uiCameraObj.AddComponent<CameraAdapter>();
-
-                Canvas uguiRoot = uiRootObj.AddComponent<Canvas>();
-                uguiRoot.renderMode = RenderMode.ScreenSpaceCamera;
-                uguiRoot.worldCamera = uiCamera;
-
-                CanvasScaler canvasScaler = uiRootObj.AddComponent<CanvasScaler>();
-                canvasScaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
-                canvasScaler.screenMatchMode = CanvasScaler.ScreenMatchMode.Expand;
-                canvasScaler.matchWidthOrHeight = 0;
-                canvasScaler.referenceResolution = new Vector2(1280, 720);
-
-                uiRootObj.AddComponent<GraphicRaycaster>();
-                GameObject eventSystem = new GameObject("EventSystem");
-                GameObject.DontDestroyOnLoad(eventSystem);
-                eventSystem.AddComponent<EventSystem>();
-                eventSystem.AddComponent<StandaloneInputModule>();
-
-                uiRoot = uguiRoot;
-
-                GameObject bgCameraObj = new GameObject("BackgroundCamera");
-                GameObject.DontDestroyOnLoad(bgCameraObj);
-                Camera bgCamera = bgCameraObj.AddComponent<Camera>();
-                bgCamera.depth = 0;
-                bgCamera.backgroundColor = Color.black;
-                bgCamera.orthographicSize = 1f;
-                bgCamera.orthographic = true;
-                bgCamera.cullingMask = LayerMask.GetMask("Nothing");
-                bgCamera.clearFlags = CameraClearFlags.SolidColor;
+                GameObject rootPrefab = AssetLoader.Load<GameObject>("UGUIRoot.prefab");
+                root = CommonHelper.InstantiateGoByPrefab(rootPrefab, null);
+                GameObject.DontDestroyOnLoad(root);
             }
+            uiRoot = root.GetComponentByName<Canvas>("Canvas");
+            uiRootObj = uiRoot.gameObject;
+            uiCamera = uiRootObj.GetComponentByName<Camera>("UICamera");
+            uiCameraObj = uiCamera.gameObject;
+
+            //if (null == uiRootObj)
+            //{
+            //    //创建画布根节点，相机节点，3D物体根节点
+            //    int uiLayer = LayerMask.NameToLayer("UI");
+            //    GameObject rootObj = new GameObject("UGUIRoot");
+            //    GameObject.DontDestroyOnLoad(rootObj);
+            //    rootObj.layer = uiLayer;
+
+            //    uiRootObj = new GameObject("Canvas");
+            //    uiRootObj.transform.parent = rootObj.transform;
+            //    uiRootObj.layer = uiLayer;
+
+            //    uiCameraObj = new GameObject("UICamera");
+            //    uiCameraObj.layer = uiLayer;
+            //    uiCameraObj.transform.parent = uiRootObj.transform;
+            //    uiCamera = uiCameraObj.AddComponent<Camera>();
+            //    uiCamera.depth = 6;
+            //    uiCamera.backgroundColor = Color.black;
+            //    uiCamera.cullingMask = LayerMask.GetMask("UI");
+            //    uiCamera.clearFlags = CameraClearFlags.Depth;
+
+            //    //使用2D相机
+            //    uiCamera.orthographicSize = 1.0f;
+            //    uiCamera.orthographic = true;
+            //    uiCamera.nearClipPlane = -1000f;
+            //    uiCamera.farClipPlane = 1000f;
+            //    uiCameraObj.AddComponent<CameraAdapter>();
+
+            //    Canvas uguiRoot = uiRootObj.AddComponent<Canvas>();
+            //    uguiRoot.renderMode = RenderMode.ScreenSpaceCamera;
+            //    uguiRoot.worldCamera = uiCamera;
+
+            //    CanvasScaler canvasScaler = uiRootObj.AddComponent<CanvasScaler>();
+            //    canvasScaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
+            //    canvasScaler.screenMatchMode = CanvasScaler.ScreenMatchMode.Expand;
+            //    canvasScaler.matchWidthOrHeight = 0;
+            //    canvasScaler.referenceResolution = new Vector2(1280, 720);
+
+            //    uiRootObj.AddComponent<GraphicRaycaster>();
+            //    GameObject eventSystem = new GameObject("EventSystem");
+            //    GameObject.DontDestroyOnLoad(eventSystem);
+            //    eventSystem.AddComponent<EventSystem>();
+            //    eventSystem.AddComponent<StandaloneInputModule>();
+
+            //    uiRoot = uguiRoot;
+
+            //    GameObject bgCameraObj = new GameObject("BackgroundCamera");
+            //    GameObject.DontDestroyOnLoad(bgCameraObj);
+            //    Camera bgCamera = bgCameraObj.AddComponent<Camera>();
+            //    bgCamera.depth = 0;
+            //    bgCamera.backgroundColor = Color.black;
+            //    bgCamera.orthographicSize = 1f;
+            //    bgCamera.orthographic = true;
+            //    bgCamera.cullingMask = LayerMask.GetMask("Nothing");
+            //    bgCamera.clearFlags = CameraClearFlags.SolidColor;
+            //}
         }
 
         private static void CreateMainCamera()

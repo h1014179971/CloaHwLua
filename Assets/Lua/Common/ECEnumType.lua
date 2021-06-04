@@ -10,7 +10,7 @@ _G.ECEnumType = ECEnumType
 ---UI界面枚举
 ECEnumType.UIEnum = {
     Login = 1, -- 登录界面
-    Loading = 2, --Loading界面
+    UILoading = 2, --Loading界面
     DebugPanel = 3, -- Debug信息界面
     WorldDialog = 4, --设置界面
     UIModel = 5, --UGUIModel测试界面

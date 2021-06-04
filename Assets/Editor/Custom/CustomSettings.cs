@@ -82,6 +82,7 @@ public static class CustomSettings
         _GT(typeof(DropdownControl)).SetNameSpace(null),
         _GT(typeof(UITableView)).SetNameSpace(null),
         _GT(typeof(UITableViewCell)).SetNameSpace(null),
+        _GT(typeof(AppConst)),
 
 #if USING_DOTWEENING
         _GT(typeof(DG.Tweening.DOTween)),
@@ -135,6 +136,7 @@ public static class CustomSettings
         _GT(typeof(AsyncOperation)).SetBaseType(typeof(System.Object)),
         _GT(typeof(LightType)),
         _GT(typeof(SleepTimeout)),
+        _GT(typeof(Slider)),
 
 #region UGUI组件导出
         _GT(typeof(Text)),

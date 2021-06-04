@@ -14,17 +14,18 @@ local logTraceTag = 3
 local debugLogTag = 3
 local warnLogTag = 2
 local errorLogTag = 0
+_G.Log = logHelper
 
 -- 普通日志
 function logHelper.debug(...)
-    if LogFunction then
+    if LogFunction and isLog then
         LogFunction(debugLogTag, debugLogTag <= logTraceTag, ...)
     end
 end
 
 -- 警告
 function logHelper.warn(...)
-    if LogFunction then
+    if LogFunction and isLog then
         LogFunction(warnLogTag, warnLogTag <= logTraceTag, ...)
     end
 end
@@ -38,7 +39,7 @@ end
 
 -- 初始化
 function logHelper.initialize()
-
+	isLog = AppConst.DebugMode
 end
 
 -- 函数注册到全局

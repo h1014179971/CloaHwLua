@@ -29,9 +29,10 @@ end
 ---注册事件
 function UIManager.RegisterEvent()
     -- 创建界面
-    EventMgr.RegisterEvent(Modules.moduleId.Common, Modules.notifyId.Common.CREATE_PANEL, UIManager.Open)
+	EventMgr.AddListener(ECEventType.UIEvent.CREATE_PANEL,Handler.Create2(UIManager.Open))
+    --EventMgr.RegisterEvent(Modules.moduleId.Common, Modules.notifyId.Common.CREATE_PANEL, UIManager.Open)
     -- 销毁界面
-    EventMgr.RegisterEvent(Modules.moduleId.Common, Modules.notifyId.Common.DESTROY_PANEL, UIManager.Close)
+    --EventMgr.RegisterEvent(Modules.moduleId.Common, Modules.notifyId.Common.DESTROY_PANEL, UIManager.Close)
 end
 
 ---设置一个UI界面参与点击其他地方关闭面板管理

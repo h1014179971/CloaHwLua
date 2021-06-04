@@ -22,12 +22,29 @@ public class SceneMgrWrap
 	{
 		try
 		{
-			ToLua.CheckArgsCount(L, 3);
-			SceneMgr obj = (SceneMgr)ToLua.CheckObject<SceneMgr>(L, 1);
-			string arg0 = ToLua.CheckString(L, 2);
-			OnSceneNameChanged arg1 = (OnSceneNameChanged)ToLua.CheckDelegate<OnSceneNameChanged>(L, 3);
-			obj.LoadSceneAdditiveAsync(arg0, arg1);
-			return 0;
+			int count = LuaDLL.lua_gettop(L);
+
+			if (count == 3)
+			{
+				SceneMgr obj = (SceneMgr)ToLua.CheckObject<SceneMgr>(L, 1);
+				string arg0 = ToLua.CheckString(L, 2);
+				OnSceneNameChanged arg1 = (OnSceneNameChanged)ToLua.CheckDelegate<OnSceneNameChanged>(L, 3);
+				obj.LoadSceneAdditiveAsync(arg0, arg1);
+				return 0;
+			}
+			else if (count == 4)
+			{
+				SceneMgr obj = (SceneMgr)ToLua.CheckObject<SceneMgr>(L, 1);
+				string arg0 = ToLua.CheckString(L, 2);
+				OnSceneProgress arg1 = (OnSceneProgress)ToLua.CheckDelegate<OnSceneProgress>(L, 3);
+				OnSceneNameChanged arg2 = (OnSceneNameChanged)ToLua.CheckDelegate<OnSceneNameChanged>(L, 4);
+				obj.LoadSceneAdditiveAsync(arg0, arg1, arg2);
+				return 0;
+			}
+			else
+			{
+				return LuaDLL.luaL_throw(L, "invalid arguments to method: SceneMgr.LoadSceneAdditiveAsync");
+			}
 		}
 		catch (Exception e)
 		{

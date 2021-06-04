@@ -9,6 +9,9 @@ else
 	print('LuaPerfect: Check documents at: https://luaperfect.net')
 end
 
+
+require("require")
+
 local IdleCityTruckRes = require("LuaData.IdleCityTruckRes")
 --主入口函数。从这里开始lua逻辑
 local rawset = rawset
@@ -37,7 +40,7 @@ local function gloablDefine()
     -- 必须首先注册全局Class,顺序敏感
     _G.Class = require("Core.middleclass")
     define("LuaLogHelper", require("Utilitys.LuaLogHelper"))
-    _G.EventMgr = require("Mgrs.EventMgr")
+    --_G.EventMgr = require("Mgrs.EventMgr")
     require("Game.Main.Modules")
     require("Game.Main.GUICollections")
 	
@@ -70,9 +73,11 @@ function Main()
     gloablDefine()
     initParam()
     initialize()
-	print("init main lua111");
-    UIManager.Open(ECEnumType.UIEnum.UIBagDialog);
-	print(IdleCityTruckRes[1].lvMin);
+	Log.debug("init main lua111");
+    --UIManager.Open(ECEnumType.UIEnum.UIBagDialog);
+	EventMgr.TriggerEvent(ECEventType.UIEvent.CREATE_PANEL,ECEnumType.UIEnum.UILoading)
+	--UIManager.Open(ECEnumType.UIEnum.UILoading);
+	Log.debug(IdleCityTruckRes[1].lvMin);
 	--local txt = AssetLoader.LoadAsync("IdleSite.json",type(TextAsset),function(obj)
 			--print("init main lua222");
 		--if obj ~= nil then
@@ -80,10 +85,16 @@ function Main()
 				--print("init main lua333",jsonStr);
 		--end		
 	--end);
-    --CommonUtil.GetSceneMgr():LoadSceneAdditiveAsync("xinshoucun", function(sceneName)
+	
+    CommonUtil.GetSceneMgr():LoadSceneAdditiveAsync("IdleScene_1001.unity",function(progress)
+		Log.debug("progress=="..progress)
+		--EventMgr.DispatchEvent(Modules.moduleId.Common, Modules.notifyId.Common.Loading_progress, progress)
+		EventMgr.TriggerEvent(ECEventType.UIEvent.Loading_progress,progress)
+	end, function(sceneName)
+			Log.debug("is done")
         --EventMgr.DispatchEvent(Modules.moduleId.Common, Modules.notifyId.Common.CREATE_PANEL, ECEnumType.UIEnum.Login)
         --UIManager.Close(ECEnumType.UIEnum.Loading)
-    --end)
+    end)
 end
 
 --场景切换通知

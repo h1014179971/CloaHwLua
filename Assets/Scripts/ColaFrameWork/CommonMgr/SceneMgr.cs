@@ -3,6 +3,7 @@
 // Copyright © 2018-2049 ColaFramework 马三小伙儿
 //----------------------------------------------
 
+using libx;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,6 +11,7 @@ using UnityEngine.SceneManagement;
 
 public delegate void OnSceneIndexChanged(int sceneIndex);
 public delegate void OnSceneNameChanged(string sceneName);
+public delegate void OnSceneProgress(float progress);
 
 /// <summary>
 /// 场景管理器
@@ -53,6 +55,39 @@ public class SceneMgr : MonoBehaviour
         SceneManager.SetActiveScene(scene);
         yield return null;
         currentScene = SceneManager.GetActiveScene();
+        if (null != onsceneChanged)
+        {
+            onsceneChanged(sceneName);
+        }
+    }
+    /// <summary>
+    /// 以异步-叠加方式加载场景
+    /// </summary>
+    /// <param name="sceneName"></param>
+    /// <param name="onsceneChanged"></param>
+    public void LoadSceneAdditiveAsync(string sceneName,OnSceneProgress onSceneProgress, OnSceneNameChanged onsceneChanged)
+    {
+        StartCoroutine(LoadTargetSceneAdditiveAsync(sceneName, onSceneProgress, onsceneChanged));
+    }
+
+    /// <summary>
+    /// 以异步-叠加方式加载场景(携程调用)
+    /// </summary>
+    /// <param name="sceneName"></param>
+    /// <param name="onsceneChanged"></param>
+    /// <returns></returns>
+    private IEnumerator LoadTargetSceneAdditiveAsync(string sceneName,OnSceneProgress onSceneProgress, OnSceneNameChanged onsceneChanged)
+    {
+        var scene = Assets.LoadSceneAsync(sceneName, false);
+
+        while (!scene.isDone)
+        {
+            Debug.Log($"progress==={scene.progress}");
+            if (onSceneProgress != null)
+                onSceneProgress(scene.progress);
+            yield return null;
+        }
+        yield return scene.isDone;
         if (null != onsceneChanged)
         {
             onsceneChanged(sceneName);
@@ -111,6 +146,7 @@ public class SceneMgr : MonoBehaviour
             onSceneChanged(sceneIndex);
         }
     }
+
 
     /// <summary>
     /// 以异步-单独的方式加载场景

@@ -38,6 +38,7 @@ public class DelegateFactory
 		dict.Add(typeof(UnityEngine.UI.Extensions.UITableView.OnProcessPress), factory.UnityEngine_UI_Extensions_UITableView_OnProcessPress);
 		dict.Add(typeof(System.Action<string>), factory.System_Action_string);
 		dict.Add(typeof(OnSceneNameChanged), factory.OnSceneNameChanged);
+		dict.Add(typeof(OnSceneProgress), factory.OnSceneProgress);
 		dict.Add(typeof(OnSceneIndexChanged), factory.OnSceneIndexChanged);
 		dict.Add(typeof(ColaFramework.NetWork.NetMessageCenter.NetMessageAction), factory.ColaFramework_NetWork_NetMessageCenter_NetMessageAction);
 		dict.Add(typeof(UnityEngine.UI.Extensions.UITableView.OnScrollCompleted), factory.UnityEngine_UI_Extensions_UITableView_OnScrollCompleted);
@@ -74,6 +75,7 @@ public class DelegateFactory
 		DelegateTraits<UnityEngine.UI.Extensions.UITableView.OnProcessPress>.Init(factory.UnityEngine_UI_Extensions_UITableView_OnProcessPress);
 		DelegateTraits<System.Action<string>>.Init(factory.System_Action_string);
 		DelegateTraits<OnSceneNameChanged>.Init(factory.OnSceneNameChanged);
+		DelegateTraits<OnSceneProgress>.Init(factory.OnSceneProgress);
 		DelegateTraits<OnSceneIndexChanged>.Init(factory.OnSceneIndexChanged);
 		DelegateTraits<ColaFramework.NetWork.NetMessageCenter.NetMessageAction>.Init(factory.ColaFramework_NetWork_NetMessageCenter_NetMessageAction);
 		DelegateTraits<UnityEngine.UI.Extensions.UITableView.OnScrollCompleted>.Init(factory.UnityEngine_UI_Extensions_UITableView_OnScrollCompleted);
@@ -110,6 +112,7 @@ public class DelegateFactory
 		TypeTraits<UnityEngine.UI.Extensions.UITableView.OnProcessPress>.Init(factory.Check_UnityEngine_UI_Extensions_UITableView_OnProcessPress);
 		TypeTraits<System.Action<string>>.Init(factory.Check_System_Action_string);
 		TypeTraits<OnSceneNameChanged>.Init(factory.Check_OnSceneNameChanged);
+		TypeTraits<OnSceneProgress>.Init(factory.Check_OnSceneProgress);
 		TypeTraits<OnSceneIndexChanged>.Init(factory.Check_OnSceneIndexChanged);
 		TypeTraits<ColaFramework.NetWork.NetMessageCenter.NetMessageAction>.Init(factory.Check_ColaFramework_NetWork_NetMessageCenter_NetMessageAction);
 		TypeTraits<UnityEngine.UI.Extensions.UITableView.OnScrollCompleted>.Init(factory.Check_UnityEngine_UI_Extensions_UITableView_OnScrollCompleted);
@@ -146,6 +149,7 @@ public class DelegateFactory
 		StackTraits<UnityEngine.UI.Extensions.UITableView.OnProcessPress>.Push = factory.Push_UnityEngine_UI_Extensions_UITableView_OnProcessPress;
 		StackTraits<System.Action<string>>.Push = factory.Push_System_Action_string;
 		StackTraits<OnSceneNameChanged>.Push = factory.Push_OnSceneNameChanged;
+		StackTraits<OnSceneProgress>.Push = factory.Push_OnSceneProgress;
 		StackTraits<OnSceneIndexChanged>.Push = factory.Push_OnSceneIndexChanged;
 		StackTraits<ColaFramework.NetWork.NetMessageCenter.NetMessageAction>.Push = factory.Push_ColaFramework_NetWork_NetMessageCenter_NetMessageAction;
 		StackTraits<UnityEngine.UI.Extensions.UITableView.OnScrollCompleted>.Push = factory.Push_UnityEngine_UI_Extensions_UITableView_OnScrollCompleted;
@@ -1492,6 +1496,63 @@ public class DelegateFactory
 	}
 
 	void Push_OnSceneNameChanged(IntPtr L, OnSceneNameChanged o)
+	{
+		ToLua.Push(L, o);
+	}
+
+	class OnSceneProgress_Event : LuaDelegate
+	{
+		public OnSceneProgress_Event(LuaFunction func) : base(func) { }
+		public OnSceneProgress_Event(LuaFunction func, LuaTable self) : base(func, self) { }
+
+		public void Call(float param0)
+		{
+			func.BeginPCall();
+			func.Push(param0);
+			func.PCall();
+			func.EndPCall();
+		}
+
+		public void CallWithSelf(float param0)
+		{
+			func.BeginPCall();
+			func.Push(self);
+			func.Push(param0);
+			func.PCall();
+			func.EndPCall();
+		}
+	}
+
+	public OnSceneProgress OnSceneProgress(LuaFunction func, LuaTable self, bool flag)
+	{
+		if (func == null)
+		{
+			OnSceneProgress fn = delegate(float param0) { };
+			return fn;
+		}
+
+		if(!flag)
+		{
+			OnSceneProgress_Event target = new OnSceneProgress_Event(func);
+			OnSceneProgress d = target.Call;
+			target.method = d.Method;
+			return d;
+		}
+		else
+		{
+			OnSceneProgress_Event target = new OnSceneProgress_Event(func, self);
+			OnSceneProgress d = target.CallWithSelf;
+			target.method = d.Method;
+			return d;
+		}
+	}
+
+	bool Check_OnSceneProgress(IntPtr L, int pos)
+	{
+		return TypeChecker.CheckDelegateType(typeof(OnSceneProgress), L, pos);
+	}
+
+	void Push_OnSceneProgress(IntPtr L, OnSceneProgress o)
 	{
 		ToLua.Push(L, o);
 	}

@@ -8,6 +8,7 @@
 /Assets/StreamingAssets/DLC
 /TrackEditor
 /Assets/LuaBaseTemp
+/Assets/.lpproj
 Assembly-CSharp.csproj
 Assembly-CSharp-Editor.csproj
 CloaHwLua.sln

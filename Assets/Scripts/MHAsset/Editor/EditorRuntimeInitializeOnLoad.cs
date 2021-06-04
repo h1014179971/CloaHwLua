@@ -36,13 +36,17 @@ namespace libx
 
     public class EditorRuntimeInitializeOnLoad : ScriptableObject
     {
-        [Tooltip("是否开启模拟模式")]
+        [Tooltip("是否开启模拟Bunlde模式")]
         [Header("OnValueChanged")]
         public  bool SimulateMode;
+        [Tooltip("是否开启Debug日志模式")]
+        [Header("OnValueChanged")]
+        public bool DebugMode = Application.platform == RuntimePlatform.WindowsEditor ? true : false;
         [RuntimeInitializeOnLoadMethod]
         private static void OnInitialize()
         {
             Assets.runtimeMode = GetSetting().SimulateMode;
+            AppConst.DebugMode = GetSetting().DebugMode;
             if (Assets.runtimeMode) return;
             Assets.basePath = BuildScript.outputPath + Path.DirectorySeparatorChar;     
             Assets.loadDelegate = AssetDatabase.LoadAssetAtPath; 

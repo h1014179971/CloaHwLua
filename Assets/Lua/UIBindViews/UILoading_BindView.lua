@@ -3,14 +3,15 @@
 local public = {}
 local cachedViews = nil
 
-public.viewPath = "Arts/UI/Prefabs/UILoading.prefab"
+public.viewPath = "UILoading.prefab"
 
 function public.BindView(uiView, Panel)
 	cachedViews = {}
 	if nil ~= Panel then
 		local collection = Panel:GetComponent("UIComponentCollection")
 		if nil ~= collection then
-			--pass
+			uiView.m_loadTxt = collection:Get(0)
+			uiView.m_process = collection:Get(1)
 		else
 			error("BindView Error! UIComponentCollection is nil!")
 		end
@@ -21,7 +22,8 @@ end
 
 function public.UnBindView(uiView)
 	cachedViews = nil
-			--pass
+	uiView.m_loadTxt = nil
+	uiView.m_process = nil
 end
 
 return public
