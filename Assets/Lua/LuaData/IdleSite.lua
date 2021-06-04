@@ -120,4 +120,5 @@ local IdleSite = {
 			size = 6.8,
 		},
 }
+_G.IdleSite = IdleSite
 return IdleSite

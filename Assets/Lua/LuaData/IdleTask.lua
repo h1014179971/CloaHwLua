@@ -473,4 +473,5 @@ local IdleTask = {
 			Introduce = "糖葫芦驿站升至1250级",
 		},
 }
+_G.IdleTask = IdleTask
 return IdleTask

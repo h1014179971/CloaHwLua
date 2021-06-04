@@ -9,6 +9,7 @@ local core = require "sproto.core"
 local Protocol = require("Protocols.Protocol")
 
 local NetManager = {}
+_G.NetManager = NetManager
 local Socket = nil
 local listeners = {}
 local sprotoCoder = nil

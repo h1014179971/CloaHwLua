@@ -100,4 +100,5 @@ local IdleCityCycle = {
 			cycle = 41,
 		},
 }
+_G.IdleCityCycle = IdleCityCycle
 return IdleCityCycle

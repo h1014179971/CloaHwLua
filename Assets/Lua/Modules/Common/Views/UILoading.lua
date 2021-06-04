@@ -27,7 +27,10 @@ end
 function UILoading:OnCreate()
 	self.m_loadTxt.text = "哈乐沃德"
 	self.m_process.value = 0
-	self:Test()
+	--self:Test()
+	Timer.New(function()
+		Log.debug("1111111111")
+	end,1,3):Start()
 end
 
 -- 界面可见性变化的时候触发
@@ -67,8 +70,7 @@ function UILoading:Test()
 end
 function UILoading:SceneProgress(progress)
 	Log.debug("UILoading progress"..progress)
-	--print("UILoading progress"..progress)
-	--self.m_process.value = progress
+	self.m_process.value = progress
 end
 
 return UILoading

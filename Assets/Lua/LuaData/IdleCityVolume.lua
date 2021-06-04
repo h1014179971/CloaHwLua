@@ -250,4 +250,5 @@ local IdleCityVolume = {
 			volume = 202,
 		},
 }
+_G.IdleCityVolume = IdleCityVolume
 return IdleCityVolume

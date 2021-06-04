@@ -32,4 +32,5 @@ local IdleGuide = {
 			NeedComplete = False,
 		},
 }
+_G.IdleGuide = IdleGuide
 return IdleGuide

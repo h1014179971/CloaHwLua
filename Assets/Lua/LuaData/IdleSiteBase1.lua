@@ -18000,4 +18000,5 @@ local IdleSiteBase1 = {
 			value = "601.8,0",
 		},
 }
+_G.IdleSiteBase1 = IdleSiteBase1
 return IdleSiteBase1

@@ -7,6 +7,7 @@ local ECEventType = {}
 _G.ECEventType = ECEventType
 ECEventType.UIEvent = {
 	CREATE_PANEL = "CREATE_PANEL",
+	DESTROY_PANEL = "DESTROY_PANEL",
 	Loading_progress = "Loading_progress",
 }
 return ECEventType

@@ -42,4 +42,5 @@ local IdleItem = {
 			itemRes = "itemImg05",
 		},
 }
+_G.IdleItem = IdleItem
 return IdleItem

@@ -100,4 +100,5 @@ local IdleTruckRes = {
 			emptySpriteDown = "truck_lv05_down_1",
 		},
 }
+_G.IdleTruckRes = IdleTruckRes
 return IdleTruckRes

@@ -4004,4 +4004,5 @@ local UnitConvert = {
 			y = "MH",
 		},
 }
+_G.UnitConvert = UnitConvert
 return UnitConvert

@@ -241,7 +241,7 @@ public class ExcelUtility
 	/// 转换为lua
 	/// </summary>
 	/// <param name="luaPath">lua文件路径</param>
-	public void ConvertToLua(string luaPath, Encoding encoding)
+	public void ConvertToLua(string luaPath, Encoding encoding ,ref List<string> fileNames)
     {
         //判断Excel文件中是否存在数据表
         if (mResultSet.Tables.Count < 1)
@@ -310,8 +310,9 @@ public class ExcelUtility
                     if (valueObj.GetType().Name == "String")
                     {
                         string valueStr = valueObj as string;
+                        string str = valueStr.Replace("\"", "\\\"");
                         if (!string.IsNullOrEmpty(valueStr))
-                            stringBuilder.Append(string.Format("\t\t\t{0} = \"{1}\",\r\n", key, valueObj));
+                            stringBuilder.Append(string.Format("\t\t\t{0} = \"{1}\",\r\n", key, str));
                         else
                             stringBuilder.Append(string.Format("\t\t\t{0} = nil,\r\n", key));
                     }  
@@ -323,7 +324,10 @@ public class ExcelUtility
                 stringBuilder.Append("\t\t},\r\n");
             }
             stringBuilder.Append("}\r\n");
+            stringBuilder.Append("_G."+fileName+" = "+ fileName);
+            stringBuilder.Append("\r\n");
             stringBuilder.Append("return " + fileName);
+            fileNames.Add(fileName);
             fileName += ".lua";
             string writePath = Path.Combine(luaPath, fileName);
             //写入文件

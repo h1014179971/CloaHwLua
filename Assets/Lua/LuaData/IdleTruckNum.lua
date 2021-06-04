@@ -160,4 +160,5 @@ local IdleTruckNum = {
 			price = "32000000,4",
 		},
 }
+_G.IdleTruckNum = IdleTruckNum
 return IdleTruckNum

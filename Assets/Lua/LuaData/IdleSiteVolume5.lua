@@ -60,4 +60,5 @@ local IdleSiteVolume5 = {
 			shelfRes = "301,301,301",
 		},
 }
+_G.IdleSiteVolume5 = IdleSiteVolume5
 return IdleSiteVolume5

@@ -30,4 +30,5 @@ local IdleShelfRes = {
 			sprite = "huojia6",
 		},
 }
+_G.IdleShelfRes = IdleShelfRes
 return IdleShelfRes

@@ -5,6 +5,7 @@
 ---
 
 local ConfigMgr = {}
+_G.ConfigMgr = ConfigMgr
 
 ---@field 数据配置文件的路径
 local cfgPath = "LuaConfigs/%s.lua"

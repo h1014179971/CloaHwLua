@@ -125,4 +125,5 @@ local IdleCity = {
 			stationcameraSize = 11,
 		},
 }
+_G.IdleCity = IdleCity
 return IdleCity

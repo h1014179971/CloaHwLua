@@ -7,7 +7,7 @@
 local GUICollections = require("Game.Main.GUICollections")
 local UISorter = require("Mgrs.UISorter")
 local UIManager = {}
-
+_G.UIManager = UIManager
 ---@field 存储打开的UI列表
 local uiList = {}
 ---@field 用于存储参与点击其他地方关闭面板管理的UI的列表
@@ -31,7 +31,7 @@ function UIManager.RegisterEvent()
     -- 创建界面
     EventMgr.RegisterEvent(ECEventType.UIEvent.CREATE_PANEL, UIManager.Open)
     -- 销毁界面
-    --EventMgr.RegisterEvent(Modules.moduleId.Common, Modules.notifyId.Common.DESTROY_PANEL, UIManager.Close)
+    EventMgr.RegisterEvent(ECEventType.UIEvent.DESTROY_PANEL, UIManager.Close)
 end
 
 ---设置一个UI界面参与点击其他地方关闭面板管理

@@ -100,4 +100,5 @@ local IdleCityTruckRes = {
 			sprite = "cityTruck_lv01_up_",
 		},
 }
+_G.IdleCityTruckRes = IdleCityTruckRes
 return IdleCityTruckRes

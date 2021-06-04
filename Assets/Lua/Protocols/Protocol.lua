@@ -5,6 +5,7 @@
 ---
 
 local Protocol = {}
+_G.Protocol = Protocol
 
 Protocol.C2S_PING = 1
 Protocol.C2S_Login = 2

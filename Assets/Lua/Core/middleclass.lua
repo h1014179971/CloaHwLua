@@ -27,6 +27,7 @@ local middleclass = {
     SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
   ]]
 }
+_G.Class = middleclass
 
 local function _createIndexWrapper(aClass, f)
   if f == nil then

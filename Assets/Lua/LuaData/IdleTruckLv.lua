@@ -70,4 +70,5 @@ local IdleTruckLv = {
 			icon = nil,
 		},
 }
+_G.IdleTruckLv = IdleTruckLv
 return IdleTruckLv

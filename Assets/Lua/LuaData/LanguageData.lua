@@ -8,4 +8,5 @@ local LanguageData = {
 			Japanese = "中国",
 		},
 }
+_G.LanguageData = LanguageData
 return LanguageData

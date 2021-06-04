@@ -468,4 +468,5 @@ local IdleMainTask = {
 			Tips = "文玩驿站-Lv600",
 		},
 }
+_G.IdleMainTask = IdleMainTask
 return IdleMainTask

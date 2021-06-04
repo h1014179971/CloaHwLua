@@ -10,9 +10,9 @@ else
 end
 
 
-require("require")
 
-local IdleCityTruckRes = require("LuaData.IdleCityTruckRes")
+
+require("LuaData.LuaData")
 --主入口函数。从这里开始lua逻辑
 local rawset = rawset
 
@@ -24,7 +24,7 @@ function define(name, value)
 end
 
 local function initialize()
-    LuaLogHelper.initialize()
+    Log.initialize()-- LuaLogHelper.initialize()
     NetManager.Initialize()
 
     --UIManager初始化
@@ -35,23 +35,14 @@ end
 
 -- 在此处定义注册一些全局变量
 local function gloablDefine()
-    require("Common.ECEnumType")
-    require("Common.LuaAppConst")
-    -- 必须首先注册全局Class,顺序敏感
-    _G.Class = require("Core.middleclass")
-    define("LuaLogHelper", require("Utilitys.LuaLogHelper"))
-    --_G.EventMgr = require("Mgrs.EventMgr")
-    require("Game.Main.Modules")
-    require("Game.Main.GUICollections")
+	require("require")
+    
+    --define("LuaLogHelper", require("Utilitys.LuaLogHelper"))
+    
 	
     -- 模块初始化
     Modules.Initialize()
-    _G.UIManager = require("Mgrs.UIManager")
-    _G.ConfigMgr = require("Mgrs.ConfigMgr")
-    _G.Protocol = require("Protocols.Protocol")
-    _G.NetManager = require("Core.Net.NetManager")
-    --控制全局变量的新建与访问
-    require("Utilitys.LuaGlobalCheck")
+    
 end
 
 -- 初始化一些参数
@@ -78,6 +69,7 @@ function Main()
 	EventMgr.DispatchEvent(ECEventType.UIEvent.CREATE_PANEL,ECEnumType.UIEnum.UILoading)
 	--UIManager.Open(ECEnumType.UIEnum.UILoading);
 	Log.debug(IdleCityTruckRes[1].lvMin);
+	Log.debug("Item="..IdleItem[1].icon)
 	--local txt = AssetLoader.LoadAsync("IdleSite.json",type(TextAsset),function(obj)
 			--print("init main lua222");
 		--if obj ~= nil then

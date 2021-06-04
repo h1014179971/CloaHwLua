@@ -192,4 +192,5 @@ local IdleCityStoreVolume = {
 			staffnum = 2,
 		},
 }
+_G.IdleCityStoreVolume = IdleCityStoreVolume
 return IdleCityStoreVolume

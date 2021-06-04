@@ -180,4 +180,5 @@ local IdleSiteTime5 = {
 			speed = 2.45,
 		},
 }
+_G.IdleSiteTime5 = IdleSiteTime5
 return IdleSiteTime5

@@ -14,4 +14,5 @@ local IdleSpecialEvent = {
 			spriteRes = "icon-shopping",
 		},
 }
+_G.IdleSpecialEvent = IdleSpecialEvent
 return IdleSpecialEvent

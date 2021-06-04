@@ -264,4 +264,5 @@ local IdleSiteGrade4 = {
 			itemIndex = 14,
 		},
 }
+_G.IdleSiteGrade4 = IdleSiteGrade4
 return IdleSiteGrade4
