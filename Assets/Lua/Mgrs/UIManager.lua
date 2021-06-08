@@ -8,6 +8,7 @@ local GUICollections = require("Game.Main.GUICollections")
 local UISorter = require("Mgrs.UISorter")
 local UIManager = {}
 _G.UIManager = UIManager
+setmetatable(UIManager,{__index = _G})
 ---@field 存储打开的UI列表
 local uiList = {}
 ---@field 用于存储参与点击其他地方关闭面板管理的UI的列表

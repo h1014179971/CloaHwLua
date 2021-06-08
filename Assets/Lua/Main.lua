@@ -11,8 +11,8 @@ end
 
 
 
-
-require("LuaData.LuaData")
+--require("3rd.BigNum.test_BigRat")
+--require("LuaData.LuaData")
 --主入口函数。从这里开始lua逻辑
 local rawset = rawset
 
@@ -35,10 +35,12 @@ end
 
 -- 在此处定义注册一些全局变量
 local function gloablDefine()
+	
 	require("require")
-    
+	--require("LuaData.IdleCityTruckRes")
+	
     --define("LuaLogHelper", require("Utilitys.LuaLogHelper"))
-    
+	--require("3rd.BigNum.test_BigRat")
 	
     -- 模块初始化
     Modules.Initialize()
@@ -66,10 +68,13 @@ function Main()
     initialize()
 	Log.debug("init main lua111");
     --UIManager.Open(ECEnumType.UIEnum.UIBagDialog);
-	EventMgr.DispatchEvent(ECEventType.UIEvent.CREATE_PANEL,ECEnumType.UIEnum.UILoading)
-	--UIManager.Open(ECEnumType.UIEnum.UILoading);
+	--EventMgr.DispatchEvent(ECEventType.UIEvent.CREATE_PANEL,ECEnumType.UIEnum.UILoading)
+	UIManager.Open(ECEnumType.UIEnum.UILoading);
+	--local IdleCityTruckRes = require("LuaData.IdleCityTruckRes")
+	
 	Log.debug(IdleCityTruckRes[1].lvMin);
-	Log.debug("Item="..IdleItem[1].icon)
+	--Log.debug("Item="..IdleItem[1].icon)
+	PlayerMgr.Instance():OnInit()
 	--local txt = AssetLoader.LoadAsync("IdleSite.json",type(TextAsset),function(obj)
 			--print("init main lua222");
 		--if obj ~= nil then
@@ -84,6 +89,9 @@ function Main()
 		EventMgr.DispatchEvent(ECEventType.UIEvent.Loading_progress,progress)
 	end, function(sceneName)
 			Log.debug("is done")
+			UIManager.Close(ECEnumType.UIEnum.UILoading)
+			--require("3rd.BigNum.test_BigRat")	
+			require("3rd.BigNum.test_BigNumber")
         --EventMgr.DispatchEvent(Modules.moduleId.Common, Modules.notifyId.Common.CREATE_PANEL, ECEnumType.UIEnum.Login)
         --UIManager.Close(ECEnumType.UIEnum.Loading)
     end)

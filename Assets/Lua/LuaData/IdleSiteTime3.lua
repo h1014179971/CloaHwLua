@@ -181,4 +181,5 @@ local IdleSiteTime3 = {
 		},
 }
 _G.IdleSiteTime3 = IdleSiteTime3
+setmetatable(_G,IdleSiteTime3)
 return IdleSiteTime3

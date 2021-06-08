@@ -6,6 +6,7 @@
 
 local LuaAppConst = {}
 _G.LuaAppConst = LuaAppConst
+setmetatable(LuaAppConst,{__index = _G})
 
 LuaAppConst.ServerIp = "127.0.0.1"
 LuaAppConst.Port = 8888

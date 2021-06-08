@@ -6,6 +6,7 @@
 
 local EventMgr = {}
 _G.EventMgr = EventMgr
+setmetatable(EventMgr,{__index = _G})
 local bit = require "bit"
 
 ---@field 观察者列表

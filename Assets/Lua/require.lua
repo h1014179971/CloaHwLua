@@ -4,7 +4,8 @@
 ---              require Module业务逻辑
 ---
 
-
+--控制全局变量的新建与访问
+--require("Utilitys.LuaGlobalCheck")
 require("Common.ECEnumType")
 require("Common.ECEventType")
 require("Common.LuaAppConst")
@@ -19,5 +20,6 @@ require("Mgrs.UIManager")
 require("Mgrs.ConfigMgr")
 require("Protocols.Protocol")
 require("Tools.Timer")
---控制全局变量的新建与访问
-require("Utilitys.LuaGlobalCheck")
+require("Mgrs.PlayerMgr")
+require("LuaData.LuaData")
+json = require "cjson"

@@ -255,7 +255,7 @@ local function run_script(script, env)
 
     return env
 end
-
+rawset(_G, "file_save", file_save)
 -- Export functions
 return {
     serialise_value = serialise_value,

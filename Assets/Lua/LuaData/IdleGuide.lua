@@ -33,4 +33,5 @@ local IdleGuide = {
 		},
 }
 _G.IdleGuide = IdleGuide
+setmetatable(_G,IdleGuide)
 return IdleGuide

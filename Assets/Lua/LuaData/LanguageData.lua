@@ -9,4 +9,5 @@ local LanguageData = {
 		},
 }
 _G.LanguageData = LanguageData
+setmetatable(_G,LanguageData)
 return LanguageData

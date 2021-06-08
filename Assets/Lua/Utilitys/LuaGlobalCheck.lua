@@ -8,6 +8,7 @@ _G.PCALL_ERROR_FUNCTION = function(message)
     error(message)
 end
 
+
 setmetatable(_G, {
     -- 控制新建全局变量
     __newindex = function(_, k)

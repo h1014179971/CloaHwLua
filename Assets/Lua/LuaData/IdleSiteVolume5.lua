@@ -61,4 +61,5 @@ local IdleSiteVolume5 = {
 		},
 }
 _G.IdleSiteVolume5 = IdleSiteVolume5
+setmetatable(_G,IdleSiteVolume5)
 return IdleSiteVolume5

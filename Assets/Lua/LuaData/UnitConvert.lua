@@ -4005,4 +4005,5 @@ local UnitConvert = {
 		},
 }
 _G.UnitConvert = UnitConvert
+setmetatable(_G,UnitConvert)
 return UnitConvert

@@ -6,6 +6,7 @@
 
 local ConfigMgr = {}
 _G.ConfigMgr = ConfigMgr
+setmetatable(ConfigMgr,{__index = _G})
 
 ---@field 数据配置文件的路径
 local cfgPath = "LuaConfigs/%s.lua"

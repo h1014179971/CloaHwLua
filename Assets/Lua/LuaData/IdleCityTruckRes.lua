@@ -101,4 +101,5 @@ local IdleCityTruckRes = {
 		},
 }
 _G.IdleCityTruckRes = IdleCityTruckRes
+setmetatable(_G,IdleCityTruckRes)
 return IdleCityTruckRes

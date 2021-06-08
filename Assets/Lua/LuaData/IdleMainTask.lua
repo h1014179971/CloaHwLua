@@ -469,4 +469,5 @@ local IdleMainTask = {
 		},
 }
 _G.IdleMainTask = IdleMainTask
+setmetatable(_G,IdleMainTask)
 return IdleMainTask

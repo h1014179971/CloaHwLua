@@ -11,6 +11,7 @@ local CoUpdateBeat = CoUpdateBeat
 local Time = Time
 
 Timer = {}
+setmetatable(Timer,{__index = _G})
 
 local Timer = Timer
 local mt = {__index = Timer}

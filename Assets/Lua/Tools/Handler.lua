@@ -20,3 +20,4 @@ function Handler.Create2(func)
 	end
 end
 _G.Handler = Handler
+setmetatable(Handler,{__index = _G})

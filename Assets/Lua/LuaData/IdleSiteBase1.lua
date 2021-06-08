@@ -18001,4 +18001,5 @@ local IdleSiteBase1 = {
 		},
 }
 _G.IdleSiteBase1 = IdleSiteBase1
+setmetatable(_G,IdleSiteBase1)
 return IdleSiteBase1

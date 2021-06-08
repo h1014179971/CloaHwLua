@@ -121,4 +121,5 @@ local IdleSite = {
 		},
 }
 _G.IdleSite = IdleSite
+setmetatable(_G,IdleSite)
 return IdleSite

@@ -31,4 +31,5 @@ local IdleShelfRes = {
 		},
 }
 _G.IdleShelfRes = IdleShelfRes
+setmetatable(_G,IdleShelfRes)
 return IdleShelfRes

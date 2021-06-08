@@ -15,4 +15,5 @@ local IdleSpecialEvent = {
 		},
 }
 _G.IdleSpecialEvent = IdleSpecialEvent
+setmetatable(_G,IdleSpecialEvent)
 return IdleSpecialEvent

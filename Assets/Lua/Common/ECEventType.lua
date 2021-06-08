@@ -5,6 +5,7 @@
 ---
 local ECEventType = {}
 _G.ECEventType = ECEventType
+setmetatable(ECEventType,{__index = _G})
 ECEventType.UIEvent = {
 	CREATE_PANEL = "CREATE_PANEL",
 	DESTROY_PANEL = "DESTROY_PANEL",

@@ -43,4 +43,5 @@ local IdleItem = {
 		},
 }
 _G.IdleItem = IdleItem
+setmetatable(_G,IdleItem)
 return IdleItem

@@ -6,6 +6,7 @@
 
 local ECEnumType = {}
 _G.ECEnumType = ECEnumType
+setmetatable(ECEnumType,{__index = _G})
 
 ---UI界面枚举
 ECEnumType.UIEnum = {

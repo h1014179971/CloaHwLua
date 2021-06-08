@@ -15,6 +15,7 @@ local debugLogTag = 3
 local warnLogTag = 2
 local errorLogTag = 0
 _G.Log = logHelper
+setmetatable(logHelper,{__index = _G})
 
 -- 普通日志
 function logHelper.debug(...)

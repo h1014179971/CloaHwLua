@@ -10,6 +10,7 @@ local Protocol = require("Protocols.Protocol")
 
 local NetManager = {}
 _G.NetManager = NetManager
+setmetatable(NetManager,{__index = _G})
 local Socket = nil
 local listeners = {}
 local sprotoCoder = nil

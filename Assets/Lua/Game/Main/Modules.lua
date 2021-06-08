@@ -11,6 +11,7 @@ local Mod = {}
 
 -- 注册全局变量
 _G.Modules = Modules
+setmetatable(Modules,{__index = _G})
 
 Modules.moduleId = require("Game.Main.ModuleId")
 Modules.notifyId = require("Game.Main.NotifyId")

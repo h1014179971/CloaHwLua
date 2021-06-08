@@ -326,6 +326,8 @@ public class ExcelUtility
             stringBuilder.Append("}\r\n");
             stringBuilder.Append("_G."+fileName+" = "+ fileName);
             stringBuilder.Append("\r\n");
+            stringBuilder.Append("setmetatable(_G," + fileName + ")");
+            stringBuilder.Append("\r\n");
             stringBuilder.Append("return " + fileName);
             fileNames.Add(fileName);
             fileName += ".lua";

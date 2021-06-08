@@ -24,8 +24,9 @@
 
 
 --%%%%%%%%  Constants used in the file %%%%%%%%--{{{1
-   RADIX = 10^7 ;
-   RADIX_LEN = math.floor( math.log10 ( RADIX ) ) ;
+
+RADIX = 10^7 ;
+RADIX_LEN = math.floor(math.log10(RADIX)) ;
 
 
 --%%%%%%%%        Start of Code        %%%%%%%%--
@@ -417,7 +418,7 @@ function BigNum.mul( bnum1 , bnum2 , bnum3 )
       for j = 0 , bnum2.len - 1 do
          carry =  ( bnum1[i] * bnum2[j] + carry ) ;
          carry = carry + bnum3[i + j] ;
-         bnum3[i + j] = math.mod ( carry , RADIX ) ;
+         bnum3[i + j] = math.fmod (carry , RADIX) ;
          temp2 = bnum3[i + j] ;
          carry =  math.floor ( carry / RADIX ) ;
       end
@@ -568,7 +569,7 @@ function BigNum.pow( bnum1 , bnum2 )
       return y ;
    end
    while 1 do
-      if math.mod( n[0] , 2 ) == 0 then
+      if math.fmod( n[0] , 2 ) == 0 then
          n = n / 2 ;
       else
          n = n / 2 ;

@@ -24,7 +24,7 @@
 
 --%%%%%%%%        Start of Code        %%%%%%%%--
 
-require( "BigNum.lua" ) ;
+require( "3rd.BigNum.BigNum" ) ;
 
 BigRat = {} ;
 BigRat.mt = {} ;

@@ -251,4 +251,5 @@ local IdleCityVolume = {
 		},
 }
 _G.IdleCityVolume = IdleCityVolume
+setmetatable(_G,IdleCityVolume)
 return IdleCityVolume

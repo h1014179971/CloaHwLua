@@ -101,4 +101,5 @@ local IdleTruckRes = {
 		},
 }
 _G.IdleTruckRes = IdleTruckRes
+setmetatable(_G,IdleTruckRes)
 return IdleTruckRes

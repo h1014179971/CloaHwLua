@@ -265,4 +265,5 @@ local IdleSiteGrade4 = {
 		},
 }
 _G.IdleSiteGrade4 = IdleSiteGrade4
+setmetatable(_G,IdleSiteGrade4)
 return IdleSiteGrade4

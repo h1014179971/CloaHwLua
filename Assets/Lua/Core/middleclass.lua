@@ -28,6 +28,7 @@ local middleclass = {
   ]]
 }
 _G.Class = middleclass
+setmetatable(middleclass,{__index = _G})
 
 local function _createIndexWrapper(aClass, f)
   if f == nil then

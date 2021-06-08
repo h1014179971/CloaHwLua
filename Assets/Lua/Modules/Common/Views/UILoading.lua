@@ -5,6 +5,7 @@
 ---
 
 
+--local file = require("3rd.cjson.util")
 local UIBase = require("Core.ui.UIBase")
 local UILoading = Class("UILoading",UIBase)
 
@@ -28,9 +29,19 @@ function UILoading:OnCreate()
 	self.m_loadTxt.text = "哈乐沃德"
 	self.m_process.value = 0
 	--self:Test()
-	Timer.New(function()
-		Log.debug("1111111111")
-	end,1,3):Start()
+	--Timer.New(self.Test,1,3):Start()
+	coroutine.start(self.Test);
+	--local jsonPath1 =  UnityEngine.Application.persistentDataPath.."/JsonData/player.json"
+	----os.execute("mkdir C:\\Users\\hw-ZGM\\AppData\\LocalLow\\DefaultCompany\\CloaHwLua\\JsonData\\player")
+	----local jsonPath1 = "C:/Users/hw-ZGM/AppData/LocalLow/DefaultCompany/CloaHwLua/JsonData/player/player.json"
+	--jsonPath1 = string.gsub(jsonPath1,"/","\\\\")
+	--local jsonPath = "C:/Users/hw-ZGM/Desktop/test.json"
+	--local player = {
+		--money = 1000,
+	--}
+	--local str = json.encode(player)
+	------local json_text = util.file_load(jsonPath)
+	--util.file_save(jsonPath1,str)
 end
 
 -- 界面可见性变化的时候触发
@@ -66,7 +77,10 @@ end
 
 ---------------------- UI事件回调 --------------------------
 function UILoading:Test()
-	self.m_process.value = 0.5
+	--self.m_process.value = 0.5
+	coroutine.wait(5)
+	Log.debug("Test")
+	
 end
 function UILoading:SceneProgress(progress)
 	Log.debug("UILoading progress"..progress)

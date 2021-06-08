@@ -101,4 +101,5 @@ local IdleCityCycle = {
 		},
 }
 _G.IdleCityCycle = IdleCityCycle
+setmetatable(_G,IdleCityCycle)
 return IdleCityCycle

@@ -494,4 +494,5 @@ local IdleGuideStep = {
 		},
 }
 _G.IdleGuideStep = IdleGuideStep
+setmetatable(_G,IdleGuideStep)
 return IdleGuideStep

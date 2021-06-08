@@ -126,4 +126,5 @@ local IdleCity = {
 		},
 }
 _G.IdleCity = IdleCity
+setmetatable(_G,IdleCity)
 return IdleCity
