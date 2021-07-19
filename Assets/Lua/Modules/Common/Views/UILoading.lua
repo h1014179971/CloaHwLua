@@ -11,6 +11,7 @@ local UILoading = Class("UILoading",UIBase)
 
 local _instance = nil
 
+
 -- 获取UI实例的接口
 function UILoading.Instance()
     if nil == _instance then
@@ -26,11 +27,12 @@ end
 
 -- override UI面板创建结束后调用，可以在这里获取gameObject和component等操作
 function UILoading:OnCreate()
-	self.m_loadTxt.text = "哈乐沃德"
+	self.m_loadTxt.text = ""
 	self.m_process.value = 0
+	self.m_isLoading = true;
 	--self:Test()
 	--Timer.New(self.Test,1,3):Start()
-	coroutine.start(self.Test);
+	coroutine.start(self.TestLoading,self,5);
 	--local jsonPath1 =  UnityEngine.Application.persistentDataPath.."/JsonData/player.json"
 	----os.execute("mkdir C:\\Users\\hw-ZGM\\AppData\\LocalLow\\DefaultCompany\\CloaHwLua\\JsonData\\player")
 	----local jsonPath1 = "C:/Users/hw-ZGM/AppData/LocalLow/DefaultCompany/CloaHwLua/JsonData/player/player.json"
@@ -77,9 +79,25 @@ end
 
 ---------------------- UI事件回调 --------------------------
 function UILoading:Test()
+	self.m_process.value = 0.5;
+	self.m_isLoading = false;
+end
+
+function UILoading:TestLoading(v)
+	Log.debug("v=",v);
 	--self.m_process.value = 0.5
-	coroutine.wait(5)
-	Log.debug("Test")
+	while self.m_isLoading do
+		coroutine.wait(1);
+		self.m_process.value = self.m_process.value + 0.1;
+		if self.m_process.value >=1 then
+			self.m_isLoading = false;
+			UIManager.Close(ECEnumType.UIEnum.UILoading)
+		end
+	end
+	--coroutine.wait(5)
+	--Log.debug("Test")
+	--EventMgr.DispatchEvent(ECEventType.UIEvent.Loading_progress,0.5)
+	--self.m_process.value = 0.5;
 	
 end
 function UILoading:SceneProgress(progress)

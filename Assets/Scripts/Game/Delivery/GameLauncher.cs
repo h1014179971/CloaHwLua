@@ -55,7 +55,7 @@ namespace Delivery
 
                 init.Release();
                 ColaFramework.GameManager.Instance.InitGameCore(gameObject);
-                yield break;
+                //yield break;
                 _updater.Init();
                 AudioCtrl.Instance.PlayBackgroundMusic(GameAudio.login);
                 Debug.Log("start load data");
@@ -121,8 +121,8 @@ namespace Delivery
         IEnumerator AssetLoadScene()
         {
 
-            GameObject loadingPanel = UIController.Instance.ShowBlocker("UI/Loading/LoadingWindow");
-            loadingPanel.GetComponent<LoadingWindow>().Init( _loadDataLength);
+            //GameObject loadingPanel = UIController.Instance.ShowBlocker("UI/Loading/LoadingWindow");
+            //loadingPanel.GetComponent<LoadingWindow>().Init( _loadDataLength);
             yield return null;
             int cityId = PlayerMgr.Instance.CityId;
             string sceneName = "IdleScene_" + cityId+".unity";
@@ -153,13 +153,34 @@ namespace Delivery
             PlayerMgr.Instance.AddOffLineIncome();
             
             EventDispatcher.Instance.TriggerEvent(new BaseEventArgs(EnumEventType.Event_Load_Complete));
+            InitGame();
         }
+        private void InitGame()
+        {
+            StartGame(null);
+            UIController.Instance.OpenPageFromAssets<IdleWindow>("IdleWindow.prefab");
+            UIController.Instance.ShowBlocker("IdleTopUI.prefab", true);
+            if (PlayerMgr.Instance.IsNewPlayer)
+            {
+                EventDispatcher.Instance.TriggerEvent(new EventArgsOne<int>(EnumEventType.Event_Guide_StartGuide, 1));
+            }
+            else
+            {
+                PlayerMgr.Instance.ResetLastGuide();
+            }
+            int leaveSecond = (int)PlayerMgr.Instance.GetLeaveCityTime();
+            if (leaveSecond / 60 >= 5)
+            {
+                UIController.Instance.ShowBlocker("OfflineWindow.prefab", true);
+            }
+        }
+
         //开始游戏逻辑
         private void StartGame(BaseEventArgs baseEventArgs)
         {
             AudioCtrl.Instance.Dispose();
             _gameState = GameState.Start;
-            ColaFramework.GameManager.Instance.InitGameCore(gameObject);
+            //ColaFramework.GameManager.Instance.InitGameCore(gameObject);
             IdleCityCtrl.Instance.Init();
             IdleForkCtrl.Instance.Init();
             IdleCityStaffCtrl.Instance.Init();

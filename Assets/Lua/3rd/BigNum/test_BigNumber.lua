@@ -41,7 +41,6 @@ else
 	d = "false"
 end
 Log.debug("a>=b"..d )
-b= 1000;
 d = a +b;
 Log.debug("a+b"..BigNumber.mt.tostring(d) )
 d = a -b;

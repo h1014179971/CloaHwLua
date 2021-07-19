@@ -62,6 +62,15 @@ local function initParam()
     collectgarbage("restart")
 end
 
+function InitLua()
+	gloablDefine()
+	initParam()
+	initialize()
+	Log.debug("init lua");
+	UIManager.Open(ECEnumType.UIEnum.UILoading);
+end
+
+
 function Main()
     gloablDefine()
     initParam()
@@ -90,8 +99,10 @@ function Main()
 	end, function(sceneName)
 			Log.debug("is done")
 			UIManager.Close(ECEnumType.UIEnum.UILoading)
+			IdleCityCtrl.Instance():OnInit();
+			IdleTruckCtrl.Instance():OnInit();
 			--require("3rd.BigNum.test_BigRat")	
-			require("3rd.BigNum.test_BigNumber")
+			--require("3rd.BigNum.test_BigNumber")
         --EventMgr.DispatchEvent(Modules.moduleId.Common, Modules.notifyId.Common.CREATE_PANEL, ECEnumType.UIEnum.Login)
         --UIManager.Close(ECEnumType.UIEnum.Loading)
     end)
@@ -103,6 +114,13 @@ function OnLevelWasLoaded(level)
     Time.timeSinceLevelLoad = 0
 end
 
-function OnApplicationQuit()
+function OnApplicationPause(pause)
+	Log.debug("Main OnApplicationPause:"..tostring(pause));
+	if pause then
+		PlayerMgr.Instance():RecordPlayer();
+	end
+end
 
+function OnApplicationQuit()
+	PlayerMgr.Instance():RecordPlayer();
 end

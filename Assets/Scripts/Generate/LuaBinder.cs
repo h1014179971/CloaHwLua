@@ -32,6 +32,7 @@ public static class LuaBinder
 		UnityEngine_UI_Extensions_UITableViewWrap.Register(L);
 		UnityEngine_UI_Extensions_UITableViewCellWrap.Register(L);
 		AppConstWrap.Register(L);
+		SeekerWrap.Register(L);
 		LuaProfilerWrap.Register(L);
 		L.RegFunction("UIEventHandler", UIEventHandler);
 		L.RegFunction("UIDragEventHandlerDetail", UIDragEventHandlerDetail);
@@ -43,6 +44,9 @@ public static class LuaBinder
 		L.RegFunction("OnSceneNameChanged", OnSceneNameChanged);
 		L.RegFunction("OnSceneProgress", OnSceneProgress);
 		L.RegFunction("OnSceneIndexChanged", OnSceneIndexChanged);
+		L.BeginModule("SG");
+		SG_ResourceManagerWrap.Register(L);
+		L.EndModule();
 		L.BeginModule("UnityEngine");
 		UnityEngine_ComponentWrap.Register(L);
 		UnityEngine_TransformWrap.Register(L);
@@ -133,6 +137,10 @@ public static class LuaBinder
 		L.BeginModule("RectTransform");
 		L.RegFunction("ReapplyDrivenProperties", UnityEngine_RectTransform_ReapplyDrivenProperties);
 		L.EndModule();
+		L.EndModule();
+		L.BeginModule("Pathfinding");
+		Pathfinding_VersionedMonoBehaviourWrap.Register(L);
+		L.RegFunction("OnPathDelegate", Pathfinding_OnPathDelegate);
 		L.EndModule();
 		L.BeginModule("System");
 		L.RegFunction("Action", System_Action);
@@ -810,6 +818,33 @@ public static class LuaBinder
 			{
 				LuaTable self = ToLua.CheckLuaTable(L, 2);
 				Delegate arg1 = DelegateTraits<UnityEngine.RectTransform.ReapplyDrivenProperties>.Create(func, self);
+				ToLua.Push(L, arg1);
+			}
+			return 1;
+		}
+		catch(Exception e)
+		{
+			return LuaDLL.toluaL_exception(L, e);
+		}
+	}
+
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static int Pathfinding_OnPathDelegate(IntPtr L)
+	{
+		try
+		{
+			int count = LuaDLL.lua_gettop(L);
+			LuaFunction func = ToLua.CheckLuaFunction(L, 1);
+
+			if (count == 1)
+			{
+				Delegate arg1 = DelegateTraits<Pathfinding.OnPathDelegate>.Create(func);
+				ToLua.Push(L, arg1);
+			}
+			else
+			{
+				LuaTable self = ToLua.CheckLuaTable(L, 2);
+				Delegate arg1 = DelegateTraits<Pathfinding.OnPathDelegate>.Create(func, self);
 				ToLua.Push(L, arg1);
 			}
 			return 1;

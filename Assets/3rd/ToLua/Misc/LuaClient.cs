@@ -205,7 +205,8 @@ public class LuaClient : MonoBehaviour
 
     protected virtual void CallMain()
     {
-        LuaFunction main = luaState.GetFunction("Main");
+        //LuaFunction main = luaState.GetFunction("Main");
+        LuaFunction main = luaState.GetFunction("InitLua");
         main.Call();
         main.Dispose();
         main = null;
@@ -324,6 +325,20 @@ public class LuaClient : MonoBehaviour
     protected void OnDestroy()
     {
         Destroy();
+    }
+    private void OnApplicationPause(bool pause)
+    {
+        //ture 为切换到后台
+        Debug.Log($"LuaClient OnApplicationPause:{pause}");
+        if(luaState != null)
+        {
+            luaState.Call<bool>("OnApplicationPause", pause,false);
+        }
+        //luaState.DoFile("Main.lua");
+        //LuaFunction main = luaState.GetFunction("OnApplicationPause");
+        //main.Call(pause);
+        //main.Dispose();
+        //main = null;
     }
 
     protected void OnApplicationQuit()

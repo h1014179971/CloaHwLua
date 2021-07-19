@@ -43,6 +43,7 @@ public class DelegateFactory
 		dict.Add(typeof(ColaFramework.NetWork.NetMessageCenter.NetMessageAction), factory.ColaFramework_NetWork_NetMessageCenter_NetMessageAction);
 		dict.Add(typeof(UnityEngine.UI.Extensions.UITableView.OnScrollCompleted), factory.UnityEngine_UI_Extensions_UITableView_OnScrollCompleted);
 		dict.Add(typeof(UnityEngine.UI.Extensions.UITableView.OnTableScrolling), factory.UnityEngine_UI_Extensions_UITableView_OnTableScrolling);
+		dict.Add(typeof(Pathfinding.OnPathDelegate), factory.Pathfinding_OnPathDelegate);
 		dict.Add(typeof(UnityEngine.Camera.CameraCallback), factory.UnityEngine_Camera_CameraCallback);
 		dict.Add(typeof(UnityEngine.Application.AdvertisingIdentifierCallback), factory.UnityEngine_Application_AdvertisingIdentifierCallback);
 		dict.Add(typeof(UnityEngine.Application.LowMemoryCallback), factory.UnityEngine_Application_LowMemoryCallback);
@@ -80,6 +81,7 @@ public class DelegateFactory
 		DelegateTraits<ColaFramework.NetWork.NetMessageCenter.NetMessageAction>.Init(factory.ColaFramework_NetWork_NetMessageCenter_NetMessageAction);
 		DelegateTraits<UnityEngine.UI.Extensions.UITableView.OnScrollCompleted>.Init(factory.UnityEngine_UI_Extensions_UITableView_OnScrollCompleted);
 		DelegateTraits<UnityEngine.UI.Extensions.UITableView.OnTableScrolling>.Init(factory.UnityEngine_UI_Extensions_UITableView_OnTableScrolling);
+		DelegateTraits<Pathfinding.OnPathDelegate>.Init(factory.Pathfinding_OnPathDelegate);
 		DelegateTraits<UnityEngine.Camera.CameraCallback>.Init(factory.UnityEngine_Camera_CameraCallback);
 		DelegateTraits<UnityEngine.Application.AdvertisingIdentifierCallback>.Init(factory.UnityEngine_Application_AdvertisingIdentifierCallback);
 		DelegateTraits<UnityEngine.Application.LowMemoryCallback>.Init(factory.UnityEngine_Application_LowMemoryCallback);
@@ -117,6 +119,7 @@ public class DelegateFactory
 		TypeTraits<ColaFramework.NetWork.NetMessageCenter.NetMessageAction>.Init(factory.Check_ColaFramework_NetWork_NetMessageCenter_NetMessageAction);
 		TypeTraits<UnityEngine.UI.Extensions.UITableView.OnScrollCompleted>.Init(factory.Check_UnityEngine_UI_Extensions_UITableView_OnScrollCompleted);
 		TypeTraits<UnityEngine.UI.Extensions.UITableView.OnTableScrolling>.Init(factory.Check_UnityEngine_UI_Extensions_UITableView_OnTableScrolling);
+		TypeTraits<Pathfinding.OnPathDelegate>.Init(factory.Check_Pathfinding_OnPathDelegate);
 		TypeTraits<UnityEngine.Camera.CameraCallback>.Init(factory.Check_UnityEngine_Camera_CameraCallback);
 		TypeTraits<UnityEngine.Application.AdvertisingIdentifierCallback>.Init(factory.Check_UnityEngine_Application_AdvertisingIdentifierCallback);
 		TypeTraits<UnityEngine.Application.LowMemoryCallback>.Init(factory.Check_UnityEngine_Application_LowMemoryCallback);
@@ -154,6 +157,7 @@ public class DelegateFactory
 		StackTraits<ColaFramework.NetWork.NetMessageCenter.NetMessageAction>.Push = factory.Push_ColaFramework_NetWork_NetMessageCenter_NetMessageAction;
 		StackTraits<UnityEngine.UI.Extensions.UITableView.OnScrollCompleted>.Push = factory.Push_UnityEngine_UI_Extensions_UITableView_OnScrollCompleted;
 		StackTraits<UnityEngine.UI.Extensions.UITableView.OnTableScrolling>.Push = factory.Push_UnityEngine_UI_Extensions_UITableView_OnTableScrolling;
+		StackTraits<Pathfinding.OnPathDelegate>.Push = factory.Push_Pathfinding_OnPathDelegate;
 		StackTraits<UnityEngine.Camera.CameraCallback>.Push = factory.Push_UnityEngine_Camera_CameraCallback;
 		StackTraits<UnityEngine.Application.AdvertisingIdentifierCallback>.Push = factory.Push_UnityEngine_Application_AdvertisingIdentifierCallback;
 		StackTraits<UnityEngine.Application.LowMemoryCallback>.Push = factory.Push_UnityEngine_Application_LowMemoryCallback;
@@ -1785,6 +1789,63 @@ public class DelegateFactory
 	}
 
 	void Push_UnityEngine_UI_Extensions_UITableView_OnTableScrolling(IntPtr L, UnityEngine.UI.Extensions.UITableView.OnTableScrolling o)
+	{
+		ToLua.Push(L, o);
+	}
+
+	class Pathfinding_OnPathDelegate_Event : LuaDelegate
+	{
+		public Pathfinding_OnPathDelegate_Event(LuaFunction func) : base(func) { }
+		public Pathfinding_OnPathDelegate_Event(LuaFunction func, LuaTable self) : base(func, self) { }
+
+		public void Call(Pathfinding.Path param0)
+		{
+			func.BeginPCall();
+			func.PushObject(param0);
+			func.PCall();
+			func.EndPCall();
+		}
+
+		public void CallWithSelf(Pathfinding.Path param0)
+		{
+			func.BeginPCall();
+			func.Push(self);
+			func.PushObject(param0);
+			func.PCall();
+			func.EndPCall();
+		}
+	}
+
+	public Pathfinding.OnPathDelegate Pathfinding_OnPathDelegate(LuaFunction func, LuaTable self, bool flag)
+	{
+		if (func == null)
+		{
+			Pathfinding.OnPathDelegate fn = delegate(Pathfinding.Path param0) { };
+			return fn;
+		}
+
+		if(!flag)
+		{
+			Pathfinding_OnPathDelegate_Event target = new Pathfinding_OnPathDelegate_Event(func);
+			Pathfinding.OnPathDelegate d = target.Call;
+			target.method = d.Method;
+			return d;
+		}
+		else
+		{
+			Pathfinding_OnPathDelegate_Event target = new Pathfinding_OnPathDelegate_Event(func, self);
+			Pathfinding.OnPathDelegate d = target.CallWithSelf;
+			target.method = d.Method;
+			return d;
+		}
+	}
+
+	bool Check_Pathfinding_OnPathDelegate(IntPtr L, int pos)
+	{
+		return TypeChecker.CheckDelegateType(typeof(Pathfinding.OnPathDelegate), L, pos);
+	}
+
+	void Push_Pathfinding_OnPathDelegate(IntPtr L, Pathfinding.OnPathDelegate o)
 	{
 		ToLua.Push(L, o);
 	}

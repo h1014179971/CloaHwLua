@@ -353,7 +353,7 @@
   <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/.lpproj/Apis/Unity/Delivery/Layers.lua" ModifyTime = "1622775181925"/>
   <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/.lpproj/Apis/Unity/Delivery/LineModel.lua" ModifyTime = "1622775182016"/>
   <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/.lpproj/Apis/Unity/Delivery/LoadAsset.lua" ModifyTime = "1622775182024"/>
-  <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/.lpproj/Apis/Unity/Delivery/Player.lua" ModifyTime = "1622775181986"/>
+  <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/.lpproj/Apis/Unity/Delivery/Player.lua" ModifyTime = "1623209066322"/>
   <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/.lpproj/Apis/Unity/Delivery/PlayerCity.lua" ModifyTime = "1622775181987"/>
   <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/.lpproj/Apis/Unity/Delivery/PlayerGuide.lua" ModifyTime = "1622775181994"/>
   <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/.lpproj/Apis/Unity/Delivery/PlayerMgr.lua" ModifyTime = "1622775181996"/>
@@ -2854,7 +2854,7 @@
   <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/3rd/ToLua/Lua/UnityEngine/Vector2.lua" ModifyTime = "1606738339000"/>
   <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/3rd/ToLua/Lua/UnityEngine/Vector3.lua" ModifyTime = "1606738339000"/>
   <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/3rd/ToLua/Lua/UnityEngine/Vector4.lua" ModifyTime = "1606738339000"/>
-  <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Editor/CreateScriptEditor/Templates/Lua/ControllerTemplate.txt" ModifyTime = "1622779928634"/>
+  <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Editor/CreateScriptEditor/Templates/Lua/ControllerTemplate.txt" ModifyTime = "1623224146384"/>
   <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Editor/CreateScriptEditor/Templates/Lua/ModuleTemplate.txt" ModifyTime = "1622779923746"/>
   <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/3rd/BigNum/BigNum.lua" ModifyTime = "1623062871093"/>
   <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/3rd/BigNum/BigRat.lua" ModifyTime = "1623053660030"/>
@@ -2869,7 +2869,7 @@
   <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/3rd/cjson/json2lua.lua" ModifyTime = "1606738339000"/>
   <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/3rd/cjson/lua2json.lua" ModifyTime = "1606738339000"/>
   <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/3rd/cjson/test.lua" ModifyTime = "1606738339000"/>
-  <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/3rd/cjson/util.lua" ModifyTime = "1623039826352"/>
+  <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/3rd/cjson/util.lua" ModifyTime = "1623207374608"/>
   <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/3rd/luabitop/bitbench.lua" ModifyTime = "1606738339000"/>
   <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/3rd/luabitop/bittest.lua" ModifyTime = "1606738339000"/>
   <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/3rd/luabitop/installpath.lua" ModifyTime = "1606738339000"/>
@@ -2894,7 +2894,7 @@
   <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Common/ECEnumType.lua" ModifyTime = "1623059506716"/>
   <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Common/ECEventType.lua" ModifyTime = "1623059516181"/>
   <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Common/LuaAppConst.lua" ModifyTime = "1623059534598"/>
-  <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Core/ColaPlus.lua" ModifyTime = "1606738339000"/>
+  <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Core/ColaPlus.lua" ModifyTime = "1623209823164"/>
   <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Core/middleclass.lua" ModifyTime = "1623059554556"/>
   <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Core/Net/NetManager.lua" ModifyTime = "1623059718079"/>
   <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Core/ui/UIBase.lua" ModifyTime = "1606738339000"/>
@@ -2947,7 +2947,7 @@
   <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/LuaData/LanguageData.lua" ModifyTime = "1623060659658"/>
   <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/LuaData/LuaData.lua" ModifyTime = "1623060659762"/>
   <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/LuaData/UnitConvert.lua" ModifyTime = "1623060659635"/>
-  <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Main.lua" ModifyTime = "1623061147540"/>
+  <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Main.lua" ModifyTime = "1623230787878"/>
   <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Mgrs/UISorter.lua" ModifyTime = "1606738339000"/>
   <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Modules/Common/NotifyId.lua" ModifyTime = "1622712125115"/>
   <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Modules/Common/Views/UIDebugPanel.lua" ModifyTime = "1606738339000"/>
@@ -2961,14 +2961,14 @@
   <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Modules/Test/Views/UIModelPanel.lua" ModifyTime = "1606738339000"/>
   <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Modules/World/Views/UIWorldDialog.lua" ModifyTime = "1606738339000"/>
   <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Protocols/Protocol.lua" ModifyTime = "1623059771267"/>
-  <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/require.lua" ModifyTime = "1623061152314"/>
+  <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/require.lua" ModifyTime = "1623230590667"/>
   <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Tools/Eventlib.lua" ModifyTime = "1622780491587"/>
   <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Tools/Handler.lua" ModifyTime = "1623059593787"/>
   <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Tools/Timer.lua" ModifyTime = "1623059804410"/>
   <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/UIBindViews/UIBagDialog_BindView.lua" ModifyTime = "1622693752234"/>
   <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/UIBindViews/UIcopying_BindView.lua" ModifyTime = "1606738339000"/>
   <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/UIBindViews/UIDebugPanel_BindView.lua" ModifyTime = "1606738339000"/>
-  <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/UIBindViews/UILoading_BindView.lua" ModifyTime = "1622719229550"/>
+  <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/UIBindViews/UILoading_BindView.lua" ModifyTime = "1623228640052"/>
   <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/UIBindViews/UILoginPanel_BindView.lua" ModifyTime = "1606738339000"/>
   <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/UIBindViews/UIModelPanel_BindView.lua" ModifyTime = "1606738339000"/>
   <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/UIBindViews/UIMohaUIView_BindView.lua" ModifyTime = "1611802023501"/>
@@ -2976,7 +2976,7 @@
   <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Utilitys/LuaCommon_Utils.lua" ModifyTime = "1606738339000"/>
   <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Utilitys/LuaGlobalCheck.lua" ModifyTime = "1623060981208"/>
   <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Utilitys/LuaLogHelper.lua" ModifyTime = "1623059606890"/>
-  <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Utilitys/Table_Utils.lua" ModifyTime = "1606738339000"/>
+  <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Utilitys/Table_Utils.lua" ModifyTime = "1623210508748"/>
   <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Utilitys/UI_Utils.lua" ModifyTime = "1606738339000"/>
   <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/LuaBaseTemp/event.lua.bytes" ModifyTime = "1606738339000"/>
   <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/LuaBaseTemp/list.lua.bytes" ModifyTime = "1606738339000"/>
@@ -2999,5 +2999,16 @@
   <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Plugins/tolua.bundle/Contents/Resources/test.lua" ModifyTime = "1606738339000"/>
   <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Plugins/tolua.bundle/Contents/Resources/testall.lua" ModifyTime = "1606738339000"/>
   <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Plugins/tolua.bundle/Contents/Resources/testrpc.lua" ModifyTime = "1606738339000"/>
-  <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Mgrs/PlayerMgr.lua" ModifyTime = "1623060319451"/>
+  <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Mgrs/PlayerMgr.lua" ModifyTime = "1623221964019"/>
+  <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/3rd/BigNum/BigNumber.lua" ModifyTime = "1623151211530"/>
+  <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/3rd/BigNum/test_BigNumber.lua" ModifyTime = "1623201690494"/>
+  <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Mgrs/Player.lua" ModifyTime = "1623222888622"/>
+  <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Utilitys/TimeUtil.lua" ModifyTime = "1612099838645"/>
+  <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Game/Idle/Mgrs/Player.lua" ModifyTime = "1623222888622"/>
+  <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Game/Idle/Mgrs/PlayerMgr.lua" ModifyTime = "1623223517323"/>
+  <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Game/Idle/Ctrls/IdleCityCtrl.lua" ModifyTime = "1623225002942"/>
+  <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Game/Idle/Common/Const.lua" ModifyTime = "1623224596783"/>
+  <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Game/Idle/Models/IdleCityModel.lua" ModifyTime = "1623229317404"/>
+  <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Game/Idle/Ctrls/IdleTruckCtrl.lua" ModifyTime = "1623230884696"/>
+  <CheckedCodeItem Filename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Game/Idle/Models/IdleTruckModel.lua" ModifyTime = "1623236914195"/>
 </CheckedCodeList>

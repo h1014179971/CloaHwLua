@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Launcher.unity
     guid: d7b5ad64e1237c240804ba1477ef9b68
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Idle/IdleScene_1001.unity
     guid: 5866861b7f9a25841be83c614cfb2440
   m_configObjects: {}

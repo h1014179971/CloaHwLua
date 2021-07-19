@@ -4,31 +4,32 @@
 </BreakpointList>
 <WatchList/>
 <ProjectUI>
-  <TreeState BaseX = "0" BaseY = "-422" AlternativeItem = "LuaFolders#Assets#Lua#3rd#BigNum#test.lua">
+  <TreeState BaseX = "0" BaseY = "-862" AlternativeItem = "LuaFolders#Assets#Lua#Game#Main">
     <SelectedList>
-      <Selected Path = "LuaFolders#Assets#Lua#3rd#BigNum#BigRat.lua"/>
+      <Selected Path = "LuaFolders#Assets#Lua#Game#Idle#Models#IdleTruckModel.lua"/>
     </SelectedList>
     <ExpandedList>
       <Expanded Path = "LuaFolders"/>
       <Expanded Path = "LuaFolders#Assets"/>
       <Expanded Path = "LuaFolders#Assets#3rd"/>
       <Expanded Path = "LuaFolders#Assets#3rd#ToLua"/>
-      <Expanded Path = "LuaFolders#Assets#3rd#ToLua#Lua"/>
       <Expanded Path = "LuaFolders#Assets#3rd#ToLua#Lua#cjson"/>
       <Expanded Path = "LuaFolders#Assets#Lua"/>
       <Expanded Path = "LuaFolders#Assets#Lua#3rd"/>
-      <Expanded Path = "LuaFolders#Assets#Lua#3rd#BigNum"/>
-      <Expanded Path = "LuaFolders#Assets#Lua#3rd#cjson"/>
       <Expanded Path = "LuaFolders#Assets#Lua#Common"/>
       <Expanded Path = "LuaFolders#Assets#Lua#Common#Collections"/>
       <Expanded Path = "LuaFolders#Assets#Lua#Core"/>
       <Expanded Path = "LuaFolders#Assets#Lua#Core#Net"/>
       <Expanded Path = "LuaFolders#Assets#Lua#Core#ui"/>
       <Expanded Path = "LuaFolders#Assets#Lua#Game"/>
+      <Expanded Path = "LuaFolders#Assets#Lua#Game#Idle"/>
+      <Expanded Path = "LuaFolders#Assets#Lua#Game#Idle#Common"/>
+      <Expanded Path = "LuaFolders#Assets#Lua#Game#Idle#Ctrls"/>
+      <Expanded Path = "LuaFolders#Assets#Lua#Game#Idle#Mgrs"/>
+      <Expanded Path = "LuaFolders#Assets#Lua#Game#Idle#Models"/>
       <Expanded Path = "LuaFolders#Assets#Lua#Game#Main"/>
       <Expanded Path = "LuaFolders#Assets#Lua#JustTest"/>
       <Expanded Path = "LuaFolders#Assets#Lua#LuaConfigs"/>
-      <Expanded Path = "LuaFolders#Assets#Lua#LuaData"/>
       <Expanded Path = "LuaFolders#Assets#Lua#Mgrs"/>
       <Expanded Path = "LuaFolders#Assets#Lua#Modules"/>
       <Expanded Path = "LuaFolders#Assets#Lua#Modules#Common"/>
@@ -37,6 +38,7 @@
       <Expanded Path = "LuaFolders#Assets#Lua#Modules#Test#Views"/>
       <Expanded Path = "LuaFolders#Assets#Lua#Protocols"/>
       <Expanded Path = "LuaFolders#Assets#Lua#Tools"/>
+      <Expanded Path = "LuaFolders#Assets#Lua#UIBindViews"/>
       <Expanded Path = "LuaFolders#Assets#Lua#Utilitys"/>
       <Expanded Path = "LuaFolders#Assets#Resources"/>
       <Expanded Path = "LuaFolders#Assets#Resources#Prefabs"/>
@@ -44,7 +46,7 @@
   </TreeState>
 </ProjectUI>
 <FindAnReplaceUI
-  Pattern = "math.mod"
+  Pattern = "shallowCopy"
   MatchCase = "false"
   MatchWholeWord = "false"
   UseRegEx = "false"
@@ -55,12 +57,12 @@
   Y = "519"
   Width = "640"
   Height = "480"
-  Maximized = "true"
-  LastCodeFilename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/3rd/BigNum/BigRat.lua">
+  Maximized = "false"
+  LastCodeFilename = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Game/Idle/Ctrls/IdleTruckCtrl.lua">
   <DockingControl>
     <DockingNode DockingDirection = "Horizontal">
       <DockingNode DockingDirection = "None">
-        <DockingBlock Width = "578" Height = "923" DocumentStyle = "false">
+        <DockingBlock Width = "471" Height = "923" DocumentStyle = "false">
           <DockingCard
             Text = "Project"
             Tag = ""
@@ -75,61 +77,196 @@
       </DockingNode>
       <DockingNode DockingDirection = "Vertical">
         <DockingNode DockingDirection = "None">
-          <DockingBlock Width = "1323" Height = "766" DocumentStyle = "true">
+          <DockingBlock Width = "1430" Height = "672" DocumentStyle = "true">
             <DockingCard
-              Text = "event.lua"
-              Tag = "F:/Moha/unityPro/CloaHwLua/Assets/3rd/ToLua/Lua/event.lua"
+              Text = "Component.lua"
+              Tag = "F:/Moha/unityPro/CloaHwLua/Assets/.lpproj/Apis/Unity/UnityEngine/Component.lua"
               ActivePage = "false"
-              ActivateTime = "880416230"
-              CaretLineIndex = "206"
+              ActivateTime = "1054651098"
+              CaretLineIndex = "66"
+              CaretCodeCharIndex = "31"
+              BaseX = "0"
+              BaseY = "-1138"/>
+            <DockingCard
+              Text = "IdleTruckModel.lua"
+              Tag = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Game/Idle/Models/IdleTruckModel.lua"
+              ActivePage = "false"
+              ActivateTime = "1054929098"
+              CaretLineIndex = "12"
+              CaretCodeCharIndex = "40"
+              BaseX = "0"
+              BaseY = "0"/>
+            <DockingCard
+              Text = "IdleTruckCtrl.lua"
+              Tag = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Game/Idle/Ctrls/IdleTruckCtrl.lua"
+              ActivePage = "true"
+              ActivateTime = "1056354608"
+              CaretLineIndex = "6"
+              CaretCodeCharIndex = "40"
+              BaseX = "0"
+              BaseY = "-66"/>
+            <DockingCard
+              Text = "IdleCityModel.lua"
+              Tag = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Game/Idle/Models/IdleCityModel.lua"
+              ActivePage = "false"
+              ActivateTime = "1047114110"
+              CaretLineIndex = "0"
+              CaretCodeCharIndex = "3"
+              BaseX = "0"
+              BaseY = "0"/>
+            <DockingCard
+              Text = "Const.lua"
+              Tag = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Game/Idle/Common/Const.lua"
+              ActivePage = "false"
+              ActivateTime = "1042347055"
+              CaretLineIndex = "13"
+              CaretCodeCharIndex = "4"
+              BaseX = "0"
+              BaseY = "0"/>
+            <DockingCard
+              Text = "PlayerMgr.lua"
+              Tag = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Game/Idle/Mgrs/PlayerMgr.lua"
+              ActivePage = "false"
+              ActivateTime = "1041771472"
+              CaretLineIndex = "19"
+              CaretCodeCharIndex = "3"
+              BaseX = "0"
+              BaseY = "-990"/>
+            <DockingCard
+              Text = "IdleCityCtrl.lua"
+              Tag = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Game/Idle/Ctrls/IdleCityCtrl.lua"
+              ActivePage = "false"
+              ActivateTime = "1047343149"
+              CaretLineIndex = "28"
               CaretCodeCharIndex = "0"
               BaseX = "0"
-              BaseY = "-4171"/>
-            <DockingCard
-              Text = "BigRat.lua"
-              Tag = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/3rd/BigNum/BigRat.lua"
-              ActivePage = "true"
-              ActivateTime = "888856027"
-              CaretLineIndex = "101"
-              CaretCodeCharIndex = "37"
-              BaseX = "0"
-              BaseY = "-1795"/>
-            <DockingCard
-              Text = "test_BigRat.lua"
-              Tag = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/3rd/BigNum/test_BigRat.lua"
-              ActivePage = "false"
-              ActivateTime = "887323926"
-              CaretLineIndex = "44"
-              CaretCodeCharIndex = "7"
-              BaseX = "0"
-              BaseY = "-761"/>
+              BaseY = "-141"/>
             <DockingCard
               Text = "Main.lua"
               Tag = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Main.lua"
               ActivePage = "false"
-              ActivateTime = "878882306"
-              CaretLineIndex = "40"
-              CaretCodeCharIndex = "1"
+              ActivateTime = "1048538960"
+              CaretLineIndex = "93"
+              CaretCodeCharIndex = "31"
               BaseX = "0"
-              BaseY = "-660"/>
+              BaseY = "-1518"/>
             <DockingCard
-              Text = "IdleItem.lua"
-              Tag = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/LuaData/IdleItem.lua"
+              Text = "TimeUtil.lua"
+              Tag = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Utilitys/TimeUtil.lua"
               ActivePage = "false"
-              ActivateTime = "878562176"
-              CaretLineIndex = "45"
-              CaretCodeCharIndex = "25"
+              ActivateTime = "1037578859"
+              CaretLineIndex = "163"
+              CaretCodeCharIndex = "39"
               BaseX = "0"
-              BaseY = "-660"/>
+              BaseY = "-3234"/>
+            <DockingCard
+              Text = "require.lua"
+              Tag = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/require.lua"
+              ActivePage = "false"
+              ActivateTime = "1048392789"
+              CaretLineIndex = "21"
+              CaretCodeCharIndex = "22"
+              BaseX = "0"
+              BaseY = "-132"/>
+            <DockingCard
+              Text = "Table_Utils.lua"
+              Tag = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Utilitys/Table_Utils.lua"
+              ActivePage = "false"
+              ActivateTime = "1028263038"
+              CaretLineIndex = "8"
+              CaretCodeCharIndex = "28"
+              BaseX = "0"
+              BaseY = "0"/>
+            <DockingCard
+              Text = "EventMgr.lua"
+              Tag = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Mgrs/EventMgr.lua"
+              ActivePage = "false"
+              ActivateTime = "1027569506"
+              CaretLineIndex = "0"
+              CaretCodeCharIndex = "0"
+              BaseX = "0"
+              BaseY = "-726"/>
+            <DockingCard
+              Text = "LuaState.lua"
+              Tag = "F:/Moha/unityPro/CloaHwLua/Assets/.lpproj/Apis/Unity/LuaInterface/LuaState.lua"
+              ActivePage = "false"
+              ActivateTime = "1027319628"
+              CaretLineIndex = "6"
+              CaretCodeCharIndex = "0"
+              BaseX = "0"
+              BaseY = "0"/>
+            <DockingCard
+              Text = "IdleCity.lua"
+              Tag = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/LuaData/IdleCity.lua"
+              ActivePage = "false"
+              ActivateTime = "1040921511"
+              CaretLineIndex = "10"
+              CaretCodeCharIndex = "23"
+              BaseX = "0"
+              BaseY = "-66"/>
+            <DockingCard
+              Text = "ColaPlus.lua"
+              Tag = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Core/ColaPlus.lua"
+              ActivePage = "false"
+              ActivateTime = "1027670153"
+              CaretLineIndex = "39"
+              CaretCodeCharIndex = "2"
+              BaseX = "0"
+              BaseY = "-528"/>
             <DockingCard
               Text = "BigNum.lua"
               Tag = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/3rd/BigNum/BigNum.lua"
               ActivePage = "false"
-              ActivateTime = "888275338"
-              CaretLineIndex = "824"
-              CaretCodeCharIndex = "16"
+              ActivateTime = "967963313"
+              CaretLineIndex = "58"
+              CaretCodeCharIndex = "14"
               BaseX = "0"
-              BaseY = "-18493"/>
+              BaseY = "-960"/>
+            <DockingCard
+              Text = "BigNumber.lua"
+              Tag = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/3rd/BigNum/BigNumber.lua"
+              ActivePage = "false"
+              ActivateTime = "1019286632"
+              CaretLineIndex = "365"
+              CaretCodeCharIndex = "15"
+              BaseX = "0"
+              BaseY = "-7634"/>
+            <DockingCard
+              Text = "test_BigNumber.lua"
+              Tag = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/3rd/BigNum/test_BigNumber.lua"
+              ActivePage = "false"
+              ActivateTime = "1019474757"
+              CaretLineIndex = "49"
+              CaretCodeCharIndex = "9"
+              BaseX = "0"
+              BaseY = "-796"/>
+            <DockingCard
+              Text = "BigRat.lua"
+              Tag = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/3rd/BigNum/BigRat.lua"
+              ActivePage = "false"
+              ActivateTime = "961375387"
+              CaretLineIndex = "51"
+              CaretCodeCharIndex = "12"
+              BaseX = "0"
+              BaseY = "-4963"/>
+            <DockingCard
+              Text = "test_BigRat.lua"
+              Tag = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/3rd/BigNum/test_BigRat.lua"
+              ActivePage = "false"
+              ActivateTime = "968214493"
+              CaretLineIndex = "49"
+              CaretCodeCharIndex = "6"
+              BaseX = "0"
+              BaseY = "-761"/>
+            <DockingCard
+              Text = "IdleItem.lua"
+              Tag = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/LuaData/IdleItem.lua"
+              ActivePage = "false"
+              ActivateTime = "968914453"
+              CaretLineIndex = "38"
+              CaretCodeCharIndex = "22"
+              BaseX = "0"
+              BaseY = "-660"/>
             <DockingCard
               Text = "IdleCityTruckRes.lua"
               Tag = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/LuaData/IdleCityTruckRes.lua"
@@ -140,30 +277,12 @@
               BaseX = "0"
               BaseY = "-1782"/>
             <DockingCard
-              Text = "require.lua"
-              Tag = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/require.lua"
-              ActivePage = "false"
-              ActivateTime = "879039423"
-              CaretLineIndex = "23"
-              CaretCodeCharIndex = "26"
-              BaseX = "0"
-              BaseY = "-66"/>
-            <DockingCard
               Text = "LuaGlobalCheck.lua"
               Tag = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Utilitys/LuaGlobalCheck.lua"
               ActivePage = "false"
               ActivateTime = "878824207"
               CaretLineIndex = "21"
               CaretCodeCharIndex = "2"
-              BaseX = "0"
-              BaseY = "0"/>
-            <DockingCard
-              Text = "PlayerMgr.lua"
-              Tag = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Mgrs/PlayerMgr.lua"
-              ActivePage = "false"
-              ActivateTime = "878122573"
-              CaretLineIndex = "10"
-              CaretCodeCharIndex = "24"
               BaseX = "0"
               BaseY = "0"/>
             <DockingCard
@@ -230,24 +349,6 @@
               BaseX = "0"
               BaseY = "-23"/>
             <DockingCard
-              Text = "test_BigNum.lua"
-              Tag = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/3rd/BigNum/test_BigNum.lua"
-              ActivePage = "false"
-              ActivateTime = "873301996"
-              CaretLineIndex = "25"
-              CaretCodeCharIndex = "34"
-              BaseX = "0"
-              BaseY = "0"/>
-            <DockingCard
-              Text = "IdleCity.lua"
-              Tag = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/LuaData/IdleCity.lua"
-              ActivePage = "false"
-              ActivateTime = "875795022"
-              CaretLineIndex = "128"
-              CaretCodeCharIndex = "15"
-              BaseX = "0"
-              BaseY = "-2368"/>
-            <DockingCard
               Text = "ECEnumType.lua"
               Tag = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Common/ECEnumType.lua"
               ActivePage = "false"
@@ -281,15 +382,6 @@
               ActivateTime = "871353961"
               CaretLineIndex = "25"
               CaretCodeCharIndex = "0"
-              BaseX = "0"
-              BaseY = "0"/>
-            <DockingCard
-              Text = "UILoading.lua"
-              Tag = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Modules/Common/Views/UILoading.lua"
-              ActivePage = "false"
-              ActivateTime = "857525607"
-              CaretLineIndex = "0"
-              CaretCodeCharIndex = "3"
               BaseX = "0"
               BaseY = "0"/>
             <DockingCard
@@ -419,15 +511,6 @@
               BaseX = "0"
               BaseY = "0"/>
             <DockingCard
-              Text = "UILoading_BindView.lua"
-              Tag = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/UIBindViews/UILoading_BindView.lua"
-              ActivePage = "false"
-              ActivateTime = "591651999"
-              CaretLineIndex = "9"
-              CaretCodeCharIndex = "21"
-              BaseX = "0"
-              BaseY = "0"/>
-            <DockingCard
               Text = "UILoginPanel.lua"
               Tag = "F:/Moha/unityPro/CloaHwLua/Assets/Lua/Modules/Login/Views/UILoginPanel.lua"
               ActivePage = "false"
@@ -520,7 +603,7 @@
           </DockingBlock>
         </DockingNode>
         <DockingNode DockingDirection = "None">
-          <DockingBlock Width = "1323" Height = "150" DocumentStyle = "false">
+          <DockingBlock Width = "1430" Height = "244" DocumentStyle = "false">
             <DockingCard
               Text = "Output"
               Tag = ""

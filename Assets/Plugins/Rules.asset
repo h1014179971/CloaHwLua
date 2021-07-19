@@ -20,7 +20,7 @@ MonoBehaviour:
   searchPatternPrefab: '*.prefab'
   searchPatternScene: '*.unity'
   searchPatternText: '*.txt,*.bytes,*.json,*.csv,*.xml,*htm,*.html,*.yaml,*.fnt'
-  version: 18
+  version: 22
   scenesInBuild:
   - {fileID: 102900000, guid: 5866861b7f9a25841be83c614cfb2440, type: 3}
   rules:
@@ -129,16 +129,22 @@ MonoBehaviour:
     path: Assets/GameAssets/Arts/UI/Prefabs/UGUIRoot.prefab
   - bundle: assets/gameassets/arts/ui/prefabs/uibagdialog.prefab.unity3d
     path: Assets/GameAssets/Arts/UI/Prefabs/UIBagDialog.prefab
+  - bundle: assets/gameassets/arts/ui/prefabs/uiloading.prefab.unity3d
+    path: Assets/GameAssets/Arts/UI/Prefabs/UILoading.prefab
   - bundle: assets/gameassets/sprotobytes/sproto.bytes.unity3d
     path: Assets/GameAssets/SprotoBytes/sproto.bytes
   - bundle: assets/luabasetemp.unity3d
     path: Assets/LuaBaseTemp/3rd.BigNum.BigNum.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/3rd.BigNum.BigNumber.lua.bytes
   - bundle: assets/luabasetemp.unity3d
     path: Assets/LuaBaseTemp/3rd.BigNum.BigRat.lua.bytes
   - bundle: assets/luabasetemp.unity3d
     path: Assets/LuaBaseTemp/3rd.BigNum.test.lua.bytes
   - bundle: assets/luabasetemp.unity3d
     path: Assets/LuaBaseTemp/3rd.BigNum.test_BigNum.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/3rd.BigNum.test_BigNumber.lua.bytes
   - bundle: assets/luabasetemp.unity3d
     path: Assets/LuaBaseTemp/3rd.BigNum.test_BigRat.lua.bytes
   - bundle: assets/luabasetemp.unity3d
@@ -204,6 +210,8 @@ MonoBehaviour:
   - bundle: assets/luabasetemp.unity3d
     path: Assets/LuaBaseTemp/Common.ECEnumType.lua.bytes
   - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/Common.ECEventType.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
     path: Assets/LuaBaseTemp/Common.LuaAppConst.lua.bytes
   - bundle: assets/luabasetemp.unity3d
     path: Assets/LuaBaseTemp/Core.ColaPlus.lua.bytes
@@ -213,6 +221,20 @@ MonoBehaviour:
     path: Assets/LuaBaseTemp/Core.middleclass.lua.bytes
   - bundle: assets/luabasetemp.unity3d
     path: Assets/LuaBaseTemp/Core.ui.UIBase.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/Game.Idle.Common.Const.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/Game.Idle.Ctrls.IdleCityCtrl.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/Game.Idle.Ctrls.IdleTruckCtrl.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/Game.Idle.Mgrs.Player.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/Game.Idle.Mgrs.PlayerMgr.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/Game.Idle.Models.IdleCityModel.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/Game.Idle.Models.IdleTruckModel.lua.bytes
   - bundle: assets/luabasetemp.unity3d
     path: Assets/LuaBaseTemp/Game.Main.GUICollections.lua.bytes
   - bundle: assets/luabasetemp.unity3d
@@ -226,13 +248,19 @@ MonoBehaviour:
   - bundle: assets/luabasetemp.unity3d
     path: Assets/LuaBaseTemp/LuaConfigs.Language.lua.bytes
   - bundle: assets/luabasetemp.unity3d
-    path: Assets/LuaBaseTemp/LuaData..lua.bytes
+    path: Assets/LuaBaseTemp/LuaData.IdleCity.lua.bytes
   - bundle: assets/luabasetemp.unity3d
     path: Assets/LuaBaseTemp/LuaData.IdleCityCycle.lua.bytes
   - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/LuaData.IdleCityStoreVolume.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
     path: Assets/LuaBaseTemp/LuaData.IdleCityTruckRes.lua.bytes
   - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/LuaData.IdleCityVolume.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
     path: Assets/LuaBaseTemp/LuaData.IdleGuide.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/LuaData.IdleGuideStep.lua.bytes
   - bundle: assets/luabasetemp.unity3d
     path: Assets/LuaBaseTemp/LuaData.IdleItem.lua.bytes
   - bundle: assets/luabasetemp.unity3d
@@ -241,6 +269,42 @@ MonoBehaviour:
     path: Assets/LuaBaseTemp/LuaData.IdleShelfRes.lua.bytes
   - bundle: assets/luabasetemp.unity3d
     path: Assets/LuaBaseTemp/LuaData.IdleSite.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/LuaData.IdleSiteBase1.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/LuaData.IdleSiteBase2.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/LuaData.IdleSiteBase3.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/LuaData.IdleSiteBase4.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/LuaData.IdleSiteBase5.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/LuaData.IdleSiteBase6.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/LuaData.IdleSiteGrade1.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/LuaData.IdleSiteGrade2.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/LuaData.IdleSiteGrade3.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/LuaData.IdleSiteGrade4.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/LuaData.IdleSiteGrade5.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/LuaData.IdleSiteGrade6.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/LuaData.IdleSiteTime1.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/LuaData.IdleSiteTime2.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/LuaData.IdleSiteTime3.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/LuaData.IdleSiteTime4.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/LuaData.IdleSiteTime5.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/LuaData.IdleSiteTime6.lua.bytes
   - bundle: assets/luabasetemp.unity3d
     path: Assets/LuaBaseTemp/LuaData.IdleSiteVolume1.lua.bytes
   - bundle: assets/luabasetemp.unity3d
@@ -256,9 +320,17 @@ MonoBehaviour:
   - bundle: assets/luabasetemp.unity3d
     path: Assets/LuaBaseTemp/LuaData.IdleSpecialEvent.lua.bytes
   - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/LuaData.IdleTask.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/LuaData.IdleTruckLv.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/LuaData.IdleTruckNum.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
     path: Assets/LuaBaseTemp/LuaData.IdleTruckRes.lua.bytes
   - bundle: assets/luabasetemp.unity3d
     path: Assets/LuaBaseTemp/LuaData.LanguageData.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/LuaData.LuaData.lua.bytes
   - bundle: assets/luabasetemp.unity3d
     path: Assets/LuaBaseTemp/LuaData.UnitConvert.lua.bytes
   - bundle: assets/luabasetemp.unity3d
@@ -309,6 +381,12 @@ MonoBehaviour:
     path: Assets/LuaBaseTemp/System.ValueType.lua.bytes
   - bundle: assets/luabasetemp.unity3d
     path: Assets/LuaBaseTemp/System.coroutine.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/Tools.Eventlib.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/Tools.Handler.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/Tools.Timer.lua.bytes
   - bundle: assets/luabasetemp.unity3d
     path: Assets/LuaBaseTemp/UIBindViews.UIBagDialog_BindView.lua.bytes
   - bundle: assets/luabasetemp.unity3d
@@ -361,6 +439,8 @@ MonoBehaviour:
     path: Assets/LuaBaseTemp/Utilitys.LuaLogHelper.lua.bytes
   - bundle: assets/luabasetemp.unity3d
     path: Assets/LuaBaseTemp/Utilitys.Table_Utils.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/Utilitys.TimeUtil.lua.bytes
   - bundle: assets/luabasetemp.unity3d
     path: Assets/LuaBaseTemp/Utilitys.UI_Utils.lua.bytes
   - bundle: assets/luabasetemp.unity3d
@@ -433,6 +513,8 @@ MonoBehaviour:
     path: Assets/LuaBaseTemp/protobuf.type_checkers.lua.bytes
   - bundle: assets/luabasetemp.unity3d
     path: Assets/LuaBaseTemp/protobuf.wire_format.lua.bytes
+  - bundle: assets/luabasetemp.unity3d
+    path: Assets/LuaBaseTemp/require.lua.bytes
   - bundle: assets/luabasetemp.unity3d
     path: Assets/LuaBaseTemp/slot.lua.bytes
   - bundle: assets/luabasetemp.unity3d
@@ -2040,12 +2122,17 @@ MonoBehaviour:
   - name: assets/gameassets/arts/ui/prefabs/uibagdialog.prefab.unity3d
     assets:
     - Assets/GameAssets/Arts/UI/Prefabs/UIBagDialog.prefab
+  - name: assets/gameassets/arts/ui/prefabs/uiloading.prefab.unity3d
+    assets:
+    - Assets/GameAssets/Arts/UI/Prefabs/UILoading.prefab
   - name: assets/luabasetemp.unity3d
     assets:
     - Assets/LuaBaseTemp/3rd.BigNum.BigNum.lua.bytes
+    - Assets/LuaBaseTemp/3rd.BigNum.BigNumber.lua.bytes
     - Assets/LuaBaseTemp/3rd.BigNum.BigRat.lua.bytes
     - Assets/LuaBaseTemp/3rd.BigNum.test.lua.bytes
     - Assets/LuaBaseTemp/3rd.BigNum.test_BigNum.lua.bytes
+    - Assets/LuaBaseTemp/3rd.BigNum.test_BigNumber.lua.bytes
     - Assets/LuaBaseTemp/3rd.BigNum.test_BigRat.lua.bytes
     - Assets/LuaBaseTemp/3rd.BigNum.test_div.lua.bytes
     - Assets/LuaBaseTemp/3rd.BigNum.test_mul.lua.bytes
@@ -2079,12 +2166,20 @@ MonoBehaviour:
     - Assets/LuaBaseTemp/Common.Collections.LObjectPool.lua.bytes
     - Assets/LuaBaseTemp/Common.Collections.LStack.lua.bytes
     - Assets/LuaBaseTemp/Common.ECEnumType.lua.bytes
+    - Assets/LuaBaseTemp/Common.ECEventType.lua.bytes
     - Assets/LuaBaseTemp/Common.LuaAppConst.lua.bytes
     - Assets/LuaBaseTemp/Core.ColaPlus.lua.bytes
     - Assets/LuaBaseTemp/Core.middleclass.lua.bytes
     - Assets/LuaBaseTemp/Core.Net.NetManager.lua.bytes
     - Assets/LuaBaseTemp/Core.ui.UIBase.lua.bytes
     - Assets/LuaBaseTemp/event.lua.bytes
+    - Assets/LuaBaseTemp/Game.Idle.Common.Const.lua.bytes
+    - Assets/LuaBaseTemp/Game.Idle.Ctrls.IdleCityCtrl.lua.bytes
+    - Assets/LuaBaseTemp/Game.Idle.Ctrls.IdleTruckCtrl.lua.bytes
+    - Assets/LuaBaseTemp/Game.Idle.Mgrs.Player.lua.bytes
+    - Assets/LuaBaseTemp/Game.Idle.Mgrs.PlayerMgr.lua.bytes
+    - Assets/LuaBaseTemp/Game.Idle.Models.IdleCityModel.lua.bytes
+    - Assets/LuaBaseTemp/Game.Idle.Models.IdleTruckModel.lua.bytes
     - Assets/LuaBaseTemp/Game.Main.GUICollections.lua.bytes
     - Assets/LuaBaseTemp/Game.Main.ModuleId.lua.bytes
     - Assets/LuaBaseTemp/Game.Main.Modules.lua.bytes
@@ -2111,14 +2206,35 @@ MonoBehaviour:
     - Assets/LuaBaseTemp/lpeg.re.lua.bytes
     - Assets/LuaBaseTemp/ltn12.lua.bytes
     - Assets/LuaBaseTemp/LuaConfigs.Language.lua.bytes
-    - Assets/LuaBaseTemp/LuaData..lua.bytes
+    - Assets/LuaBaseTemp/LuaData.IdleCity.lua.bytes
     - Assets/LuaBaseTemp/LuaData.IdleCityCycle.lua.bytes
+    - Assets/LuaBaseTemp/LuaData.IdleCityStoreVolume.lua.bytes
     - Assets/LuaBaseTemp/LuaData.IdleCityTruckRes.lua.bytes
+    - Assets/LuaBaseTemp/LuaData.IdleCityVolume.lua.bytes
     - Assets/LuaBaseTemp/LuaData.IdleGuide.lua.bytes
+    - Assets/LuaBaseTemp/LuaData.IdleGuideStep.lua.bytes
     - Assets/LuaBaseTemp/LuaData.IdleItem.lua.bytes
     - Assets/LuaBaseTemp/LuaData.IdleMainTask.lua.bytes
     - Assets/LuaBaseTemp/LuaData.IdleShelfRes.lua.bytes
     - Assets/LuaBaseTemp/LuaData.IdleSite.lua.bytes
+    - Assets/LuaBaseTemp/LuaData.IdleSiteBase1.lua.bytes
+    - Assets/LuaBaseTemp/LuaData.IdleSiteBase2.lua.bytes
+    - Assets/LuaBaseTemp/LuaData.IdleSiteBase3.lua.bytes
+    - Assets/LuaBaseTemp/LuaData.IdleSiteBase4.lua.bytes
+    - Assets/LuaBaseTemp/LuaData.IdleSiteBase5.lua.bytes
+    - Assets/LuaBaseTemp/LuaData.IdleSiteBase6.lua.bytes
+    - Assets/LuaBaseTemp/LuaData.IdleSiteGrade1.lua.bytes
+    - Assets/LuaBaseTemp/LuaData.IdleSiteGrade2.lua.bytes
+    - Assets/LuaBaseTemp/LuaData.IdleSiteGrade3.lua.bytes
+    - Assets/LuaBaseTemp/LuaData.IdleSiteGrade4.lua.bytes
+    - Assets/LuaBaseTemp/LuaData.IdleSiteGrade5.lua.bytes
+    - Assets/LuaBaseTemp/LuaData.IdleSiteGrade6.lua.bytes
+    - Assets/LuaBaseTemp/LuaData.IdleSiteTime1.lua.bytes
+    - Assets/LuaBaseTemp/LuaData.IdleSiteTime2.lua.bytes
+    - Assets/LuaBaseTemp/LuaData.IdleSiteTime3.lua.bytes
+    - Assets/LuaBaseTemp/LuaData.IdleSiteTime4.lua.bytes
+    - Assets/LuaBaseTemp/LuaData.IdleSiteTime5.lua.bytes
+    - Assets/LuaBaseTemp/LuaData.IdleSiteTime6.lua.bytes
     - Assets/LuaBaseTemp/LuaData.IdleSiteVolume1.lua.bytes
     - Assets/LuaBaseTemp/LuaData.IdleSiteVolume2.lua.bytes
     - Assets/LuaBaseTemp/LuaData.IdleSiteVolume3.lua.bytes
@@ -2126,8 +2242,12 @@ MonoBehaviour:
     - Assets/LuaBaseTemp/LuaData.IdleSiteVolume5.lua.bytes
     - Assets/LuaBaseTemp/LuaData.IdleSiteVolume6.lua.bytes
     - Assets/LuaBaseTemp/LuaData.IdleSpecialEvent.lua.bytes
+    - Assets/LuaBaseTemp/LuaData.IdleTask.lua.bytes
+    - Assets/LuaBaseTemp/LuaData.IdleTruckLv.lua.bytes
+    - Assets/LuaBaseTemp/LuaData.IdleTruckNum.lua.bytes
     - Assets/LuaBaseTemp/LuaData.IdleTruckRes.lua.bytes
     - Assets/LuaBaseTemp/LuaData.LanguageData.lua.bytes
+    - Assets/LuaBaseTemp/LuaData.LuaData.lua.bytes
     - Assets/LuaBaseTemp/LuaData.UnitConvert.lua.bytes
     - Assets/LuaBaseTemp/Main.lua.bytes
     - Assets/LuaBaseTemp/Mgrs.ConfigMgr.lua.bytes
@@ -2159,6 +2279,7 @@ MonoBehaviour:
     - Assets/LuaBaseTemp/protobuf.type_checkers.lua.bytes
     - Assets/LuaBaseTemp/protobuf.wire_format.lua.bytes
     - Assets/LuaBaseTemp/Protocols.Protocol.lua.bytes
+    - Assets/LuaBaseTemp/require.lua.bytes
     - Assets/LuaBaseTemp/slot.lua.bytes
     - Assets/LuaBaseTemp/socket.ftp.lua.bytes
     - Assets/LuaBaseTemp/socket.headers.lua.bytes
@@ -2176,6 +2297,9 @@ MonoBehaviour:
     - Assets/LuaBaseTemp/System.Timer.lua.bytes
     - Assets/LuaBaseTemp/System.ValueType.lua.bytes
     - Assets/LuaBaseTemp/tolua.lua.bytes
+    - Assets/LuaBaseTemp/Tools.Eventlib.lua.bytes
+    - Assets/LuaBaseTemp/Tools.Handler.lua.bytes
+    - Assets/LuaBaseTemp/Tools.Timer.lua.bytes
     - Assets/LuaBaseTemp/typeof.lua.bytes
     - Assets/LuaBaseTemp/UIBindViews.UIBagDialog_BindView.lua.bytes
     - Assets/LuaBaseTemp/UIBindViews.UIcopying_BindView.lua.bytes
@@ -2203,6 +2327,7 @@ MonoBehaviour:
     - Assets/LuaBaseTemp/Utilitys.LuaGlobalCheck.lua.bytes
     - Assets/LuaBaseTemp/Utilitys.LuaLogHelper.lua.bytes
     - Assets/LuaBaseTemp/Utilitys.Table_Utils.lua.bytes
+    - Assets/LuaBaseTemp/Utilitys.TimeUtil.lua.bytes
     - Assets/LuaBaseTemp/Utilitys.UI_Utils.lua.bytes
   - name: assets/effects/materials/mat_piaoqian.mat.unity3d
     assets:
@@ -2426,3 +2551,9 @@ MonoBehaviour:
   - name: assets/textures/idle/ui/idlewindow/offlinebg.png.unity3d
     assets:
     - Assets/Textures/idle/UI/idleWindow/offlinebg.png
+  - name: assets/textures/idle/ui/loading/bg-process.png.unity3d
+    assets:
+    - Assets/Textures/idle/UI/loading/bg-process.png
+  - name: assets/textures/idle/ui/loading/fg-process.png.unity3d
+    assets:
+    - Assets/Textures/idle/UI/loading/fg-process.png

@@ -1,26 +1,4 @@
-﻿--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%{{{1
---
---  File Name:              bignum.lua
---  Package Name:           BigNum
---
---  Project:    Big Numbers library for Lua
---  Mantainers: fmp - Frederico Macedo Pessoa
---              msm - Marco Serpa Molinaro
---
---  History:
---     Version      Autor       Date            Notes
---      1.1      fmp/msm    12/11/2004   Some bug fixes (thanks Isaac Gouy)
---      alfa     fmp/msm    03/22/2003   Start of Development
---      beta     fmp/msm    07/11/2003   Release
---
---  Description:
---    Big numbers manipulation library for Lua.
---    A Big Number is a table with as many numbers as necessary to represent
---       its value in base 'RADIX'. It has a field 'len' containing the num-
---       ber of such numbers and a field 'signal' that may assume the values
---       '+' and '-'.
---
---$.%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+﻿
 
 
 --%%%%%%%%  Constants used in the file %%%%%%%%--{{{1
@@ -165,18 +143,7 @@ function BigNumber.mt.le( num1 , num2 )
 	return BigNumber.le( bnum1 , bnum2 ) ;
 end
 
-----BigNumber.mt.gt{{{2
---function BigNumber.mt.gt( num1 , num2 )
-	--local bnum1 = BigNumber.new(num1);
-	--local bnum2 = BigNumber.new(num2);
-	--return BigNumber.gt( bnum1 , bnum2 ) ;
---end
-----BigNumber.mt.ge{{{2
---function BigNumber.mt.ge( num1 , num2 )
-	--local bnum1 = BigNumber.new(num1);
-	--local bnum2 = BigNumber.new(num2);
-	--return BigNumber.ge( bnum1 , bnum2 ) ;
---end
+
 
 
 
@@ -195,8 +162,6 @@ BigNumber.mt.__div = BigNumber.mt.div ;
 BigNumber.mt.__eq = BigNumber.mt.eq   ;
 BigNumber.mt.__le = BigNumber.mt.le   ;
 BigNumber.mt.__lt = BigNumber.mt.lt   ;
---BigNumber.mt.__ge = BigNumber.mt.ge   ;
---BigNumber.mt.__gt = BigNumber.mt.gt   ;
 --concatenation
 -- BigNum.me.__concat = ???
 
@@ -433,59 +398,6 @@ function BigNumber.le( bnum1 , bnum2 )
 		return false ;
 	end
 end
-
-
---%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%{{{2
---
---  Function: LT
---
---
---  Description:
---     Verifies if bnum1 is greater than bnum2.
---
---  Parameters:
---     bnum1, bnum2 - numbers
---
---  Returns:
---     Returns true if bnum1 is lesser than bnum2 or false otherwise.
---
---  %%%%%%%% --
---BigNum.lt{{{2
-function BigNumber.gt( bnum1 , bnum2 )
-	if BigNumber.compare( bnum1 , bnum2 ) == 1 then
-		return true ;
-	else
-		return false ;
-	end
-end
-
-
---%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%{{{2
---
---  Function: LE
---
---
---  Description:
---     Verifies if bnum1 is greater or equal than bnum2.
---
---  Parameters:
---     bnum1, bnum2 - numbers
---
---  Returns:
---     Returns true if bnum1 is lesser or equal than bnum2 or false otherwise.
---
---  %%%%%%%% --
---BigNum.le{{{2
-function BigNumber.ge( bnum1 , bnum2 )
-	local temp = -1 ;
-	temp = BigNumber.compare( bnum1 , bnum2 )
-	if temp == 0 or temp == 1 then
-		return true ;
-	else
-		return false ;
-	end
-end
-
 
 
 

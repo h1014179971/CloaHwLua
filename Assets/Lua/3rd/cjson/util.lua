@@ -101,6 +101,7 @@ local function file_load(filename)
         file, err = io.open(filename, "rb")
         if file == nil then
             error(("Unable to read '%s': %s"):format(filename, err))
+			return nil
         end
     end
     local data = file:read("*a")

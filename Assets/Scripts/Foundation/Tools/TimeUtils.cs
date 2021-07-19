@@ -9,6 +9,7 @@ public class TimeUtils
 	public static DateTime dt1 = DateTime.Parse("1970-1-1 8:0:0");
 
 
+	#region 本地时间相关
 	/// <summary>
 	/// 时间戳转为C#格式时间
 	/// </summary>
@@ -22,37 +23,63 @@ public class TimeUtils
 		return dtStart.Add(toNow);
 	}
 
-	/// <summary>
-	/// DateTime时间格式转换为Unix时间戳格式
-	/// </summary>
-	/// <param name=”time”></param>
-	/// <returns></returns>
-	public static string ConvertDateTime(System.DateTime time)
-	{
-		System.DateTime startTime = TimeZone.CurrentTimeZone.ToLocalTime(new System.DateTime(1970, 1, 1));
-		return Convert.ToString((int)(time - startTime).TotalSeconds);
-	}
+    public static DateTime GetDateTime(long second)
+    {
+        DateTime dtStart = TimeZone.CurrentTimeZone.ToLocalTime(new DateTime(1970, 1, 1));
+     
+        return dtStart.AddSeconds(second);
+    }
+	
+
+    /// <summary>
+    /// DateTime时间格式转换为Unix时间戳格式
+    /// </summary>
+    /// <param name=”time”></param>
+    /// <returns></returns>
+    public static string ConvertDateTime(System.DateTime time)
+    {
+        //datetime计算时有时区缓存
+        //TimeZone.CurrentTimeZone.ToLocalTime(new System.DateTime(1970, 1, 1)),东八区输出时间为1970/1/1 8:00:00
+        //TimeZone.CurrentTimeZone.ToUniversalTime(new System.DateTime(1970, 1, 1))	,东八区输出时间为1969/12/31 16:00:00
+        System.DateTime startTime = TimeZone.CurrentTimeZone.ToLocalTime(new System.DateTime(1970, 1, 1));
+        return Convert.ToString((int)(time - startTime).TotalSeconds);
+    }
     public static long ConvertLongDateTime(System.DateTime time)
     {
         string str = ConvertDateTime(time);
         return long.Parse(str);
     }
+    #endregion
+    #region UTC时间相关
+
+    public static DateTime GetUtcTime(long utcSecond)
+	{
+		DateTime dtStart = TimeZone.CurrentTimeZone.ToUniversalTime(new DateTime(1970, 1, 1) + TimeZoneInfo.Local.BaseUtcOffset);
+
+		return dtStart.AddSeconds(utcSecond);
+	}
+
 	public static string ConvertUtcDateTime(System.DateTime time)
-	{
-		System.DateTime startTime = TimeZone.CurrentTimeZone.ToUniversalTime(new System.DateTime(1970, 1, 1));
-		return Convert.ToString((int)(time - startTime).TotalSeconds);
-	}
-	public static long ConvertLongUtcDateTime(System.DateTime time)
-	{
-		string str = ConvertUtcDateTime(time);
-		return long.Parse(str);
-	}
-	/// <summary>
-	/// Adjusts the time value.
-	/// 客户端服务器时间校准差值
-	/// </summary>
-	/// <param name="serverMilliseconds">Server milliseconds.</param>
-	public static void AdjustTimeValue(long serverMilliseconds)
+    {
+		//datetime计算时有时区缓存
+		//TimeZone.CurrentTimeZone.ToLocalTime(new System.DateTime(1970, 1, 1)),东八区输出时间为1970/1/1 8:00:00
+		//TimeZone.CurrentTimeZone.ToUniversalTime(new System.DateTime(1970, 1, 1))	,东八区输出时间为1969/12/31 16:00:00
+		// TimeZone.CurrentTimeZone.ToUniversalTime(new System.DateTime(1970, 1, 1) + TimeZoneInfo.Local.BaseUtcOffset),输出时间为1970/1/1 00:00:00
+		System.DateTime startTime = TimeZone.CurrentTimeZone.ToUniversalTime(new System.DateTime(1970, 1, 1) + TimeZoneInfo.Local.BaseUtcOffset);
+        return Convert.ToString((int)(time - startTime).TotalSeconds);
+    }
+    public static long ConvertLongUtcDateTime(System.DateTime time)
+    {
+        string str = ConvertUtcDateTime(time);
+        return long.Parse(str);
+    }
+    #endregion
+    /// <summary>
+    /// Adjusts the time value.
+    /// 客户端服务器时间校准差值
+    /// </summary>
+    /// <param name="serverMilliseconds">Server milliseconds.</param>
+    public static void AdjustTimeValue(long serverMilliseconds)
 	{
 		double clientMilliseconds = System.DateTime.Now.Subtract(System.DateTime.Parse("1970-1-1 8:0:0")).TotalMilliseconds;
 		timeAdjustValue = serverMilliseconds - clientMilliseconds;
@@ -308,6 +335,16 @@ public class TimeUtils
 		return shour + ":" + sminute + ":" + ssecond;
 	}
 	#endregion
+    /// <summary>
+    /// 根据秒数获取天数
+    /// </summary>
+    /// <param name="seconds"></param>
+    /// <returns></returns>
+    public static int SecondsToDay(long seconds)
+    {
+        int day = (int)seconds / 3600 / 24;
+        return day;
+    }
 
 	#region 登陆时间判断
 	/// <summary>

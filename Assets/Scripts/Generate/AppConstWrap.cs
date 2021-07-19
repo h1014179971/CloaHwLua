@@ -13,7 +13,6 @@ public class AppConstWrap
 		L.RegVar("SimulateMode", get_SimulateMode, set_SimulateMode);
 		L.RegConstant("LuaByteMode", 0);
 		L.RegVar("LuaBundleMode", get_LuaBundleMode, set_LuaBundleMode);
-		L.RegVar("LuaBundleModeEditMode", get_LuaBundleModeEditMode, set_LuaBundleModeEditMode);
 		L.RegVar("CheckUpdate", get_CheckUpdate, set_CheckUpdate);
 		L.RegVar("LuaBaseBundle", get_LuaBaseBundle, null);
 		L.RegVar("LuaUpdateBundle", get_LuaUpdateBundle, null);
@@ -101,20 +100,6 @@ public class AppConstWrap
 		try
 		{
 			LuaDLL.lua_pushboolean(L, AppConst.LuaBundleMode);
-			return 1;
-		}
-		catch (Exception e)
-		{
-			return LuaDLL.toluaL_exception(L, e);
-		}
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int get_LuaBundleModeEditMode(IntPtr L)
-	{
-		try
-		{
-			LuaDLL.lua_pushboolean(L, AppConst.LuaBundleModeEditMode);
 			return 1;
 		}
 		catch (Exception e)
@@ -510,21 +495,6 @@ public class AppConstWrap
 		{
 			bool arg0 = LuaDLL.luaL_checkboolean(L, 2);
 			AppConst.LuaBundleMode = arg0;
-			return 0;
-		}
-		catch (Exception e)
-		{
-			return LuaDLL.toluaL_exception(L, e);
-		}
-	}
-
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static int set_LuaBundleModeEditMode(IntPtr L)
-	{
-		try
-		{
-			bool arg0 = LuaDLL.luaL_checkboolean(L, 2);
-			AppConst.LuaBundleModeEditMode = arg0;
 			return 0;
 		}
 		catch (Exception e)

@@ -17,15 +17,15 @@ public class AppConst
 
     public const bool LuaByteMode = false;                       //Lua字节码模式-默认关闭 
     public static bool LuaBundleMode = true;                    //Lua代码AssetBundle模式
-#if UNITY_EDITOR
-    public static bool LuaBundleModeEditMode = false;            //Lua代码AssetBundle模式(仅用于Editor下模式测试)
-#endif
+//#if UNITY_EDITOR
+//    public static bool LuaBundleModeEditMode = false;            //Lua代码AssetBundle模式(仅用于Editor下模式测试)
+//#endif
     public static bool CheckUpdate = true;                      //是否需要检测热更新
 
     //public const string LuaBaseBundle = "lua/lua_base" + ExtName;         //包内的lua AssetBundle
     //public const string LuaUpdateBundle = "lua/lua_update" + ExtName;     //热更下载的lua AseetBundle
-    public const string LuaBaseBundle = "luabasetemp.unity3d";         //包内的lua AssetBundle
-    public const string LuaUpdateBundle = "luaupdatetemp.unity3d";     //热更下载的lua AseetBundle
+    public const string LuaBaseBundle = "assets/luabasetemp.unity3d";         //包内的lua AssetBundle
+    public const string LuaUpdateBundle = "assets/luaupdatetemp.unity3d";     //热更下载的lua AseetBundle
     public const string LuaBundlePrefix = "lua/";               //lua AssetBundle的前缀
     public static List<string> LuaBundles = new List<string>() { LuaUpdateBundle, LuaBaseBundle };
 

@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdc56db92a402e941ab08efeaa2267e0, type: 3}
   m_Name: AppSetting
   m_EditorClassIdentifier: 
-  SimulateMode: 0
+  SimulateMode: 1
   DebugMode: 1

@@ -25,7 +25,7 @@ namespace ColaFramework.ToolKit
 
         private static Dictionary<string, int> uiExportElementDic = new Dictionary<string, int>();
         private static List<Type> ExportComponentTypes = new List<Type>() { typeof(IControl),typeof(Button),typeof(InputField),typeof(Dropdown),typeof(Toggle),typeof(Slider),
-        typeof(ScrollRect),typeof(Scrollbar)};
+        typeof(ScrollRect),typeof(Scrollbar),typeof(MyButton),typeof(MyText)};
         private static List<Type> ExportPropertyTypes = new List<Type>() { typeof(IComponent), typeof(Image), typeof(RawImage), typeof(Text), typeof(RectTransform), typeof(Transform) };
         private static UIComponentCollection UICollection;
         private static int UIComponentIndex = -1;

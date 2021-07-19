@@ -5,6 +5,8 @@
 ---
 
 local Table_Utils = Class("Table_Utils")
+_G.Table_Utils = Table_Utils
+setmetatable(_G,Table_Utils)
 
 -- override 初始化各种数据
 function Table_Utils.initialize()

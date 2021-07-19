@@ -83,6 +83,8 @@ public static class CustomSettings
         _GT(typeof(UITableView)).SetNameSpace(null),
         _GT(typeof(UITableViewCell)).SetNameSpace(null),
         _GT(typeof(AppConst)),
+        _GT(typeof(SG.ResourceManager)),
+        _GT(typeof(Seeker)),
 
 #if USING_DOTWEENING
         _GT(typeof(DG.Tweening.DOTween)),

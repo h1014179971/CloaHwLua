@@ -20,6 +20,13 @@ require("Mgrs.UIManager")
 require("Mgrs.ConfigMgr")
 require("Protocols.Protocol")
 require("Tools.Timer")
-require("Mgrs.PlayerMgr")
+
 require("LuaData.LuaData")
 json = require "cjson"
+require("Utilitys.Table_Utils")
+require("utilitys.TimeUtil")
+--游戏逻辑业务--
+require("Game.Idle.Mgrs.PlayerMgr")
+require("Game.Idle.Ctrls.IdleCityCtrl")
+require("Game.Idle.Ctrls.IdleTruckCtrl")
+require("Game.Idle.Common.Const")
