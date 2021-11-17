@@ -12,25 +12,8 @@ public abstract class MonoSingleton<T> : MonoBehaviour where T: MonoSingleton<T>
             if (_applicationIsQuit)
                 return null;
 
-            T[] managers = GameObject.FindObjectsOfTypeAll(typeof(T)) as T[];
-            if (managers.Length != 0)
-            {
-                if (managers.Length == 1)
-                {
-                    _Instance = managers[0];
-                    _Instance.gameObject.name = typeof(T).Name;
-                    DontDestroyOnLoad(_Instance.gameObject);
-                    return _Instance;
-                }
-                else
-                {
-                    foreach (T manager in managers)
-                    {
-                        Destroy(manager.gameObject);
-                    }
-                }
-            }
-
+            if (null != _Instance)
+                return _Instance;
             GameObject gO = new GameObject(typeof(T).Name, typeof(T));
             _Instance = gO.GetComponent<T>();
             DontDestroyOnLoad(_Instance.gameObject);
