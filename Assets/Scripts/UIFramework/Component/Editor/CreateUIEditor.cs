@@ -35,6 +35,23 @@ public class CreateUIEditor
         // 放入到UI Canvas中
         PlaceUIElementRoot(btnRoot, menuCmd);
     }
+    [MenuItem("GameObject/3D Object/MyTextMeshPro")]
+    static void CreateTextTmp(MenuCommand menuCmd)
+    {
+        // 创建游戏对象
+        GameObject prefab = Resources.Load<GameObject>("Prefabs/MyText (TMP)");
+        GameObject btnRoot = GameObject.Instantiate<GameObject>(prefab);
+        btnRoot.name = "MyText (TMP)";
+        var parentGameObject = Selection.activeObject as GameObject;
+        var parentTransform = parentGameObject == null ? null : parentGameObject.transform;
+        btnRoot.transform.SetParent(parentTransform);
+        string uniqueName = GameObjectUtility.GetUniqueNameForSibling(parentTransform, btnRoot.name);
+        btnRoot.name = uniqueName;
+        btnRoot.transform.SetAsLastSibling();
+        EditorUtility.FocusProjectWindow();
+        Selection.activeObject = btnRoot;
+        EditorGUIUtility.PingObject(Selection.activeObject);
+    }
     public static void PlaceUIElementRoot(GameObject element, MenuCommand menuCommand)
     {
         GameObject parent = menuCommand.context as GameObject;
