@@ -89,6 +89,7 @@ namespace PSDImporter
         /// </summary>
         private static void CreateUGUI(bool toPrefab = false)
         {
+            Font txtFont = AssetDatabase.LoadAssetAtPath<Font>("Assets/GameAssets/fonts/Alibaba.ttf");
             Transform canvasTrans = null;
             if (GameObject.FindObjectOfType<Canvas>() == null)
             {
@@ -158,6 +159,8 @@ namespace PSDImporter
                     txt.rectTransform.sizeDelta = new Vector2(item.width,item.height);
                     txt.rectTransform.position = new Vector3(item.x, item.y, 0);
                     txt.color = txtColor;
+                    if (txtFont != null)
+                        txt.font = txtFont;
                     txt.fontSize = item.size;
                     txt.alignment = TextAnchor.MiddleCenter;
                     txt.horizontalOverflow = HorizontalWrapMode.Overflow;

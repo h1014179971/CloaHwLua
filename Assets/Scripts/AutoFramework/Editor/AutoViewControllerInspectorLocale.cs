@@ -7,21 +7,23 @@ namespace AutoCode
 {
     public class AutoViewControllerInspectorLocale
     {
-        public string CodegenPart =>" ������������" ;
-        public string Namespace => "�����ռ�:" ;
-        public string ScriptName =>"���ɽű���:";
-        public string ScriptsFolder => "�ű�����Ŀ¼:" ;
-        public string GeneratePrefab =>"���� Prefab" ;
-        public string PrefabGenerateFolder => "Prefab ����Ŀ¼:" ;
-        public string OpenScript =>" �򿪽ű�" ;
-        public string SelectScript =>" ѡ��ű�";
-        public string Generate =>" ���ɴ���";
+        public string TxtFontDesc => "文本字体:";
+        public string ReplaceFont => "替换字体";
+        public string CodegenPart =>" 代码生成设置" ;
+        public string Namespace => "命名空间:" ;
+        public string ScriptName =>"生成脚本名:";
+        public string ScriptsFolder => "脚本生成目录:" ;
+        public string GeneratePrefab =>"生成 Prefab" ;
+        public string PrefabGenerateFolder => "Prefab 生成目录:" ;
+        public string OpenScript =>" 打开脚本" ;
+        public string SelectScript =>" 选择脚本";
+        public string Generate =>" 生成代码";
 
         public string DragDescription =>
-             "�뽫Ҫ���ɽű����ļ����ϵ��±����� �� ������дĿ¼����һ����" ;
+             "请将要生成脚本的文件夹拖到下边区域 或 自行填写目录到上一栏中" ;
 
         public string PrefabDragDescription =>
-            "�뽫Ҫ���� Prefab ���ļ����ϵ��±����� �� ������дĿ¼����һ����" ;
+            "请将要生成 Prefab 的文件夹拖到下边区域 或 自行填写目录到上一栏中" ;
     }
 }
 #endif

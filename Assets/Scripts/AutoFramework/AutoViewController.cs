@@ -17,6 +17,8 @@ namespace AutoCode
 
         [HideInInspector] public string PrefabFolder = string.Empty;
 
+        [HideInInspector] public Font TxtFont = null;
+
         public string TemplateName => nameof(AutoViewController);
     }
 }

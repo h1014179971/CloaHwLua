@@ -5,6 +5,7 @@ using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 namespace AutoCode
 {
@@ -16,14 +17,14 @@ namespace AutoCode
         {
             if(Selection.objects == null || Selection.objects.Length <=0)
             {
-                Debug.LogError("ÐèÒªÑ¡Ôñ GameObject");
+                Debug.LogError("éœ€è¦é€‰æ‹© GameObject");
                 return;
             }
             var gameObject = Selection.objects.First() as GameObject;
 
             if (!gameObject)
             {
-                Debug.LogError("ÐèÒªÑ¡Ôñ GameObject");
+                Debug.LogError("éœ€è¦é€‰æ‹© GameObject");
                 return;
             }
 
@@ -79,6 +80,29 @@ namespace AutoCode
             GUILayout.Label(mLocaleText.CodegenPart, mStyle.BigTitleStyle.Value);
 
             //LocaleKitEditor.DrawSwitchToggle(GUI.skin.label.normal.textColor);
+            GUILayout.BeginHorizontal();
+            GUILayout.Label(mLocaleText.TxtFontDesc, GUILayout.Width(150));
+            ViewController.TxtFont = (Font)EditorGUILayout.ObjectField(ViewController.TxtFont, typeof(Font), true);
+            GUILayout.EndHorizontal();
+            GUILayout.BeginHorizontal();
+            if (GUILayout.Button(mLocaleText.ReplaceFont, GUILayout.Height(30)))
+            {
+                if (ViewController.TxtFont == null)
+                    Debug.LogError($"æœªé€‰æ‹©éœ€è¦æ›¿æ¢çš„å­—ä½“");
+                else
+                {
+                    Text[] txts = ViewController.gameObject.GetComponentsInChildren<Text>();
+                    for(int i = 0; i < txts.Length; i++)
+                    {
+                        Text txt = txts[i];
+                        txt.font = ViewController.TxtFont;
+                    }
+                    Debug.Log($"å­—ä½“æ›¿æ¢æˆåŠŸ");
+                }
+                
+
+            }
+            GUILayout.EndHorizontal();
 
             GUILayout.BeginHorizontal();
             GUILayout.Label(mLocaleText.Namespace, GUILayout.Width(150));
@@ -109,7 +133,7 @@ namespace AutoCode
                 && sfxPathRect.Contains(Event.current.mousePosition)
             )
             {
-                //¸Ä±äÊó±êµÄÍâ±í  
+                //æ”¹å˜é¼ æ ‡çš„å¤–è¡¨  
                 DragAndDrop.visualMode = DragAndDropVisualMode.Generic;
                 if (DragAndDrop.paths != null && DragAndDrop.paths.Length > 0)
                 {
@@ -150,7 +174,7 @@ namespace AutoCode
                     && dragRect.Contains(Event.current.mousePosition)
                 )
                 {
-                    //¸Ä±äÊó±êµÄÍâ±í  
+                    //æ”¹å˜é¼ æ ‡çš„å¤–è¡¨  
                     DragAndDrop.visualMode = DragAndDropVisualMode.Generic;
                     if (DragAndDrop.paths != null && DragAndDrop.paths.Length > 0)
                     {
