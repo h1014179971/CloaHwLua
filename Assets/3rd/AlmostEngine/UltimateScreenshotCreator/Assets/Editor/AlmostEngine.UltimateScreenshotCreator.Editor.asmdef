@@ -1,0 +1,14 @@
+﻿{
+	"name": "AlmostEngine.UltimateScreenshotCreator.Editor",
+    "references": ["AlmostEngine","AlmostEngine.Shared.Editor"],
+    "optionalUnityReferences": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+}

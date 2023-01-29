@@ -1,0 +1,14 @@
+﻿{
+	"name": "AlmostEngine.SimpleLocalization.Editor",
+    "references": ["AlmostEngine"],
+    "optionalUnityReferences": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+}

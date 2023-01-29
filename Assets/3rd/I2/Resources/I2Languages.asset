@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f0b0c553be8edd4682e9180fdd13e37, type: 3}
+  m_Name: I2Languages
+  m_EditorClassIdentifier: 
+  mSource:
+    UserAgreesToHaveItOnTheScene: 0
+    UserAgreesToHaveItInsideThePluginsFolder: 0
+    GoogleLiveSyncIsUptoDate: 1
+    mTerms:
+    - Term: AppName
+      TermType: 0
+      Description: "\u6E38\u620F\u540D\u5B57"
+      Languages:
+      - 'Planet Smash : Idle War'
+      - 'Planet Smash : Idle War'
+      - 'Planet Smash : Idle War'
+      - 'Planet Smash : Idle War'
+      - 'Planet Smash : Idle War'
+      - 'Planet Smash : Idle War'
+      - 'Planet Smash : Idle War'
+      - 'Planet Smash : Idle War'
+      Flags: 0000000000000000
+      Languages_Touch: []
+    - Term: App_ATT
+      TermType: 0
+      Description: 
+      Languages:
+      - "\u70B9\u51FB\\\"\u5141\u8BB8\\\"\u4EE5\u4F7F\u7528\u8BBE\u5907\u4FE1\u606F\u83B7\u5F97\u66F4\u52A0\u76F8\u5173\u7684\u5E7F\u544A\u5185\u5BB9"
+      - This only uses device info for less annoying, more relevant ads
+      - "\u9EDE\u64CA\\\"\u5141\u8A31\\\"\u4EE5\u4F7F\u7528\u8A2D\u5099\u4FE1\u606F\u7372\u5F97\u66F4\u52A0\u76F8\u95DC\u7684\u5EE3\u544A\u5167\u5BB9 "
+      - "\\\"Autoriser\\\" permet d'utiliser les infos du t\xE9l\xE9phone pour afficher
+        des contenus publicitaires plus pertinents "
+      - "\\\"Erlauben\\\" dr\xFCcken benutzt Ger\xE4tinformationen f\xFCr relevantere
+        Werbeinhalte "
+      - "\\\"\u8A31\u53EF\\\"\u3092\u30AF\u30EA\u30C3\u30AF\u3059\u308B\u3053\u3068\u3067\u3001\u30C7\u30D0\u30A4\u30B9\u60C5\u5831\u3092\u5143\u306B\u3088\u308A\u6700\u9069\u306A\u5E83\u544A\u3092\u8868\u793A\u3059\u308B\u3053\u3068\u304C\u3067\u304D\u307E\u3059 "
+      - "\\\"\uD5C8\uC6A9\\\"\uC744 \uB204\uB974\uBA74 \uB354 \uAD00\uB828\uC131
+        \uB192\uC740 \uAD11\uACE0 \uCF58\uD150\uCE20\uB97C \uC81C\uACF5\uD558\uAE30
+        \uC704\uD574 \uAE30\uAE30 \uC815\uBCF4\uAC00 \uC0AC\uC6A9\uB429\uB2C8\uB2E4 "
+      - "\u9EDE\u64CA\\\"\u5141\u8A31\\\"\u4EE5\u4F7F\u7528\u8A2D\u5099\u4FE1\u606F\u7372\u5F97\u66F4\u52A0\u76F8\u95DC\u7684\u5EE3\u544A\u5167\u5BB9 "
+      Flags: 0000000000000000
+      Languages_Touch: []
+    - Term: AppName_Android
+      TermType: 0
+      Description: 
+      Languages:
+      - Planet Smash
+      - Planet Smash
+      - Planet Smash
+      - Planet Smash
+      - Planet Smash
+      - Planet Smash
+      - Planet Smash
+      - Planet Smash
+      Flags: 0000000000000000
+      Languages_Touch: []
+    CaseInsensitiveTerms: 0
+    OnMissingTranslation: 1
+    mTerm_AppName: AppName
+    mTerm_AppName_Android: AppName_Android
+    mTerm_AppATT: App_ATT
+    mLanguages:
+    - Name: Chinese (Simplified)
+      Code: zh-CN
+      Flags: 0
+    - Name: English
+      Code: en
+      Flags: 0
+    - Name: Chinese (Taiwan)
+      Code: zh-TW
+      Flags: 0
+    - Name: French
+      Code: fr
+      Flags: 0
+    - Name: German
+      Code: de
+      Flags: 0
+    - Name: Japanese
+      Code: ja
+      Flags: 0
+    - Name: Korean
+      Code: ko
+      Flags: 0
+    - Name: Chinese (Hong Kong)
+      Code: zh-HK
+      Flags: 0
+    IgnoreDeviceLanguage: 0
+    _AllowUnloadingLanguages: 0
+    Google_WebServiceURL: 
+    Google_SpreadsheetKey: 
+    Google_SpreadsheetName: 
+    Google_LastUpdatedVersion: 
+    Google_Password: change_this
+    GoogleUpdateFrequency: 3
+    GoogleInEditorCheckFrequency: 2
+    GoogleUpdateSynchronization: 1
+    GoogleUpdateDelay: 0
+    Assets: []
+    Spreadsheet_LocalFileName: "../Excels/\u8BED\u8A00\u914D\u7F6E\u8868.txt"
+    Spreadsheet_LocalCSVSeparator: "\t"
+    Spreadsheet_LocalCSVEncoding: gb2312
+    Spreadsheet_SpecializationAsRows: 1
